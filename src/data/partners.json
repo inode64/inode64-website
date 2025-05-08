@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Optiza, Soluciones tecnológicas",
+        "description": "Primera empresa de Gestión Tecnológica con el objetivo de integrar avances tecnológicos con el día a día de la empresa, aumentando la productividad y efectividad en todos los ámbitos (administración, gestión comercial, producción, etc.). Mejorar la competitividad depende cada vez más de tomar buenas decisiones a la hora de implantar mejoras tecnológicas.\n\nConsúltanos y te ayudaremos con menos inversión de lo que imaginas.",
+        "url": "https://www.optiza.es/",
+        "image": "optiza"
+    },
+    {
+        "name": "LOISELE Comunicación",
+        "description": "En nuestro estudio nos dedicamos a la comunicación y al diseño gráfico desde 1992. Somos creadores, comunicadores y, sobre todo, diseñadores. Nos gusta lo que hacemos, por eso ofrecemos una amplia variedad de servicios que van desde la concepción de su identidad corporativa hasta el desarrollo y gestión de su empresa en INTERNET.\n\nEstamos especializados en la creación de maquetas únicas y en la producción de publicidad de tirada corta. Para ello, disponemos de una máquina de impresión digital ®Minolta con la que realizamos impresiones de alta calidad. También contamos con servidores administrados por INODE64, garantizando máxima fiabilidad en el alojamiento de páginas web.",
+        "url": "http://www.loisele.com/",
+        "image": "loisele"
+    },
+    {
+        "name": "EMOS, Formación y desarrollo personal",
+        "description": "EMOS es un Centro de formación especializado en el desarrollo del potencial humano en las empresas. Nuestra vocación es acercar formación de alto nivel a pequeñas empresas que no suelen tener acceso a ella. Ofrecemos cursos en liderazgo, RRHH, comercio y marketing, así como idiomas e informática.\n\nEn cada área, lo que nos define es que los objetivos de nuestros clientes son nuestros objetivos. Sumamos nuestro esfuerzo al suyo, poniendo todos los medios a nuestro alcance para ayudarles a lograrlos.",
+        "url": "http://www.e-emos.com/",
+        "image": "emos"
+    },
+    {
+        "name": "Ignota Design",
+        "description": "Ignota Design es un estudio creativo que desarrolla proyectos globales de diseño industrial, comunicación e interiorismo. Nuestro objetivo es aportar un valor añadido a los productos o marcas de nuestros clientes, asegurando su éxito. Diego Suárez, diseñador con experiencia en empresas de referencia, dirige el estudio.\n\nContamos con una amplia red de colaboradores multidisciplinares, lo que nos permite abarcar proyectos de primer nivel optimizando recursos.",
+        "url": "http://www.ignotadesign.com/",
+        "image": "ignota"
+    },
+    {
+        "name": "Eva Núñez, estudio creativo",
+        "description": "Entendemos el diseño como una forma de seducir los sentidos y crear para sugerir. Aplicamos nuestro método: escuchar, observar, analizar, descubrir, proponer, cuidar detalles y captar tendencias.\n\nDurante el proceso creativo, guiamos al cliente en la búsqueda de los elementos intangibles que expresen la esencia de su producto o servicio.",
+        "url": "http://evanunez.com/",
+        "image": "eva"
+    },
+    {
+        "name": "Sipweb, Servicios Informáticos Profesionales",
+        "description": "Nuestra empresa le ayudará en todos los procesos de informatización de su negocio, sin importar su tamaño. Le ofrecemos SOLUCIONES a sus problemas, confiando en nosotros como si fuéramos parte de su equipo.\n\nAnalizamos sus necesidades y recomendamos las mejores herramientas para optimizar su trabajo. Configuramos e instalamos software y hardware adecuados, realizamos mantenimiento preventivo y solucionamos imprevistos en el menor tiempo posible, utilizando materiales de primera calidad.",
+        "url": "http://www.sipweb.info/",
+        "image": "sipweb"
+    },
+    {
+        "name": "Redactalia",
+        "description": "Redactalia es una empresa de comunicación y servicios lingüísticos conformada por un equipo de emprendedores especializados en comunicación, publicidad, lingüística y marketing.\n\nNuestro compromiso es ofrecer soluciones efectivas en redacción, edición y estrategias comunicativas, adaptándonos a las necesidades de cada cliente.",
+        "url": "http://www.redactalia.com/",
+        "image": "redactalia"
+    },
+    {
+        "name": "Desmarca Marketing",
+        "description": "Desmarca está formada por un equipo de profesionales caracterizado por su juventud, talento y ambición. Gracias a nuestra experiencia, identificamos los principales problemas de las empresas y ofrecemos soluciones rápidas y creativas.\n\nBasamos nuestra estrategia de marketing en el análisis, planificando acciones a corto, medio y largo plazo que ayuden a cada empresa a crecer y posicionarse de manera destacada en el mercado.",
+        "url": "http://desmarcamarketing.com/",
+        "image": "desmarca"
+    }
+]

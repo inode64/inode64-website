@@ -1,0 +1,51 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { seoConfig } from "@/config/seo-config";
+import projects from "../data/projects.json";
+---
+
+<Layout 
+  title={seoConfig.projects.title}
+  description={seoConfig.projects.description}
+  image={seoConfig.projects.image}
+>
+  <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
+    <div class="mx-auto max-w-250 text-center">
+      <h2
+        class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl"
+      >
+        Proyectos
+      </h2>
+      <p class="mt-5 text-lg/8 text-gray-600">
+        Descubre una selección de proyectos que destacan por su originalidad, impacto y dedicación a la calidad. Cada proyecto es un testimonio de nuestro esfuerzo por ofrecer soluciones excepcionales y resultados sobresalientes.
+      </p>
+    </div>
+    <div
+      class="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-x-25 gap-y-16 pt-6 sm:pt-10 lg:mx-auto lg:max-w-5xl lg:grid-cols-2"
+    >
+      {
+        projects.map( project => (
+          <article class="group">
+            <img
+              alt={project.name}
+              src={`/images/projects/${project.screenshot}.webp`}
+              class="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
+            />
+          
+            <div class="p-4">
+              <a href="#">
+                <h3 class="text-lg font-medium text-gray-900">{project.name}</h3>
+              </a>
+          
+                <ul class="mt-2 text-sm/relaxed text-gray-500">
+                {project.features.map(feature => (
+                  <li class="list-disc">{feature}</li>
+                ))}
+                </ul>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</Layout>

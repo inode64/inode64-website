@@ -1,0 +1,73 @@
+---
+import TypedBlogPost from '@/components/blog/TypedBlogPost.astro';
+import Layout from '../../layouts/Layout.astro';
+import { seoConfig } from "@/config/seo-config";
+import type { GetStaticPaths } from "astro";
+import { getCollection } from 'astro:content';
+import Button from '@/components/ui/Button.astro';
+
+export const getStaticPaths = ( async ({ paginate }) => {
+  const blogPosts = (await getCollection('blog', (post) => post.data.isDraft === false)).sort((a, b) => {
+    return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+  });
+
+  return paginate(blogPosts, { pageSize: 9 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const currentPage = page.currentPage;
+---
+
+<Layout 
+  title={seoConfig.blog.title}
+  description={seoConfig.blog.description}
+  image={seoConfig.blog.image}
+>
+  <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
+    <div class="mx-auto max-w-250 text-center">
+      <h2
+        class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl"
+      >
+        Blog
+      </h2>
+      <p class="mt-5 text-lg/8 text-gray-600">
+        Bienvenido a nuestro blog, donde compartimos ideas, consejos y las
+        últimas novedades. Explora nuestros artículos y descubre contenido
+        diseñado para inspirarte y mantenerte informado.
+      </p>
+    </div>
+        <!-- component -->
+    <section>
+      <div class="container px-2 lg:px-6 sm:py-10 mx-auto max-w-7xl">
+        <div class="grid grid-cols-1 gap-10 mt-8 md:mt-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+            {page.data.map((post) => <TypedBlogPost post={post} />)}
+        </div>
+      </div>      
+    </section>
+
+      <section aria-label="Controles" class="flex justify-center gap-8 mt-10">
+        <Button 
+          href={page.url.prev} 
+          text="Anteriores" 
+          disabled={!page.url.prev}
+        />
+        <span class="flex items-center">Página { currentPage }</span>
+        <Button 
+          href={page.url.next} 
+          text="Siguientes" 
+          disabled={!page.url.next}
+        />
+    </section>
+  </div>
+</Layout>
+
+<style>
+    @reference 'tailwindcss';
+    a {
+    @apply bg-red-800 text-white p-2 rounded hover:bg-red-700 cursor-pointer;
+    }
+
+    .disabled {
+    @apply bg-gray-300 hover:bg-gray-600 pointer-events-none;
+    }
+</style>

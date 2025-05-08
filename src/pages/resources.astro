@@ -1,0 +1,38 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { seoConfig } from "@/config/seo-config";
+import resources from "../data/resources.json";
+import Button from "@/components/ui/Button.astro";
+---
+
+<Layout 
+  title={seoConfig.resources.title}
+  description={seoConfig.resources.description}
+  image={seoConfig.resources.image}
+>
+  <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
+    <div class="mx-auto max-w-250 text-center">
+      <h2
+        class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl"
+      >
+        Recursos
+      </h2>
+      <p class="mt-5 text-lg/8 text-gray-600">
+        INODE64 recomienda herramientas gratuitas de software para facilitar tu trabajo y potenciar tus habilidades tecnológicas. Explora estas opciones seleccionadas para aprovechar al máximo las tecnologías disponibles.
+      </p>
+    </div>
+    <div
+      class="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-6 sm:pt-10 lg:mx-auto lg:max-w-7xl md:grid-cols-2 lg:grid-cols-4"
+    >
+    {
+      resources.map(( app ) => (
+        <div class="flex flex-col items-center sm:items-start rounded-lg bg-gray-50 p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-gray-900" style="margin-top: 0;">{app.name}</h3>
+          <p class="mt-2 text-sm text-gray-600 text-center sm:text-left py-2 mb-4">{app.description}</p>
+          <Button type="button" text="Descargar" href={app.url} />
+        </div>
+      ))
+    }
+    </div>
+  </div>
+</Layout>

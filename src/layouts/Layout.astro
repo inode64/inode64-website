@@ -1,0 +1,47 @@
+---
+import { ClientRouter } from "astro:transitions";
+import "../styles/global.css";
+import { seoConfig } from "@/config/seo-config";
+
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+
+interface Props {
+  title?: string;
+  image?: string;
+  description?: string;
+}
+
+const { 
+  title = seoConfig.home.title, 
+  description = seoConfig.home.description, 
+  image = seoConfig.home.image,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head class="h-full">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO -->
+    <meta name="description" content={description} />
+    <meta name="author" content={'Roberto Galan'} />
+
+    <!-- OG MetaTags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+     
+    <title>{title}</title>
+    <ClientRouter />
+  </head>
+  <body class="h-full">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>

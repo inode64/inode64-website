@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Azabache Grupo",
+    "logo": "azabache.webp",
+    "website": "https://www.azabache.es",
+    "features": [
+      "Optimización web para indexación en buscadores y SEO",
+      "Multiidioma (Español, Ruso e Inglés)",
+      "Catálogo interactivo de alta calidad",
+      "Administrable por el cliente",
+      "Feedback 2.0"
+    ],
+    "screenshot": "azabache"
+  },
+  {
+    "name": "Dizumo",
+    "logo": "dizumo-logo.png",
+    "website": "https://www.dizumo.es",
+    "features": [
+      "Pasarela de pago VISA y PAYPAL",
+      "Optimización web para indexación en buscadores y SEO",
+      "Boletines y Blog",
+      "Administrable por el cliente",
+      "Feedback 2.0"
+    ],
+    "screenshot": "dizumo"
+  },
+  {
+    "name": "STP-woodflooring",
+    "logo": "stpwoodflooring-logo.png",
+    "website": "https://www.stp-woodflooring.com",
+    "features": [
+      "Maquetación según diseño exclusivo y usabilidad",
+      "Descarga de catálogos y planos",
+      "Enlace de productos y modelos",
+      "Sistema de boletines integrado en web",
+      "Administrable por el cliente"
+    ],
+    "screenshot": "stp"
+  },
+  {
+    "name": "Col·legi Grans i Menuts",
+    "logo": "gransimenuts-logo.png",
+    "website": "https://www.gransimenuts.com",
+    "features": [
+      "Boletines",
+      "Optimización web para indexación en buscadores y SEO",
+      "Conectores con WordPress y Moodle",
+      "Administrable por el cliente",
+      "Feedback 2.0"
+    ],
+    "screenshot": "gransimenuts"
+  },
+  {
+    "name": "Fino y Gómez",
+    "logo": "finoygomez-logo.png",
+    "website": "https://www.finoygomez.com",
+    "features": [
+      "Boletines",
+      "Optimización web para indexación en buscadores y SEO",
+      "Blog de consejos y banners de publicidad",
+      "Administrable por el cliente",
+      "Pago por web",
+      "Feedback 2.0"
+    ],
+    "screenshot": "finogomez"
+  },
+  {
+    "name": "Babysuommo",
+    "logo": "babysuommo-logo.png",
+    "website": "https://www.babysuommo.com",
+    "features": [
+      "Pasarela de pago VISA",
+      "Optimización web para indexación en buscadores y SEO",
+      "Multiidioma",
+      "Catálogo interactivo",
+      "Administrable por el cliente",
+      "Feedback 2.0"
+    ],
+    "screenshot": "babysuommo"
+  },
+  {
+    "name": "Shear",
+    "logo": "shear-logo.png",
+    "website": "https://www.shear.es",
+    "features": [
+      "Boletines y Gráficas informativas y de publicidad",
+      "Optimización web para indexación en buscadores y SEO",
+      "Administrable por el cliente",
+      "Feedback 2.0"
+    ],
+    "screenshot": "shear"
+  },
+  {
+    "name": "Club de Escacs Vila-Real",
+    "logo": "escacsvilareal-logo.png",
+    "website": "https://www.escacsvila-real.com",
+    "features": [
+      "Noticias",
+      "Promoción de actividades",
+      "Foro",
+      "Administrable por el cliente"
+    ],
+    "screenshot": "clubescacs"
+  },
+  {
+    "name": "Preventec",
+    "logo": "preventec-logo.png",
+    "website": "https://www.preventec.es",
+    "features": [
+      "E-commerce",
+      "Zona de clientes",
+      "Enlaces a marcas",
+      "Administrable por el cliente"
+    ],
+    "screenshot": "preventec"
+  },
+  {
+    "name": "Proarpro",
+    "logo": "proarpro-logo.png",
+    "website": "https://www.proarpro.com",
+    "features": [
+      "Optimizada para venta de viviendas en el mercado Europeo",
+      "Zona de clientes",
+      "Multiidioma",
+      "Administrable por el cliente"
+    ],
+    "screenshot": "proarpro"
+  },
+  {
+    "name": "Azulejera Alcorense",
+    "logo": "alcorense-logo.png",
+    "website": "https://www.azulejeraalcorense.com",
+    "features": [
+      "Multiidioma (Español, Inglés, Francés)",
+      "Productos, Catálogo interactivo, Panel Books",
+      "Administrable por cliente",
+      "Diseño optimizado para usabilidad y buscadores"
+    ],
+    "screenshot": "alcorense"
+  }
+]

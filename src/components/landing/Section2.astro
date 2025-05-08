@@ -1,0 +1,80 @@
+---
+import Button from "../ui/Button.astro";
+---
+
+<div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-270 lg:text-center">
+      <h2 class="text-base/7 font-semibold text-red-800">Soluciones Tecnológicas para Empresas</h2>
+      <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">Servicios de Administración y Mantenimiento IT</p>
+      <p class="mt-6 text-lg/8 text-gray-600">Ofrecemos soluciones especializadas en administración de sistemas, hospedaje web profesional y mantenimiento de software y hardware para empresas. Nuestro equipo garantiza un servicio eficiente y adaptado a tus necesidades.</p>
+    </div>
+    <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+      <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-gray-900">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-800">
+              <img src="/icons/loading.svg" alt="Icono cargando" class="p-2" />
+            </div>
+            Administración de Sistemas
+          </dt>
+          <dd class="mt-2 text-base/7 text-gray-600">Gestión, configuración y mantenimiento de servidores y redes empresariales.
+          <ul class="mt-2 list-disc list-inside text-sm text-gray-500">
+            <li>Monitorización proactiva 24/7</li>
+            <li>Administración de sistemas Linux y Windows</li>
+            <li>Automatización con Ansible y scripts personalizados</li>
+          </ul>
+          </dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-gray-900">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-800">
+              <img src="/icons/lock.svg" alt="Icono candado" class="p-2" />
+            </div>
+            Hospedaje Web Profesional
+          </dt>
+          <dd class="mt-2 text-base/7 text-gray-600">Soluciones de hosting seguras, rápidas y escalables para tu empresa.
+          <ul class="mt-2 list-disc list-inside text-sm text-gray-500">
+            <li>Servidores dedicados o compartidos</li>
+            <li>Certificados SSL y backups automáticos</li>
+            <li>Panel de control personalizado</li>
+          </ul>
+          </dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-gray-900">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-800">
+              <img src="/icons/cloud.svg" alt="Icono nube" class="p-2" />
+            </div>
+            Servicios en la Nube
+          </dt>
+          <dd class="mt-2 text-base/7 text-gray-600">Infraestructura cloud para almacenamiento, gestión de datos y aplicaciones empresariales.
+          <ul class="mt-2 list-disc list-inside text-sm text-gray-500">
+            <li>Soluciones híbridas o 100% en la nube</li>
+            <li>Integración con Google Cloud, AWS y Azure</li>
+            <li>Escalabilidad según demanda</li>
+          </ul>
+          </dd>
+        </div>
+        <div class="relative pl-16">
+          <dt class="text-base/7 font-semibold text-gray-900">
+            <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-800">
+              <img src="/icons/finger.svg" alt="Icono huella" class="p-2" />
+            </div>
+            Mantenimiento de Software y Hardware
+          </dt>
+            <dd class="mt-2 text-base/7 text-gray-600">Soporte técnico especializado para garantizar el funcionamiento de tus equipos y sistemas.
+          <ul class="mt-2 list-disc list-inside text-sm text-gray-500">
+            <li>Diagnóstico y reparación de hardware</li>
+            <li>Actualización de software y sistemas operativos</li>
+            <li>Mantenimiento preventivo y correctivo</li>
+          </ul>
+          </dd>
+        </div>
+      </dl>
+    </div>
+    <div class="mt-10 mb-15 text-center">
+      <Button type="button" text="Solicite una auditoría gratuita" href="/contact" />
+  </div>
+  </div>
+</div>

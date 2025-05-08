@@ -1,0 +1,71 @@
+---
+import Button from "../ui/Button.astro";
+---
+
+<section class="bg-gray-50">
+    <div class="p-8 md:p-12 lg:px-16 lg:py-34">
+      <div class="mx-auto max-w-230 text-center">
+        <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+            Únete a la comunidad de INODE64 para recibir las últimas novedades y soluciones tecnológicas.
+        </h2>
+        </h2>
+  
+        <p class="hidden text-gray-500 sm:mt-4 sm:block">
+            Mantente al día con nuestras actualizaciones sobre software libre, soluciones de seguridad informática, proyectos innovadores y las últimas tendencias tecnológicas. ¡No te pierdas nada y sé parte del cambio!
+        </p>
+      </div>
+  
+      <div class="mx-auto mt-8 max-w-xl">
+        <form id="subscribeForm" action="/api/subscribe" method="POST" class="sm:flex sm:gap-4">
+          <div class="sm:flex-1">
+            <label for="email" class="sr-only">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Introduce tu correo electrónico"
+              class="w-full rounded-md border-gray-200 bg-white p-3 text-gray-700 shadow-xs transition focus:border-white focus:ring-1 focus:ring-red-800/75 focus:outline-hidden"
+              required
+            />
+          </div>
+
+          <Button type="submit" text="Suscríbete ahora" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const form = document.querySelector('#subscribeForm') as HTMLFormElement;
+    const emailInput = document.querySelector('#email') as HTMLFormElement;;
+    const messageDiv = document.createElement('div');
+    form.appendChild(messageDiv);
+  
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+  
+      // Validar que el campo de email no esté vacío
+      if (!emailInput.value) {
+        messageDiv.textContent = 'Por favor, ingresa un correo electrónico.';
+        messageDiv.style.color = 'red';
+        return; // Detiene la ejecución si el correo está vacío
+      }
+  
+      const formData = new FormData(form);
+  
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (response.ok) {
+        messageDiv.textContent = data.message;
+        messageDiv.style.color = 'green';
+      } else {
+        messageDiv.textContent = data.message;
+        messageDiv.style.color = 'red';
+      }
+    });
+  </script>

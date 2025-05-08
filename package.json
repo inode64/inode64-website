@@ -1,0 +1,32 @@
+{
+  "name": "inode64-astro",
+  "description": "INODE64 Astro project. A website to explore technological solutions.",
+  "homepage": "https://inode64.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inode64/inode64-website"
+  },
+  "author": {
+    "name": "Roberto Galán",
+    "url": "https://github.com/galandev"
+  },
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.16",
+    "astro": "^5.7.12",
+    "mysql2": "^3.14.0",
+    "nodemailer": "^6.10.1",
+    "tailwindcss": "^4.0.16"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.17"
+  }
+}

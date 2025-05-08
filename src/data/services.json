@@ -1,0 +1,164 @@
+[
+  {
+    "slug": "mantenimiento-de-sistemas-windows",
+    "title": "Mantenimiento sistemas Windows",
+    "shortDescription": "Optimización, actualización y soporte técnico para sistemas Windows en entornos empresariales y domésticos. Mantén tu equipo en su mejor estado con nuestra gestión proactiva.",
+    "longDescription": "Nuestro servicio de mantenimiento de sistemas Windows está diseñado para garantizar que tus equipos funcionen de manera eficiente y sin interrupciones. Realizamos diagnósticos periódicos, optimización del rendimiento, instalación de actualizaciones críticas y resolución de problemas técnicos. Además, ofrecemos soporte técnico personalizado para ayudarte a resolver cualquier inconveniente, ya sea en entornos empresariales o domésticos. Con nuestra gestión proactiva, puedes estar seguro de que tus sistemas estarán siempre en su mejor estado.",
+    "imageName": "maintenance",
+    "keywords": ["mantenimiento", "windows", "soporte técnico", "optimización", "actualización"],
+    "details": [
+      "Diagnóstico y resolución de problemas.",
+      "Instalación y configuración de software.",
+      "Implementación medidas seguridad.",
+      "Optimización del rendimiento del sistema.",
+      "Asesoramiento técnico personalizado.",
+      "Actualización y mantenimiento drivers."
+    ],
+    "price": 150,
+    "priceUnit": "€/mes"
+  },
+  {
+    "slug": "infraestructura-it-empresas",
+    "title": "Infraestructura IT para Empresas",
+    "shortDescription": "Monitorización, seguridad y mantenimiento de infraestructuras IT. Nos encargamos de servidores, redes y estaciones de trabajo para garantizar el máximo rendimiento y fiabilidad.",
+    "longDescription": "Ofrecemos un servicio integral de administración de sistemas para empresas, enfocado en la monitorización constante, la seguridad avanzada y el mantenimiento preventivo de tus infraestructuras IT. Nos encargamos de gestionar servidores, redes y estaciones de trabajo, asegurando que todos los componentes funcionen de manera óptima. Nuestro equipo de expertos trabaja para prevenir problemas antes de que ocurran, minimizando tiempos de inactividad y maximizando la productividad de tu negocio.",
+    "imageName": "admin",
+    "keywords": ["infraestructura", "servidores", "monitorización", "seguridad", "empresas"],
+    "details": [
+      "Monitorización constante de sistemas.",
+      "Gestión de servidores y redes.",
+      "Mantenimiento preventivo y correctivo.",
+      "Implementación seguridad avanzada.",
+      "Soporte técnico especializado.",
+      "Auditorías periódicas de los sistemas."
+    ],
+    "price": 120,
+    "priceUnit": "€/mes"
+  },
+  {
+    "slug": "transformacion-digital-en-educacion",
+    "title": "Transformación digital educativa",
+    "shortDescription": "Asesoramiento y soluciones tecnológicas para centros educativos. Implementamos plataformas digitales, aulas virtuales y dispositivos para una enseñanza adaptada a la era digital.",
+    "longDescription": "La transformación digital en educación es clave para preparar a los estudiantes y docentes para los desafíos del futuro. Ofrecemos asesoramiento especializado y soluciones tecnológicas adaptadas a las necesidades de cada centro educativo. Implementamos plataformas digitales, configuramos aulas virtuales y proporcionamos dispositivos tecnológicos que facilitan la enseñanza y el aprendizaje. Nuestro objetivo es crear entornos educativos modernos, accesibles y eficientes que potencien la experiencia educativa.",
+    "imageName": "education",
+    "keywords": ["educación", "aulas virtuales", "digitalización", "centros educativos", "tecnología"],
+    "details": [
+      "Implementación de plataformas digitales.",
+      "Configuración de aulas virtuales.",
+      "Suministro de dispositivos tecnológicos.",
+      "Capacitación para docentes y estudiantes.",
+      "Asesoramiento en estrategias de digitalización.",
+      "Soporte continuo para herramientas digitales educativas."
+    ],
+    "price": 90,
+    "priceUnit": "€/proyecto"
+  },
+  {
+    "slug": "marketing-digital-y-desarrollo-web",
+    "title": "Marketing digital y desarrollo web",
+    "shortDescription": "Estrategias SEO/SEM, posicionamiento en buscadores, campañas publicitarias online y optimización web para aumentar la visibilidad de tu negocio y atraer más clientes.",
+    "longDescription": "Nuestro servicio de marketing digital y optimización web está diseñado para ayudarte a destacar en el competitivo mundo online. Creamos estrategias personalizadas de SEO y SEM para mejorar tu posicionamiento en buscadores, atraer tráfico de calidad y aumentar la conversión. Además, gestionamos campañas publicitarias en línea y optimizamos tu sitio web para garantizar una experiencia de usuario excepcional. Con nuestro enfoque integral, tu negocio alcanzará nuevos niveles de visibilidad y éxito.",
+    "imageName": "marketing",
+    "keywords": ["marketing", "SEO", "SEM", "visibilidad", "campañas online"],
+    "details": [
+      "Estrategias personalizadas de SEO y SEM.",
+      "Gestión de campañas publicitarias online.",
+      "Optimización de la experiencia de usuario (UX).",
+      "Análisis de métricas y resultados.",
+      "Consultoría para mejorar la conversión.",
+      "Gestión de contenido y estrategias de branding online."
+    ],
+    "price": 150,
+    "priceUnit": "€/mes"
+  },
+  {
+    "slug": "soluciones-en-la-nube",
+    "title": "Soluciones avanzadas en la nube",
+    "shortDescription": "Implementación y gestión de servicios en la nube: almacenamiento, servidores virtuales, copias de seguridad y colaboración en línea para mejorar la productividad de tu empresa.",
+    "longDescription": "Las soluciones en la nube son esenciales para las empresas que buscan flexibilidad, escalabilidad y eficiencia. Ofrecemos servicios de implementación y gestión de almacenamiento en la nube, servidores virtuales, copias de seguridad automáticas y herramientas de colaboración en línea. Nuestro equipo se asegura de que tus datos estén seguros y accesibles en todo momento, permitiéndote centrarte en lo que realmente importa: hacer crecer tu negocio.",
+    "imageName": "cloud",
+    "keywords": ["nube", "cloud", "servidores virtuales", "backup", "colaboración"],
+    "details": [
+      "Implementación de almacenamiento en la nube.",
+      "Gestión de servidores virtuales.",
+      "Configuración de copias de seguridad automáticas.",
+      "Integración de herramientas de colaboración.",
+      "Soporte técnico para soluciones en la nube.",
+      "Auditoría de seguridad y cumplimiento normativo."
+    ],
+    "price": 100,
+    "priceUnit": "€/mes"
+  },
+  {
+    "slug": "hosting-web-de-alto-rendimiento",
+    "title": "Hosting web de alto rendimiento",
+    "shortDescription": "Alojamiento web profesional con máxima seguridad y velocidad. Soluciones personalizadas para páginas web, tiendas online y aplicaciones con soporte técnico experto.",
+    "longDescription": "Nuestro servicio de hosting web de alto rendimiento está diseñado para garantizar que tu sitio web funcione de manera rápida, segura y confiable. Ofrecemos soluciones personalizadas para páginas web, tiendas online y aplicaciones, adaptándonos a las necesidades específicas de tu proyecto. Con soporte técnico experto y medidas avanzadas de seguridad, puedes estar seguro de que tu presencia online estará siempre protegida y optimizada.",
+    "imageName": "hosting",
+    "keywords": ["hosting", "alojamiento", "servidor web", "seguridad", "velocidad"],
+    "details": [
+      "Alojamiento web con alta disponibilidad.",
+      "Optimización de velocidad y rendimiento.",
+      "Seguridad avanzada para proteger datos.",
+      "Soporte técnico especializado 24/7.",
+      "Escalabilidad para proyectos en crecimiento.",
+      "Gestión de dominios y certificados SSL."
+    ],
+    "price": 60,
+    "priceUnit": "€/mes"
+  },
+  {
+    "slug": "consultoria-y-analitica-web",
+    "title": "Consultoría y analítica web",
+    "shortDescription": "Evaluación y optimización del rendimiento de tu web. Identificamos mejoras en UX, velocidad de carga y conversión para maximizar el impacto de tu negocio en internet.",
+    "longDescription": "Nuestro servicio de consultoría y analítica web te ayuda a identificar las áreas de mejora en tu sitio web para maximizar su rendimiento. Analizamos la experiencia de usuario (UX), la velocidad de carga y las tasas de conversión, proporcionando recomendaciones prácticas y estrategias para optimizar cada aspecto. Con nuestro enfoque basado en datos, tu negocio podrá alcanzar su máximo potencial en el entorno digital.",
+    "imageName": "analysis",
+    "keywords": ["consultoría", "analítica", "UX", "velocidad", "rendimiento"],
+    "details": [
+      "Análisis detallado de métricas web.",
+      "Recomendaciones para mejorar la UX.",
+      "Optimización de la velocidad de carga.",
+      "Estrategias para aumentar la conversión.",
+      "Informes personalizados con datos clave.",
+      "Seguimiento continuo y actualización de estrategias."
+    ],
+    "price": 80,
+    "priceUnit": "€/informe"
+  },
+  {
+    "slug": "conectividad-con-guifi-net",
+    "title": "Conectividad con guifi.net",
+    "shortDescription": "Instalación y mantenimiento de nodos en la red abierta guifi.net. Soluciones de conectividad colaborativa, accesible y sostenible para hogares, empresas, comunidades y otros.",
+    "longDescription": "Guifi.net es una red abierta y colaborativa que ofrece soluciones de conectividad accesibles y sostenibles. Nuestro servicio incluye la instalación y mantenimiento de nodos en esta red, permitiendo a hogares, empresas y comunidades disfrutar de una conexión estable y de calidad. Promovemos la colaboración y el acceso equitativo a internet, contribuyendo al desarrollo de una infraestructura de red más inclusiva.",
+    "imageName": "guifinet",
+    "keywords": ["guifi.net", "conectividad", "red abierta", "comunidad", "nodos"],
+    "details": [
+      "Instalación de nodos en guifi.net.",
+      "Mantenimiento técnico de la red.",
+      "Optimización de la conectividad local.",
+      "Asesoramiento en redes colaborativas.",
+      "Soporte para comunidades y empresas.",
+      "Gestión de permisos y documentación de nodos."
+    ],
+    "price": 40,
+    "priceUnit": "€/instalación"
+  },
+  {
+    "slug": "redes-inalambricas-empresariales",
+    "title": "Redes inalámbricas empresariales",
+    "shortDescription": "Diseño e implementación de infraestructuras WiFi seguras y altamente eficientes. Optimización de cobertura, configuración de redes mesh y seguridad avanzada.",
+    "longDescription": "Diseñamos e implementamos redes inalámbricas empresariales que garantizan una conectividad rápida, segura y confiable. Nuestro servicio incluye la optimización de la cobertura WiFi, la configuración de redes mesh para entornos complejos y la implementación de medidas de seguridad avanzadas. Nos aseguramos de que tu infraestructura inalámbrica esté preparada para soportar las demandas de tu negocio, mejorando la productividad y la experiencia del usuario.",
+    "imageName": "wireless",
+    "keywords": ["WiFi", "inalámbrico", "mesh", "infraestructura", "seguridad"],
+    "details": [
+      "Diseño de redes WiFi personalizadas.",
+      "Configuración de redes mesh avanzadas.",
+      "Optimización de la cobertura inalámbrica.",
+      "Implementación de medidas de seguridad.",
+      "Soporte técnico para redes empresariales.",
+      "Mantenimiento y monitorización remota de la red."
+    ],
+    "price": 110,
+    "priceUnit": "€/proyecto"
+  }
+]

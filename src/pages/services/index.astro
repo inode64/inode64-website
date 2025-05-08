@@ -1,0 +1,53 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { seoConfig } from "@/config/seo-config";
+import services from "../../data/services.json";
+import Button from "@/components/ui/Button.astro";
+---
+
+<Layout 
+  title={seoConfig.services.title}
+  description={seoConfig.services.description}
+  image={seoConfig.services.image}
+>
+  <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
+    <div class="mx-auto max-w-250 text-center">
+      <h2
+        class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl"
+      >
+        Nuestros servicios
+      </h2>
+      <p class="mt-5 text-lg/8 text-gray-600">
+        Ofrecemos una amplia gama de servicios diseñados para satisfacer las
+        necesidades de nuestros clientes. Desde consultoría especializada hasta
+        soluciones personalizadas, estamos aquí para ayudarte a alcanzar tus
+        objetivos.
+      </p>
+    </div>
+    <div class="container mx-auto max-w-7xl lg:px-8 grid grid-cols-1 gap-6 mt-12 md:grid-cols-2 md:mt-16 lg:grid-cols-3">
+      {
+        services.map( service => (
+          <div class="relative block border border-gray-100 rounded-lg mb-4">
+            <img
+              transition:name={`${service.imageName}-image`}
+              src={`/images/products/${service.imageName}.webp`}
+              alt={service.title}
+              class="h-50 w-full object-cover rounded-t-lg"
+            />
+
+            <div class="p-4 text-center">
+              <strong class="text-xl font-medium text-gray-900">{service.title}</strong>
+              <p class="mt-2 text-pretty text-gray-700">{service.shortDescription}</p>
+              <Button 
+                href={`/services/${service.slug}`} 
+                text="Más información" 
+                withFull={true} 
+                srText={`sobre ${service.title.toLowerCase()}`}
+              />
+            </div>
+        </div>  
+        ))
+      }
+    </div>
+  </div>
+</Layout>
