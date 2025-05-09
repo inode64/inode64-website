@@ -59,14 +59,14 @@ Esto iniciará el servidor de desarrollo en `http://localhost:4321`
 ### 2.5. Estructura del proyecto
 
 ```text
-├── public/                    # Recursos estáticos (favicon, logos, etc.)
-├── src/                       # Código fuente principal
-│   ├── components/            # Componentes Astro reutilizables
-│   ├── content/               # Entradas del blog (MDX)
-│   ├── data/                  # Archivos JSON con contenido estructurado
-│   ├── layouts/               # Layouts base para secciones
-│   ├── pages/                 # Páginas del sitio (rutas)
-│   └── styles/                # Archivos CSS personalizados
+├── public/                   # Recursos estáticos (favicon, logos, etc.)
+├── src/                      # Código fuente principal
+│   ├── components/           # Componentes Astro reutilizables
+│   ├── content/              # Entradas del blog (MDX)
+│   ├── data/                 # Archivos JSON con contenido estructurado
+│   ├── layouts/              # Layouts base para secciones
+│   ├── pages/                # Páginas del sitio (rutas)
+│   └── styles/               # Archivos CSS personalizados
 ├── astro.config.mjs          # Configuración de Astro
 ├── tailwind.config.cjs       # Configuración de Tailwind CSS
 ├── tsconfig.json             # Configuración de TypeScript
