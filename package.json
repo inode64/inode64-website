@@ -28,5 +28,42 @@
   },
   "devDependencies": {
     "@types/nodemailer": "^6.4.17"
+  },
+  "cspell": {
+    "dictionaryDefinitions": [
+      {
+        "name": "main",
+        "path": ".vscode/dictionary.txt"
+      }
+    ],
+    "enableGlobDot": true,
+    "enabledLanguageIds": [
+      "git-commit",
+      "ignore",
+      "json",
+      "jsonc",
+      "markdown",
+      "plaintext",
+      "python",
+      "restructuredtext",
+      "text",
+      "toml",
+      "yaml",
+      "yml"
+    ],
+    "ignorePaths": [
+      "*.log",
+      "public/**",
+      ".git",
+      ".vscode/extensions.json",
+      "node_modules/**"
+    ],
+    "language": "en, es",
+    "languageSettings": [
+      {
+        "dictionaries": ["main"],
+        "languageId": "*"
+      }
+    ]
   }
 }
