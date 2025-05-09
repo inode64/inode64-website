@@ -23,7 +23,7 @@ Normalmente los ficheros que se modifican primero son el `index.php`, pero en Jo
 
 Lo primero que tenemos que hacer es buscar en dichos ficheros, tanto al principio como al final, las siguientes sintaxis:
 
-```javascript
+```php
 eval(gzinflate(base64_decode('HJ3HbuvIFkU/5zXAAXMaMkcxi2nywJxz5te33IML+BqwJFbV2XstWZKLM+n/qd5mLPtkL/5Jk60gsP/nRT.......akxUhgBILEQ1AACIJo8Z9///79938=')));
 eval(@gzinflate(base64_decode('HJ3HbuvIFkU/5zXAAXMaMkcxi2nywJxz5te33IML+BqwJFbV2XstWZKLM+n/qd5mLPtkL/5Jk60gsP/nRT.......akxUhgBILEQ1AACIJo8Z9///79938=')));
 preg_replace("/.+/e","\x65\x76\x61\x6C\x28\x67\x7A\x69\x6E\x66\x6C\x61\x74\x65\x28......hPLidw/nyu/lEf6Xcg24Mhg8Bqov4C'\x29\x29\x29\x3B",".");
