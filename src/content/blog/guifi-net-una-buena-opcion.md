@@ -39,7 +39,7 @@ Esto ha sido debido a diferentes factores, entre ellos:
 
 ## Propuestas de mejora
 
-Por tanto proponemos las siguientes soluciones:
+Por tanto, proponemos las siguientes soluciones:
 
 - Normativas claras y de obligado cumplimiento, existen normativas actualmente, pero excesivamente amplias y sin concretar, con ello, afloran los comportamientos y prácticas indeseados para la red.
 
@@ -59,4 +59,4 @@ Por tanto proponemos las siguientes soluciones:
 
 ## Conclusión
 
-Creemos en las posibilidades de guifi.net, ya que tiene muchísima gente implicada y realizando una gran labor, además tiene la ventaja de ser una gran red libre, pero eso no es lo mismo que una red sin control de ningún tipo (anárquica), y por tanto, creemos que lo anteriormente expuesto mejoraría de forma sustancial guifi.net.
+Creemos en las posibilidades de guifi.net, ya que tiene muchísima gente implicada y realizando una gran labor, además tiene la ventaja de ser una gran red libre, pero eso no es lo mismo que una red sin control de ningún tipo (anárquica), por tanto, creemos que lo anteriormente expuesto mejoraría de forma sustancial guifi.net.

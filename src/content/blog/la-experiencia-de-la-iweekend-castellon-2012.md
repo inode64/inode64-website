@@ -27,7 +27,7 @@ También sería de gran ayuda definir en cada grupo unos objetivos, aparte de lo
 - **Diseño**: colores primarios, logotipos, favicon, banners, papelería.
 - **Desarrollo**: site simulado (existen multitud de CMS tipo Joomla, WordPress, Drupal, que permiten comprobar de forma rápida las funcionalidades y ver la estructura global), portal de registro.
 
-Ya que se dispone de un tiempo limitado, vamos a delimitar en qué tenemos que invertir las horas para que el líder del proyecto cuando salga tenga más que un simple landing page.
+Ya que se dispone de un tiempo limitado, vamos a delimitar en qué tenemos que invertir las horas para que el líder del proyecto cuando salga tenga más que una simple landing page.
 
 ## El papel de los mentores
 
@@ -35,8 +35,8 @@ Uno de los últimos cambios que se han realizado en la iWeekend es introducir la
 
 ## El líder del proyecto tiene que buscar colaboradores
 
-Igualmente, desde la organización, se debería dar más énfasis en la tarea de hacer entender al líder del proyecto lo necesario de buscar a personas serias, trabajadoras, con ideas que se encajen en el proyecto y sus objetivos. Porque suele suceder que se transforma en un [Gollum](http://es.wikipedia.org/wiki/Gollum) y al cabo de los meses ves como el proyecto no prospera y se queda en un simple landing. Si el proyecto madura es más fácil que obtenga una ayuda de los [Business Angels](http://es.wikipedia.org/wiki/Inversor_%C3%A1ngel) como un equipo, no como un “hombre orquesta”.
+Igualmente, desde la organización, se debería dar más énfasis en la tarea de hacer entender al líder del proyecto lo necesario de buscar a personas serias, trabajadoras, con ideas que se encajen en el proyecto y sus objetivos. Porque suele suceder que se transforma en un [Gollum](http://es.wikipedia.org/wiki/Gollum) y al cabo de los meses ves como el proyecto no prospera y se queda en una simple landing. Si el proyecto madura es más fácil que obtenga una ayuda de los [Business Angels](http://es.wikipedia.org/wiki/Inversor_%C3%A1ngel) como un equipo, no como un “hombre orquesta”.
 
-Igualmente se le da un aliciente más a los participantes para que den lo mejor de sí y compitan de forma sana para conseguir formar parte.
+Igualmente, se le da un aliciente más a los participantes para que den lo mejor de sí y compitan de forma sana para conseguir formar parte.
 
 Tanto para la organización como a los mentores veo un gran reto conseguir unir y hacer trabajar en la misma dirección a 50 emprendedores, para que no se pierda toda la materia gris y experiencia, y para llevar a buen puerto los proyectos y que esta iniciativa de iWeekend continúe por muchos años.

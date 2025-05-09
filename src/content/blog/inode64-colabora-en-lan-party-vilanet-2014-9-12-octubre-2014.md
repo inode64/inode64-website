@@ -31,13 +31,13 @@ Queremos agradecer a todos los patrocinadores que han apoyado el evento desde el
 
 INODE64 participará con las siguientes charlas:
 
-- **Gestión de proyectos colaborativos con Redmine**  
+- **Gestión de proyectos colaborativos con Redmine**
   Redmine es una herramienta para la gestión de proyectos que incluye un sistema de seguimiento de errores e incidencias. También incorpora calendario de actividades, diagramas de Gantt, wiki, foros, visor de repositorios, integración con correo electrónico y mucho más.
-
-- **Qué necesitas saber para montar tu tienda virtual con Joomla**  
+  
+- **Qué necesitas saber para montar tu tienda virtual con Joomla**
   Joomla y VirtueMart son dos sistemas muy potentes y fáciles de administrar incluso para usuarios con pocos conocimientos técnicos. Permiten crear y mantener una tienda online de manera eficiente.
 
-- **No instales software pirata en tu empresa, usa software libre**  
+- **No instales software pirata en tu empresa, usa software libre**
   Por desconocimiento o mal asesoramiento, muchas empresas instalan software sin licencia. Esto supone una oportunidad perdida para mejorar la productividad y reducir costes. El software libre ofrece una alternativa legal y eficiente.
 
 Os animamos a participar en este importante evento. ¡Inscríbete ya! (acceso gratuito a charlas y talleres)

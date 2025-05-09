@@ -15,7 +15,7 @@ Su primera edición fue el primer evento de *tecnología*, *ciencia*, *innovaci�
 
 En su segunda edición, se pretende hacer hincapié en el mundo de los videojuegos. Un mercado en continuo crecimiento al que cada vez se suma más público de todas las edades. Contará con todo tipo de **charlas de acceso libre y gratuito, talleres, competiciones on-line**, etc., para acercar a todos nuestros participantes e invitados nuevas experiencias. Todas ellas serán de gran interés tanto para profesionales del sector como aficionados.
 
-No por ello se deja de lado otra parte muy importante dentro del mundo de las TICs, como es la *seguridad informática*. En la edición anterior ya tuvo un gran protagonismo y este año volveremos a contar con profesionales del sector que aportarán nuevos conocimientos y experiencias en un campo tan actual e importante como este.
+No por ello se deja de lado otra parte muy importante dentro del mundo de las TICs, como es la *seguridad informática*. En la edición anterior ya tuvo un gran protagonismo y este año volveremos a contar con profesionales del sector que aportarán nuevos conocimientos, experiencias en un campo tan actual y relevante como este.
 
 **INODE64** colabora en los siguientes puntos:
 

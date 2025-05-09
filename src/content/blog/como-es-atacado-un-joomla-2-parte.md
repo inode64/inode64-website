@@ -9,9 +9,9 @@ tags: [joomla, ataques, cms]
 isDraft: false
 ---
 
-Si en la [1º parte](Guias/Como-es-atacado-un-Joomla.html) explicamos cuáles son los métodos de ataque de un **CMS** tipo Joomla o Wordpress, ahora comentaremos de qué forma es modificado el Joomla y cómo podemos limpiarlo.
+Si en la [1º parte](como-es-atacado-un-joomla) explicamos cuáles son los métodos de ataque de un **CMS** tipo Joomla o Wordpress, ahora comentaremos de qué forma es modificado el Joomla y cómo podemos limpiarlo.
 
-Normalmente los ficheros que se modifican primero son el `index.php`, pero en Joomla también son modificados:
+Normalmente, los ficheros que se modifican primero son el `index.php`, pero en Joomla también son modificados:
 
 ```bash
 /index.php

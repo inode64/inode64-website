@@ -15,7 +15,7 @@ Esta web representa la presencia digital de INODE64, ofreciendo información sob
 
 ### 1.3. Estado del despliegue
 
-Actualmente la web se encuentra desplegada temporalmente en Netlify: [https://tangerine-crumble-afbcfc.netlify.app](https://tangerine-crumble-afbcfc.netlify.app)
+Actualmente, la web se encuentra desplegada temporalmente en Netlify: [https://tangerine-crumble-afbcfc.netlify.app](https://tangerine-crumble-afbcfc.netlify.app)
 
 INODE64 tiene previsto realizar el despliegue final en sus propios servidores.
 
@@ -123,7 +123,7 @@ El formulario de suscripción al boletín se encuentra en el footer y utiliza ta
 
 ### 5.3. Validaciones y endpoints
 
-Actualmente las validaciones son de tipo HTML5 (`required`, `type="email"`, etc.). Se recomienda en el futuro implementar validaciones backend, filtrado anti-spam y seguridad adicional en endpoints.
+Actualmente, las validaciones son de tipo HTML5 (`required`, `type="email"`, etc.). Se recomienda en el futuro implementar validaciones backend, filtrado anti-spam y seguridad adicional en endpoints.
 
 ### 5.4. Validaciones y endpoints
 

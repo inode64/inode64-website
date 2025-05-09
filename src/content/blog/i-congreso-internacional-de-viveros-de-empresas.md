@@ -9,7 +9,7 @@ tags: [viveros, empresas, emprendedores]
 isDraft: false
 ---
 
-Asistimos en Sevilla, los días 17 y 18 de marzo, al I Congreso Internacional de Viveristas, inaugurado por el Príncipe de Asturias, el Ministro de Hacienda Cristóbal Montoro y la Presidenta de la Junta de Andalucía, Susana Díaz.
+Asistimos en Sevilla, los días 17 y 18 de marzo, al "I Congreso Internacional de Viveristas", inaugurado por el Príncipe de Asturias, el Ministro de Hacienda Cristóbal Montoro y la Presidenta de la Junta de Andalucía, Susana Díaz.
 
 Durante el evento, tuvimos la oportunidad de conocer a otros emprendedores de toda España y presentar nuestros servicios y productos.
 

@@ -9,7 +9,7 @@ tags: [jornadas, innovación, networking]
 isDraft: false
 ---
 
-Se ha celebrado hoy el [**Encuentro Empresarial Enrédate Castellón 2012**](http://ceeicastellon.emprenemjunts.es/index.php?op=63&mn=1196) en el Auditori i Palau de Congressos de Castellón. Se han dado cita en este encuentro empresarios innovadores, personas emprendedoras, jóvenes con inquietudes empresariales e interés por hacer cosas nuevas. En la jornada se han abordado diversas temáticas empresariales que pueden ofrecer una nueva perspectiva a emprendedores y empresarios. El encuentro, organizado con la colaboración de diferentes entidades de la provincia relacionadas con el emprendimiento, tiene por finalidad crear nuevas oportunidades, generar redes, hacer **Networking**, contactos, intercambiar opiniones, conocer tendencias, sectores emergentes, mercados internacionales, etc...
+Se ha celebrado hoy el [**Encuentro Empresarial Enrédate Castellón 2012**](http://ceeicastellon.emprenemjunts.es/index.php?op=63&mn=1196) en el Auditori i Palau de Congressos de Castellón. Se han dado cita en este encuentro empresarios innovadores, personas emprendedoras, jóvenes con inquietudes empresariales e interés por hacer cosas nuevas. En la jornada se han abordado diversas temáticas empresariales que pueden ofrecer una nueva perspectiva a emprendedores y empresarios. El encuentro, organizado con la colaboración de diferentes entidades de la provincia relacionadas con el emprendimiento, tiene por finalidad crear nuevas oportunidades, generar redes, hacer **Networking**, contactos, intercambiar opiniones, conocer tendencias, sectores emergentes, mercados internacionales, etc.
 
 Nosotros **_INODE64 Sistemas_** hemos asistido a los talleres 5 y 6:
 

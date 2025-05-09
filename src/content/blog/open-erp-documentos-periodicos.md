@@ -9,15 +9,15 @@ tags: [openerp, documentos, automatizaciones]
 isDraft: false
 ---
 
-¿Quieres cobrar una cuota de mantenimiento a un cliente determinado, productos, servicios, etc …?
+¿Quieres cobrar una cuota de mantenimiento a un cliente determinado, productos, servicios, etc.?
 
 En **Open ERP** puedes realizar una **facturación periódica de cierto servicio o producto**, tanto de compras como de ventas.
 
 Te explicamos cómo crear un documento periódico para cada factura y no tener que estar pendiente cada cierto tiempo de realizarla.
 
-Simplemente necesitamos instalar el módulo llamado `subscription`, lo que crea ciertas entradas en el menú principal: Herramientas.
+Simplemente, necesitamos instalar el módulo llamado `subscription`, lo que crea ciertas entradas en el menú principal: Herramientas.
 
-Es un módulo sencillo, que se basa en duplicar un modelo dado (pedido, albarán, factura, …), que debe estar creado de antemano, y que una vez configurado crea una planificación (**Administración → Configuración → Planificación → Acciones Planificadas**), ejecutándose en cierta fecha y hora (según la configuración establecida) y duplicando el modelo, cambiando sólo aquellos campos que hayamos configurado (uno importante es la fecha del modelo, para que esté actualizada a cuando se genera el documento).
+Es un módulo sencillo, que se basa en duplicar un modelo dado (pedido, albarán, factura, …), que debe estar creado de antemano, y que una vez configurado crea una planificación (**Administración → Configuración → Planificación → Acciones Planificadas**), ejecutándose en cierta fecha y hora (según la configuración establecida) y duplicando el modelo, cambiando solo aquellos campos que hayamos configurado (uno importante es la fecha del modelo, para que esté actualizada a cuando se genera el documento).
 
 ### Para configurar una suscripción:
 
