@@ -9,7 +9,7 @@ tags: [villarrealcf, estadísticas, apache, cacti, hosting, server]
 isDraft: false
 ---
 
-En las estadísticas de apache del nuevo hosting del villarrealcf.com se puede apreciar que cuando un entrenador se va, sufre más el apache que cuando entra el nuevo entrenador. 
+En las estadísticas de apache del nuevo hosting del villarrealcf.com se puede apreciar que cuando un entrenador se va, sufre más el apache que cuando entra el nuevo entrenador.
 
 Se puede ver la gráfica de los hits por segundo, parece que hay más morbo y causa más repercusión mediática.
 

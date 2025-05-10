@@ -13,7 +13,7 @@ Cuando llevas tiempo administrando servidores Linux te sucede que algunos client
 
 En el proceso de migración de un sistema **Gentoo** de 32 bits a 64 bits existen varias formas de realizarlo. Nosotros creamos un *chroot* con todo el sistema desde cero y luego vamos copiando la configuración. Esto nos permite actualizar el servidor sin apenas tiempo de desconexión.
 
-### Pasos previos:
+### Pasos previos
 
 - Actualizar el portage, emerge e instalar el último *kernel* estable:
 
@@ -53,7 +53,7 @@ make ARCH=x86_64 oldconfig
 make ARCH=x86_64 CROSS_COMPILE=x86_64-pc-linux-gnu-
 ```
 
-Activamos también “**IA32 Emulation**” y ajustamos los cambios pertinentes del nuevo kernel, udev u otros.
+Activamos también "**IA32 Emulation**" y ajustamos los cambios pertinentes del nuevo kernel, udev u otros.
 
 Reiniciamos la máquina y ya tendremos el kernel de 64 bits funcionando con el resto de aplicaciones de 32 bits.
 
@@ -85,7 +85,7 @@ Una vez instalados todos los programas requeridos, reiniciamos el equipo y lo ar
 
 Movemos los directorios anteriores del sistema a `/mnt/32bits` por si tenemos que realizar una marcha atrás, y movemos el sistema de 64 bits a su ubicación normal. Luego, con reiniciar, es suficiente para tener todo el sistema a 64 bits con apenas tiempos de parada.
 
-### Referencias:
+### Referencias
 
 - [Migration from x86 to x86_64](http://www.odi.ch/weblog/posting.php?posting=572)
 - [Notes on an in-place migration from Gentoo/i686 to multilib Gentoo/x86_64](http://www.parp.homeunix.net/articles/migration.html)

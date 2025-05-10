@@ -38,7 +38,7 @@ Con modificar nuestra programación PHP con estas simples líneas podemos contro
 
 Existen casos especiales como en virtuemart 2.0 que el sistema de pago Paypal genera un error por detectar de forma incorrecta la IP de origen:
 
-Error code 506. Possible fraud. Error with REMOTE IP ADDRESS = 127.0.0.1.  
+Error code 506. Possible fraud. Error with REMOTE IP ADDRESS = 127.0.0.1.
 The remote address of the script posting to this notify script does not match a valid PayPal ip address.
 
 ## Solución aplicada por INODE64

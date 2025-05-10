@@ -18,7 +18,7 @@ Se permitirá cancelar las facturas si se cumplen las dos condiciones siguientes
 
 Para poder cancelar una factura, primero tendremos que cancelar el asiento correspondiente. Instalar el módulo disponible (`account_cancel`). Después, hay que ir a:
 
-**Contabilidad y finanzas > Configuración > Contabilidad financiera > Diarios financieros**
+- **Contabilidad y finanzas > Configuración > Contabilidad financiera > Diarios financieros**
 
 Y activar **"Permitir cancelación de asientos"** en cada diario necesario.
 
@@ -30,5 +30,5 @@ Cuando la factura ha sido cancelada, se podrá regresar al estado borrador. Así
 
 Después de cancelar una factura que no está regenerando, se encontrará con una ruptura en la numeración. Tendrá que ir y modificar la secuencia, rehacer la factura y reemplazar el número de secuencia con su valor original.
 
-Puede controlar las secuencias usando el menú:  
+Puede controlar las secuencias usando el menú:
 **Administración > Configuración > Secuencias > Secuencias**

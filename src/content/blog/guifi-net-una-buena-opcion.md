@@ -13,7 +13,7 @@ isDraft: false
 
 Desde hace aproximadamente 1 año se aprecia una disminución del crecimiento de la red tal y como aparece en las gráficas de la web de guifi.net, entendiendo crecimiento por la creación de nuevos nodos en la red.
 
-Tal y como se puede observar, el crecimiento de la red en general se reduce, pero sobre todo llama la atención la caída libre de la provincia de Castellón. 
+Tal y como se puede observar, el crecimiento de la red en general se reduce, pero sobre todo llama la atención la caída libre de la provincia de Castellón.
 
 ## Consecuencias del deterioro de la red
 
@@ -31,7 +31,7 @@ Esto ha sido debido a diferentes factores, entre ellos:
 
 - Los supernodos y sus troncales son elementos de responsabilidad que deberían de ser instalados por gente comprometida, con experiencia y conocimientos para generar garantías de una mínima calidad en los enlaces, evitando hardware no adecuado que inunda la red de tráfico innecesario y enrutando el tráfico de forma no eficiente. Existiendo casos en que un servicio ha fallado y no poder hacer nada hasta que el propietario vuelva de vacaciones o de fin de semana.
 
-- Zonas donde existen “feudos” que impiden que otros usuarios puedan mejorar los servicios ofrecidos actualmente.
+- Zonas donde existen "feudos" que impiden que otros usuarios puedan mejorar los servicios ofrecidos actualmente.
 
 - Falta de control en la cesión y gestión de las IPs en los supernodos, creando falsamente una falta de disponibilidad.
 

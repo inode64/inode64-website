@@ -19,7 +19,7 @@ Luego evaluamos el tiempo de renderizado (en segundos) de la página web sin car
 
 <!-- ![render web partidos politicos](images/stories/partidos/render.png) -->
 
-### CONCLUSIONES:
+### CONCLUSIONES
 
 1. ONO es más rápido que Telefónica.
 2. Como norma general, la latencia es buena. Esto ayudará a una carga de elementos más rápida, con excepción de *Unión Progreso y Democracia*.

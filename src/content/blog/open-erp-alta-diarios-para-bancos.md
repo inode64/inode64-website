@@ -19,10 +19,10 @@ El diario es el lugar donde se registran los asientos contables. En **OpenERP** 
 - Pagos **Paypal o similar**: Si gestionan pagos por internet.
 - **Stocks**: Para registrar el valor de las existencias.
 
-La configuración de los diarios se realiza desde el menú:  
+La configuración de los diarios se realiza desde el menú:
 **Contabilidad > Configuración > Contabilidad financiera > Diarios > Nuevo**
 
-Campos del formulario diario:
+### Campos del formulario diario
 
 - Nombre del diario.
 - Código del diario.

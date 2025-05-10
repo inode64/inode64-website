@@ -29,12 +29,12 @@ eval(@gzinflate(base64_decode('HJ3HbuvIFkU/5zXAAXMaMkcxi2nywJxz5te33IML+BqwJFbV2
 preg_replace("/.+/e","\x65\x76\x61\x6C\x28\x67\x7A\x69\x6E\x66\x6C\x61\x74\x65\x28......hPLidw/nyu/lEf6Xcg24Mhg8Bqov4C'\x29\x29\x29\x3B",".");
 ```
 
-Estas líneas han sido cortadas por los puntos suspensivos, normalmente tienen más de 1200 caracteres, pudiendo llegar a 24.000, lo que nos hace sospechar de que algo raro pasa.  
+Estas líneas han sido cortadas por los puntos suspensivos, normalmente tienen más de 1200 caracteres, pudiendo llegar a 24.000, lo que nos hace sospechar de que algo raro pasa.
 En una primera limpieza, borraríamos las líneas o sustituiríamos los ficheros modificados por los originales o la última copia no alterada.
 
 Luego buscaríamos estos patrones en el resto de ficheros y también podemos buscar por fecha de modificación.
 
-Hay que estar atento a los ficheros modificados, porque también pueden incluir una puerta trasera. Y aunque limpiemos los ficheros o activemos sistemas de seguridad como [**suhosin**](http://www.hardened-php.net/suhosin/index.html) o [**mod_security**](http://www.modsecurity.org/), hay que buscar este código y eliminarlo.  
+Hay que estar atento a los ficheros modificados, porque también pueden incluir una puerta trasera. Y aunque limpiemos los ficheros o activemos sistemas de seguridad como [**suhosin**](http://www.hardened-php.net/suhosin/index.html) o [**mod_security**](http://www.modsecurity.org/), hay que buscar este código y eliminarlo.
 (*suhosin permite limitar el uso de `eval`, pero se necesitan conocimientos porque se podría dejar de funcionar ciertas partes de nuestra web.*)
 
 ```php

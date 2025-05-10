@@ -10,13 +10,13 @@ isDraft: false
 ---
 ## Introducción
 
-A partir de PHP 5.6, todas las conexiones seguras **SSL/TLS** activan por defecto la verificación del nombre del host en el certificado. Esto garantiza que la conexión es realmente segura y no puede ser interceptada por un ataque "man in the middle" (MITM). 
+A partir de PHP 5.6, todas las conexiones seguras **SSL/TLS** activan por defecto la verificación del nombre del host en el certificado. Esto garantiza que la conexión es realmente segura y no puede ser interceptada por un ataque "man in the middle" (MITM).
 
 Este cambio mejora la seguridad en transacciones bancarias, el intercambio de información sensible, correos electrónicos y plataformas de venta online, ya que se verifica que el servidor al que nos conectamos es legítimo y no un impostor.
 
 ## Impacto del cambio en PHP 5.6
 
-Si bien esta mejora incrementa la seguridad, también puede generar problemas en aplicaciones mal configuradas. Por ejemplo, el envío de correos electrónicos a través de SMTPS puede fallar si el certificado del servidor no coincide exactamente con el dominio usado en la conexión. 
+Si bien esta mejora incrementa la seguridad, también puede generar problemas en aplicaciones mal configuradas. Por ejemplo, el envío de correos electrónicos a través de SMTPS puede fallar si el certificado del servidor no coincide exactamente con el dominio usado en la conexión.
 
 Antes, era común conectarse a un servidor SMTP mediante `localhost`. Sin embargo, dado que la verificación del certificado es estricta, ahora es necesario utilizar el nombre real del servidor, por ejemplo: `kvm9.srvdr.com`.
 
@@ -29,6 +29,7 @@ Si tu aplicación deja de funcionar debido a esta verificación, considera las s
 1. **Actualizar los certificados:** La mejor opción es asegurarse de que los certificados sean válidos y estén correctamente configurados.
 2. **Configurar correctamente los nombres de host:** Evita usar `localhost` en conexiones seguras y usa el nombre de dominio real del servidor.
 3. **Parche temporal (no recomendado):** Mientras gestionas un certificado válido, puedes desactivar la verificación de certificados en tu código:
+
    ```php
    $context = stream_context_create([
        "ssl" => [
@@ -37,6 +38,7 @@ Si tu aplicación deja de funcionar debido a esta verificación, considera las s
        ]
    ]);
    ```
+
    ⚠ **Advertencia:** Desactivar la verificación reduce la seguridad y deja la conexión vulnerable a ataques MITM.
 
 4. **Añadir certificado raíz manualmente:** Si no puedes obtener un certificado válido, puedes añadir manualmente los certificados CA en la configuración global de PHP, editando `openssl.cafile` en `php.ini`.

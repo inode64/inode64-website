@@ -13,7 +13,7 @@ En sistemas centralizados donde se usa un sistema de autenticación por **LDAP**
 
 Pero con el nuevo cambio al sistema _polkit_, se tiene que crear una configuración por cada puesto de trabajo dentro de `/etc/polkit-1/rules.d/`, lo cual rompe con el concepto de sistema centralizado, al requerir sincronizar ficheros de configuración en todos los ordenadores para ajustar los permisos. Esto genera errores como:
 
-```
+```text
 Mount failed: Not Authorized
 ```
 
@@ -31,7 +31,7 @@ polkit.addRule(function(action, subject) {
 
 A partir de ese momento, todos los usuarios tendrán permisos. Luego se pueden ir creando reglas adicionales para quitar permisos a usuarios o grupos concretos.
 
-### Referencias:
+### Referencias
 
 - [Homepage Polkit](http://www.freedesktop.org/wiki/Software/polkit/)
 - [Ubuntu LDAP Admins and GUI Root Passwords](http://www.ossramblings.com/ubuntu-with-ldap-user-root-password-issue)

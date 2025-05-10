@@ -17,7 +17,7 @@ Recientemente, en uno de nuestros servidores se disparó una alarma por incremen
 112.207.247.13 - - [13/Mar/2014:23:08:15 +0100] "POST /index2.php HTTP/1.1" 200 1750 "http://xxxxx.xxxxx.com/index2.php?page=shop.recommend&product_id=283&pop=1&tmpl=component&option=com_virtuemart&Itemid=2" "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0; iOpus-Web-Automation; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)"
 ```
 
-### Para solucionar el problema:
+### Para solucionar el problema
 
 Hay que editar el fichero:
 
@@ -48,10 +48,10 @@ else {
 
 Este código permite una suplantación de identidad y que servicios de _email spoofing_ aprovechen esta vulnerabilidad para sus “clientes”.
 
-Ya no se podrán realizar recomendaciones, pero al menos los atacantes tampoco.  
+Ya no se podrán realizar recomendaciones, pero al menos los atacantes tampoco.
 Como solución más elegante se podría activar el recaptcha, pero lo mejor es que el cliente migre a Virtuemart 2.0.
 
-Al principio no encontramos ninguna referencia, pero sí existe reporte del problema desde _2010_.  
+Al principio no encontramos ninguna referencia, pero sí existe reporte del problema desde _2010_.
 Lo grave del asunto es que hayan pasado 4 años sin que se informe a los usuarios ni se haya creado una versión con parche desde Virtuemart para solucionarlo.
 
 - [https://forum.virtuemart.net/index.php?topic=72804.0](https://forum.virtuemart.net/index.php?topic=72804.0)

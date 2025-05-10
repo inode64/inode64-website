@@ -11,7 +11,7 @@ isDraft: false
 
 En *Virtuemart* 1.5.xx existe un parámetro que viene activado por defecto y que rompe y entorpece la correcta indexación de la web por parte de los buscadores, con el consiguiente decremento de las visitas y ventas.
 
-El susodicho parámetro es “**¿Activar el chequeo de Cookies?**”, que se encuentra en la configuración de *Virtuemart* en el apartado “*Ajustes del núcleo*”. Si se encuentra activado, modifica la respuesta que obtienen los buscadores haciéndoles creer que cada vez que acceden existe un problema, devolviendo el código de error del apache **303** y generando una nueva *URL*, como en el siguiente ejemplo:
+El susodicho parámetro es "**¿Activar el chequeo de Cookies?**", que se encuentra en la configuración de *Virtuemart* en el apartado "*Ajustes del núcleo*". Si se encuentra activado, modifica la respuesta que obtienen los buscadores haciéndoles creer que cada vez que acceden existe un problema, devolviendo el código de error del apache **303** y generando una nueva *URL*, como en el siguiente ejemplo:
 
 ```bash
 "GET /index.php?page=shop.ask&flypage=flypage.tpl&product_id=1202&category_id=186&option=com_virtuemart&Itemid=2 HTTP/1.1" 303 20 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +https://www.google.com/bot.html)"

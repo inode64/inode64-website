@@ -9,25 +9,25 @@ tags: [xhtml, clean code]
 isDraft: false
 ---
 
-### Las principales ventajas del XHTML sobre el HTML son:
+### Las principales ventajas del XHTML sobre el HTML son
 
 1. Se pueden incorporar elementos de distintos [espacios de nombres](http://es.wikipedia.org/w/index.php?title=Espacio_de_nombres&amp;action=edit&amp;redlink=1) [XML](http://es.wikipedia.org/wiki/XML) (como [MathML](http://es.wikipedia.org/wiki/MathML) y [Scalable Vector Graphics](http://es.wikipedia.org/wiki/Scalable_Vector_Graphics)).
 2. Un navegador no necesita implementar [heurísticas](http://es.wikipedia.org/wiki/Heur%C3%ADstica) para detectar qué quiso poner el autor, por lo que el [parser](http://es.wikipedia.org/wiki/Parser) puede ser mucho más sencillo.
 3. Como es XML se pueden utilizar fácilmente herramientas creadas para procesamiento de documentos XML genéricos (editores, [XSLT](http://es.wikipedia.org/wiki/XSLT), etc.).
 
-### Lista de reglas que diferencian XHTML 1.0 de [HTML](http://es.wikipedia.org/wiki/HTML) 4.01.
+### Lista de reglas que diferencian XHTML 1.0 de [HTML](http://es.wikipedia.org/wiki/HTML) 4.01
 
 Muchas de estas diferencias vienen con el cambio de ser una aplicación [SGML](http://es.wikipedia.org/wiki/SGML) a ser una aplicación del más estricto [XML](http://es.wikipedia.org/wiki/XML):
 
 - Los elementos vacíos deben cerrarse siempre:
   - Incorrecto: `<br>`
-  - Correcto: `<br></br>` o `<br/>` o `<br />`  
+  - Correcto: `<br></br>` o `<br/>` o `<br />`
     Nota: Cualquiera de las tres formas es válida en XHTML. Para compatibilidad debe usarse `<br />`
-  
+
 - Los elementos no vacíos también deben cerrarse siempre:
   - Incorrecto: `<p>Primer párrafo<p>Segundo párrafo`
   - Correcto: `<p>Primer párrafo</p><p>Segundo párrafo</p>`
-  
+
 - Los elementos anidados deben tener un correcto orden de apertura/cierre (el que se abre último, debe cerrarse primero).
   - Incorrecto: `<em><strong>Texto</em></strong>`
   - Correcto: `<em><strong>Texto</strong></em>`
@@ -44,29 +44,29 @@ Muchas de estas diferencias vienen con el cambio de ser una aplicación [SGML](h
   - Incorrecto: `<td rowspan=3>`
   - Correcto: `<td rowspan="3">`
   - Correcto: `<td rowspan='3'>`
-  
+
 - Los nombres de elementos y atributos deben ir en minúsculas.
-  - Incorrecto: [http://www.domname.com](<a href="http://www.domname.com">Domname</a>)
-  - Correcto: [http://www.domname.com](<a href="http://www.domname.com">Domname</a>)
-  
+  - Incorrecto: `<DIV Align="center">Hola Mundo</DIV>`
+  - Correcto: `<div align="center">Hola Mundo</div>`
+
 - No está permitida la minimización de atributos (se usa el nombre del atributo como valor)
   - Incorrecto: `<textarea readonly>Solo-lectura</textarea>`
   - Correcto: `<textarea readonly="readonly">Solo-lectura</textarea>`
   - Aquí hay una lista de los elementos que podían usarse minimizados, tal como deben incluirse en xhtml:
 
-```
-compact="compact" 
-checked="checked" 
-declare="declare" 
-readonly="readonly" 
-disabled="disabled" 
-selected="selected" 
-defer="defer" 
-ismap="ismap" 
-nohref="nohref" 
-noshade="noshade" 
-nowrap="nowrap" 
-multiple="multiple" 
+```xhtml
+compact="compact"
+checked="checked"
+declare="declare"
+readonly="readonly"
+disabled="disabled"
+selected="selected"
+defer="defer"
+ismap="ismap"
+nohref="nohref"
+noshade="noshade"
+nowrap="nowrap"
+multiple="multiple"
 noresize="noresize"
 ```
 
@@ -74,7 +74,7 @@ noresize="noresize"
   - Incorrecto: `<font color="#0000FF">Blue text</font>`
   - Correcto: `<span style="color: #0000FF;">Blue text</span>`
 
-- El atributo *name* declarado no recomendado en xhtml, el atributo *name* queda en desuso, recomendándose en su lugar el atributo *id* de los siguiente elementos “*a*, *applet*, *form*, *frame*, *iframe*, *img* y *map*”.
+- El atributo *name* declarado no recomendado en xhtml, el atributo *name* queda en desuso, recomendándose en su lugar el atributo *id* de los siguiente elementos "*a*, *applet*, *form*, *frame*, *iframe*, *img* y *map*".
   - `<img src="dibujo.gif" id="dibujo1" />`
 
 - Es necesaria la declaración de tipo de documento. En xhtml debemos declarar explícitamente el tipo de documento de que se trate; por ejemplo, para xhtml 1.0 transicional:

@@ -15,7 +15,7 @@ Seguiremos aquí para ofrecer soporte y mantenerles informados sobre las última
 
 Para cualquier incidencia técnica pueden ponerse en contacto con nosotros a través de:
 
-📞 Teléfono: +34 964 213 105  
+📞 Teléfono: +34 964 213 105
 📧 Email: [info@inode64.com](mailto:info@inode64.com)
 
 Nuestro equipo de soporte estará disponible para atender cualquier problema que pueda surgir en su empresa.

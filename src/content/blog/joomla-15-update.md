@@ -9,7 +9,7 @@ tags: [joomla, actualizaciones, parche, linux]
 isDraft: false
 ---
 
-Repositorio de actualizaciones Joomla 1.5 en formato parche para instalación en funcionamiento.  
+Repositorio de actualizaciones Joomla 1.5 en formato parche para instalación en funcionamiento.
 Al estar en modo parche, solo se aplican los cambios y respeta mejor las modificaciones que se hubieran hecho.
 
 Para aplicarlas solo hay que ejecutar este comando en Linux dentro del directorio Joomla:
@@ -18,7 +18,7 @@ Para aplicarlas solo hay que ejecutar este comando en Linux dentro del directori
 patch --binary -p1 < "fichero"
 ```
 
-En sistemas con múltiples instalaciones, he creado un script que facilita dicha tarea.  
+En sistemas con múltiples instalaciones, he creado un script que facilita dicha tarea.
 Actualizado para solo actualizar la versión 1.5:
 
 ```bash

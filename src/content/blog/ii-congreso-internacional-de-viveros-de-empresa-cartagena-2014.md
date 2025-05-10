@@ -15,7 +15,7 @@ El 24 y 25 de noviembre estuvimos invitados al II Congreso Internacional de Vive
 
 ## Primer día: discursos y networking
 
-El primer día del congreso fue algo monótono y poco útil para los emprendedores, ya que por la mañana, los políticos ofrecieron discursos de campaña electoral, los cuales no aportaron valor a los asistentes. 
+El primer día del congreso fue algo monótono y poco útil para los emprendedores, ya que por la mañana, los políticos ofrecieron discursos de campaña electoral, los cuales no aportaron valor a los asistentes.
 
 No fue hasta el café y la comida cuando realmente pudimos comenzar a hacer networking con otros emprendedores, compartiendo experiencias e ideas en un ambiente más dinámico.
 

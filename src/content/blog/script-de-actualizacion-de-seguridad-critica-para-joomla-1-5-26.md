@@ -16,7 +16,6 @@ Pero por desgracia, no todos los clientes han migrado a las versiones más recie
 Adjunto el script. En caso necesario, es fácil cambiar la ruta donde se encuentran los dominios alojados.
 
 ```bash
-```bash
 #!/bin/bash
 
 # Ruta donde se encuentran los dominios alojados
@@ -43,9 +42,8 @@ done
 
 echo "Proceso de actualización completado."
 ```
-```
 
-### Referencias:
+### Referencias
 
 - [Joomla 1.5 security patch made easy to install](http://anything-digital.com/blog/security-updates/joomla-updates/joomla-15-security-patch-made-easy-to-install.html)
 - [Joomla Bug [#31626] Unauthorized file upload security issue](http://joomlacode.org/gf/project/joomla/tracker/?action=TrackerItemEdit&tracker_item_id=31626)

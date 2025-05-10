@@ -92,14 +92,13 @@ kvm-img convert -f vpc -O raw origen.vhd destino.img
 
 Ahora podemos crear la máquina virtual con todos los parámetros necesarios. En caso de ser una máquina virtual con Windows, se deben realizar algunos pasos adicionales para evitar problemas:
 
-1. **Arrancar con un CD de utilidades**  
+1. **Arrancar con un CD de utilidades**
    Utiliza un CD como [Hiren's Boot](http://www.hirensbootcd.org/download/) y arranca el mini Windows XP. Luego, ejecuta dentro del menú "Registry" la opción **Fix hard disk controller (fix_hdc.cmd)** para evitar el pantallazo azul al iniciar. Esto se debe a que Windows crea un registro especial desde donde se instala la máquina.
 
-2. **Desinstalar Virtual Machine Additions**  
+2. **Desinstalar Virtual Machine Additions**
    Asegúrate de desinstalar este programa para evitar conflictos.
 
-3. **Solución para el ratón**  
+3. **Solución para el ratón**
    Si el ratón dentro de la máquina virtual deja de funcionar, elimina la opción de tableta gráfica USB EVTouch.
 
 Con estos pasos, tu máquina virtual estará lista para funcionar correctamente en KVM.
-```

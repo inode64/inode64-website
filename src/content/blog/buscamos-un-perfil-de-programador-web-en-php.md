@@ -9,26 +9,26 @@ tags: [joomla, php]
 isDraft: false
 ---
 
-# Buscamos un perfil de programador WEB en PHP
+### Buscamos un perfil de programador WEB en PHP
 
-## Requisitos:
+## Requisitos
 
 - Programación en PHP
 - Últimas tecnologías web: HTML5, CSS3, Jquery, AJAX
 - Vivir en las proximidades de Vila-real
 
-## Se valorará:
+## Se valorará
 
 - Conocimientos de Joomla
 - Vehículo propio
 - Linux
 
-## Ofrecemos:
+## Ofrecemos
 
 - Contratación inmediata
 - Formación continua
 
-No envíes el Curriculum Vitae indicando “Programador WEB” en las notas. [Consulta la oferta de empleo aquí](http://www.inode64.com/oferta-de-empleo).
+No envíes el Curriculum Vitae indicando "Programador WEB" en las notas. [Consulta la oferta de empleo aquí](http://www.inode64.com/oferta-de-empleo).
 
 Para agilizar el proceso de selección, hemos ideado un pequeño test antes de la entrevista personal. En la última selección recibimos muchas ofertas de personas que no sabían programar.
 

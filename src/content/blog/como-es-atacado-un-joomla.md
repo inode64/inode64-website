@@ -20,7 +20,7 @@ Sin embargo, la realidad es que hay muchas personas malintencionadas interesadas
 
 ### Cómo detectar si tu web está comprometida
 
-1. **Búsqueda en Google**  
+1. **Búsqueda en Google**
     Realiza una búsqueda como la siguiente para comprobar si tu web está comprometida con enlaces externos:
 
     ```bash
@@ -29,7 +29,7 @@ Sin embargo, la realidad es que hay muchas personas malintencionadas interesadas
 
     Reemplaza `*****` con tu dominio, por ejemplo, `inode64.com` o `villarrealcf.es`.
 
-2. **Análisis de registros del servidor**  
+2. **Análisis de registros del servidor**
     Revisa los logs del servidor web para detectar accesos sospechosos. Por ejemplo:
 
     ```bash
@@ -73,4 +73,3 @@ En este caso, se encontró un componente vulnerable (`com_rokmodule`) que fue ex
 - Considera contratar a un experto en seguridad o contactar a los profesionales que desarrollaron la web.
 
 [Sigue leyendo la 2º Parte](como-es-atacado-un-joomla-2-parte)
-```

@@ -26,7 +26,7 @@ En esta pequeña guía vamos a explicar de forma sencilla los pasos a seguir par
     virtual/mysql
     ```
 
-3. Igualmente, tendremos que copiar nuestra configuración de `dev-db/mysql` en `/etc/portage/package.use` para no perder personalizaciones.  
+3. Igualmente, tendremos que copiar nuestra configuración de `dev-db/mysql` en `/etc/portage/package.use` para no perder personalizaciones.
    Recomendamos usar el flag `jemalloc` para mejorar el rendimiento.
 
 4. Paramos el motor MySQL:
@@ -69,7 +69,7 @@ En esta pequeña guía vamos a explicar de forma sencilla los pasos a seguir par
 
 Y a disfrutar de la velocidad de MariaDB.
 
-### Referencias:
+### Referencias
 
 - [Impact of memory allocators on MySQL performance](http://www.mysqlperformanceblog.com/2012/07/05/impact-of-memory-allocators-on-mysql-performance/)
 - [Cómo migrar de MySQL a MariaDb en Ubuntu Server](http://davidburgosonline.com/ddbb-base-datos/2013/como-migrar-de-mysql-a-mariadb-en-ubuntu-server/)

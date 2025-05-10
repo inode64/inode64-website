@@ -13,7 +13,7 @@ Este componente para **Joomla 2.5** permite la fácil creación de puntos de men
 
 ---
 
-### Características:
+### Características
 
 - Soporte de SEF
 - Textos de ejemplo: *LOREM IPSUM*, *Don Quijote*, *Moby Dick*, *Erlebnisse einsamer Menschen*
@@ -21,7 +21,7 @@ Este componente para **Joomla 2.5** permite la fácil creación de puntos de men
 
 ---
 
-### Changelog:
+### Changelog
 
 - **0.0.1** (2012-06-13): Versión inicial
 - **0.0.2** (2012-06-14): Solución de pequeños errores gracias a los betatesters

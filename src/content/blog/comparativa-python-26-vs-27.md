@@ -81,7 +81,7 @@ jinja2         3.5700    0.0100    3.5800    3.5831
 
 Los siguientes resultados se basan en el código de [Spitfire performance tests](http://code.google.com/p/spitfire/source/browse/trunk/tests/perf/bigtable.py):
 
-#### Python 2.6.6
+#### Python 2.6.6 (spitfire)
 
 ```bash
 Genshi tag builder                308.61 ms
@@ -95,7 +95,7 @@ cStringIO                           8.07 ms
 list concat                         5.09 ms
 ```
 
-#### Python 2.7.2
+#### Python 2.7.2 (spitfire)
 
 ```bash
 Genshi tag builder                313.95 ms
@@ -109,7 +109,7 @@ cStringIO                           7.30 ms
 list concat                         4.90 ms
 ```
 
-#### Python 2.7.2 y GCC 4.5.3
+#### Python 2.7.2 y GCC 4.5.3 (spitfire)
 
 ```bash
 Genshi tag builder                305.27 ms
@@ -129,4 +129,3 @@ list concat                         4.66 ms
 - El cambio de **GCC 4.4.6 a 4.5.3** mejora el rendimiento en algunas áreas, pero introduce regresiones en otras.
 
 ¡Comparte tus experiencias y resultados en los comentarios!
-```

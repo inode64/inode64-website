@@ -43,7 +43,7 @@ show engines;
 
 Debe de aparecer algo como esto:
 
-```
+```text
 +------------+---------+----------------------------------------------------------------+--------------+------+------------+
 | Engine     | Support | Comment                                                        | Transactions | XA   | Savepoints |
 +------------+---------+----------------------------------------------------------------+--------------+------+------------+
@@ -89,6 +89,6 @@ CONNECTION='mysql://usuario:password@localhost/basededatos/a4821_users';
 
 Hemos quitado del original el `AUTO_INCREMENT`, cambiado el `ENGINE` y, por supuesto, la conexión a la otra base de datos.
 
-### Referencias:
+### Referencias
 
 - [Sincronizar dos tablas en MySQL](http://www.avargas.info/index.php?option=com_content&task=view&id=9&Itemid=1)

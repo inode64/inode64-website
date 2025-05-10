@@ -33,7 +33,7 @@ INODE64 participará con las siguientes charlas:
 
 - **Gestión de proyectos colaborativos con Redmine**
   Redmine es una herramienta para la gestión de proyectos que incluye un sistema de seguimiento de errores e incidencias. También incorpora calendario de actividades, diagramas de Gantt, wiki, foros, visor de repositorios, integración con correo electrónico y mucho más.
-  
+
 - **Qué necesitas saber para montar tu tienda virtual con Joomla**
   Joomla y VirtueMart son dos sistemas muy potentes y fáciles de administrar incluso para usuarios con pocos conocimientos técnicos. Permiten crear y mantener una tienda online de manera eficiente.
 

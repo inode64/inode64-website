@@ -17,7 +17,7 @@ O bien usar la utilidad [MergeIDE](https://inode64.com), que automatiza el proce
 
 ---
 
-### Pasos para la conversión:
+### Pasos para la conversión
 
 1. Desinstalar las VMware Tools.
 2. Ejecutar en el disco C: la herramienta **MergeIDE**.

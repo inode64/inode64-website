@@ -15,7 +15,8 @@ Plugin para Joomla que permite modificar automáticamente las preferencias de id
 
 ### Changelog
 
-**Versión 0.01**  
+**Versión 0.01**
+
 - Versión inicial
 
 📦 [Descargar Plugin Update Language v0.1 (1.41 kB)](https://inode64.com)
