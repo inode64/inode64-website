@@ -1,5 +1,6 @@
 ---
-
+import { Image } from "astro:assets";
+import * as clientLogos from "../../assets/images/clients/";
 ---
 <div id="clientes" class="bg-gray-50 py-24 sm:py-22 ">
   <div class="mx-auto max-w-270 px-6 lg:px-8">
@@ -9,35 +10,34 @@
   </div>
     <div class="mx-auto mt-10 grid max-w-lg grid-cols-3 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-5 sm:gap-x-1 lg:mx-0 lg:max-w-none lg:grid-cols-5">
       <a href="https://villarrealcf.es">
-        <img class="col-span-2 max-h-24 w-full object-contain lg:col-span-1" src="/images/customers/villarreal.png" alt="Transistor" width="158" height="48">
-        <p class="text-center">Villarreal Cf</p>
+        <Image src={clientLogos.villarreal} format="webp" class="h-28 mx-auto col-span-2 max-h-30 w-full object-contain lg:col-span-1" loading="lazy" alt="logo villarreal" />
       </a>
       <a href="https://www.transgrau.es">
-        <img class="col-span-2 max-h-22 w-full object-contain lg:col-span-1" src="/images/customers/transgrau.png" alt="Reform" width="158" height="48">
+        <Image src={clientLogos.transgrau} format="webp" class="h-28 mx-auto col-span-2 max-h-30 w-full object-contain lg:col-span-1" loading="lazy" alt="logo transgrau" />
       </a>
       <a href="https://actm.es">
-        <img class="col-span-2 max-h-32 w-full object-contain lg:col-span-1" src="/images/customers/actm.png" alt="Tuple" width="158" height="48">
-      </a>
-      <a href="https://www.alcorense.com">
-        <img class="col-span-2 max-h-20 w-full object-contain sm:col-start-2 lg:col-span-1" src="/images/customers/alcorense.png" alt="SavvyCal" width="158" height="48">
+        <Image src={clientLogos.actm} format="webp" class="h-32 mx-auto col-span-2 max-h-32 w-full object-contain lg:col-span-1" loading="lazy" alt="logo actm" />
       </a>
       <a href="https://www.enfervalencia.org">
-        <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="/images/customers/colenfermeria.png" alt="Statamic" width="158" height="48">
+        <Image src={clientLogos.colenfermeria} format="webp" class="h-28 mx-auto col-span-2 max-h-30 w-full object-contain lg:col-span-1" loading="lazy" alt="logo colegi enfermeria" />
+      </a>
+      <a href="https://www.alcorense.com">
+        <Image src={clientLogos.alcorense} format="webp" class="h-24 mx-auto col-span-2 max-h-30 w-full object-contain lg:col-span-1" loading="lazy" alt="logo alcorense" />
       </a>
       <a>
-        <img class="col-span-2 max-h-24 w-full object-contain lg:col-span-1" src="/images/customers/finogomez.png" alt="Reform" width="158" height="48">
+        <Image src={clientLogos.finogomez} format="webp" class="h-28 mx-auto col-span-2 max-h-30 w-full object-contain lg:col-span-1" loading="lazy" alt="logo finogomez" />
       </a>
       <a href="https://www.magicworldresort.com">
-        <img class="col-span-2 col-start-2 max-h-20 w-full object-contain sm:col-start-auto lg:col-span-1" src="/images/customers/marinador.png" alt="Statamic" width="158" height="48">
+        <Image src={clientLogos.marinador} format="webp" class="h-28 mx-auto col-span-2 max-h-30 w-full object-contain lg:col-span-1" loading="lazy" alt="logo marinador" />
       </a>
       <a href="https://insca.com">
-        <img class="col-span-2 max-h-22 w-full object-contain sm:col-start-2 lg:col-span-1" src="/images/customers/insca.png" alt="SavvyCal" width="158" height="48">
+        <Image src={clientLogos.insca} format="webp" class="h-28 mx-auto col-span-2 max-h-30 w-full object-contain lg:col-span-1" loading="lazy" alt="logo insca" />
       </a>
       <a href="https://gransimenuts.org">
-        <img class="col-span-2 max-h-42 w-full object-contain lg:col-span-1" src="/images/customers/gransimenuts.png" alt="Tuple" width="158" height="48">
+        <Image src={clientLogos.gransimenuts} format="webp" class="h-48 mx-auto col-span-2 max-h-57 w-full object-contain lg:col-span-1" loading="lazy" alt="logo gransimenuts" />
       </a>
       <a>
-        <img class="col-span-2 col-start-2 max-h-22 w-full object-contain sm:col-start-auto lg:col-span-1" src="/images/customers/escriche.png" alt="Statamic" width="158" height="48">
+        <Image src={clientLogos.escriche} format="webp" class="h-28 mx-auto col-span-2 max-h-30 w-full object-contain lg:col-span-1" loading="lazy" alt="logo escriche" />
       </a>
     </div>
   </div>
