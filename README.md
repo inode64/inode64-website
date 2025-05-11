@@ -117,15 +117,11 @@ El formulario de contacto se encuentra en la página `/contact` y utiliza el com
 
 Está integrado con Netlify Forms como solución temporal para gestionar envíos. En producción, puede conectarse a un endpoint personalizado para mayor control.
 
-### 5.2. Newsletter
-
-El formulario de suscripción al boletín se encuentra en el footer y utiliza también un componente separado. Funciona bajo el mismo sistema de envío que el formulario de contacto, con posibilidad de ampliación hacia servicios como Mailchimp o EmailOctopus.
-
-### 5.3. Validaciones y endpoints
+### 5.2. Validaciones y endpoints
 
 Actualmente, las validaciones son de tipo HTML5 (`required`, `type="email"`, etc.). Se recomienda en el futuro implementar validaciones backend, filtrado anti-spam y seguridad adicional en endpoints.
 
-### 5.4. Validaciones y endpoints
+### 5.3. Validaciones y endpoints
 
 Además de las validaciones nativas en cliente, en producción se aconseja:
 
@@ -154,21 +150,19 @@ npm run preview
 
 ### 6.2. Recomendaciones para hosting propio
 
-Para desplegar en los servidores de INODE64 se recomienda:
+Desplegado en los propios servidores de INODE64, con las siguientes características:
 
-- Usar Nginx, Apache o similar para servir `/dist`
-- Activar HTTPS (Let's Encrypt)
-- Permitir redirecciones y compresión Gzip/Brotli
+- Uso de Apache 2.4.x para servir `/dist`
+- HTTPS con (Let's Encrypt)
+- Permitido el uso de redirecciones y compresión Gzip/Brotli
 - Automatizar el despliegue con Git o CI/CD
-- Hacer copias de seguridad del código y los datos
-
-Alternativas de hosting: Netlify, Vercel, Cloudflare Pages, Firebase Hosting.
+- Copias de seguridad diarias y remotas del site
 
 ---
 
 ## Conclusión
 
-Esta guía proporciona a INODE64 los conocimientos necesarios para gestionar y mantener su sitio web de forma autónoma. Gracias a la estructura clara, el uso de Astro y Tailwind CSS, y una arquitectura centrada en la modularidad y el contenido externo, el proyecto es fácilmente escalable y adaptable a futuras necesidades.
+Esta guía proporciona los conocimientos necesarios para gestionar y mantener su sitio web de forma autónoma. Gracias a la estructura clara, el uso de Astro y Tailwind CSS, y una arquitectura centrada en la modularidad y el contenido externo, el proyecto es fácilmente escalable y adaptable a futuras necesidades.
 
 Para cualquier ampliación futura se recomienda seguir las prácticas establecidas aquí y consultar la documentación oficial de Astro y Tailwind.
 
