@@ -21,7 +21,7 @@ En su segunda edición, se pretende hacer hincapié en el mundo de los videojueg
 
 ## Seguridad informática como eje clave
 
-Tampoco queremos dejar de lado otra parte muy importante del mundo TIC: la seguridad informática. En la edición anterior tuvo un papel destacado, y este año volveremos a contar con expertos del sector que compartirán sus conocimientos y experiencias en este ámbito tan actual e importante.
+Tampoco queremos dejar de lado otra parte muy importante del mundo TIC: la seguridad informática. En la edición anterior tuvo un papel destacado, y este año volveremos a contar con expertos del sector que compartirán sus conocimientos y experiencias en este ámbito tan actual y relevante.
 
 ## Agradecimientos
 
@@ -33,7 +33,7 @@ INODE64 participará con las siguientes charlas:
 
 - **Gestión de proyectos colaborativos con Redmine**
   Redmine es una herramienta para la gestión de proyectos que incluye un sistema de seguimiento de errores e incidencias. También incorpora calendario de actividades, diagramas de Gantt, wiki, foros, visor de repositorios, integración con correo electrónico y mucho más.
-
+  
 - **Qué necesitas saber para montar tu tienda virtual con Joomla**
   Joomla y VirtueMart son dos sistemas muy potentes y fáciles de administrar incluso para usuarios con pocos conocimientos técnicos. Permiten crear y mantener una tienda online de manera eficiente.
 

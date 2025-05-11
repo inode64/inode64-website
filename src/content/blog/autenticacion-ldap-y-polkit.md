@@ -17,7 +17,7 @@ Pero con el nuevo cambio al sistema _polkit_, se tiene que crear una configuraci
 Mount failed: Not Authorized
 ```
 
-al intentar montar un dispositivo USB, no mostrar en el menú de usuario las opciones de apagar y reiniciar, o no poder conectarse a una red wifi, entre otros.
+Al intentar montar un dispositivo USB, no mostrar en el menú de usuario las opciones de apagar y reiniciar, o no poder conectarse a una red wifi, entre otros.
 
 Existe una solución que, aunque no muy elegante, puede funcionar en la mayoría de los casos, especialmente si no hay grandes limitaciones para los usuarios: dar permisos a todos y luego restringirlos cuando sea necesario. Esto simplifica las reglas de _polkit_.
 

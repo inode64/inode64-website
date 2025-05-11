@@ -32,7 +32,7 @@ Muchas de estas diferencias vienen con el cambio de ser una aplicación [SGML](h
   - Incorrecto: `<em><strong>Texto</em></strong>`
   - Correcto: `<em><strong>Texto</strong></em>`
   - Ya se sabe. No vale por ejemplo `<font size="2"><b>texto</font></b>`, sino `<font size="2"><b>texto</b></font>`
-  - Un elemento que no sea formador de un bloque en el flujo del documento, no puede contener un elemento formador de bloque. `<font size="2"><center>texto</center></font>` es invalido.
+  - Un elemento que no sea formador de un bloque en el flujo del documento, no puede contener un elemento formador de bloque. `<font size="2"><center>texto</center></font>` es inválido.
 
 | Elementos block-line (formadores de bloque): |
 |-----------------------------------------------|
@@ -74,7 +74,7 @@ noresize="noresize"
   - Incorrecto: `<font color="#0000FF">Blue text</font>`
   - Correcto: `<span style="color: #0000FF;">Blue text</span>`
 
-- El atributo *name* declarado no recomendado en xhtml, el atributo *name* queda en desuso, recomendándose en su lugar el atributo *id* de los siguiente elementos "*a*, *applet*, *form*, *frame*, *iframe*, *img* y *map*".
+- El atributo *name* declarado no recomendado en xhtml, el atributo *name* queda en desuso, recomendándose en su lugar el atributo *id* de los siguientes elementos "*a*, *applet*, *form*, *frame*, *iframe*, *img* y *map*".
   - `<img src="dibujo.gif" id="dibujo1" />`
 
 - Es necesaria la declaración de tipo de documento. En xhtml debemos declarar explícitamente el tipo de documento de que se trate; por ejemplo, para xhtml 1.0 transicional:
@@ -110,7 +110,7 @@ noresize="noresize"
 ### Referencias
 
 1. [http://www.w3.org/TR/xhtml1/#xhtml](http://www.w3.org/TR/xhtml1/#xhtml) Sección 'What is XHTML?' en *XHTML™ 1.0 The Extensible HyperText Markup Language (Second Edition)* A Reformulation of HTML 4 in XML 1.0 *W3C Recommendation 26 January 2000, revised 1 August 2002*
-2. [OneStat Website Statistics and website metrics - Press Room](http://www.onestat.com/html/aboutus_pressbox40_browser_market_firefox_growing.html)
+2. [OneStat Website Statistics and website metrics—Press Room](http://www.onestat.com/html/aboutus_pressbox40_browser_market_firefox_growing.html)
 3. [World Wide Web Consortium (W3C) Members](http://www.w3.org/Consortium/Member/List)
 4. [http://hixie.ch/advocacy/xhtml](http://hixie.ch/advocacy/xhtml)
 
