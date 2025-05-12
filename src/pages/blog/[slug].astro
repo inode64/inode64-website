@@ -6,10 +6,10 @@ import { Formatter } from "@/utils/formatter";
 import { siteConfig } from "@/config/site-config";
 
 export const getStaticPaths = ( async() => {
-
     const blogPosts = await getCollection('blog');
-    
-    return blogPosts.map( post => ({
+    const visiblePosts = blogPosts.filter(post => post.data.isDraft !== true);
+
+    return visiblePosts.map( post => ({
         params: { slug: post.slug },
         props: { post: post }
     }))
@@ -17,7 +17,6 @@ export const getStaticPaths = ( async() => {
 
 const { post } = Astro.props;
 const frontmatter = post.data;
-
 const { Content } = await post.render();
 ---
 
