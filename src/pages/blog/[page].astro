@@ -48,13 +48,13 @@ const currentPage = page.currentPage;
       <section aria-label="Controles" class="flex justify-center gap-8 mt-10">
         <Button 
           href={page.url.prev} 
-          text="Anteriores" 
+          text="Anterior"
           disabled={!page.url.prev}
         />
         <span class="flex items-center">Página { currentPage }</span>
         <Button 
           href={page.url.next} 
-          text="Siguientes" 
+          text="Siguiente"
           disabled={!page.url.next}
         />
     </section>
