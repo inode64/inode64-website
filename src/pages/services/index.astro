@@ -1,11 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "@/layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
 import services from "../../data/services.json";
 import Button from "@/components/ui/Button.astro";
+import { serviceImages } from "../../assets/images/services";
 ---
 
-<Layout 
+<Layout
   title={seoConfig.services.title}
   description={seoConfig.services.description}
   image={seoConfig.services.image}
@@ -28,24 +30,26 @@ import Button from "@/components/ui/Button.astro";
       {
         services.map( service => (
           <div class="relative block border border-gray-100 rounded-lg mb-4">
-            <img
-              transition:name={`${service.imageName}-image`}
-              src={`/images/products/${service.imageName}.webp`}
-              alt={service.title}
+            <Image
+              src={serviceImages[service.imageName]}
+              format="webp"
               class="h-50 w-full object-cover rounded-t-lg"
+              loading="lazy"
+              alt={service.imageName}
+              transition:name={`${service.imageName}-image`}
             />
 
             <div class="p-4 text-center">
               <strong class="text-xl font-medium text-gray-900">{service.title}</strong>
               <p class="mt-2 text-pretty text-gray-700">{service.shortDescription}</p>
-              <Button 
-                href={`/services/${service.slug}`} 
-                text="Más información" 
-                withFull={true} 
+              <Button
+                href={`/services/${service.slug}`}
+                text="Más información"
+                withFull={true}
                 srText={`sobre ${service.title.toLowerCase()}`}
               />
             </div>
-        </div>  
+        </div>
         ))
       }
     </div>

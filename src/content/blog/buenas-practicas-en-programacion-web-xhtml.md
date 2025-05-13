@@ -3,7 +3,7 @@ title: Buenas Practicas en programación web XHTML
 date: 2010-06-04
 description: Una guía detallada sobre las mejores prácticas en programación web utilizando XHTML, destacando sus ventajas, reglas y diferencias clave con HTML.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/buenas-practicas-en-programacion-web-xhtml.webp'
+image: 'buenas-practicas-en-programacion-web-xhtml'
 category: 'blog'
 tags: [xhtml, clean code]
 isDraft: false

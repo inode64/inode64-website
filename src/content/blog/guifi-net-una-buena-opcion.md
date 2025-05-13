@@ -3,7 +3,7 @@ title: Guifi.net, ¿una buena opción para redes comunitarias?
 date: 2014-06-13
 description: Un análisis crítico sobre el estado actual de guifi.net, sus desafíos y propuestas para mejorar esta red libre y colaborativa.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/guifi-net-una-buena-opcion.webp'
+image: 'guifi-net-una-buena-opcion'
 category: 'blog'
 tags: [guifinet, internet, comunidad]
 isDraft: false

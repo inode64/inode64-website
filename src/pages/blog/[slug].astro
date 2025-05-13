@@ -1,9 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import type { GetStaticPaths } from "astro";
 import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 import { Formatter } from "@/utils/formatter";
 import { siteConfig } from "@/config/site-config";
+
+import { postImages } from "../../assets/images/blog/post";
+import felixAvatar from "../../assets/images/team/felix.webp";
 
 export const getStaticPaths = ( async() => {
     const blogPosts = await getCollection('blog');
@@ -20,32 +24,36 @@ const frontmatter = post.data;
 const { Content } = await post.render();
 ---
 
-<Layout 
+<Layout
     title={`${frontmatter.title} | Blog ${siteConfig.title}`}
     description={frontmatter.description}
-    image={frontmatter.image}
+    image={postImages[frontmatter.image]}
 >
     <div class="lg:pt-14 sm:pt-14 pt-5 px-6 lg:px-8">
         <div class="mx-auto mt-10 pt-10 sm:mt-6 sm:pt-6 lg:mx-auto lg:max-w-4xl">
             <h1 class="text-2xl mb-0">{frontmatter.title}</h1>
             <div class="relative mt-5 flex items-center gap-x-4">
-                <img 
-                    src="/images/team/felix.webp" 
-                    alt={frontmatter.author} 
+                <Image
+                    src={felixAvatar}
+                    format="webp"
                     class="size-12 rounded-full shadow"
-                >
+                    loading="lazy"
+                    alt={frontmatter.author}
+                />
                 <div class="text-sm/6">
                     <p class="text-gray-500">{Formatter.formatDate(frontmatter.date)}</p>
                     <p class="font-semibold text-gray-900">{frontmatter.author}</p>
                 </div>
             </div>
             <div class="flex justify-center my-4">
-                <img 
-                    transition:name={post.slug}
-                    src={frontmatter.image} 
-                    alt={frontmatter.title} 
+                <Image
+                    src={postImages[frontmatter.image]}
+                    format="webp"
                     class="w-full max-w-xl"
-                >
+                    loading="lazy"
+                    alt={frontmatter.title}
+                    transition:name={post.slug}
+                />
             </div>
 
             <Content />
@@ -59,7 +67,7 @@ const { Content } = await post.render();
                 ))}
                 </div>
             </div>
-  
+
             <div class="mt-6">
                 <a
                   href="javascript:history.back()"

@@ -3,7 +3,7 @@ title: Joomla 1.5 y el nuevo error de correo electrónico TLS
 date: 2012-09-10
 description: Solución al problema de envío de correos en Joomla 1.5 al usar TLS, explicando el error y cómo configurarlo correctamente con SSL.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/joomla-15-y-el-error-de-mail-tls.webp'
+image: 'joomla-15-y-el-error-de-mail-tls'
 category: 'joomla'
 tags: [joomla, php, mail]
 isDraft: false

@@ -3,7 +3,7 @@ title: Configuración de Autenticación LDAP y Polkit
 date: 2013-09-22
 description: Exploramos cómo configurar la autenticación centralizada con LDAP y Polkit, resolviendo problemas comunes y optimizando permisos en sistemas GNOME.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/autenticacion-ldap-y-polkit.webp'
+image: 'autenticacion-ldap-y-polkit'
 category: 'seguridad'
 tags: [ldap, polkit, seguridad, gnome]
 isDraft: false

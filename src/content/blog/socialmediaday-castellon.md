@@ -3,7 +3,7 @@ title: II edición del SocialMediaDay Castellón 2012
 date: 2012-10-02
 description: Un resumen del II Social Media Day Castellón, destacando las ponencias, estrategias y experiencias compartidas sobre el uso profesional de las redes sociales.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/socialmediaday-castellon.webp'
+image: 'socialmediaday-castellon'
 category: 'blog'
 tags: [socialMediaDay, castellón, resumen]
 isDraft: false

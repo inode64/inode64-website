@@ -1,10 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "@/layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
+import { porfolioImages } from "../assets/images/porfolio";
 import projects from "../data/projects.json";
 ---
 
-<Layout 
+<Layout
   title={seoConfig.projects.title}
   description={seoConfig.projects.description}
   image={seoConfig.projects.image}
@@ -26,21 +28,24 @@ import projects from "../data/projects.json";
       {
         projects.map( project => (
           <article class="group">
-            <img
+            <Image
+              src={porfolioImages[project.screenshot]}
+              format="webp"
               alt={project.name}
-              src={`/images/projects/${project.screenshot}.webp`}
               class="h-56 w-full rounded-xl object-cover shadow-xl transition group-hover:grayscale-[50%]"
             />
-          
+
             <div class="p-4">
               <a href="#">
                 <h3 class="text-lg font-medium text-gray-900">{project.name}</h3>
               </a>
-          
+
                 <ul class="mt-2 text-sm/relaxed text-gray-500">
-                {project.features.map(feature => (
-                  <li class="list-disc">{feature}</li>
-                ))}
+                  {
+                    project.features.map(feature => (
+                      <li class="list-disc">{feature}</li>
+                    ))
+                  }
                 </ul>
             </div>
           </article>

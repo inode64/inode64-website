@@ -3,7 +3,7 @@ title: Gestión de Unidades en Negativo en OPEN ERP
 date: 2012-08-22
 description: Una guía sobre cómo gestionar pedidos de venta con unidades en negativo en OpenERP, incluyendo soluciones prácticas y recomendaciones para evitar errores en el control de inventarios.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/open-erp-unidades-en-negativo.webp'
+image: 'open-erp-unidades-en-negativo'
 category: 'blog'
 tags: [openerp, unidades, pedidos]
 isDraft: false

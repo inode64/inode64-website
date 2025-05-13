@@ -3,7 +3,7 @@ title: Como es atacado un sistema Joomla (1ª Parte)
 date: 2012-06-03
 description: Descubre cómo los atacantes explotan vulnerabilidades en Joomla y aprende a proteger tu web corporativa con consejos prácticos y ejemplos reales.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/como-es-atacado-un-joomla.webp'
+image: 'como-es-atacado-un-joomla'
 category: 'blog'
 tags: [joomla, ataques, seguridad]
 isDraft: false

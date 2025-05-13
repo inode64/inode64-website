@@ -3,7 +3,7 @@ title: Buscamos un perfil de programador WEB en PHP
 date: 2013-06-06
 description: Estamos buscando un programador web con experiencia en PHP y tecnologías modernas, dispuesto a afrontar retos y demostrar sus habilidades en un entorno dinámico.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/buscamos-un-perfil-de-programador-web-en-php.webp'
+image: 'buscamos-un-perfil-de-programador-web-en-php'
 category: 'blog'
 tags: [joomla, php]
 isDraft: false

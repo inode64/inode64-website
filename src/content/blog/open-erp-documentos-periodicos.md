@@ -3,7 +3,7 @@ title: Gestión de documentos periódicos en OPEN ERP
 date: 2012-08-22
 description: Aprende cómo configurar documentos periódicos en Open ERP para automatizar la facturación de servicios o productos de manera eficiente.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/open-erp-documentos-periodicos.webp'
+image: 'open-erp-documentos-periodicos'
 category: 'blog'
 tags: [openerp, documentos, automatizaciones]
 isDraft: false

@@ -3,7 +3,7 @@ title: Comparativa de Python 2.6 y 2.7 (diferentes motores de plantillas)
 date: 2011-10-15
 description: Un análisis detallado sobre el rendimiento de Python 2.6 y 2.7, comparando motores de plantillas como Django, Cheetah, Genshi, y más, con benchmarks y conclusiones clave.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/comparativa-python-26-vs-27.webp'
+image: 'comparativa-python-26-vs-27'
 category: 'blog'
 tags: [template engine, phyton, django, cheetah, kid, ghensi, mako, benchmark]
 isDraft: false

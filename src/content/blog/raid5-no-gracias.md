@@ -3,7 +3,7 @@ title: RAID5, No gracias. Riesgos y desventajas del sistema
 date: 2013-03-16
 description: Exploramos los riesgos y desventajas del RAID5 basándonos en un caso real, y analizamos alternativas más seguras como RAID6 o RAID1.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/raid5-no-gracias.webp'
+image: 'raid5-no-gracias'
 category: 'blog'
 tags: [linux, almacenamiento]
 isDraft: false

@@ -3,7 +3,7 @@ title: Galería de encantadores arbolitos de navidad by INODE64
 date: 2013-01-30
 description: Una recopilación de imágenes enviadas por nuestros clientes mostrando sus arbolitos de navidad mágicos, un detalle especial que sorprendió durante las fiestas de 2012.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/envio-de-mensajes-desde-php-internacionalizado.webp'
+image: 'envio-de-mensajes-desde-php-internacionalizado'
 category: 'blog'
 tags: [navidad, inode64, arboles]
 isDraft: false

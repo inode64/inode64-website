@@ -3,7 +3,7 @@ title: Cancelación de facturas en sistemas OPEN ERP
 date: 2012-08-22
 description: Aprende cómo cancelar facturas en OpenERP de manera efectiva, cumpliendo con las condiciones necesarias y evitando errores comunes en la gestión contable.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/open-erp-cancelar-facturas.webp'
+image: 'open-erp-cancelar-facturas'
 category: 'blog'
 tags: [openerp, facturas, cancelaciones]
 isDraft: false

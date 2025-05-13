@@ -3,7 +3,7 @@ title: Protege eficazmente tu Joomla contra los hackers
 date: 2013-05-12
 description: Aprende cómo proteger tu sitio Joomla contra ataques de hackers mediante técnicas de seguridad y un script en bash que limita la escritura en archivos clave.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/protege-tu-joomla-contra-los-hackers.webp'
+image: 'protege-tu-joomla-contra-los-hackers'
 category: 'joomla'
 tags: [joomla, seguridad]
 isDraft: false

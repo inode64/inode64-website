@@ -3,7 +3,7 @@ title: Asistimos con entusiasmo a las jornadas del Vilaemprén 2014
 date: 2014-01-24
 description: Resumen de la 1ª jornada Vilaemprèn, destacando las actividades, el espíritu emprendedor y las oportunidades de networking para jóvenes de Vila-real.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/asistimos-a-las-jornadas-vilaempren.webp'
+image: 'asistimos-a-las-jornadas-vilaempren'
 category: 'blog'
 tags: [vilaempren, empresas, emprendedores]
 isDraft: false

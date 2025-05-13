@@ -3,7 +3,7 @@ title: ¿Por qué debes elegir Gentoo para tus servidores?
 date: 2013-04-26
 description: Exploramos las ventajas de usar Gentoo en servidores, destacando su flexibilidad, optimización y control en actualizaciones y dependencias.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/por-que-gentoo.webp'
+image: 'por-que-gentoo'
 category: 'blog'
 tags: [gentoo, benchmark]
 isDraft: false

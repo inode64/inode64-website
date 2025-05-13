@@ -2,21 +2,31 @@
 import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
 import { seoConfig } from "@/config/seo-config";
+import favicon from "../assets/favicon.png";
 
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
 
+interface ImageMetadata {
+  src: string;
+  width: number;
+  height: number;
+  format: string;
+}
+
 interface Props {
   title?: string;
-  image?: string;
+  image?: string | ImageMetadata;
   description?: string;
 }
 
-const { 
-  title = seoConfig.home.title, 
-  description = seoConfig.home.description, 
+const {
+  title = seoConfig.home.title,
+  description = seoConfig.home.description,
   image = seoConfig.home.image,
 } = Astro.props;
+
+const ogImage = typeof image === "string" ? image : image.src;
 ---
 
 <!doctype html>
@@ -24,7 +34,7 @@ const {
   <head class="h-full">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href={favicon.src} />
     <meta name="generator" content={Astro.generator} />
 
     <!-- SEO -->
@@ -34,8 +44,8 @@ const {
     <!-- OG MetaTags -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
-     
+    <meta property="og:image" content={ogImage} />
+
     <title>{title}</title>
     <ClientRouter />
   </head>

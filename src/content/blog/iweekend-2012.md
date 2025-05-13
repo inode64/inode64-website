@@ -3,7 +3,7 @@ title: IV edición del evento iWeekend Castellón 2012
 date: 2012-10-23
 description: Resumen de nuestra participación en iWeekend Castellón 2012, destacando proyectos innovadores, colaboración emprendedora y nuestra contribución al evento.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/iweekend-2012.webp'
+image: 'iweekend-2012'
 category: 'blog'
 tags: [iweekend, hosting, innovacion]
 isDraft: false
