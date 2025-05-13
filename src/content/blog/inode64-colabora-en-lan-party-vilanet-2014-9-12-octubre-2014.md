@@ -3,7 +3,7 @@ title: INODE64 colabora en LAN Party VILANET 2014 9-12 Octubre 2014
 date: 2014-10-05
 description: Un evento tecnológico único que combina videojuegos, seguridad informática y gestión de proyectos, con charlas y talleres para profesionales y aficionados.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/inode64-colabora-en-lan-party-vilanet-2014-9-12-octubre-2014.webp'
+image: 'inode64-colabora-en-lan-party-vilanet-2014-9-12-octubre-2014'
 category: 'blog'
 tags: [vilanet, inode64, lan]
 isDraft: false
@@ -33,7 +33,7 @@ INODE64 participará con las siguientes charlas:
 
 - **Gestión de proyectos colaborativos con Redmine**
   Redmine es una herramienta para la gestión de proyectos que incluye un sistema de seguimiento de errores e incidencias. También incorpora calendario de actividades, diagramas de Gantt, wiki, foros, visor de repositorios, integración con correo electrónico y mucho más.
-  
+
 - **Qué necesitas saber para montar tu tienda virtual con Joomla**
   Joomla y VirtueMart son dos sistemas muy potentes y fáciles de administrar incluso para usuarios con pocos conocimientos técnicos. Permiten crear y mantener una tienda online de manera eficiente.
 

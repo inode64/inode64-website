@@ -3,7 +3,7 @@ title: 1º Congreso Internacional de Viveros de Empresas
 date: 2014-04-10
 description: Resumen del I Congreso Internacional de Viveros de Empresas, destacando los momentos clave y las oportunidades de networking para emprendedores.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/i-congreso-internacional-de-viveros-de-empresas.webp'
+image: 'i-congreso-internacional-de-viveros-de-empresas'
 category: 'blog'
 tags: [viveros, empresas, emprendedores]
 isDraft: false

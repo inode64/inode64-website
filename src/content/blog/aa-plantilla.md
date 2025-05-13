@@ -3,7 +3,7 @@ title: Plantilla
 date: 2050-01-01
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/example.webp'
+image: 'example'
 category: 'blog'
 tags: [tag1, tag2, tag3]
 isDraft: true

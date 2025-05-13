@@ -3,7 +3,7 @@ title: Convertir maquinas virtuales VMware a KVM
 date: 2011-11-07
 description: Aprende cómo convertir máquinas virtuales de VMware a KVM, solucionando problemas comunes y mejorando el rendimiento con herramientas y pasos detallados.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/convertir-maquinas-virtuales-vmware-a-kvm.webp'
+image: 'convertir-maquinas-virtuales-vmware-a-kvm'
 category: 'blog'
 tags: [maquinas virtuales, kvm, vmware]
 isDraft: false

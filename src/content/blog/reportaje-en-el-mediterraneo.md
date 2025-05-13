@@ -3,7 +3,7 @@ title: Reportaje de INODE64 en el Periódico mediterráneo
 date: 2008-01-23
 description: Un análisis del artículo destacado en el periódico *Mediterráneo*, que resalta cómo empresarios de Castellón prosperan a pesar de la crisis económica.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/reportaje-en-el-mediterraneo.webp'
+image: 'reportaje-en-el-mediterraneo'
 category: 'blog'
 tags: [viveros, congresos]
 isDraft: false

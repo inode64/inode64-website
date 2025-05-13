@@ -1,5 +1,6 @@
 ---
 import Button from "../ui/Button.astro";
+import { icons } from "../../assets/icons";
 ---
 
 <div>
@@ -14,7 +15,7 @@ import Button from "../ui/Button.astro";
         <div class="relative pl-16">
           <dt class="text-base/7 font-semibold text-gray-900">
             <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-800">
-              <img src="/icons/loading.svg" alt="Icono cargando" class="p-2" />
+              <img src={icons.loading.src} class="p-2" loading="lazy" alt="Icono cargando" />
             </div>
             Administración de Sistemas
           </dt>
@@ -29,7 +30,7 @@ import Button from "../ui/Button.astro";
         <div class="relative pl-16">
           <dt class="text-base/7 font-semibold text-gray-900">
             <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-800">
-              <img src="/icons/lock.svg" alt="Icono candado" class="p-2" />
+              <img src={icons.lock.src} class="p-2" loading="lazy" alt="Icono candado" />
             </div>
             Hospedaje Web Profesional
           </dt>
@@ -44,7 +45,7 @@ import Button from "../ui/Button.astro";
         <div class="relative pl-16">
           <dt class="text-base/7 font-semibold text-gray-900">
             <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-800">
-              <img src="/icons/cloud.svg" alt="Icono nube" class="p-2" />
+              <img src={icons.cloud.src} class="p-2" loading="lazy" alt="Icono nube" />
             </div>
             Servicios en la Nube
           </dt>
@@ -59,7 +60,7 @@ import Button from "../ui/Button.astro";
         <div class="relative pl-16">
           <dt class="text-base/7 font-semibold text-gray-900">
             <div class="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-red-800">
-              <img src="/icons/finger.svg" alt="Icono huella" class="p-2" />
+              <img src={icons.finger.src} class="p-2" loading="lazy" alt="Icono huella" />
             </div>
             Mantenimiento de Software y Hardware
           </dt>

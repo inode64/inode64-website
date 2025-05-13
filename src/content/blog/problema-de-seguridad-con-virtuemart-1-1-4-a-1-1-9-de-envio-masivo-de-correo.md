@@ -3,7 +3,7 @@ title: Vulnerabilidad en Virtuemart 1.1.4 y 1.1.9 - Envío masivo de correos
 date: 2014-03-13
 description: Análisis de una grave vulnerabilidad en Virtuemart 1.1.4 a 1.1.9 que permite el envío masivo de correos, incluyendo detalles técnicos, solución propuesta y recomendaciones para mitigar el problema.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/problema-de-seguridad-con-virtuemart-1-1-4-a-1-1-9-de-envio-masivo-de-correo.webp'
+image: 'problema-de-seguridad-con-virtuemart-1-1-4-a-1-1-9-de-envio-masivo-de-correo'
 category: 'seguridad'
 tags: [seguridad, joomla, virtuemart]
 isDraft: false

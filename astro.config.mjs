@@ -4,6 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 import robotsTxt from 'astro-robots-txt';
 import sitemap from '@astrojs/sitemap';
 
+import mdx from '@astrojs/mdx';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://inode64.com',
@@ -11,5 +13,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  integrations: [robotsTxt(), sitemap()]
+  integrations: [robotsTxt(), sitemap(), mdx()]
 });

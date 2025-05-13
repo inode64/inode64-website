@@ -3,7 +3,7 @@ title: Nueva página Web para el Club d'escacs Vila-real
 date: 2012-08-31
 description: Descubre la nueva web del Club d'escacs Vila-real, un espacio donde podrás conocer su historia, actividades, noticias y cómo formar parte de esta comunidad apasionada por el ajedrez.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/web-club-descacs-vila-real.webp'
+image: 'web-club-descacs-vila-real'
 category: 'blog'
 tags: [web, vila-real, club escacs, ajedrez]
 isDraft: false

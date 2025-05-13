@@ -3,7 +3,7 @@ title: Comparativa técnica web de partidos políticos
 date: 2011-11-01
 description: Una comparativa técnica de las páginas web de los principales partidos políticos de España, analizando latencia, tiempos de renderizado y conclusiones clave.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/comparativa-tecnica-web-de-partidos-politicos.webp'
+image: 'comparativa-tecnica-web-de-partidos-politicos'
 category: 'blog'
 tags: [partidos políticos, web]
 isDraft: false

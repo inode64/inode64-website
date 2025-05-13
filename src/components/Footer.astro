@@ -1,4 +1,8 @@
 ---
+import { Image } from "astro:assets";
+import logo from "../assets/images/brand/logo.webp";
+import { icons } from "../assets/icons";
+
 const year = new Date().getFullYear();
 ---
 
@@ -7,7 +11,7 @@ const year = new Date().getFullYear();
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
         <div class="flex justify-center text-red-800 sm:justify-start">
-          <img src="/images/brand/logo.webp" alt="Logo Empresa" class="w-24 h-auto md:w-32 lg:w-40">
+          <Image src={logo} format="webp" class="w-24 h-auto md:w-32 lg:w-40" loading="lazy" alt="Logo Empresa" />
         </div>
 
         <p class="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
@@ -22,7 +26,7 @@ const year = new Date().getFullYear();
               target="_blank"
             >
               <img
-                src="/icons/whatsapp.svg"
+                src={icons.whatsapp.src}
                 alt="Icono de WhatsApp"
                 class="transition duration-200 hover:brightness-120"
               />
@@ -36,7 +40,7 @@ const year = new Date().getFullYear();
               target="_blank"
             >
               <img
-                src="/icons/linkedin.svg"
+                src={icons.linkedin.src}
                 alt="Icono de Linkedin"
                 class="transition duration-200 hover:brightness-120"
               />
@@ -50,7 +54,7 @@ const year = new Date().getFullYear();
               target="_blank"
             >
               <img
-                src="/icons/youtube.svg"
+                src={icons.youtube.src}
                 alt="Icono de YouTube"
                 class="transition duration-200 hover:brightness-120"
               />
@@ -64,7 +68,7 @@ const year = new Date().getFullYear();
               rel="noopener noreferrer"
             >
               <img
-                src="/icons/twitter.svg"
+                src={icons.twitter.src}
                 alt="Icono de Twitter"
                 class="transition duration-200 hover:brightness-120"
               />
@@ -78,7 +82,7 @@ const year = new Date().getFullYear();
               target="_blank"
             >
               <img
-                src="/icons/github.svg"
+                src={icons.github.src}
                 alt="Icono de Github"
                 class="transition duration-200 hover:brightness-110"
               />
@@ -91,7 +95,7 @@ const year = new Date().getFullYear();
               target="_blank"
             >
               <img
-                src="/icons/flickr.svg"
+                src={icons.flickr.src}
                 alt="Icono de Flickr"
                 class="transition duration-200 hover:brightness-110"
               />
@@ -161,17 +165,17 @@ const year = new Date().getFullYear();
 
           <ul class="mt-8 space-y-4 text-sm">
             <li class="-mt-0.5 flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
-                <img src="/icons/mail.svg" alt="Icono de correo" class="max-w-6" />
+                <img src={icons.mail.src} alt="Icono de correo" class="max-w-6" />
                 <a href="mailto:sat@inode64.com" class="flex-1 text-gray-700">sat@inode64.com</a>
             </li>
 
             <li class=" -mt-0.5 flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
-              <img src="/icons/phone.svg" alt="Icono de teléfono" class="max-w-6" />
+              <img src={icons.phone.src} alt="Icono de teléfono" class="max-w-6" />
               <span class="flex-1 text-gray-700">+34 964 213 105</span>
             </li>
 
             <li class="-mt-0.5 flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
-              <img src="/icons/location.svg" alt="Icono de localización" class="max-w-6" />
+              <img src={icons.location.src} alt="Icono de localización" class="max-w-6" />
               <address class="-mt-0.5 flex-1 text-gray-700 not-italic">C/ Picaso, 5 - Bajo 12005 Castellón, Spain</address>
             </li>
           </ul>

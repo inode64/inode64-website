@@ -3,7 +3,7 @@ title: Como desbloquear el puerto 25 en los routers ADSL de telefónica
 date: 2010-09-18
 description: Aprende cómo desbloquear el puerto 25 (SMTP) en los routers ADSL de Telefónica con esta guía paso a paso para resolver problemas de envío de correos electrónicos.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/como-desploquear-el-puerto-25-smtp-en-los-routes-adsl-de-telefonica.webp'
+image: 'como-desploquear-el-puerto-25-smtp-en-los-routes-adsl-de-telefonica'
 category: 'blog'
 tags: [smtp, adsl, telefonica]
 isDraft: false

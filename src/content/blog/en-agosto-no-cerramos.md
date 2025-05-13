@@ -3,7 +3,7 @@ title: En agosto no cerramos, seguimos trabajando para ti
 date: 2012-08-10
 description: En INODE64 seguimos trabajando durante el verano para ofrecer soporte y mantener informados a nuestros clientes sobre las últimas novedades en nuestros productos y servicios.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/en-agosto-no-cerramos.webp'
+image: 'en-agosto-no-cerramos'
 category: 'blog'
 tags: [horario, verano, inode64]
 isDraft: false

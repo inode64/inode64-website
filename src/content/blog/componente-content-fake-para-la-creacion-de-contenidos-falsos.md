@@ -3,7 +3,7 @@ title: Componente "CONTENT_FAKE" para crear contenidos de prueba
 date: 2012-06-14
 description: Descubre cómo el componente "CONTENT_FAKE" para Joomla facilita la creación de contenidos falsos con textos de prueba e imágenes personalizadas, optimizando el desarrollo de sitios web.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/componente-content-fake-para-la-creacion-de-contenidos-falsos.webp'
+image: 'componente-content-fake-para-la-creacion-de-contenidos-falsos'
 category: 'joomla'
 tags: [joomla, componentes]
 isDraft: false

@@ -3,7 +3,7 @@ title: Migración de Servidores Gentoo de 32Bits a 64Bits
 date: 2014-12-05
 description: Una guía detallada sobre cómo migrar servidores Gentoo de 32 bits a 64 bits, optimizando el rendimiento y aprovechando al máximo el hardware moderno.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/migracion-de-servidores-gentoo-de-32bits-a-64bits.webp'
+image: 'migracion-de-servidores-gentoo-de-32bits-a-64bits'
 category: 'seguridad'
 tags: [gentoo, server]
 isDraft: false

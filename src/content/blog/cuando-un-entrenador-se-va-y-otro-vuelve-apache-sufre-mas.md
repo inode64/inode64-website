@@ -3,7 +3,7 @@ title: Cuando un entrenador se va y otro vuelve apache sufre mas
 date: 2011-12-12
 description: Un análisis de cómo los cambios en el cuerpo técnico del Villarreal CF afectan al rendimiento del servidor Apache, destacando estadísticas y curiosidades.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/cuando-un-entrenador-se-va-y-otro-vuelve-apache-sufre-mas.webp'
+image: 'cuando-un-entrenador-se-va-y-otro-vuelve-apache-sufre-mas'
 category: 'blog'
 tags: [villarrealcf, estadísticas, apache, cacti, hosting, server]
 isDraft: false

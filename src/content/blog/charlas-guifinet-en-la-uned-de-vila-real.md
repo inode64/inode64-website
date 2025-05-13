@@ -3,7 +3,7 @@ title: Charlas informativas de guifi.net en la Uned de Vila-real
 date: 2014-12-05
 description: Resumen de la charla sobre guifi.net en la UNED de Vila-real, destacando su historia, ventajas y la importancia de optimizar el espectro libre para uso público.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/charlas-guifinet-en-la-uned-de-vila-real.webp'
+image: 'charlas-guifinet-en-la-uned-de-vila-real'
 category: 'blog'
 tags: [guifi, internet, uned, vila-real]
 isDraft: false

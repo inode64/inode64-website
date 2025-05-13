@@ -1,7 +1,6 @@
 ---
 import services from "../../data/services.json";
 import Button from "../ui/Button.astro";
-
 ---
 <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:grid lg:h-screen lg:place-content-center">
   <div class="mx-auto max-w-270">
@@ -36,10 +35,10 @@ import Button from "../ui/Button.astro";
             srText={`sobre ${service.title.toLowerCase()}`}
           />
         </div>
-  
+
         <div class="p-6 lg:px-8">
           <p class="text-lg font-medium text-gray-900 sm:text-xl">Incluye:</p>
-          
+
           {service.details && Array.isArray(service.details) && (
             <ul class="mt-2 space-y-2 sm:mt-4">
               {service.details.map((detail) => (

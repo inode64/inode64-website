@@ -1,7 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "@/layouts/Layout.astro";
 import services from "../../data/services.json";
 import { siteConfig } from "@/config/site-config";
+import { serviceImages } from "../../assets/images/services";
 
 export async function getStaticPaths() {
   return services.map(service => ({
@@ -19,10 +21,10 @@ if (!service) {
 const { title, shortDescription, longDescription, details, imageName, keywords, price, priceUnit } = service;
 ---
 
-<Layout 
+<Layout
   title={`${title} | Servicios ${siteConfig.title}`}
   description={shortDescription}
-  image={`/images/products/${imageName}.webp`}
+  image={serviceImages[imageName]}
 >
   <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
     <section>
@@ -31,7 +33,7 @@ const { title, shortDescription, longDescription, details, imageName, keywords, 
           <div class="order-2 md:order-1">
             <h1 class="text-4xl font-extrabold text-gray-900">{title}</h1>
             <p class="mt-4 text-lg text-gray-700">{longDescription}</p>
-            
+
             {details && Array.isArray(details) && (
               <ul class="mt-6 list-disc list-inside space-y-2 text-gray-600">
                 {details.map(detail => (
@@ -58,11 +60,13 @@ const { title, shortDescription, longDescription, details, imageName, keywords, 
           </div>
 
           <div class="flex justify-center lg:justify-end order-1 md:order-2">
-            <img
-              transition:name={`${imageName}-image`}
-              src={`/images/products/${imageName}.webp`}
-              alt={title}
+            <Image
+              src={serviceImages[imageName]}
+              format="webp"
               class="w-full max-w-md rounded-lg shadow-xl object-cover"
+              loading="lazy"
+              alt={title}
+              transition:name={`${imageName}-image`}
             />
           </div>
         </div>

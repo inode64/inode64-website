@@ -3,7 +3,7 @@ title: Entrevista en el periódico nacional, El País
 date: 2010-10-02
 description: Una entrevista publicada en el Diario *El País* que destaca la iniciativa **Wireless Vila-real**, un proyecto innovador en el ámbito de la conectividad inalámbrica.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/entrevista-en-el-pais.webp'
+image: 'entrevista-en-el-pais'
 category: 'prensa'
 tags: [el país, prensa, entrevista]
 isDraft: false

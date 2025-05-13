@@ -3,7 +3,7 @@ title: INODE64 colabora en LAN Party VILANET 2013 11,12 y 13 Octubre
 date: 2013-09-25
 description: Resumen de la colaboración de INODE64 en la LAN Party VILANET 2013, destacando actividades tecnológicas, videojuegos, seguridad informática y soporte técnico.
 author: Francisco Javier Félix Belmonte
-image: '/images/blog/post/inode64-colabora-en-lan-party-vilanet-2013-11-12-y-13-octubre.webp'
+image: 'inode64-colabora-en-lan-party-vilanet-2013-11-12-y-13-octubre'
 category: 'blog'
 tags: [vilanet, party]
 isDraft: false
