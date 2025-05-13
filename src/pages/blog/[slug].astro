@@ -10,10 +10,10 @@ import { postImages } from "../../assets/images/blog/post";
 import felixAvatar from "../../assets/images/team/felix.webp";
 
 export const getStaticPaths = ( async() => {
-
     const blogPosts = await getCollection('blog');
+    const visiblePosts = blogPosts.filter(post => post.data.isDraft !== true);
 
-    return blogPosts.map( post => ({
+    return visiblePosts.map( post => ({
         params: { slug: post.slug },
         props: { post: post }
     }))
@@ -21,7 +21,6 @@ export const getStaticPaths = ( async() => {
 
 const { post } = Astro.props;
 const frontmatter = post.data;
-
 const { Content } = await post.render();
 ---
 
