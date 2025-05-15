@@ -26,13 +26,15 @@
     "@tailwindcss/vite": "^4.1.6",
     "astro": "^5.7.13",
     "astro-robots-txt": "^1.0.0",
-    "nodemailer": "^7.0.3",
     "tailwindcss": "^4.1.6",
     "imagemin": "^9.0.1",
     "imagemin-webp": "^8.0.0",
     "imagemin-pngquant": "^10.0.0",
     "imagemin-svgo": "^11.0.1",
     "glob": "11.0.2"
+  },
+  "ContactDependencies": {
+    "nodemailer": "^7.0.3"
   },
   "devDependencies": {
     "prettier": "^3.5.3",

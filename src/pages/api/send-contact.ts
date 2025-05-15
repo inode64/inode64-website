@@ -1,4 +1,5 @@
-export const prerender = false;
+/*
+Desactivado el contacto porque en modo SSG el envío de POST a una URL estática no esta soportado
 
 import type { APIRoute } from "astro";
 import nodemailer from "nodemailer";
@@ -41,3 +42,4 @@ Mensaje: ${message}
     return new Response(JSON.stringify({ success: false }), { status: 500 });
   }
 };
+*/

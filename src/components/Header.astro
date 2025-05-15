@@ -17,31 +17,60 @@ import logo from "../assets/images/brand/logo.webp";
         class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
       >
         <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
         </svg>
         <span class="sr-only">Abrir menú</span>
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-8">
-      <a href="/about" class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300">Nosotros</a>
-      <a href="/services" class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300">Servicios</a>
-      <a href="/projects" class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300">Proyectos</a>
-      <a href="/blog/1" class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300">Blog</a>
-      <a href="/partners" class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300">Partners</a>
-      <a href="/resources" class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300">Recursos</a>
+      <a href="/about" class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300">
+        Nosotros
+      </a>
+      <a
+        href="/services"
+        class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300"
+      >
+        Servicios
+      </a>
+      <a
+        href="/projects"
+        class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300"
+      >
+        Proyectos
+      </a>
+      <a href="/blog/1" class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300">
+        Blog
+      </a>
+      <a
+        href="/partners"
+        class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300"
+      >
+        Partners
+      </a>
+      <a
+        href="/resources"
+        class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300"
+      >
+        Recursos
+      </a>
+      <!-- Desactivado el contacto porque en modo SSG el envío de POST a una URL estática no esta soportado
       <a href="/contact" class="text-base font-semibold text-gray-800 hover:text-red-700 transition-colors duration-300">Contacto</a>
+      -->
     </div>
   </nav>
 
   <!-- Menú móvil -->
-  <div id="mobile-menu" class="opacity-0 pointer-events-none fixed inset-0 bg-white z-10 p-3 sm:max-w-xxl sm:ring-1 sm:ring-gray-900/10 transition-opacity duration-300 ease-in-out">
+  <div
+    id="mobile-menu"
+    class="opacity-0 pointer-events-none fixed inset-0 bg-white z-10 p-3 sm:max-w-xxl sm:ring-1 sm:ring-gray-900/10 transition-opacity duration-300 ease-in-out"
+  >
     <div class="flex items-center justify-between">
       <a href="/">
         <Image src={logo} format="webp" class="w-40 h-auto md:w-34 lg:w-40 p-2" loading="lazy" alt="inode64 logo" />
       </a>
       <button id="menu-close" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
         <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
         </svg>
         <span class="sr-only">Cerrar menú</span>
       </button>
@@ -53,7 +82,9 @@ import logo from "../assets/images/brand/logo.webp";
       <a href="/blog/1" class="block px-3 py-2 text-2xl font-semibold text-gray-800 hover:text-red-700">Blog</a>
       <a href="/partners" class="block px-3 py-2 text-2xl font-semibold text-gray-800 hover:text-red-700">Partners</a>
       <a href="/resources" class="block px-3 py-2 text-2xl font-semibold text-gray-800 hover:text-red-700">Recursos</a>
+      <!-- Desactivado el contacto porque en modo SSG el envío de POST a una URL estática no esta soportado
       <a href="/contact" class="block px-3 py-2 text-2xl font-semibold text-gray-800 hover:text-red-700">Contacto</a>
+      -->
     </div>
   </div>
 
@@ -70,8 +101,8 @@ import logo from "../assets/images/brand/logo.webp";
       menuClose?.addEventListener("click", () => {
         mobileMenu?.classList.add("opacity-0", "pointer-events-none");
       });
-    }
-    document.addEventListener('astro:page-load', handlePageLoad);
+    };
+    document.addEventListener("astro:page-load", handlePageLoad);
   </script>
 </header>
 <!-- Recuerda añadir `pt-24` (o según la altura real del header) al contenedor principal de cada página para evitar que el contenido quede oculto detrás del header fijo. -->
