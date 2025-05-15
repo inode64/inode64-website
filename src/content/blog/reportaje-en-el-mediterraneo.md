@@ -9,6 +9,8 @@ tags: [viveros, congresos]
 isDraft: false
 ---
 
-En el periódico *Mediterráneo* se destaca un artículo titulado **"La vida sigue y los negocios... también"**, donde se menciona que, aunque la economía claramente va a la baja, es innegable que muchas empresas y empresarios de Castellón no solo logran salir adelante, sino que también prosperan con éxito.
+En el periódico *Mediterráneo* se destaca un artículo titulado **"La vida sigue y los negocios... también"**, donde se
+menciona que, aunque la economía claramente va a la baja, es innegable que muchas empresas y empresarios de Castellón no
+solo logran salir adelante, sino que también prosperan con éxito.
 
 <!-- ![Artículo del periódico Mediterráneo](https://via.placeholder.com/800x400 "La vida sigue y los negocios... también") -->

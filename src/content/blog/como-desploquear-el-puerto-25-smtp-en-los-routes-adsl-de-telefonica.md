@@ -16,10 +16,12 @@ Con estos sencillos pasos, tendremos resuelto el problema en unos minutos:
 1. Eliminar el software malicioso que esté enviando SPAM a través de nuestra ADSL.
 2. Llamar al teléfono **900 35 70 00**.
 3. Facilitar nuestro número de teléfono asignado al ADSL.
-4. Solicitar amablemente a la operadora que, una vez eliminado el software malicioso, necesitamos que se desbloquee el envío de correo por el puerto 25 (SMTP).
+4. Solicitar amablemente a la operadora que, una vez eliminado el software malicioso, necesitamos que se desbloquee el
+   envío de correo por el puerto 25 (SMTP).
 
 ---
 
 Tras realizar la llamada, nuestra conexión debería quedar libre de bloqueos.
 
-⚠️ **Importante**: Si no hemos erradicado correctamente el software malicioso de todos los ordenadores de la red, en pocos días volveremos a sufrir el bloqueo.
+⚠️ **Importante**: Si no hemos erradicado correctamente el software malicioso de todos los ordenadores de la red, en
+pocos días volveremos a sufrir el bloqueo.

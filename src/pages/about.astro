@@ -5,68 +5,112 @@ import { icons } from "../assets/icons";
 import about from "../assets/images/about/about.svg";
 ---
 
-<Layout
-  title={seoConfig.about.title}
-  description={seoConfig.about.description}
-  image={seoConfig.about.image}
->
-    <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
-        <div class="mx-auto max-w-250 text-center">
-            <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Quiénes Somos</h2>
-            <p class="mt-5 text-lg/8 text-gray-600">Ofrecemos soluciones tecnológicas para empresas, incluyendo administración de sistemas, hospedaje web, soluciones en la nube y mantenimiento de software. Nuestra misión es mejorar el rendimiento de tu negocio con tecnología confiable.</p>
-          </div>
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-1 sm:gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 mt-8 sm:mt-8">
-          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div class="lg:pr-4">
-              <div class="lg:max-w-lg">
-                <p class="text-base/7 font-semibold text-red-800">Tecnología y Eficiencia</p>
-                <h2 class="mt-2 text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">Optimización y Seguridad</h2>
-                <p class="mt-6 text-lg/8 text-gray-600">Diseñamos e implementamos infraestructuras IT adaptadas a cada empresa, priorizando la eficiencia operativa, la seguridad de los datos y la capacidad de crecimiento a medida que evoluciona tu negocio.</p>
-              </div>
-            </div>
-          </div>
-          <div class="lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden lg:pt-15">
-            <img src={about.src} alt="about background" />
-          </div>
-          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div class="lg:pr-4">
-              <div class="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
-                <p>En nuestra empresa, nos dedicamos a brindar soluciones tecnológicas que se adaptan a las necesidades específicas de cada cliente. Contamos con un equipo de expertos que trabaja constantemente para ofrecer un servicio de calidad. Nos enfocamos en la innovación y la mejora continua para garantizar la satisfacción de nuestros clientes.</p>
-                <ul role="list" class="mt-8 space-y-8 text-gray-600">
-                  <li class="flex gap-x-3">
-                    <img src={icons.cloudAbout.src} alt="Icono nube" class="size-10" />
-                    <span><strong class="font-semibold text-gray-900">Gestión y despliegue eficiente.</strong> Implementamos estrategias efectivas para asegurar un funcionamiento óptimo de tus sistemas tecnológicos.</span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <img src={icons.lockAbout.src} alt="Icono candado" class="size-10" />
-                    <span><strong class="font-semibold text-gray-900">Seguridad garantizada con certificados SSL.</strong> Protegemos tus datos y los de tus clientes mediante estándares de seguridad de alto nivel.</span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <img src={icons.driveAbout.src} alt="Icono disco ssd" class="size-10" />
-                    <span><strong class="font-semibold text-gray-900">Copias de seguridad automatizadas para tus datos.</strong> Aseguramos la continuidad de tu negocio con respaldos regulares y seguros.</span>
-                  </li>
-                </ul>
-                <p class="mt-8">Nos comprometemos a ofrecer un servicio excepcional, adaptándonos a las necesidades cambiantes del mercado y de nuestros clientes. La innovación y la satisfacción del cliente son nuestras principales prioridades.</p>
-                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Servicios a Medida</h2>
-                <p class="mt-6">Nos adaptamos a las necesidades de cada cliente, ofreciendo desde administración de servidores hasta implementación de tecnología Thin Client para optimizar el uso de recursos.</p>
-                <ul role="list" class="mt-8 space-y-8 text-gray-600">
-                  <li class="flex gap-x-3">
-                    <img src={icons.circleAbout.src} alt="Icono circulo" class="size-8" />
-                    <span><strong class="font-semibold text-gray-900">Consultoría especializada.</strong> Ofrecemos asesoramiento técnico para identificar las mejores soluciones tecnológicas para tu negocio.</span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <img src={icons.circleAbout.src} alt="Icono circulo" class="size-8" />
-                    <span><strong class="font-semibold text-gray-900">Soporte técnico 24/7.</strong> Nuestro equipo está disponible en todo momento para resolver cualquier incidencia o consulta técnica.</span>
-                  </li>
-                  <li class="flex gap-x-3">
-                    <img src={icons.circleAbout.src} alt="Icono circulo" class="size-8" />
-                    <span><strong class="font-semibold text-gray-900">Integración de sistemas.</strong> Facilitamos la conexión entre diferentes plataformas y herramientas para optimizar tus procesos.</span>
-                  </li>
-                </ul>
-                <p class="mt-8">Nuestro enfoque está en construir relaciones a largo plazo con nuestros clientes, basadas en la confianza, la calidad y la innovación. Estamos aquí para ayudarte a alcanzar tus objetivos tecnológicos y empresariales.</p>
-              </div>
-            </div>
+<Layout title={seoConfig.about.title} description={seoConfig.about.description} image={seoConfig.about.image}>
+  <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
+    <div class="mx-auto max-w-250 text-center">
+      <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Quiénes Somos</h2>
+      <p class="mt-5 text-lg/8 text-gray-600">
+        Ofrecemos soluciones tecnológicas para empresas, incluyendo administración de sistemas, hospedaje web,
+        soluciones en la nube y mantenimiento de software. Nuestra misión es mejorar el rendimiento de tu negocio con
+        tecnología confiable.
+      </p>
+    </div>
+    <div
+      class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-1 sm:gap-y-10 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 mt-8 sm:mt-8"
+    >
+      <div
+        class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+      >
+        <div class="lg:pr-4">
+          <div class="lg:max-w-lg">
+            <p class="text-base/7 font-semibold text-red-800">Tecnología y Eficiencia</p>
+            <h2 class="mt-2 text-2xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-3xl">
+              Optimización y Seguridad
+            </h2>
+            <p class="mt-6 text-lg/8 text-gray-600">
+              Diseñamos e implementamos infraestructuras IT adaptadas a cada empresa, priorizando la eficiencia
+              operativa, la seguridad de los datos y la capacidad de crecimiento a medida que evoluciona tu negocio.
+            </p>
           </div>
         </div>
       </div>
+      <div class="lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden lg:pt-15">
+        <img src={about.src} alt="about background" />
+      </div>
+      <div
+        class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+      >
+        <div class="lg:pr-4">
+          <div class="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
+            <p>
+              En nuestra empresa, nos dedicamos a brindar soluciones tecnológicas que se adaptan a las necesidades
+              específicas de cada cliente. Contamos con un equipo de expertos que trabaja constantemente para ofrecer un
+              servicio de calidad. Nos enfocamos en la innovación y la mejora continua para garantizar la satisfacción
+              de nuestros clientes.
+            </p>
+            <ul role="list" class="mt-8 space-y-8 text-gray-600">
+              <li class="flex gap-x-3">
+                <img src={icons.cloudAbout.src} alt="Icono nube" class="size-10" />
+                <span>
+                  <strong class="font-semibold text-gray-900">Gestión y despliegue eficiente.</strong> Implementamos estrategias
+                  efectivas para asegurar un funcionamiento óptimo de tus sistemas tecnológicos.
+                </span>
+              </li>
+              <li class="flex gap-x-3">
+                <img src={icons.lockAbout.src} alt="Icono candado" class="size-10" />
+                <span>
+                  <strong class="font-semibold text-gray-900">Seguridad garantizada con certificados SSL.</strong> Protegemos
+                  tus datos y los de tus clientes mediante estándares de seguridad de alto nivel.
+                </span>
+              </li>
+              <li class="flex gap-x-3">
+                <img src={icons.driveAbout.src} alt="Icono disco ssd" class="size-10" />
+                <span>
+                  <strong class="font-semibold text-gray-900">Copias de seguridad automatizadas para tus datos.</strong>
+                  Aseguramos la continuidad de tu negocio con respaldos regulares y seguros.
+                </span>
+              </li>
+            </ul>
+            <p class="mt-8">
+              Nos comprometemos a ofrecer un servicio excepcional, adaptándonos a las necesidades cambiantes del mercado
+              y de nuestros clientes. La innovación y la satisfacción del cliente son nuestras principales prioridades.
+            </p>
+            <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Servicios a Medida</h2>
+            <p class="mt-6">
+              Nos adaptamos a las necesidades de cada cliente, ofreciendo desde administración de servidores hasta
+              implementación de tecnología Thin Client para optimizar el uso de recursos.
+            </p>
+            <ul role="list" class="mt-8 space-y-8 text-gray-600">
+              <li class="flex gap-x-3">
+                <img src={icons.circleAbout.src} alt="Icono circulo" class="size-8" />
+                <span>
+                  <strong class="font-semibold text-gray-900">Consultoría especializada.</strong> Ofrecemos asesoramiento
+                  técnico para identificar las mejores soluciones tecnológicas para tu negocio.
+                </span>
+              </li>
+              <li class="flex gap-x-3">
+                <img src={icons.circleAbout.src} alt="Icono circulo" class="size-8" />
+                <span>
+                  <strong class="font-semibold text-gray-900">Soporte técnico 24/7.</strong> Nuestro equipo está disponible
+                  en todo momento para resolver cualquier incidencia o consulta técnica.
+                </span>
+              </li>
+              <li class="flex gap-x-3">
+                <img src={icons.circleAbout.src} alt="Icono circulo" class="size-8" />
+                <span>
+                  <strong class="font-semibold text-gray-900">Integración de sistemas.</strong> Facilitamos la conexión entre
+                  diferentes plataformas y herramientas para optimizar tus procesos.
+                </span>
+              </li>
+            </ul>
+            <p class="mt-8">
+              Nuestro enfoque está en construir relaciones a largo plazo con nuestros clientes, basadas en la confianza,
+              la calidad y la innovación. Estamos aquí para ayudarte a alcanzar tus objetivos tecnológicos y
+              empresariales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>

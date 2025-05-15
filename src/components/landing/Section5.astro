@@ -1,29 +1,33 @@
 ---
-import { getCollection } from "astro:content"
+import { getCollection } from "astro:content";
 import TypedBlogPost from "../blog/TypedBlogPost.astro";
 import Button from "../ui/Button.astro";
 
-const blogPosts = (await getCollection('blog', (post) => post.data.isDraft === false))
+const blogPosts = (await getCollection("blog", (post) => post.data.isDraft === false))
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
   .slice(0, 3);
 ---
+
 <section class="max-w-screen-xl mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:grid lg:h-screen lg:place-content-center">
-    <div class="mx-auto max-w-7xl px-2 lg:px-8">
-        <div class="mx-auto max-w-7xl lg:mx-0">
-            <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl text-center">Últimas publicaciones</h2>
-            <p class="mt-2 text-lg/8 text-gray-600 text-center">Descubre cómo optimizar tu infraestructura IT con nuestros consejos expertos. Aprende a implementar soluciones innovadoras, mejorar la seguridad de tus sistemas y maximizar la eficiencia operativa de tu empresa.</p>
-        </div>
-        <section>
-          <div class="container px-2 lg:px-6 py-10 mx-auto">
-            <div class="grid grid-cols-1 gap-8 mt-8 md:mt-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-              {blogPosts.map((post, i) => (
-                <TypedBlogPost post={post} className={`${i === 2 ? 'hidden lg:block' : ''}`} />
-              ))}
-            </div>
-          </div>      
-        </section>
-        <div class="mt-10 text-center">
-          <Button type="button" text="Ver más publicaciones" href="/blog" />
-        </div>
+  <div class="mx-auto max-w-7xl px-2 lg:px-8">
+    <div class="mx-auto max-w-7xl lg:mx-0">
+      <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl text-center">
+        Últimas publicaciones
+      </h2>
+      <p class="mt-2 text-lg/8 text-gray-600 text-center">
+        Descubre cómo optimizar tu infraestructura IT con nuestros consejos expertos. Aprende a implementar soluciones
+        innovadoras, mejorar la seguridad de tus sistemas y maximizar la eficiencia operativa de tu empresa.
+      </p>
     </div>
+    <section>
+      <div class="container px-2 lg:px-6 py-10 mx-auto">
+        <div class="grid grid-cols-1 gap-8 mt-8 md:mt-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+          {blogPosts.map((post, i) => <TypedBlogPost post={post} className={`${i === 2 ? "hidden lg:block" : ""}`} />)}
+        </div>
+      </div>
+    </section>
+    <div class="mt-10 text-center">
+      <Button type="button" text="Ver más publicaciones" href="/blog" />
+    </div>
+  </div>
 </section>

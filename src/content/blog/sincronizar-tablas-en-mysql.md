@@ -9,7 +9,11 @@ tags: [mysql, federated, gentoo]
 isDraft: false
 ---
 
-Cuando se realizan páginas web, a veces resulta necesario compartir datos entre ellas, como puede ser el caso de compartir los usuarios entre varias webs diferentes en Joomla. Para eso, MySQL nos proporciona una funcionalidad llamada [FEDERATED](http://dev.mysql.com/doc/refman/5.6/en/federated-storage-engine.html), que permite usar tablas en remoto como si estuvieran almacenadas en local. Para evitar problemas de pérdida de datos y velocidad, lo mejor es usarlo en el mismo servidor.
+Cuando se realizan páginas web, a veces resulta necesario compartir datos entre ellas, como puede ser el caso de
+compartir los usuarios entre varias webs diferentes en Joomla. Para eso, MySQL nos proporciona una funcionalidad
+llamada [FEDERATED](http://dev.mysql.com/doc/refman/5.6/en/federated-storage-engine.html), que permite usar tablas en
+remoto como si estuvieran almacenadas en local. Para evitar problemas de pérdida de datos y velocidad, lo mejor es
+usarlo en el mismo servidor.
 
 Para ello, en *Gentoo* necesitamos activar:
 
@@ -87,7 +91,8 @@ CREATE TABLE `h3241_users` (
 CONNECTION='mysql://usuario:password@localhost/basededatos/a4821_users';
 ```
 
-Hemos quitado del original el `AUTO_INCREMENT`, cambiado el `ENGINE` y, por supuesto, la conexión a la otra base de datos.
+Hemos quitado del original el `AUTO_INCREMENT`, cambiado el `ENGINE` y, por supuesto, la conexión a la otra base de
+datos.
 
 ### Referencias
 

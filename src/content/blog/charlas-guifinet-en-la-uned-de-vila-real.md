@@ -9,6 +9,8 @@ tags: [guifi, internet, uned, vila-real]
 isDraft: false
 ---
 
-Asistimos en la **UNED** de Vila-real a la charla de [guifi.net](https://guifi.net), realizadas por *Pablo Boronat* y *Miguel Pérez*, donde se dio a conocer a los asistentes la red, una breve introducción de su historia, qué ventajas ofrece y por qué debemos aunar esfuerzos para aprovechar mejor el poco espectro libre que existe para uso público.
+Asistimos en la **UNED** de Vila-real a la charla de [guifi.net](https://guifi.net), realizadas por *Pablo Boronat* y
+*Miguel Pérez*, donde se dio a conocer a los asistentes la red, una breve introducción de su historia, qué ventajas
+ofrece y por qué debemos aunar esfuerzos para aprovechar mejor el poco espectro libre que existe para uso público.
 
 Al final, se resolvieron las dudas del público asistente.

@@ -9,6 +9,8 @@ tags: [mediterraneo, prensa, ciberseguridad]
 isDraft: false
 ---
 
-En la edición del 12 de enero de 2009 del periódico *Mediterráneo*, se publicó un artículo en el que expertos alertan sobre los crecientes riesgos de la inseguridad informática. Este artículo destaca la importancia de tomar medidas preventivas para proteger los sistemas y datos frente a posibles amenazas cibernéticas.
+En la edición del 12 de enero de 2009 del periódico *Mediterráneo*, se publicó un artículo en el que expertos alertan
+sobre los crecientes riesgos de la inseguridad informática. Este artículo destaca la importancia de tomar medidas
+preventivas para proteger los sistemas y datos frente a posibles amenazas cibernéticas.
 
 <!-- ![Artículo del periódico Mediterráneo sobre inseguridad informática](/images/blog/mediterraneo-inseguridad-informatica.png) -->

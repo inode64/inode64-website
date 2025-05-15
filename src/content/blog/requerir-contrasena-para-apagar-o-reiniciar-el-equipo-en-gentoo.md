@@ -9,7 +9,8 @@ tags: [passwords, gentoo]
 isDraft: false
 ---
 
-En [Gentoo](http://www.gentoo.org), por defecto no está activa la restricción de pedir la contraseña del administrador para apagar o reiniciar el equipo desde GDM o el escritorio.
+En [Gentoo](http://www.gentoo.org), por defecto no está activa la restricción de pedir la contraseña del administrador
+para apagar o reiniciar el equipo desde GDM o el escritorio.
 
 ---
 

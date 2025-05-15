@@ -9,7 +9,8 @@ tags: [php, emails, clean code]
 isDraft: false
 ---
 
-Cuando creamos una aplicación en PHP que necesite enviar correos electrónicos de forma internacionalizada, nos encontramos con algunos desafíos comunes:
+Cuando creamos una aplicación en PHP que necesite enviar correos electrónicos de forma internacionalizada, nos
+encontramos con algunos desafíos comunes:
 
 - Codificación de caracteres (UTF-8, ISO-8859-1, etc.).
 - Compatibilidad con distintos clientes de correo.
@@ -19,7 +20,8 @@ Cuando creamos una aplicación en PHP que necesite enviar correos electrónicos 
 
 ### Solución propuesta
 
-Una solución eficiente es usar la función `mb_send_mail()` de PHP, que permite manejar codificaciones multibyte y establecer correctamente los encabezados.
+Una solución eficiente es usar la función `mb_send_mail()` de PHP, que permite manejar codificaciones multibyte y
+establecer correctamente los encabezados.
 
 Ejemplo básico:
 

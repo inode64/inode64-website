@@ -11,13 +11,17 @@ isDraft: false
 
 ## Introducción
 
-Lo primero es conocer el hardware que tiene instalado la máquina virtual que deseemos migrar. Virtual PC utiliza archivos de configuración por máquina con la extensión `.vmc`, los cuales están codificados en UTF-16. Para poder abrirlos, debemos convertirlos con el siguiente comando:
+Lo primero es conocer el hardware que tiene instalado la máquina virtual que deseemos migrar. Virtual PC utiliza
+archivos de configuración por máquina con la extensión `.vmc`, los cuales están codificados en UTF-16. Para poder
+abrirlos, debemos convertirlos con el siguiente comando:
 
 ```bash
 iconv -f utf-16 -t utf-8 origen.vmc | dos2unix > origen.xml
 ```
 
-En este archivo podemos encontrar información como la memoria (`ram_size`), el tipo de tarjeta de red (`virtual_network`), su dirección MAC (`ethernet_card_address`), los discos duros instalados (`ide_controller`) y cualquier otro hardware adicional necesario.
+En este archivo podemos encontrar información como la memoria (`ram_size`), el tipo de tarjeta de red (
+`virtual_network`), su dirección MAC (`ethernet_card_address`), los discos duros instalados (`ide_controller`) y
+cualquier otro hardware adicional necesario.
 
 ### Ejemplo de archivo `.vmc`
 
@@ -90,10 +94,13 @@ kvm-img convert -f vpc -O raw origen.vhd destino.img
 
 ## Creación de la máquina virtual
 
-Ahora podemos crear la máquina virtual con todos los parámetros necesarios. En caso de ser una máquina virtual con Windows, se deben realizar algunos pasos adicionales para evitar problemas:
+Ahora podemos crear la máquina virtual con todos los parámetros necesarios. En caso de ser una máquina virtual con
+Windows, se deben realizar algunos pasos adicionales para evitar problemas:
 
 1. **Arrancar con un CD de utilidades**
-   Utiliza un CD como [Hiren's Boot](http://www.hirensbootcd.org/download/) y arranca el mini Windows XP. Luego, ejecuta dentro del menú "Registry" la opción **Fix hard disk controller (fix_hdc.cmd)** para evitar el pantallazo azul al iniciar. Esto se debe a que Windows crea un registro especial desde donde se instala la máquina.
+   Utiliza un CD como [Hiren's Boot](http://www.hirensbootcd.org/download/) y arranca el mini Windows XP. Luego, ejecuta
+   dentro del menú "Registry" la opción **Fix hard disk controller (fix_hdc.cmd)** para evitar el pantallazo azul al
+   iniciar. Esto se debe a que Windows crea un registro especial desde donde se instala la máquina.
 
 2. **Desinstalar Virtual Machine Additions**
    Asegúrate de desinstalar este programa para evitar conflictos.

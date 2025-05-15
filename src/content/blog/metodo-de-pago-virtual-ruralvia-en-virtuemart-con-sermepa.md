@@ -9,9 +9,15 @@ tags: [pagos virtuales, serpema, ruralvía]
 isDraft: false
 ---
 
-Partiendo del código de [SERMEPA webempresa](http://www.webempresa.com/blog/item/307-configuracion-de-la-pasarela-de-pago-sermepa-en-virtuemart.html), seguimos los pasos de instalación y el código proporcionado, y cuando creamos el módulo de pago en Virtuemart lo cambiamos por este adaptado a los requerimientos especiales de Ruralvía que, aunque use el sistema SERMEPA, han realizado modificaciones en los parámetros enviados y la forma de generar la clave encriptada en sha1.
+Partiendo del código
+de [SERMEPA webempresa](http://www.webempresa.com/blog/item/307-configuracion-de-la-pasarela-de-pago-sermepa-en-virtuemart.html),
+seguimos los pasos de instalación y el código proporcionado, y cuando creamos el módulo de pago en Virtuemart lo
+cambiamos por este adaptado a los requerimientos especiales de Ruralvía que, aunque use el sistema SERMEPA, han
+realizado modificaciones en los parámetros enviados y la forma de generar la clave encriptada en sha1.
 
-Dentro del **Administrator** vamos a **Virtuemart > Formas de pago** y añadimos una nueva con tipo "**HTML-Form based (e.g. PayPal)**" y con **Nombre para clase de pago** a `ps_payment`. Luego, en la pestaña de **Configuración**, pegamos el nuevo código.
+Dentro del **Administrator** vamos a **Virtuemart > Formas de pago** y añadimos una nueva con tipo "**HTML-Form based (
+e.g. PayPal)**" y con **Nombre para clase de pago** a `ps_payment`. Luego, en la pestaña de **Configuración**, pegamos
+el nuevo código.
 
 ```php
 // Código PHP adaptado para Ruralvía

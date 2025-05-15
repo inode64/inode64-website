@@ -1,41 +1,39 @@
 ---
-const { 
-  type = 'button', 
-  text, 
-  href = '', 
-  withFull = false, 
-  disabled = false, 
-  className = '',
-  srText = ''
+const {
+  type = "button",
+  text,
+  href = "",
+  withFull = false,
+  disabled = false,
+  className = "",
+  srText = "",
 } = Astro.props;
 ---
 
-{href ? (
-  <a
-    href={disabled ? undefined : href}
-    class={`group inline-flex items-center justify-center gap-2 rounded-md ${
-      disabled 
-        ? 'bg-gray-300 cursor-deny' 
-        : 'bg-red-800 hover:bg-red-700 cursor-pointer'
-    } px-5 py-3 text-white text-sm font-medium transition focus:outline-none ${
-      withFull ? 'w-full' : ''
-    } ${className}`}
-  >
-    {text}
-    {srText && <span class="sr-only"> {srText} </span>}
-  </a>
-) : (
-  <button
-    type={type}
-    disabled={disabled}
-    class={`group inline-flex items-center justify-center gap-2 rounded-md ${
-      disabled 
-        ? 'bg-gray-300 cursor-deny' 
-        : 'bg-red-800 hover:bg-red-700 cursor-pointer'
-    } px-5 py-3 text-white text-sm font-medium transition focus:outline-none ${
-      withFull ? 'w-full' : ''
-    } ${className}`}
-  >
-    {text}
-  </button>
-)}
+{
+  href ? (
+    <a
+      href={disabled ? undefined : href}
+      class={`group inline-flex items-center justify-center gap-2 rounded-md ${
+        disabled ? "bg-gray-300 cursor-deny" : "bg-red-800 hover:bg-red-700 cursor-pointer"
+      } px-5 py-3 text-white text-sm font-medium transition focus:outline-none ${
+        withFull ? "w-full" : ""
+      } ${className}`}
+    >
+      {text}
+      {srText && <span class="sr-only"> {srText} </span>}
+    </a>
+  ) : (
+    <button
+      type={type}
+      disabled={disabled}
+      class={`group inline-flex items-center justify-center gap-2 rounded-md ${
+        disabled ? "bg-gray-300 cursor-deny" : "bg-red-800 hover:bg-red-700 cursor-pointer"
+      } px-5 py-3 text-white text-sm font-medium transition focus:outline-none ${
+        withFull ? "w-full" : ""
+      } ${className}`}
+    >
+      {text}
+    </button>
+  )
+}

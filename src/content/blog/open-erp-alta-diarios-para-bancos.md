@@ -9,12 +9,15 @@ tags: [bancos, openerp, configuración]
 isDraft: false
 ---
 
-El diario es el lugar donde se registran los asientos contables. En **OpenERP** es mejor tener un diario para cada tipo de asiento para facilitar su codificación. Por ejemplo, es habitual que una compañía tenga definidos todos estos diarios:
+El diario es el lugar donde se registran los asientos contables. En **OpenERP** es mejor tener un diario para cada tipo
+de asiento para facilitar su codificación. Por ejemplo, es habitual que una compañía tenga definidos todos estos
+diarios:
 
 - **General**: Para asientos varios: Nóminas, liquidaciones de impuestos, movimientos de capital, correcciones...
 - **Ventas**: Para registrar las ventas (facturas de cliente).
 - **Compras**: Para registrar las compras (facturas de proveedor).
-- Uno para cada **banco/caja** con el que trabaje la compañía (se pueden crear fácilmente al ejecutar el asistente de creación del plan contable a partir de la plantilla).
+- Uno para cada **banco/caja** con el que trabaje la compañía (se pueden crear fácilmente al ejecutar el asistente de
+  creación del plan contable a partir de la plantilla).
 - En **efectivo o caja**: Si se cobra/paga con dinero en efectivo.
 - Pagos **Paypal o similar**: Si gestionan pagos por internet.
 - **Stocks**: Para registrar el valor de las existencias.
@@ -29,7 +32,9 @@ La configuración de los diarios se realiza desde el menú:
 - Tipo: Efectivo o Caja, Venta, Compra, General, Situación.
 - Vista: Vista a usar en la introducción de apuntes.
 - Secuencia del asiento: Numeración a usar en los asientos nuevos (normalmente la misma para todos).
-- Cuenta debe por defecto, Cuenta haber por defecto: Requerido en los diarios de efectivo o caja, es la cuenta usada en la contrapartida del asiento realizado en este diario.
-- Permitir cancelación de asientos: A tener en cuenta en diarios de ventas y compras. Si está desactivado, no se pueden cancelar las facturas.
+- Cuenta debe por defecto, Cuenta haber por defecto: Requerido en los diarios de efectivo o caja, es la cuenta usada en
+  la contrapartida del asiento realizado en este diario.
+- Permitir cancelación de asientos: A tener en cuenta en diarios de ventas y compras. Si está desactivado, no se pueden
+  cancelar las facturas.
 
 ### Ejemplo para crear un banco

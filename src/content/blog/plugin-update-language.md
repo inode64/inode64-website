@@ -9,7 +9,8 @@ tags: [joomla, joomfish, frontend, plugin]
 isDraft: false
 ---
 
-Plugin para Joomla que permite modificar automáticamente las preferencias de idioma del usuario en el frontend, simplemente cambiando de idioma con JoomFish.
+Plugin para Joomla que permite modificar automáticamente las preferencias de idioma del usuario en el frontend,
+simplemente cambiando de idioma con JoomFish.
 
 ---
 

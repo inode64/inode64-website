@@ -2,69 +2,75 @@
 import services from "../../data/services.json";
 import Button from "../ui/Button.astro";
 ---
+
 <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:grid lg:h-screen lg:place-content-center">
   <div class="mx-auto max-w-270">
     <h2 class="text-4xl text-center font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
       Servicios destacados
     </h2>
     <p class="mt-2 text-lg/8 text-gray-600 text-center pb-10">
-      Contrata el servicio que mejor se adapte a las necesidades de tu empresa o proyecto personal. Ofrecemos opciones flexibles para todos los niveles, asegurando que encuentres la solución perfecta para alcanzar tus objetivos y maximizar tu potencial.
+      Contrata el servicio que mejor se adapte a las necesidades de tu empresa o proyecto personal. Ofrecemos opciones
+      flexibles para todos los niveles, asegurando que encuentres la solución perfecta para alcanzar tus objetivos y
+      maximizar tu potencial.
     </p>
   </div>
   <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-2 md:gap-8 justify-center">
     {
-      services.slice(0, 2).map(service => (
-      <div class="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs">
-        <div class="p-6 pb-0 sm:px-8 rounded-2xl border-0" style="background: linear-gradient(to bottom, rgba(255, 0, 0, 0.1), rgba(255, 255, 255, 0.1));">
-          <h2 class="text-xl font-medium text-gray-900">
-            {service.title}
-            <span class="sr-only">Plan</span>
-          </h2>
-          <div>
-            <p class="mt-2 pb-4 text-gray-700">{service.shortDescription}</p>
-            {/* <p class="mt-2 sm:mt-4 text-right">
+      services.slice(0, 2).map((service) => (
+        <div class="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs">
+          <div
+            class="p-6 pb-0 sm:px-8 rounded-2xl border-0"
+            style="background: linear-gradient(to bottom, rgba(255, 0, 0, 0.1), rgba(255, 255, 255, 0.1));"
+          >
+            <h2 class="text-xl font-medium text-gray-900">
+              {service.title}
+              <span class="sr-only">Plan</span>
+            </h2>
+            <div>
+              <p class="mt-2 pb-4 text-gray-700">{service.shortDescription}</p>
+              {/* <p class="mt-2 sm:mt-4 text-right">
               <strong class="text-3xl font-bold text-gray-900 sm:text-5xl">{service.price}</strong>
               <span class="text-xs font-medium text-gray-700">{service.priceUnit}</span>
             </p> */}
+            </div>
+            <Button
+              type="button"
+              withFull={true}
+              text="Más información"
+              href={`/services/${service.slug}`}
+              srText={`sobre ${service.title.toLowerCase()}`}
+            />
           </div>
-          <Button
-            type="button"
-            withFull={true}
-            text="Más información"
-            href={`/services/${service.slug}`}
-            srText={`sobre ${service.title.toLowerCase()}`}
-          />
+
+          <div class="p-6 lg:px-8">
+            <p class="text-lg font-medium text-gray-900 sm:text-xl">Incluye:</p>
+
+            {service.details && Array.isArray(service.details) && (
+              <ul class="mt-2 space-y-2 sm:mt-4">
+                {service.details.map((detail) => (
+                  <li class="flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5 text-red-700 shadow-sm"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span class="text-gray-700 text-sm">{detail}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
-
-        <div class="p-6 lg:px-8">
-          <p class="text-lg font-medium text-gray-900 sm:text-xl">Incluye:</p>
-
-          {service.details && Array.isArray(service.details) && (
-            <ul class="mt-2 space-y-2 sm:mt-4">
-              {service.details.map((detail) => (
-                <li class="flex items-center gap-1">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-5 text-red-700 shadow-sm"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                  </svg>
-
-                  <span class="text-gray-700 text-sm">{detail}</span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      </div>
       ))
     }
-    </div>
-    <div class="mt-8 text-center">
-      <Button type="button" text="Ver todos los servicios" href="/services" />
-    </div>
   </div>
+  <div class="mt-8 text-center">
+    <Button type="button" text="Ver todos los servicios" href="/services" />
+  </div>
+</div>

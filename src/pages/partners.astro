@@ -4,54 +4,45 @@ import Layout from "@/layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
 import { partnerImages } from "../assets/images/partners";
 import partners from "../data/partners.json";
-
 ---
 
-<Layout
-  title={seoConfig.partners.title}
-  description={seoConfig.partners.description}
-  image={seoConfig.partners.image}
->
+<Layout title={seoConfig.partners.title} description={seoConfig.partners.description} image={seoConfig.partners.image}>
   <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
     <div class="mx-auto max-w-250 text-center">
-      <h2
-        class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl"
-      >
-        Partners
-      </h2>
+      <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Partners</h2>
       <p class="mt-5 text-lg/8 text-gray-600">
-        Descubre las empresas que colaboran con INODE64, formando alianzas
-        estratégicas para impulsar la innovación y el desarrollo de soluciones
-        tecnológicas avanzadas. Juntos, creamos un impacto positivo en la industria.
+        Descubre las empresas que colaboran con INODE64, formando alianzas estratégicas para impulsar la innovación y el
+        desarrollo de soluciones tecnológicas avanzadas. Juntos, creamos un impacto positivo en la industria.
       </p>
     </div>
-    <div
-      class="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-x-25 gap-y-16 pt-3 lg:mx-auto lg:max-w-4xl"
-    >
+    <div class="mx-auto mt-5 grid max-w-2xl grid-cols-1 gap-x-25 gap-y-16 pt-3 lg:mx-auto lg:max-w-4xl">
       <ul role="list" class="divide-y divide-gray-100">
         {
-          partners.map ( partner => (
-        <li class="flex flex-col sm:flex-row justify-between gap-x-6 py-5 mb-5">
-          <div class="flex flex-col sm:flex-row min-w-0 gap-x-4 items-center sm:items-start">
-            <Image
-              src={partnerImages[partner.image]}
-              format="webp"
-              class="size-29 border border-gray-200/25 shadow flex-none rounded-full bg-gray-50"
-              loading="lazy"
-              alt={partner.name}
-           />
-            <div class="min-w-0 flex-auto text-center sm:text-left">
-          <p class="text-2xl font-semibold text-gray-900">{partner.name}</p>
-          <p class="mt-3 text-sm/6 text-gray-500">{partner.description}</p>
-            <a href={partner.url} class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-red-800">
-              Ir al sitio web
-              <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-            &rarr;
-              </span>
-            </a>
-            </div>
-          </div>
-        </li>
+          partners.map((partner) => (
+            <li class="flex flex-col sm:flex-row justify-between gap-x-6 py-5 mb-5">
+              <div class="flex flex-col sm:flex-row min-w-0 gap-x-4 items-center sm:items-start">
+                <Image
+                  src={partnerImages[partner.image]}
+                  format="webp"
+                  class="size-29 border border-gray-200/25 shadow flex-none rounded-full bg-gray-50"
+                  loading="lazy"
+                  alt={partner.name}
+                />
+                <div class="min-w-0 flex-auto text-center sm:text-left">
+                  <p class="text-2xl font-semibold text-gray-900">{partner.name}</p>
+                  <p class="mt-3 text-sm/6 text-gray-500">{partner.description}</p>
+                  <a
+                    href={partner.url}
+                    class="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-red-800"
+                  >
+                    Ir al sitio web
+                    <span aria-hidden="true" class="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                      &rarr;
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </li>
           ))
         }
       </ul>

@@ -1,62 +1,62 @@
 [
-    {
-        "question": "¿Qué servicios ofrece INODE64?",
-        "answer": "INODE64 ofrece servicios de desarrollo de software, consultoría tecnológica, auditorías de seguridad y soluciones personalizadas para empresas."
-    },
-    {
-        "question": "¿Cómo puedo contactar con el equipo de soporte de INODE64?",
-        "answer": "Puedes contactar con el equipo de soporte de INODE64 a través del formulario de contacto en su página web o enviando un correo a soporte@inode64.com."
-    },
-    {
-        "question": "¿INODE64 ofrece soluciones personalizadas para empresas?",
-        "answer": "Sí, INODE64 se especializa en crear soluciones tecnológicas personalizadas adaptadas a las necesidades de cada cliente."
-    },
-    {
-        "question": "¿Qué experiencia tiene INODE64 en el sector tecnológico?",
-        "answer": "INODE64 cuenta con años de experiencia trabajando con empresas de diferentes sectores, ofreciendo soluciones innovadoras y de alta calidad."
-    },
-    {
-        "question": "¿INODE64 trabaja con startups o solo con grandes empresas?",
-        "answer": "INODE64 trabaja tanto con startups como con grandes empresas, adaptándose a las necesidades y objetivos de cada cliente."
-    },
-    {
-        "question": "¿Qué tecnologías utiliza INODE64 en sus proyectos?",
-        "answer": "INODE64 utiliza tecnologías modernas como JavaScript, Python, frameworks como React y herramientas de inteligencia artificial, entre otras."
-    },
-    {
-        "question": "¿INODE64 ofrece servicios de consultoría tecnológica?",
-        "answer": "Sí, INODE64 ofrece servicios de consultoría tecnológica para ayudar a las empresas a optimizar sus procesos y adoptar las mejores soluciones tecnológicas."
-    },
-    {
-        "question": "¿Dónde se encuentra ubicada la oficina principal de INODE64?",
-        "answer": "La oficina principal de INODE64 está ubicada en [Ubicación específica, si está disponible]."
-    },
-    {
-        "question": "¿INODE64 tiene casos de éxito que pueda consultar?",
-        "answer": "Sí, puedes consultar los casos de éxito de INODE64 en su página web, donde destacan proyectos realizados para diversos clientes."
-    },
-    {
-        "question": "¿Qué diferencia a INODE64 de otras empresas de tecnología?",
-        "answer": "INODE64 se diferencia por su enfoque personalizado, su equipo altamente capacitado y su compromiso con la innovación tecnológica."
-    },
-    {
-        "question": "¿INODE64 ofrece soporte 24/7?",
-        "answer": "Sí, INODE64 ofrece soporte técnico 24/7 para garantizar la continuidad de los servicios de sus clientes."
-    },
-    {
-        "question": "¿Qué tipo de clientes suelen trabajar con INODE64?",
-        "answer": "INODE64 trabaja con una amplia variedad de clientes, desde startups hasta grandes corporaciones, en sectores como tecnología, finanzas y salud."
-    },
-    {
-        "question": "¿INODE64 realiza auditorías de seguridad informática?",
-        "answer": "Sí, INODE64 ofrece servicios de auditoría de seguridad informática para identificar y mitigar riesgos en los sistemas de sus clientes."
-    },
-    {
-        "question": "¿Cómo puedo solicitar una cotización de servicios en INODE64?",
-        "answer": "Puedes solicitar una cotización de servicios completando el formulario en la página web de INODE64 o contactando directamente a su equipo de ventas."
-    },
-    {
-        "question": "¿INODE64 ofrece formación o talleres para empresas?",
-        "answer": "Sí, INODE64 organiza talleres y programas de formación para empresas que buscan capacitar a sus equipos en tecnología y desarrollo."
-    }
+  {
+    "question": "¿Qué servicios ofrece INODE64?",
+    "answer": "INODE64 ofrece servicios de desarrollo de software, consultoría tecnológica, auditorías de seguridad y soluciones personalizadas para empresas."
+  },
+  {
+    "question": "¿Cómo puedo contactar con el equipo de soporte de INODE64?",
+    "answer": "Puedes contactar con el equipo de soporte de INODE64 a través del formulario de contacto en su página web o enviando un correo a soporte@inode64.com."
+  },
+  {
+    "question": "¿INODE64 ofrece soluciones personalizadas para empresas?",
+    "answer": "Sí, INODE64 se especializa en crear soluciones tecnológicas personalizadas adaptadas a las necesidades de cada cliente."
+  },
+  {
+    "question": "¿Qué experiencia tiene INODE64 en el sector tecnológico?",
+    "answer": "INODE64 cuenta con años de experiencia trabajando con empresas de diferentes sectores, ofreciendo soluciones innovadoras y de alta calidad."
+  },
+  {
+    "question": "¿INODE64 trabaja con startups o solo con grandes empresas?",
+    "answer": "INODE64 trabaja tanto con startups como con grandes empresas, adaptándose a las necesidades y objetivos de cada cliente."
+  },
+  {
+    "question": "¿Qué tecnologías utiliza INODE64 en sus proyectos?",
+    "answer": "INODE64 utiliza tecnologías modernas como JavaScript, Python, frameworks como React y herramientas de inteligencia artificial, entre otras."
+  },
+  {
+    "question": "¿INODE64 ofrece servicios de consultoría tecnológica?",
+    "answer": "Sí, INODE64 ofrece servicios de consultoría tecnológica para ayudar a las empresas a optimizar sus procesos y adoptar las mejores soluciones tecnológicas."
+  },
+  {
+    "question": "¿Dónde se encuentra ubicada la oficina principal de INODE64?",
+    "answer": "La oficina principal de INODE64 está ubicada en [Ubicación específica, si está disponible]."
+  },
+  {
+    "question": "¿INODE64 tiene casos de éxito que pueda consultar?",
+    "answer": "Sí, puedes consultar los casos de éxito de INODE64 en su página web, donde destacan proyectos realizados para diversos clientes."
+  },
+  {
+    "question": "¿Qué diferencia a INODE64 de otras empresas de tecnología?",
+    "answer": "INODE64 se diferencia por su enfoque personalizado, su equipo altamente capacitado y su compromiso con la innovación tecnológica."
+  },
+  {
+    "question": "¿INODE64 ofrece soporte 24/7?",
+    "answer": "Sí, INODE64 ofrece soporte técnico 24/7 para garantizar la continuidad de los servicios de sus clientes."
+  },
+  {
+    "question": "¿Qué tipo de clientes suelen trabajar con INODE64?",
+    "answer": "INODE64 trabaja con una amplia variedad de clientes, desde startups hasta grandes corporaciones, en sectores como tecnología, finanzas y salud."
+  },
+  {
+    "question": "¿INODE64 realiza auditorías de seguridad informática?",
+    "answer": "Sí, INODE64 ofrece servicios de auditoría de seguridad informática para identificar y mitigar riesgos en los sistemas de sus clientes."
+  },
+  {
+    "question": "¿Cómo puedo solicitar una cotización de servicios en INODE64?",
+    "answer": "Puedes solicitar una cotización de servicios completando el formulario en la página web de INODE64 o contactando directamente a su equipo de ventas."
+  },
+  {
+    "question": "¿INODE64 ofrece formación o talleres para empresas?",
+    "answer": "Sí, INODE64 organiza talleres y programas de formación para empresas que buscan capacitar a sus equipos en tecnología y desarrollo."
+  }
 ]

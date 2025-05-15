@@ -10,12 +10,8 @@ import { seoConfig } from "@/config/seo-config";
 import Layout from "@/layouts/Layout.astro";
 ---
 
-<Layout 
-  title={seoConfig.home.title}
-  description={seoConfig.home.description}
-  image={seoConfig.home.image}
->
-  <Section1 /> 
+<Layout title={seoConfig.home.title} description={seoConfig.home.description} image={seoConfig.home.image}>
+  <Section1 />
   <Section2 />
   <Section3 />
   <Section4 />

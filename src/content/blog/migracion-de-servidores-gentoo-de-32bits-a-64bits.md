@@ -9,9 +9,14 @@ tags: [gentoo, server]
 isDraft: false
 ---
 
-Cuando llevas tiempo administrando servidores Linux te sucede que algunos clientes, por antigüedad, tienen aún una instalación de 32 bits que no llegó a actualizarse, o se mejoró el hardware con nuevos procesadores con soporte de 64 bits. Para poder gestionar más de tres gigabytes de memoria y mejorar el rendimiento, es necesario actualizarlo a 64 bits para sacar el mayor provecho al hardware.
+Cuando llevas tiempo administrando servidores Linux te sucede que algunos clientes, por antigüedad, tienen aún una
+instalación de 32 bits que no llegó a actualizarse, o se mejoró el hardware con nuevos procesadores con soporte de 64
+bits. Para poder gestionar más de tres gigabytes de memoria y mejorar el rendimiento, es necesario actualizarlo a 64
+bits para sacar el mayor provecho al hardware.
 
-En el proceso de migración de un sistema **Gentoo** de 32 bits a 64 bits existen varias formas de realizarlo. Nosotros creamos un *chroot* con todo el sistema desde cero y luego vamos copiando la configuración. Esto nos permite actualizar el servidor sin apenas tiempo de desconexión.
+En el proceso de migración de un sistema **Gentoo** de 32 bits a 64 bits existen varias formas de realizarlo. Nosotros
+creamos un *chroot* con todo el sistema desde cero y luego vamos copiando la configuración. Esto nos permite actualizar
+el servidor sin apenas tiempo de desconexión.
 
 ### Pasos previos
 
@@ -25,7 +30,8 @@ emerge gentoo-sources
 
 ### Creando el compilador de 64 bits (Cross Compiler)
 
-El primer proceso en la migración a 64 bits es la instalación de un compilador que permita generar código para otra plataforma. Para ello, necesitamos las utilidades de `crossdev`.
+El primer proceso en la migración a 64 bits es la instalación de un compilador que permita generar código para otra
+plataforma. Para ello, necesitamos las utilidades de `crossdev`.
 
 ```bash
 emerge -1 crossdev
@@ -59,9 +65,11 @@ Reiniciamos la máquina y ya tendremos el kernel de 64 bits funcionando con el r
 
 ### Entorno chroot 64 bits
 
-Descargamos el [stage3 apropiado](http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3/) y creamos un entorno en `/mnt/64bits`.
+Descargamos el [stage3 apropiado](http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3/) y creamos un
+entorno en `/mnt/64bits`.
 
-Creamos un directorio en `/mnt/64bits` y descomprimimos el stage3 actual. Luego, con `chroot /mnt/64bits`, instalamos los programas necesarios y copiamos la configuración del sistema actual.
+Creamos un directorio en `/mnt/64bits` y descomprimimos el stage3 actual. Luego, con `chroot /mnt/64bits`, instalamos
+los programas necesarios y copiamos la configuración del sistema actual.
 
 Recordar activar los nuevos valores del sistema en `make.conf`:
 
@@ -81,9 +89,12 @@ chroot /mnt/64bits
 source /etc/profile
 ```
 
-Una vez instalados todos los programas requeridos, reiniciamos el equipo y lo arrancamos con un sistema de rescate como [SystemRescueCD](http://www.sysresccd.org/SystemRescueCd_Homepage).
+Una vez instalados todos los programas requeridos, reiniciamos el equipo y lo arrancamos con un sistema de rescate
+como [SystemRescueCD](http://www.sysresccd.org/SystemRescueCd_Homepage).
 
-Movemos los directorios anteriores del sistema a `/mnt/32bits` por si tenemos que realizar una marcha atrás, y movemos el sistema de 64 bits a su ubicación normal. Luego, con reiniciar, es suficiente para tener todo el sistema a 64 bits con apenas tiempos de parada.
+Movemos los directorios anteriores del sistema a `/mnt/32bits` por si tenemos que realizar una marcha atrás, y movemos
+el sistema de 64 bits a su ubicación normal. Luego, con reiniciar, es suficiente para tener todo el sistema a 64 bits
+con apenas tiempos de parada.
 
 ### Referencias
 

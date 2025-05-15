@@ -21,7 +21,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     await transporter.sendMail({
       from: `"Formulario Contacto" <${import.meta.env.SMTP_USER}>`,
-      to: "sat@inode64.com", 
+      to: "sat@inode64.com",
       subject: "Nueva consulta desde la web",
       text: `
 Nombre: ${firstName} ${lastName}

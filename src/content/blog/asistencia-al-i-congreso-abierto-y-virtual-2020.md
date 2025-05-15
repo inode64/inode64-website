@@ -9,6 +9,7 @@ tags: [mediterraneo, prensa, congreso]
 isDraft: false
 ---
 
-El **I Congreso Abierto y Virtual 2020** se celebró en la *Universitat Jaume I (UJI)*, reuniendo a profesionales del sector de las TIC (Tecnologías de la Información).
+El **I Congreso Abierto y Virtual 2020** se celebró en la *Universitat Jaume I (UJI)*, reuniendo a profesionales del
+sector de las TIC (Tecnologías de la Información).
 
 📄 [Descargar artículo: Congreso Abierto y Virtual 2020 (3.69 MB)](https://inode64.com)

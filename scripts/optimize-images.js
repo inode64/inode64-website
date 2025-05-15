@@ -1,13 +1,13 @@
-import imagemin from 'imagemin';
-import png from 'imagemin-pngquant';
-import svg from 'imagemin-svgo';
-import webp from 'imagemin-webp';
-import fs from 'fs';
-import path from 'path';
-import { glob } from 'glob';
+import imagemin from "imagemin";
+import png from "imagemin-pngquant";
+import svg from "imagemin-svgo";
+import webp from "imagemin-webp";
+import fs from "fs";
+import path from "path";
+import { glob } from "glob";
 
-const inputDir = 'public';
-const outputDir = 'src/asset';
+const inputDir = "public";
+const outputDir = "src/asset";
 const quality = 85;
 
 fs.rmSync(outputDir, { recursive: true, force: true });
@@ -33,11 +33,7 @@ fs.rmSync(outputDir, { recursive: true, force: true });
 
     const optimized = await imagemin([filePath], {
       destination: outputDirPath,
-      plugins: [
-        png({ quality: [quality / 100, quality / 100], strip: true }),
-        webp({ quality }),
-        svg()
-      ]
+      plugins: [png({ quality: [quality / 100, quality / 100], strip: true }), webp({ quality }), svg()],
     });
 
     if (optimized.length > 0) {
@@ -51,7 +47,7 @@ fs.rmSync(outputDir, { recursive: true, force: true });
           originalSize,
           optimizedSize,
           reduction: `${reduction}%`,
-          status: '✅ Optimized'
+          status: "✅ Optimized",
         });
       } else {
         // Borrar versión optimizada y usar original
@@ -63,7 +59,7 @@ fs.rmSync(outputDir, { recursive: true, force: true });
           originalSize,
           optimizedSize,
           reduction: `${reduction}%`,
-          status: '⚠️ No mejora (original copiada)'
+          status: "⚠️ No mejora (original copiada)",
         });
       }
     }

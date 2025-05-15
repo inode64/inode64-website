@@ -9,4 +9,5 @@ tags: [mediterraneo, cpd]
 isDraft: false
 ---
 
-Fotografía trabajando en un CPD de un cliente en el artículo "_Dos tercios de las firmas provinciales aún no protegen los datos personales_" del Mediterráneo del 20 de agosto del 2012.
+Fotografía trabajando en un CPD de un cliente en el artículo "_Dos tercios de las firmas provinciales aún no protegen
+los datos personales_" del Mediterráneo del 20 de agosto del 2012.

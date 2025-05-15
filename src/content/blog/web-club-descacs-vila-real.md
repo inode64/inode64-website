@@ -9,4 +9,6 @@ tags: [web, vila-real, club escacs, ajedrez]
 isDraft: false
 ---
 
-Os presentamos uno de nuestros últimos trabajos, la web del Club d'escacs Vila-real. Desde ella podrás conocer la historia del club, informarte de las actividades, ver noticias, dejar comentarios en el foro y establecer contacto para poder ser un miembro del club.
+Os presentamos uno de nuestros últimos trabajos, la web del Club d'escacs Vila-real. Desde ella podrás conocer la
+historia del club, informarte de las actividades, ver noticias, dejar comentarios en el foro y establecer contacto para
+poder ser un miembro del club.

@@ -13,13 +13,15 @@ isDraft: false
 
 Para su seguridad, hemos estado analizando múltiples sistemas antivirus.
 
-Como sabrá, existen múltiples soluciones actuales antivirus, pero no todas ellas son convenientes, ya que hay que encontrar un equilibrio entre muchos factores como son la protección y el rendimiento.
+Como sabrá, existen múltiples soluciones actuales antivirus, pero no todas ellas son convenientes, ya que hay que
+encontrar un equilibrio entre muchos factores como son la protección y el rendimiento.
 
 ## Comparativa y resultados
 
 Tras realizar el análisis de varias soluciones, estos han sido nuestros resultados:
 
-Como puede comprobar en nuestra comparativa, a día de hoy el antivirus más equilibrado es G-Data Antivirus, por tanto, es el antivirus que recomendamos para la gran mayoría de situaciones.
+Como puede comprobar en nuestra comparativa, a día de hoy el antivirus más equilibrado es G-Data Antivirus, por tanto,
+es el antivirus que recomendamos para la gran mayoría de situaciones.
 
 ## Recomendación profesional
 
@@ -27,7 +29,9 @@ G-Data Antivirus ha sido ya probado en empresas con éxito, así que podemos gar
 
 ## Asesoramiento personalizado
 
-Si su antivirus está próximo a caducar, contacte con nosotros para un asesoramiento a su medida, ya que hoy en día el software antivirus es de vital importancia, porque le previene de una forma activa contra todo tipo de peligros en la red.
+Si su antivirus está próximo a caducar, contacte con nosotros para un asesoramiento a su medida, ya que hoy en día el
+software antivirus es de vital importancia, porque le previene de una forma activa contra todo tipo de peligros en la
+red.
 
 ## Compatibilidad multiplataforma
 

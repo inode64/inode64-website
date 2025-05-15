@@ -6,16 +6,16 @@ import { siteConfig } from "@/config/site-config";
 import { serviceImages } from "../../assets/images/services";
 
 export async function getStaticPaths() {
-  return services.map(service => ({
-    params: { slug: service.slug }
+  return services.map((service) => ({
+    params: { slug: service.slug },
   }));
 }
 
 const { slug } = Astro.params;
-const service = services.find(service => service.slug === slug);
+const service = services.find((service) => service.slug === slug);
 
 if (!service) {
-  return Astro.redirect('/services', 302);
+  return Astro.redirect("/services", 302);
 }
 
 const { title, shortDescription, longDescription, details, imageName, keywords, price, priceUnit } = service;
@@ -34,29 +34,34 @@ const { title, shortDescription, longDescription, details, imageName, keywords, 
             <h1 class="text-4xl font-extrabold text-gray-900">{title}</h1>
             <p class="mt-4 text-lg text-gray-700">{longDescription}</p>
 
-            {details && Array.isArray(details) && (
-              <ul class="mt-6 list-disc list-inside space-y-2 text-gray-600">
-                {details.map(detail => (
-                  <li>{detail}</li>
-                ))}
-              </ul>
-            )}
+            {
+              details && Array.isArray(details) && (
+                <ul class="mt-6 list-disc list-inside space-y-2 text-gray-600">
+                  {details.map((detail) => (
+                    <li>{detail}</li>
+                  ))}
+                </ul>
+              )
+            }
 
             <div class="mt-8">
               <span class="inline-block rounded-full bg-red-100 px-5 py-2 text-sm font-semibold text-red-800">
-                Precio: {price} {priceUnit}
+                Precio: {price}
+                {priceUnit}
               </span>
             </div>
 
-            {keywords && Array.isArray(keywords) && (
-              <div class="mt-6 flex flex-wrap gap-2">
-                {keywords.map(keyword => (
-                  <span class="inline-block rounded-full bg-gray-200 px-3 py-1 text-xs font-medium text-gray-700">
-                    #{keyword}
-                  </span>
-                ))}
-              </div>
-            )}
+            {
+              keywords && Array.isArray(keywords) && (
+                <div class="mt-6 flex flex-wrap gap-2">
+                  {keywords.map((keyword) => (
+                    <span class="inline-block rounded-full bg-gray-200 px-3 py-1 text-xs font-medium text-gray-700">
+                      #{keyword}
+                    </span>
+                  ))}
+                </div>
+              )
+            }
           </div>
 
           <div class="flex justify-center lg:justify-end order-1 md:order-2">
@@ -71,10 +76,7 @@ const { title, shortDescription, longDescription, details, imageName, keywords, 
           </div>
         </div>
         <div class="mt-6">
-          <a
-            href="/services"
-            class="text-sm font-semibold text-red-800 hover:text-red-700 transition"
-          >
+          <a href="/services" class="text-sm font-semibold text-red-800 hover:text-red-700 transition">
             ← Volver a Servicios
           </a>
         </div>

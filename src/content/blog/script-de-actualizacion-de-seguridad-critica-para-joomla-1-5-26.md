@@ -9,9 +9,12 @@ tags: [joomla, seguridad]
 isDraft: false
 ---
 
-Nada más recibir la notificación de este serio problema de seguridad (el cual permite subir ficheros al servidor) que afecta a la versión de *Joomla* 1.5.xx, empecé a revisar el código y planificar las actualizaciones a los clientes alojados en los diferentes servidores.
+Nada más recibir la notificación de este serio problema de seguridad (el cual permite subir ficheros al servidor) que
+afecta a la versión de *Joomla* 1.5.xx, empecé a revisar el código y planificar las actualizaciones a los clientes
+alojados en los diferentes servidores.
 
-Pero por desgracia, no todos los clientes han migrado a las versiones más recientes y el número de ellos no es pequeño, con lo cual preparé un pequeño script que actualiza solo aquellos que estén afectados por el problema.
+Pero por desgracia, no todos los clientes han migrado a las versiones más recientes y el número de ellos no es pequeño,
+con lo cual preparé un pequeño script que actualiza solo aquellos que estén afectados por el problema.
 
 Adjunto el script. En caso necesario, es fácil cambiar la ruta donde se encuentran los dominios alojados.
 

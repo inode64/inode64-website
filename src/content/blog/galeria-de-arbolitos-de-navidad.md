@@ -9,4 +9,6 @@ tags: [navidad, inode64, arboles]
 isDraft: false
 ---
 
-Nuestros clientes, al recibir la felicitación de Navidad de 2012, se han quedado sorprendidos por nuestro detalle del árbol mágico. Al poner el líquido y pasadas unas 6 horas, cristaliza y aparece el árbol nevado. ¡Nos han ido enviando las fotos!
+Nuestros clientes, al recibir la felicitación de Navidad de 2012, se han quedado sorprendidos por nuestro detalle del
+árbol mágico. Al poner el líquido y pasadas unas 6 horas, cristaliza y aparece el árbol nevado. ¡Nos han ido enviando
+las fotos!
