@@ -12,7 +12,8 @@ export const POST: APIRoute = async ({ request }) => {
 
   try {
     const transporter = nodemailer.createTransport({
-      service: "gmail", // O "smtp.your-provider.com"
+      service: import.meta.env.SMTP_HOST,
+      port: Number(import.meta.env.SMTP_PORT),
       auth: {
         user: import.meta.env.SMTP_USER,
         pass: import.meta.env.SMTP_PASS,
@@ -20,9 +21,9 @@ export const POST: APIRoute = async ({ request }) => {
     });
 
     await transporter.sendMail({
-      from: `"Formulario Contacto" <${import.meta.env.SMTP_USER}>`,
-      to: "sat@inode64.com",
-      subject: "Nueva consulta desde la web",
+      from: `${import.meta.env.SMTP_USER}`,
+      to: `${import.meta.env.SENDER_CONTACT_EMAIL}`,
+      subject: `${import.meta.env.SENDER_CONTACT_SUBJECT}`,
       text: `
 Nombre: ${firstName} ${lastName}
 Empresa: ${company}

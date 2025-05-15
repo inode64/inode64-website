@@ -22,6 +22,7 @@ grayscale
 guifi
 guifinet
 insca
+jetbrains
 joomla
 jurisprudencial
 linkedin
@@ -53,8 +54,10 @@ Suscríbete
 tailwindcss
 tipado
 transgrau
+tsconfigs
 Universitat
 villarreal
+webp
 whatsapp
 youtube
 Zumalacárregui
