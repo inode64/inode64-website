@@ -1,114 +1,178 @@
 [
   {
-    "slug": "mantenimiento-de-sistemas-linux",
-    "title": "Mantenimiento sistemas Linux",
-    "shortDescription": "Optimización, actualización y soporte técnico para sistemas Linux en entornos empresariales. Mantén tu equipo en su mejor estado con nuestra gestión proactiva.",
-    "longDescription": "Nuestro servicio de mantenimiento proactivo de servidores Linux asegura que tu infraestructura esté siempre disponible, segura y optimizada. Combinamos diagnósticos periódicos, actualizaciones críticas y monitorización avanzada para prevenir incidencias antes de que afecten a tu negocio.",
-
+    "slug": "mantenimiento-de-sistemas-linux-empresarial",
+    "title": "Mantenimiento Experto de Sistemas Linux para Empresas",
+    "shortTitle": "Mantenimiento Linux Empresarial",
+    "shortDescription": "Garantice la continuidad y el rendimiento de su negocio con nuestro servicio de mantenimiento, optimización y soporte técnico especializado para sistemas Linux.",
+    "longDescription": "Asegure la máxima disponibilidad, seguridad y eficiencia de su infraestructura Linux empresarial con nuestro servicio de mantenimiento proactivo. Implementamos diagnósticos exhaustivos, aplicamos actualizaciones críticas de seguridad y rendimiento, y utilizamos monitorización avanzada para anticipar y neutralizar incidencias antes de que impacten sus operaciones. Nuestra gestión experta está diseñada para que sus sistemas Linux funcionen de manera óptima, permitiéndole enfocarse en el crecimiento de su negocio.\n\nConfíe en nuestra especialización en Gentoo y nuestra amplia experiencia en Debian, Ubuntu y CentOS para una infraestructura Linux robusta y fiable.",
     "imageName": "maintenance",
-    "keywords": ["mantenimiento", "linux", "soporte técnico", "optimización", "actualización"],
-    "details": [
-      "Diagnóstico y resolución de problemas.",
-      "Instalación y configuración de software.",
-      "Implementación medidas seguridad.",
-      "Optimización del rendimiento del sistema.",
-      "Asesoramiento técnico personalizado.",
-      "Contenedores Docker.",
-      "Sistemas de monitorización remota (Prometheus, Grafana).",
-      "Alta Disponibilidad y Almacenamiento Distribuido (Ceph, GlusterFS, DRBD).",
-      "Nos especializamos en la distribución Gentoo, pero también ofrecemos soporte para otras distribuciones como Debian, Ubuntu y CentOS."
+    "keywords": [
+      "mantenimiento linux empresarial",
+      "soporte técnico linux",
+      "administración servidores linux",
+      "optimización linux",
+      "seguridad linux",
+      "actualización sistemas linux",
+      "gentoo support",
+      "debian server maintenance",
+      "ubuntu server support"
     ],
-    "price": "según proyecto",
+    "details": [
+      "Diagnóstico avanzado y resolución ágil de incidentes.",
+      "Instalación, configuración y hardening de software y servicios Linux.",
+      "Implementación de políticas y medidas de seguridad avanzadas (firewalls, IDS/IPS).",
+      "Optimización de rendimiento del sistema operativo y aplicaciones.",
+      "Consultoría y asesoramiento técnico estratégico personalizado.",
+      "Gestión y orquestación de contenedores (Docker, Kubernetes básico).",
+      "Despliegue y gestión de sistemas de monitorización (Prometheus, Grafana, Zabbix).",
+      "Soluciones de Alta Disponibilidad (HA) y Almacenamiento Distribuido (Ceph, GlusterFS, DRBD).",
+      "Especialización en Gentoo y soporte integral para Debian, Ubuntu, CentOS y otras distribuciones."
+    ],
+    "price": "Solicite presupuesto personalizado",
     "priceUnit": ""
   },
   {
-    "slug": "infraestructura-it-empresas",
-    "title": "Infraestructura IT para Empresas",
-    "shortDescription": "Monitorización, seguridad y mantenimiento de infraestructuras IT. Nos encargamos de servidores, redes y estaciones de trabajo para garantizar el máximo rendimiento y fiabilidad.",
-    "longDescription": "Ofrecemos un servicio integral de administración de sistemas para empresas, enfocado en la monitorización constante, la seguridad avanzada y el mantenimiento preventivo de tus infraestructuras IT. Nos encargamos de gestionar servidores, redes y estaciones de trabajo, asegurando que todos los componentes funcionen de manera óptima. Nuestro equipo de expertos trabaja para prevenir problemas antes de que ocurran, minimizando tiempos de inactividad y maximizando la productividad de tu negocio.",
+    "slug": "gestion-integral-infraestructura-it-empresarial",
+    "title": "Gestión Integral de Infraestructura IT para Empresas",
+    "shortTitle": "Gestión Integral IT",
+    "shortDescription": "Soluciones completas de monitorización, ciberseguridad y mantenimiento IT para servidores, redes y estaciones. Potenciamos la eficiencia y continuidad de su negocio.",
+    "longDescription": "Fortalezca la operativa de su empresa con nuestro servicio de administración integral de infraestructuras IT. Nos especializamos en la monitorización proactiva 24/7, la implementación de estrategias de ciberseguridad robustas y el mantenimiento preventivo y correctivo de todos sus activos tecnológicos: servidores, redes y estaciones de trabajo. Nuestro objetivo es garantizar que su infraestructura IT funcione con la máxima eficiencia y fiabilidad, minimizando el riesgo de interrupciones y optimizando la productividad.\n\nPermita que nuestros expertos se encarguen de la complejidad tecnológica, para que usted pueda concentrarse en sus objetivos estratégicos.",
     "imageName": "admin",
-    "keywords": ["infraestructura", "servidores", "monitorización", "seguridad", "empresas"],
-    "details": [
-      "Monitorización constante de sistemas.",
-      "Gestión de servidores y redes.",
-      "Mantenimiento preventivo y correctivo.",
-      "Implementación seguridad avanzada.",
-      "Soporte técnico especializado.",
-      "Auditorías periódicas de los sistemas."
+    "keywords": [
+      "gestión infraestructura TI",
+      "servicios TI para empresas",
+      "soporte informático empresarial",
+      "monitorización sistemas TI",
+      "ciberseguridad empresarial",
+      "mantenimiento informático empresas",
+      "administración de redes y servidores"
     ],
-    "price": "según proyecto",
+    "details": [
+      "Monitorización proactiva 24/7 de rendimiento y seguridad.",
+      "Administración experta de servidores (Windows, Linux) y redes corporativas.",
+      "Planes de mantenimiento preventivo, predictivo y correctivo.",
+      "Implementación y gestión de soluciones de ciberseguridad multicapa.",
+      "Soporte técnico especializado multicanal con SLAs definidos.",
+      "Auditorías de seguridad y rendimiento de la infraestructura TI.",
+      "Gestión de inventario y ciclo de vida de activos tecnológicos."
+    ],
+    "price": "Planes adaptados a su empresa",
     "priceUnit": ""
   },
   {
-    "slug": "soluciones-en-la-nube",
-    "title": "Soluciones avanzadas en la nube",
-    "shortDescription": "Implementación y gestión de servicios en la nube: almacenamiento, servidores virtuales, copias de seguridad y colaboración en línea para mejorar la productividad de tu empresa.",
-    "longDescription": "Las soluciones en la nube son esenciales para las empresas que buscan flexibilidad, escalabilidad y eficiencia. Ofrecemos servicios de implementación y gestión de almacenamiento en la nube, servidores virtuales, copias de seguridad automáticas y herramientas de colaboración en línea. Nuestro equipo se asegura de que tus datos estén seguros y accesibles en todo momento, permitiéndote centrarte en lo que realmente importa: hacer crecer tu negocio.",
+    "slug": "soluciones-cloud-empresariales-escalables",
+    "title": "Soluciones Cloud Empresariales: Escalabilidad y Eficiencia",
+    "shortTitle": "Soluciones Cloud Empresariales",
+    "shortDescription": "Transforme su negocio con nuestros servicios de implementación y gestión cloud: almacenamiento seguro, servidores virtuales (VPS/VDS), backup robusto y colaboración optimizada.",
+    "longDescription": "Impulse la agilidad, escalabilidad y eficiencia de su empresa con nuestras soluciones cloud estratégicas. Diseñamos, implementamos y gestionamos infraestructuras en la nube que incluyen almacenamiento flexible y seguro, servidores virtuales de alto rendimiento (IaaS), estrategias de backup y recuperación ante desastres (BaaS/DRaaS), y plataformas de colaboración que potencian la productividad. Nos aseguramos de que sus datos críticos estén protegidos, accesibles y cumplan con la normativa vigente, liberando recursos para que su empresa innove y crezca.\n\nMigre y optimice sus cargas de trabajo en la nube con expertos que entienden sus necesidades de negocio.",
     "imageName": "cloud",
-    "keywords": ["nube", "cloud", "servidores virtuales", "backup", "colaboración"],
-    "details": [
-      "Implementación de almacenamiento en la nube.",
-      "Gestión de servidores virtuales.",
-      "Configuración de copias de seguridad automáticas.",
-      "Integración de herramientas de colaboración.",
-      "Soporte técnico para soluciones en la nube.",
-      "Auditoría de seguridad y cumplimiento normativo."
+    "keywords": [
+      "soluciones cloud empresariales",
+      "servicios gestionados en la nube",
+      "migración a la nube",
+      "servidores virtuales cloud",
+      "backup en la nube para empresas",
+      "cloud Híbrida",
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "seguridad en la nube"
     ],
-    "price": "según proyecto",
+    "details": [
+      "Diseño e implementación de arquitecturas de almacenamiento cloud (Object, Block, File Storage).",
+      "Gestión y optimización de servidores virtuales (VPS/VDS) en principales proveedores (AWS, Azure, GCP) o cloud privada.",
+      "Configuración e implementación de estrategias de backup automatizado y recuperación ante desastres (DRP).",
+      "Integración y personalización de herramientas de colaboración y productividad en la nube (Microsoft 365, Google Workspace).",
+      "Soporte técnico especializado y gestión proactiva de servicios cloud.",
+      "Auditorías de seguridad, cumplimiento normativo (GDPR) y optimización de costes en la nube (FinOps)."
+    ],
+    "price": "Consulte nuestras soluciones cloud",
     "priceUnit": ""
   },
   {
-    "slug": "hosting-web-de-alto-rendimiento",
-    "title": "Hosting web de alto rendimiento",
-    "shortDescription": "Alojamiento web profesional con máxima seguridad y velocidad. Soluciones personalizadas para páginas web, tiendas online y aplicaciones con soporte técnico experto.",
-    "longDescription": "Nuestro servicio de hosting web de alto rendimiento está diseñado para garantizar que tu sitio web funcione de manera rápida, segura y confiable. Ofrecemos soluciones personalizadas para páginas web, tiendas online y aplicaciones, adaptándonos a las necesidades específicas de tu proyecto. Con soporte técnico experto y medidas avanzadas de seguridad, puedes estar seguro de que tu presencia online estará siempre protegida y optimizada.",
+    "slug": "hosting-web-empresarial-alto-rendimiento-seguro",
+    "title": "Hosting Web Empresarial: Rendimiento, Seguridad y Soporte Experto",
+    "shortTitle": "",
+    "shortDescription": "Impulse su presencia online con nuestro hosting web profesional. Velocidad, seguridad robusta y soporte 24/7 para webs corporativas, e-commerce y aplicaciones críticas.",
+    "longDescription": "Ofrezca la mejor experiencia a sus usuarios y proteja sus activos digitales con nuestro servicio de hosting web de alto rendimiento, diseñado específicamente para las exigencias empresariales. Garantizamos velocidad de carga superior, uptime excepcional y seguridad multicapa para su página web, tienda online o aplicación web. Nuestras soluciones son personalizadas y escalables, adaptándose al crecimiento de su proyecto, y respaldadas por un equipo de soporte técnico experto disponible 24/7 para resolver cualquier incidencia.\n\nInvierta en un hosting que contribuya al éxito de su negocio online, con la tranquilidad de una infraestructura fiable y optimizada.",
     "imageName": "hosting",
-    "keywords": ["hosting", "alojamiento", "servidor web", "seguridad", "velocidad"],
-    "details": [
-      "Alojamiento web con alta disponibilidad.",
-      "Optimización de velocidad y rendimiento.",
-      "Seguridad avanzada para proteger datos.",
-      "Soporte técnico especializado 24/7.",
-      "Escalabilidad para proyectos en crecimiento.",
-      "Gestión de dominios y certificados SSL."
+    "keywords": [
+      "hosting web empresarial",
+      "alojamiento web profesional",
+      "hosting seguro para empresas",
+      "hosting rápido",
+      "hosting e-commerce",
+      "servidor dedicado gestionado",
+      "VPS hosting",
+      "soporte hosting 24/7"
     ],
-    "price": "a partir de 60",
-    "priceUnit": "€/mes"
+    "details": [
+      "Plataformas de alojamiento con alta disponibilidad y SLAs garantizados.",
+      "Optimización de velocidad de carga (LiteSpeed, CDN, caching avanzado).",
+      "Seguridad perimetral avanzada (WAF, Anti-DDoS) y protección de datos.",
+      "Soporte técnico especializado 24/7/365 por expertos en hosting.",
+      "Planes escalables para acompañar el crecimiento de su negocio.",
+      "Gestión integral de dominios, certificados SSL/TLS y DNS.",
+      "Backups automáticos y programados con opciones de restauración."
+    ],
+    "price": "Desde 60",
+    "priceUnit": "€/mes (consulte planes empresariales)"
   },
   {
-    "slug": "consultoría-y-analítica-web",
-    "title": "Consultoría y analítica web",
-    "shortDescription": "Evaluación y optimización del rendimiento de tu web. Identificamos mejoras en UX, velocidad de carga y conversión para maximizar el impacto de tu negocio en internet.",
-    "longDescription": "Nuestro servicio de consultoría y analítica web te ayuda a identificar las áreas de mejora en tu sitio web para maximizar su rendimiento. Analizamos la experiencia de usuario (UX), la velocidad de carga y las tasas de conversión, proporcionando recomendaciones prácticas y estrategias para optimizar cada aspecto. Con nuestro enfoque basado en datos, tu negocio podrá alcanzar su máximo potencial en el entorno digital.",
+    "slug": "consultoria-analitica-web-optimizacion-conversion",
+    "title": "Consultoría y Analítica Web Estratégica para Empresas",
+    "shortTitle": "",
+    "shortDescription": "Transforme datos en decisiones. Optimizamos la UX, velocidad y conversión de su web para maximizar el ROI y el impacto de su negocio digital.",
+    "longDescription": "Potencie el rendimiento de su presencia online con nuestra consultoría y analítica web basada en datos. Identificamos oportunidades críticas de mejora analizando la experiencia de usuario (UX/UI), la velocidad de carga (Core Web Vitals), el funnel de conversión y el comportamiento del visitante. Proporcionamos insights accionables y estrategias personalizadas para optimizar cada faceta de su web, desde la captación hasta la fidelización. Nuestro objetivo es ayudarle a tomar decisiones informadas que impulsen el crecimiento y la rentabilidad de su negocio en el competitivo entorno digital.\n\nConvierta su sitio web en una potente herramienta de negocio con nuestro enfoque analítico y estratégico.",
     "imageName": "analysis",
-    "keywords": ["consultoría", "analítica", "UX", "velocidad", "rendimiento"],
-    "details": [
-      "Análisis detallado de métricas web.",
-      "Recomendaciones para mejorar la UX.",
-      "Optimización de la velocidad de carga.",
-      "Estrategias para aumentar la conversión.",
-      "Informes personalizados con datos clave.",
-      "Seguimiento continuo y actualización de estrategias."
+    "keywords": [
+      "consultoría web empresarial",
+      "analítica web avanzada",
+      "optimización de la tasa de conversión (CRO)",
+      "mejora UX/UI",
+      "auditoría rendimiento web",
+      "estrategia digital basada en datos",
+      "Google Analytics 4",
+      "SEO técnico"
     ],
-    "price": "según proyecto",
+    "details": [
+      "Análisis exhaustivo de métricas web y comportamiento del usuario (Google Analytics 4, Hotjar).",
+      "Auditoría y recomendaciones para la optimización de la Experiencia de Usuario (UX/UI).",
+      "Diagnóstico y optimización de la velocidad de carga y Core Web Vitals.",
+      "Desarrollo e implementación de estrategias de Optimización de la Tasa de Conversión (CRO) y A/B testing.",
+      "Informes de rendimiento personalizados con KPIs clave y recomendaciones estratégicas.",
+      "Seguimiento continuo, ajuste de estrategias y consultoría para la toma de decisiones."
+    ],
+    "price": "Proyectos a medida",
     "priceUnit": ""
   },
   {
-    "slug": "redes-inalámbricas-empresariales",
-    "title": "Redes inalámbricas empresariales",
-    "shortDescription": "Diseño e implementación de infraestructuras WiFi seguras y altamente eficientes. Optimización de cobertura, configuración de redes mesh y seguridad avanzada.",
-    "longDescription": "Diseñamos e implementamos redes inalámbricas empresariales que garantizan una conectividad rápida, segura y confiable. Nuestro servicio incluye la optimización de la cobertura WiFi, la configuración de redes mesh para entornos complejos y la implementación de medidas de seguridad avanzadas. Nos aseguramos de que tu infraestructura inalámbrica esté preparada para soportar las demandas de tu negocio, mejorando la productividad y la experiencia del usuario.",
+    "slug": "soluciones-wifi-empresarial-seguras-alto-rendimiento",
+    "title": "Soluciones WiFi Empresariales: Conectividad Segura y de Alto Rendimiento",
+    "shortTitle": "",
+    "shortDescription": "Diseño, implementación y gestión de redes WiFi profesionales. Cobertura total, seguridad robusta y rendimiento optimizado para la productividad de su empresa.",
+    "longDescription": "Garantice una conectividad inalámbrica fiable, segura y de alto rendimiento para su organización con nuestras soluciones WiFi empresariales. Realizamos estudios de cobertura (site surveys), diseñamos e implementamos infraestructuras WiFi personalizadas, incluyendo redes mesh para entornos complejos y la integración de tecnologías WiFi 6/6E. Implementamos protocolos de seguridad avanzados (WPA3-Enterprise, segmentación de red, NAC) para proteger sus datos y dispositivos. Nuestro servicio asegura que su red inalámbrica soporte las crecientes demandas de movilidad, IoT y aplicaciones críticas para el negocio, mejorando la productividad y la experiencia de empleados y clientes.\n\nOptimice la conectividad de su empresa con una infraestructura WiFi diseñada para el futuro.",
     "imageName": "wireless",
-    "keywords": ["WiFi", "inalámbrico", "mesh", "infraestructura", "seguridad"],
-    "details": [
-      "Diseño de redes WiFi personalizadas.",
-      "Configuración de redes mesh avanzadas.",
-      "Optimización de la cobertura inalámbrica.",
-      "Implementación de medidas de seguridad.",
-      "Soporte técnico para redes empresariales.",
-      "Mantenimiento y monitorización remota de la red."
+    "keywords": [
+      "WiFi empresarial",
+      "redes inalámbricas seguras",
+      "soluciones WiFi para oficinas",
+      "infraestructura WiFi profesional",
+      "redes mesh empresariales",
+      "seguridad WiFi corporativa",
+      "WiFi 6 para empresas",
+      "gestión de redes inalámbricas"
     ],
-    "price": "según proyecto",
+    "details": [
+      "Estudios de cobertura (Site Survey) y diseño personalizado de redes WiFi.",
+      "Implementación y configuración de redes WiFi y Mesh de última generación (WiFi 6/6E).",
+      "Optimización de la cobertura, capacidad y rendimiento de la red inalámbrica.",
+      "Implementación de políticas de seguridad avanzadas: WPA3-Enterprise, RADIUS, segmentación VLAN, NAC.",
+      "Configuración de portales cautivos para acceso de invitados.",
+      "Soporte técnico especializado y mantenimiento proactivo de la infraestructura WiFi.",
+      "Monitorización remota del rendimiento y la seguridad de la red inalámbrica."
+    ],
+    "price": "Diseños y presupuestos a medida",
     "priceUnit": ""
   }
 ]

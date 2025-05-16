@@ -2,6 +2,9 @@
 import { Image } from "astro:assets";
 import logo from "../assets/images/brand/logo.webp";
 import { icons } from "../assets/icons";
+import allServices from "../data/services.json";
+
+const servicesForFooter = allServices.filter((service) => service.shortTitle && service.shortTitle.trim() !== "");
 
 const year = new Date().getFullYear();
 ---
@@ -71,35 +74,22 @@ const year = new Date().getFullYear();
           </ul>
         </div>
 
-        <div class="text-center sm:text-left">
-          <p class="text-lg font-medium text-gray-900">Servicios</p>
-
-          <ul class="mt-8 space-y-4 text-sm">
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/services/mantenimiento-de-sistemas-linux"
-              >
-                Mantenimiento de sistemas Linux
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="text-gray-700 transition hover:text-gray-700/75"
-                href="/services/hosting-web-de-alto-rendimiento"
-              >
-                Hosting Web
-              </a>
-            </li>
-
-            <li>
-              <a class="text-gray-700 transition hover:text-gray-700/75" href="/services/soluciones-en-la-nube">
-                Soluciones en la nube
-              </a>
-            </li>
-          </ul>
-        </div>
+        {
+          servicesForFooter.length > 0 && (
+            <div class="text-center sm:text-left">
+              <p class="text-lg font-medium text-gray-900">Servicios</p>
+              <ul class="mt-8 space-y-4 text-sm">
+                {servicesForFooter.map((service) => (
+                  <li>
+                    <a class="text-gray-700 transition hover:text-gray-700/75" href={`/services/${service.slug}`}>
+                      {service.shortTitle}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
 
         <div class="text-center sm:text-left">
           <p class="text-lg font-medium text-gray-900">Empresa</p>
