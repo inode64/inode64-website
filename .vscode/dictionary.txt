@@ -1,6 +1,7 @@
 actm
 alcorense
 allowall
+Azulejera
 babysuommo
 belmonte
 cdrom
@@ -8,6 +9,7 @@ colegi
 colenfermeria
 editables
 enfermeria
+Envidea
 Escalabilidad
 escriche
 faqs
@@ -18,9 +20,11 @@ frontmatter
 galán
 github
 gransimenuts
+grau
 grayscale
 guifi
 guifinet
+innovamaquinaria
 insca
 jetbrains
 joomla
@@ -33,6 +37,7 @@ mailchimp
 mantenibilidad
 marinador
 mediterraneo
+Menuts
 modularidad
 moodle
 optiza
@@ -40,6 +45,7 @@ paypal
 Picaso
 plugdev
 polkit
+promopublic
 redactalia
 redirecciones
 reutilizable
