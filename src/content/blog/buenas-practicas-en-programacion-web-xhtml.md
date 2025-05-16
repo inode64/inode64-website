@@ -45,7 +45,7 @@ una aplicación del más estricto [XML](https://es.wikipedia.org/wiki/XML):
     bloque. `<font size="2"><center>texto</center></font>` es inválido.
 
 | Elementos block-line (formadores de bloque):   |
-| ---------------------------------------------- |
+|------------------------------------------------|
 | p dir dl noframes menu isindex table           |
 | blockquote ul ol center address h1-h6 fieldset |
 | pre hr di                                      |

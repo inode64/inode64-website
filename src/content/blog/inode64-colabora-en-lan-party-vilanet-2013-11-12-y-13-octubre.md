@@ -20,7 +20,7 @@ que cada vez se suma más público de todas las edades. Contará con todo tipo d
 talleres, competiciones on-line**, etc., para acercar a todos nuestros participantes e invitados nuevas experiencias.
 Todas ellas serán de gran interés tanto para profesionales del sector como aficionados.
 
-No por ello se deja de lado otra parte muy importante dentro del mundo de las TICs, como es la _seguridad informática_.
+No por ello se deja de lado otra parte muy importante dentro del mundo de las TIC, como es la _seguridad informática_.
 En la edición anterior ya tuvo un gran protagonismo y este año volveremos a contar con profesionales del sector que
 aportarán nuevos conocimientos, experiencias en un campo tan actual y relevante como este.
 
