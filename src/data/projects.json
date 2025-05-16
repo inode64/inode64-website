@@ -95,24 +95,14 @@
     "name": "Club de Escacs Vila-Real",
     "logo": "escacsvilareal-logo.png",
     "website": "https://www.escacsvila-real.com",
-    "features": [
-      "Noticias",
-      "Promoción de actividades",
-      "Foro",
-      "Administrable por el cliente"
-    ],
+    "features": ["Noticias", "Promoción de actividades", "Foro", "Administrable por el cliente"],
     "screenshot": "clubescacs"
   },
   {
     "name": "Preventec",
     "logo": "preventec-logo.png",
     "website": "https://www.preventec.es",
-    "features": [
-      "E-commerce",
-      "Zona de clientes",
-      "Enlaces a marcas",
-      "Administrable por el cliente"
-    ],
+    "features": ["E-commerce", "Zona de clientes", "Enlaces a marcas", "Administrable por el cliente"],
     "screenshot": "preventec"
   },
   {

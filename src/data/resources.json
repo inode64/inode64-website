@@ -1,38 +1,13 @@
 [
   {
     "name": "Adobe Reader",
-    "description": "Aplicación útil para visualizar, imprimir y comentar agilmente múltiples documentos PDF.",
+    "description": "Aplicación útil para visualizar, imprimir y comentar ágilmente múltiples documentos PDF.",
     "url": "https://get.adobe.com/reader/"
-  },
-  {
-    "name": "Adobe Flash Player",
-    "description": "Complemento multimedia para reproducir contenido interactivo en diferentes navegadores web.",
-    "url": "https://helpx.adobe.com/flash-player.html"
-  },
-  {
-    "name": "Avira AntiVir",
-    "description": "Antivirus gratuito que ofrece una protección básica contra virus, malware y otras amenazas de seguridad.",
-    "url": "https://www.avira.com/en/free-antivirus-windows"
-  },
-  {
-    "name": "Bacula",
-    "description": "Conjunto de programas para gestionar copias de seguridad, recuperación y verificación de datos.",
-    "url": "https://sourceforge.net/projects/bacula/"
-  },
-  {
-    "name": "CCleaner",
-    "description": "Herramienta útil para limpiar archivos innecesarios y optimizar el rendimiento del sistema.",
-    "url": "https://www.ccleaner.com/"
   },
   {
     "name": "ClamWin",
     "description": "Antivirus gratuito para Windows con actualizaciones periódicas de su base de datos.",
     "url": "https://sourceforge.net/projects/clamwin/"
-  },
-  {
-    "name": "Remote Chrome",
-    "description": "Extensión de Chrome que permite el acceso remoto a otros dispositivos para su manejo.",
-    "url": "https://remotedesktop.google.com/"
   },
   {
     "name": "Firefox",
@@ -60,19 +35,9 @@
     "url": "https://inkscape.org/"
   },
   {
-    "name": "Java",
-    "description": "Plataforma software que permite ejecutar aplicaciones desarrolladas en el lenguaje  Java.",
-    "url": "https://www.java.com/"
-  },
-  {
     "name": "LibreOffice",
     "description": "Suite ofimática de código abierto que incluye procesador de textos, hojas de cálculo y más.",
     "url": "https://es.libreoffice.org/"
-  },
-  {
-    "name": "Malwarebytes",
-    "description": "Software avanzado diseñado para detectar y eliminar malware y otras amenazas de seguridad.",
-    "url": "https://es.malwarebytes.com/"
   },
   {
     "name": "MySQL Workbench",
@@ -110,11 +75,6 @@
     "url": "https://support.apple.com/kb/DL837"
   },
   {
-    "name": "Skype",
-    "description": "Aplicación de comunicación que permite realizar llamadas y videollamadas a través de Internet.",
-    "url": "https://www.skype.com/"
-  },
-  {
     "name": "SpyBot",
     "description": "Programa que detecta y elimina todo tipo de spyware y los distintos softwares maliciosos.",
     "url": "https://www.safer-networking.org/"
@@ -138,11 +98,6 @@
     "name": "UltraVNC",
     "description": "Software de control remoto que permite visualizar y controlar otro ordenador a distancia.",
     "url": "https://www.uvnc.com/"
-  },
-  {
-    "name": "VMware Workstation",
-    "description": "Software de virtualización que permite ejecutar múltiples sistemas operativos en una máquina.",
-    "url": "https://www.vmware.com/products/workstation.html"
   },
   {
     "name": "Wireshark",

@@ -3,8 +3,8 @@ title: INODE64 colabora en LAN Party VILANET 2014 9-12 Octubre 2014
 date: 2014-10-05
 description: Un evento tecnológico único que combina videojuegos, seguridad informática y gestión de proyectos, con charlas y talleres para profesionales y aficionados.
 author: Francisco Javier Félix Belmonte
-image: 'inode64-colabora-en-lan-party-vilanet-2014-9-12-octubre-2014'
-category: 'blog'
+image: "inode64-colabora-en-lan-party-vilanet-2014-9-12-octubre-2014"
+category: "blog"
 tags: [vilanet, inode64, lan]
 isDraft: false
 ---
@@ -51,4 +51,4 @@ INODE64 participará con las siguientes charlas:
   Por desconocimiento o mal asesoramiento, muchas empresas instalan software sin licencia. Esto supone una oportunidad
   perdida para mejorar la productividad y reducir costes. El software libre ofrece una alternativa legal y eficiente.
 
-Os animamos a participar en este importante evento. ¡Inscríbete ya! (acceso gratuito a charlas y talleres)
+Os animamos a participar en este importante evento. ¡Inscríbase ya! (acceso gratuito a charlas y talleres)

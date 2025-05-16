@@ -3,8 +3,8 @@ title: II edición del SocialMediaDay Castellón 2012
 date: 2012-10-02
 description: Un resumen del II Social Media Day Castellón, destacando las ponencias, estrategias y experiencias compartidas sobre el uso profesional de las redes sociales.
 author: Francisco Javier Félix Belmonte
-image: 'socialmediaday-castellon'
-category: 'blog'
+image: "socialmediaday-castellon"
+category: "blog"
 tags: [socialMediaDay, castellón, resumen]
 isDraft: false
 ---
@@ -40,7 +40,7 @@ en Manises.
 **"Viñetas rentables en internet"**
 El cómic en las redes sociales a través de la tablet.
 
-**JAUME SIMÓ** [@jaumequelo](https://twitter.com/jaumequelo) [@_peniscola](https://twitter.com/_peniscola)
+**JAUME SIMÓ** [@jaumequelo](https://twitter.com/jaumequelo) [@\_peniscola](https://twitter.com/_peniscola)
 **"Los Social Media en el turismo y cómo llegar a los 10.000 Me gusta en menos de 2 años"**
 Turismo Peñíscola en redes sociales, integrar estrategia offline y online. #eventos #estancias
 

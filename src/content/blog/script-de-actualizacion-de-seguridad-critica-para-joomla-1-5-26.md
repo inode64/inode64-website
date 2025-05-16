@@ -3,14 +3,14 @@ title: Script de actualización de seguridad critica Joomla 1.5.26
 date: 2013-08-04
 description: Descubre cómo solucionar un grave problema de seguridad en Joomla 1.5.26 con un script diseñado para proteger tus servidores y mantener tus sitios seguros.
 author: Francisco Javier Félix Belmonte
-image: 'script-de-actualizacion-de-seguridad-critica-para-joomla-1-5-26'
-category: 'seguridad'
+image: "script-de-actualizacion-de-seguridad-critica-para-joomla-1-5-26"
+category: "seguridad"
 tags: [joomla, seguridad]
 isDraft: false
 ---
 
 Nada más recibir la notificación de este serio problema de seguridad (el cual permite subir ficheros al servidor) que
-afecta a la versión de *Joomla* 1.5.xx, empecé a revisar el código y planificar las actualizaciones a los clientes
+afecta a la versión de _Joomla_ 1.5.xx, empecé a revisar el código y planificar las actualizaciones a los clientes
 alojados en los diferentes servidores.
 
 Pero por desgracia, no todos los clientes han migrado a las versiones más recientes y el número de ellos no es pequeño,

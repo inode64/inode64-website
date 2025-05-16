@@ -3,8 +3,8 @@ title: Vulnerabilidad en Virtuemart 1.1.4 y 1.1.9 - Envío masivo de correos
 date: 2014-03-13
 description: Análisis de una grave vulnerabilidad en Virtuemart 1.1.4 a 1.1.9 que permite el envío masivo de correos, incluyendo detalles técnicos, solución propuesta y recomendaciones para mitigar el problema.
 author: Francisco Javier Félix Belmonte
-image: 'problema-de-seguridad-con-virtuemart-1-1-4-a-1-1-9-de-envio-masivo-de-correo'
-category: 'seguridad'
+image: "problema-de-seguridad-con-virtuemart-1-1-4-a-1-1-9-de-envio-masivo-de-correo"
+category: "seguridad"
 tags: [seguridad, joomla, virtuemart]
 isDraft: false
 ---
@@ -52,7 +52,7 @@ Este código permite una suplantación de identidad y que servicios de _email sp
 para sus “clientes”.
 
 Ya no se podrán realizar recomendaciones, pero al menos los atacantes tampoco.
-Como solución más elegante se podría activar el recaptcha, pero lo mejor es que el cliente migre a Virtuemart 2.0.
+Como solución más elegante se podría activar el reCAPTCHA, pero lo mejor es que el cliente migre a Virtuemart 2.0.
 
 Al principio no encontramos ninguna referencia, pero sí existe reporte del problema desde _2010_.
 Lo grave del asunto es que hayan pasado 4 años sin que se informe a los usuarios ni se haya creado una versión con
