@@ -2,72 +2,81 @@ export const logoInode = new URL("./assets/images/og/inode64.webp", import.meta.
 
 export const seoConfig = {
   home: {
-    title: "INODE64 | Expertos en soluciones informáticas con software libre",
+    title: "INODE64 | Soluciones TI Empresariales con Software Libre",
     description:
-      "Más de 10 años de experiencia ofreciendo soluciones basadas en Linux, servidores, hosting y desarrollo web con tecnologías libres.",
+      "Potencie su empresa con INODE64: expertos en Linux, servidores, cloud, ciberseguridad y desarrollo web. Soluciones TI a medida y eficientes.", // Beneficios y keywords B2B
     image: logoInode,
   },
   about: {
-    title: "Quiénes somos | INODE64",
+    title: "Quiénes Somos | Expertos en TI y Software Libre - INODE64",
     description:
-      "Conoce al equipo de INODE64, nuestra filosofía de trabajo y nuestro compromiso con el software libre.",
+      "Conozca al equipo de INODE64: nuestra filosofía, experiencia y compromiso con soluciones tecnológicas abiertas y eficientes para empresas.",
     image: logoInode,
   },
   services: {
-    title: "Servicios | INODE64",
+    title: "Servicios TI para Empresas | Mantenimiento, Cloud, Cluster, Hosting - INODE64",
     description:
-      "Soluciones profesionales en administración de sistemas, correo electrónico, desarrollo web y más con tecnologías libres.",
+      "Descubra nuestros servicios TI: administración de sistemas Linux, soluciones cloud, hosting de alto rendimiento, ciberseguridad y consultoría experta.",
     image: logoInode,
   },
   projects: {
-    title: "Proyectos | INODE64",
+    title: "Casos de Éxito y Proyectos Destacados | INODE64",
     description:
-      "Descubre nuestros proyectos realizados en el ámbito del software libre y la infraestructura tecnológica.",
+      "Vea cómo hemos ayudado a empresas a optimizar su infraestructura y alcanzar sus objetivos con nuestras soluciones de software libre.",
     image: logoInode,
   },
   blog: {
-    title: "Blog | INODE64",
-    description: "Artículos, tutoriales y novedades sobre software libre, Linux, administración de sistemas y más.",
+    title: "Blog Tecnológico para Empresas | Linux, Cloud, Seguridad - INODE64",
+    description:
+      "Artículos y análisis sobre Linux, cloud, ciberseguridad, administración de sistemas y tendencias tecnológicas para optimizar su negocio.",
     image: logoInode,
   },
   partners: {
-    title: "Colaboradores | INODE64",
-    description: "Nuestros socios tecnológicos y colaboraciones estratégicas en el ámbito del software libre.",
+    title: "Alianzas Estratégicas y Partners Tecnológicos | INODE64",
+    description:
+      "Conozca nuestros partners tecnológicos clave y colaboraciones que fortalecen nuestras soluciones de software libre para su empresa.",
     image: logoInode,
   },
   resources: {
-    title: "Recursos | INODE64",
-    description: "Guías, manuales, descargas y documentación útil para la comunidad técnica.",
+    title: "Recursos y Documentación Técnica TI | INODE64",
+    description:
+      "Acceda a guías, manuales y recursos técnicos sobre Linux, servidores y software libre. Optimice su conocimiento y gestión TI.",
     image: logoInode,
   },
   contact: {
-    title: "Contacto | INODE64",
-    description: "Ponte en contacto con nosotros para solicitar más información o iniciar una colaboración.",
+    title: "Contacte con Expertos en Soluciones TI | INODE64",
+    description:
+      "¿Listo para optimizar su infraestructura TI? Contacte con INODE64 para una consulta o solicitar un presupuesto de nuestros servicios.",
     image: logoInode,
   },
   faqs: {
-    title: "Preguntas frecuentes | INODE64",
-    description: "Encuentra respuestas a las preguntas más comunes sobre nuestros servicios y filosofía.",
+    title: "Preguntas Frecuentes sobre Servicios TI y Software Libre | INODE64",
+    description:
+      "Encuentre respuestas a sus dudas sobre nuestros servicios de mantenimiento Linux, cloud, hosting y nuestra filosofía de software libre.",
     image: logoInode,
   },
   privacy: {
-    title: "Política de privacidad | INODE64",
-    description: "Consulta cómo gestionamos tus datos personales conforme a la normativa vigente.",
+    title: "Política de Privacidad de Datos | INODE64",
+    description:
+      "Consulte nuestra Política de Privacidad para entender cómo INODE64 protege y gestiona sus datos personales conforme al RGPD.",
     image: logoInode,
   },
   terms: {
-    title: "Términos y condiciones | INODE64",
-    description: "Revisa nuestras condiciones generales de uso y servicio.",
+    title: "Términos y Condiciones del Servicio | INODE64",
+    description:
+      "Revise los Términos y Condiciones que rigen el uso de los servicios y la web de INODE64. Transparencia y claridad para nuestros clientes.",
     image: logoInode,
   },
   notFound: {
-    title: "Página no encontrada | INODE64",
-    description: "Lo sentimos, no hemos podido encontrar la página que buscas.",
+    title: "Error 404: Página No Encontrada | INODE64",
+    description:
+      "Lo sentimos, la página que busca no existe o ha sido movida. Explore nuestros servicios o contacte con nosotros para ayuda.",
     image: logoInode,
   },
   cookies: {
-    title: "Política de cookies | INODE64",
-    description: "Consulta cómo gestionamos las cookies conforme a la normativa vigente.",
+    title: "Política de Cookies | Gestión de Cookies en INODE64",
+    description:
+      "Información detallada sobre el uso de cookies en nuestro sitio web y cómo puede gestionar sus preferencias según la normativa.",
     image: logoInode,
   },
 };
