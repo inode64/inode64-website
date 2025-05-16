@@ -11,7 +11,7 @@ isDraft: false
 
 Una vez que tengamos nuestro Windows virtualizado con **KVM**, necesitamos descargar los drivers desde:
 
-👉 [http://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/bin/](http://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/bin/)
+👉 [https://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/bin/](https://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/bin/)
 
 Estos drivers mejoran el rendimiento. El único problema es que para las versiones anteriores a **Windows XP** no hay
 soporte.

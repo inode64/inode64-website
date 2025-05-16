@@ -58,5 +58,5 @@ Si tu aplicación deja de funcionar debido a esta verificación, considera las s
 ## Recursos adicionales
 
 - Documentación oficial de PHP sobre
-  SSL/TLS: [http://php.net/manual/en/context.ssl.php](http://php.net/manual/en/context.ssl.php)
-- Roadmap de versiones de PHP: [http://www.php.net/supported-versions.php](http://www.php.net/supported-versions.php)
+  SSL/TLS: [https://php.net/manual/en/context.ssl.php](https://php.net/manual/en/context.ssl.php)
+- Roadmap de versiones de PHP: [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php)

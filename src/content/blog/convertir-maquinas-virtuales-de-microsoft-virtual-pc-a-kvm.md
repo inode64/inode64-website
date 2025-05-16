@@ -98,7 +98,7 @@ Ahora podemos crear la máquina virtual con todos los parámetros necesarios. En
 Windows, se deben realizar algunos pasos adicionales para evitar problemas:
 
 1. **Arrancar con un CD de utilidades**
-   Utiliza un CD como [Hiren's Boot](http://www.hirensbootcd.org/download/) y arranca el mini Windows XP. Luego, ejecuta
+   Utiliza un CD como [Hiren's Boot](https://www.hirensbootcd.org/download/) y arranca el mini Windows XP. Luego, ejecuta
    dentro del menú "Registry" la opción **Fix hard disk controller (fix_hdc.cmd)** para evitar el pantallazo azul al
    iniciar. Esto se debe a que Windows crea un registro especial desde donde se instala la máquina.
 

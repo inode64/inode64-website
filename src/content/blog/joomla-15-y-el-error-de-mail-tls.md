@@ -10,7 +10,7 @@ isDraft: false
 ---
 
 En la versión de Joomla 1.5 se usa para enviar el correo electrónico el
-script [phpmailer](http://phpmailer.worxware.com/) 2.0.4 del 2009. Esta versión en concreto no funciona si se selecciona
+script [phpmailer](https://phpmailer.worxware.com/) 2.0.4 del 2009. Esta versión en concreto no funciona si se selecciona
 en la Configuración global la opción _TLS_ en **SMTP Security**. Por otra parte, los grandes ISP (Google, Outlook, etc.)
 obligan a usar encriptación para enviar emails autenticados, con lo cual aparece en la pantalla del navegador el mensaje
 de Joomla:
@@ -28,5 +28,5 @@ fsockopen("ssl://smtp.gmail.com", 465, $errNum, $errStr, 30); // Correcto
 fsockopen("tls://smtp.gmail.com", 587, $errNum, $errStr, 30); // Error SSL3_GET_RECORD
 ```
 
-Mira [este ejemplo más descriptivo](http://stackoverflow.com/questions/5294751/using-gmails-outgoing-smtp-from-php-using-tls)
+Mira [este ejemplo más descriptivo](https://stackoverflow.com/questions/5294751/using-gmails-outgoing-smtp-from-php-using-tls)
 de la correcta implementación _TLS_.

@@ -11,7 +11,7 @@ isDraft: false
 
 ## Introducción
 
-La asistencia al evento [ResetWeekend](http://www.resetweekend.org/) 2014 fue una experiencia de dos días de
+La asistencia al evento [ResetWeekend](https://www.resetweekend.org/) 2014 fue una experiencia de dos días de
 aprendizaje, trabajo y colaboración continua. Se mejoró tanto el formato como la organización interna del desarrollo de
 los proyectos ganadores con respecto a años anteriores. Además, se buscó amenizar y crear un ambiente agradable de
 trabajo con la ayuda de profesionales en coaching y dinamizadores personales.

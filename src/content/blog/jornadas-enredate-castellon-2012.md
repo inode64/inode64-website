@@ -10,7 +10,7 @@ isDraft: false
 ---
 
 Se ha celebrado hoy el [**Encuentro Empresarial Enrédate Castellón 2012
-**](http://ceeicastellon.emprenemjunts.es/index.php?op=63&mn=1196) en el Auditori i Palau de Congressos de Castellón. Se
+**](https://ceeicastellon.emprenemjunts.es/index.php?op=63&mn=1196) en el Auditori i Palau de Congressos de Castellón. Se
 han dado cita en este encuentro empresarios innovadores, personas emprendedoras, jóvenes con inquietudes empresariales e
 interés por hacer cosas nuevas. En la jornada se han abordado diversas temáticas empresariales que pueden ofrecer una
 nueva perspectiva a emprendedores y empresarios. El encuentro, organizado con la colaboración de diferentes entidades de
@@ -24,7 +24,7 @@ Nosotros **_INODE64 Sistemas_** hemos asistido a los talleres 5 y 6:
 - Taller 6: _De la idea al éxito_
 
 Aquí os reflejamos con algunas palabras clave e ideas cómo hemos vivido nosotros [**Enrédate2012
-**](http://ceeicastellon.emprenemjunts.es/index.php?op=63&mn=1196):
+**](https://ceeicastellon.emprenemjunts.es/index.php?op=63&mn=1196):
 
 - **Entropía**, _trabajo y más trabajo._
 - **Reflexión estratégica**, _innovación por objetivos, concretar._

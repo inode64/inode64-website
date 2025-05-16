@@ -44,11 +44,11 @@ la empresa. Esto incluso puede poner en peligro las relaciones con los clientes.
 
    En este ejemplo, se comprueban diferentes componentes conocidos por tener problemas de seguridad, como:
 
-    - [xmap](http://extensions.joomla.org/extensions/structure-a-navigation/site-map/3066) ([CVE-2010-2678](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2678))
-    - [rsgallery2](http://extensions.joomla.org/extensions/photos-a-images/galleries/photo-gallery/142) ([CVE-2006-6962](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-6962))
+    - [xmap](https://extensions.joomla.org/extensions/structure-a-navigation/site-map/3066) ([CVE-2010-2678](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2678))
+    - [rsgallery2](https://extensions.joomla.org/extensions/photos-a-images/galleries/photo-gallery/142) ([CVE-2006-6962](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-6962))
     - Myblog ([CVE-2010-1540](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1540), CVE-2008-6193,
       CVE-2008-4341)
-    - [rokmodule](http://www.rockettheme.com/extensions-downloads/free/1012-rokmodule) ([CVE-2010-1479](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1479))
+    - [rokmodule](https://www.rockettheme.com/extensions-downloads/free/1012-rokmodule) ([CVE-2010-1479](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1479))
     - Otros componentes como Play, Sport, Etree, Tag, Adagency, Storedirectory, etc.
 
 ### Cómo actúan los atacantes

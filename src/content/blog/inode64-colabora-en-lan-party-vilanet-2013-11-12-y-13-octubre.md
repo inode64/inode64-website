@@ -10,7 +10,7 @@ isDraft: false
 ---
 
 La [*Asociación PINT*](https://twitter.com/AsociacionPint) celebra su segunda **LAN party**. Desde aquí os invitamos a
-participar en el [Vilanet 2013](http://www.vilanetcon.org/) a todos aquellos con inquietudes tecnológicas.
+participar en el [Vilanet 2013](https://www.vilanetcon.org/) a todos aquellos con inquietudes tecnológicas.
 
 Su primera edición fue el primer evento de *tecnología*, *ciencia*, *innovación* y *ocio digital* en **Vila-real**,
 convirtiéndose en un punto de encuentro para todos los amantes de las nuevas tecnologías.
@@ -26,13 +26,13 @@ aportarán nuevos conocimientos, experiencias en un campo tan actual y relevante
 
 **INODE64** colabora en los siguientes puntos:
 
-- Hosting de la web [http://www.vilanetcon.org/](http://www.vilanetcon.org/)
+- Hosting de la web [https://www.vilanetcon.org/](https://www.vilanetcon.org/)
 - Servidor de *Minecraft*
 - Optimización **SEO** de la web y campaña de marketing en Internet
 - Caché y proxy de *Internet*
-- Sistema wifi para 150 conexiones simultáneas, implementado con el sistema [UNIFi](http://www.ubnt.com/unifi)
-  de [Ubiquiti](http://www.ubnt.com)
+- Sistema wifi para 150 conexiones simultáneas, implementado con el sistema [UNIFi](https://www.ubnt.com/unifi)
+  de [Ubiquiti](https://www.ubnt.com)
 
-Os animamos a participar en este importante evento, [inscríbete ya](http://www.vilanetcon.org/inscripcion).
+Os animamos a participar en este importante evento, [inscríbete ya](https://www.vilanetcon.org/inscripcion).
 
-[Accede al portal de Vilanet](http://www.vilanetcon.org/)
+[Accede al portal de Vilanet](https://www.vilanetcon.org/)

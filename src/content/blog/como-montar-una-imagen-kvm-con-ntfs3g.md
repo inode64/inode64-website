@@ -9,11 +9,11 @@ tags: [kvm, ntfs3g, maquinas virtuales]
 isDraft: false
 ---
 
-Cuando estamos trabajando con máquinas virtuales Windows desde [KVM](http://www.linux-kvm.org/), alguna vez nos vemos en
+Cuando estamos trabajando con máquinas virtuales Windows desde [KVM](https://www.linux-kvm.org/), alguna vez nos vemos en
 la necesidad de acceder al sistema de archivos dentro de la máquina virtual sin que dicha máquina esté en
 funcionamiento, para una limpieza de virus, recuperar archivos, etc.
 
-Existe un pequeño truco que es simplemente con la herramienta [ntfs-3g](http://www.ntfs-3g.org/) montar la imagen (
+Existe un pequeño truco que es simplemente con la herramienta [ntfs-3g](https://www.ntfs-3g.org/) montar la imagen (
 porque la imagen incluye la tabla de particiones) a partir del sector donde empieza realmente el sistema de archivos.
 
 ```bash

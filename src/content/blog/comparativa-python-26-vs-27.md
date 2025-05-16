@@ -11,7 +11,7 @@ isDraft: false
 
 Este artículo presenta un test de rendimiento entre las diferentes versiones de Python (2.6 y 2.7) y varios motores de
 plantillas ("Template Engine") como Django, Cheetah, Kid, Genshi, Mako y Tenjin. Los benchmarks fueron realizados
-utilizando herramientas proporcionadas por [Tenjin](http://www.kuwata-lab.com/tenjin/).
+utilizando herramientas proporcionadas por [Tenjin](https://www.kuwata-lab.com/tenjin/).
 
 ### Configuración del entorno de pruebas
 
@@ -82,7 +82,7 @@ jinja2         3.5700    0.0100    3.5800    3.5831
 ### Benchmarks adicionales
 
 Los siguientes resultados se basan en el código
-de [Spitfire performance tests](http://code.google.com/p/spitfire/source/browse/trunk/tests/perf/bigtable.py):
+de [Spitfire performance tests](https://code.google.com/p/spitfire/source/browse/trunk/tests/perf/bigtable.py):
 
 #### Python 2.6.6 (spitfire)
 

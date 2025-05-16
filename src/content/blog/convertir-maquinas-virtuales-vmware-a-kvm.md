@@ -39,6 +39,6 @@ O bien usar la utilidad [MergeIDE](https://inode64.com), que automatiza el proce
 
 5. Ejecutar la máquina en **KVM** e instalar los drivers **VirtIO** desde:
 
-   👉 [http://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/bin/](http://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/bin/)
+   👉 [https://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/bin/](https://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/bin/)
 
    Esto mejorará el rendimiento del sistema virtualizado.

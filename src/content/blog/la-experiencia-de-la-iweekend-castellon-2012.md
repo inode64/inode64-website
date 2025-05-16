@@ -55,9 +55,9 @@ para qué vamos, que lo hagan todo ellos y nosotros miramos.
 
 Igualmente, desde la organización, se debería dar más énfasis en la tarea de hacer entender al líder del proyecto lo
 necesario de buscar a personas serias, trabajadoras, con ideas que se encajen en el proyecto y sus objetivos. Porque
-suele suceder que se transforma en un [Gollum](http://es.wikipedia.org/wiki/Gollum) y al cabo de los meses ves como el
+suele suceder que se transforma en un [Gollum](https://es.wikipedia.org/wiki/Gollum) y al cabo de los meses ves como el
 proyecto no prospera y se queda en una simple landing. Si el proyecto madura es más fácil que obtenga una ayuda de
-los [Business Angels](http://es.wikipedia.org/wiki/Inversor_%C3%A1ngel) como un equipo, no como un "hombre orquesta".
+los [Business Angels](https://es.wikipedia.org/wiki/Inversor_%C3%A1ngel) como un equipo, no como un "hombre orquesta".
 
 Igualmente, se le da un aliciente más a los participantes para que den lo mejor de sí y compitan de forma sana para
 conseguir formar parte.

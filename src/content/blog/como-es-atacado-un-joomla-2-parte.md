@@ -39,8 +39,8 @@ copia no alterada.
 Luego buscaríamos estos patrones en el resto de ficheros y también podemos buscar por fecha de modificación.
 
 Hay que estar atento a los ficheros modificados, porque también pueden incluir una puerta trasera. Y aunque limpiemos
-los ficheros o activemos sistemas de seguridad como [**suhosin**](http://www.hardened-php.net/suhosin/index.html) o [*
-*mod_security**](http://www.modsecurity.org/), hay que buscar este código y eliminarlo.
+los ficheros o activemos sistemas de seguridad como [**suhosin**](https://www.hardened-php.net/suhosin/index.html) o [*
+*mod_security**](https://www.modsecurity.org/), hay que buscar este código y eliminarlo.
 (*suhosin permite limitar el uso de `eval`, pero se necesitan conocimientos porque se podría dejar de funcionar ciertas
 partes de nuestra web.*)
 

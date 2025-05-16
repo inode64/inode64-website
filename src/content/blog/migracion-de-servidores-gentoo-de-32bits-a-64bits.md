@@ -65,7 +65,7 @@ Reiniciamos la máquina y ya tendremos el kernel de 64 bits funcionando con el r
 
 ### Entorno chroot 64 bits
 
-Descargamos el [stage3 apropiado](http://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3/) y creamos un
+Descargamos el [stage3 apropiado](https://distfiles.gentoo.org/releases/amd64/autobuilds/current-stage3/) y creamos un
 entorno en `/mnt/64bits`.
 
 Creamos un directorio en `/mnt/64bits` y descomprimimos el stage3 actual. Luego, con `chroot /mnt/64bits`, instalamos
@@ -90,7 +90,7 @@ source /etc/profile
 ```
 
 Una vez instalados todos los programas requeridos, reiniciamos el equipo y lo arrancamos con un sistema de rescate
-como [SystemRescueCD](http://www.sysresccd.org/SystemRescueCd_Homepage).
+como [SystemRescueCD](https://www.sysresccd.org/SystemRescueCd_Homepage).
 
 Movemos los directorios anteriores del sistema a `/mnt/32bits` por si tenemos que realizar una marcha atrás, y movemos
 el sistema de 64 bits a su ubicación normal. Luego, con reiniciar, es suficiente para tener todo el sistema a 64 bits
@@ -98,5 +98,5 @@ con apenas tiempos de parada.
 
 ### Referencias
 
-- [Migration from x86 to x86_64](http://www.odi.ch/weblog/posting.php?posting=572)
-- [Notes on an in-place migration from Gentoo/i686 to multilib Gentoo/x86_64](http://www.parp.homeunix.net/articles/migration.html)
+- [Migration from x86 to x86_64](https://www.odi.ch/weblog/posting.php?posting=572)
+- [Notes on an in-place migration from Gentoo/i686 to multilib Gentoo/x86_64](https://www.parp.homeunix.net/articles/migration.html)

@@ -11,7 +11,7 @@ isDraft: false
 
 Cuando se realizan páginas web, a veces resulta necesario compartir datos entre ellas, como puede ser el caso de
 compartir los usuarios entre varias webs diferentes en Joomla. Para eso, MySQL nos proporciona una funcionalidad
-llamada [FEDERATED](http://dev.mysql.com/doc/refman/5.6/en/federated-storage-engine.html), que permite usar tablas en
+llamada [FEDERATED](https://dev.mysql.com/doc/refman/5.6/en/federated-storage-engine.html), que permite usar tablas en
 remoto como si estuvieran almacenadas en local. Para evitar problemas de pérdida de datos y velocidad, lo mejor es
 usarlo en el mismo servidor.
 
@@ -96,4 +96,4 @@ datos.
 
 ### Referencias
 
-- [Sincronizar dos tablas en MySQL](http://www.avargas.info/index.php?option=com_content&task=view&id=9&Itemid=1)
+- [Sincronizar dos tablas en MySQL](https://www.avargas.info/index.php?option=com_content&task=view&id=9&Itemid=1)

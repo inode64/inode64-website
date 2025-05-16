@@ -48,5 +48,5 @@ echo "Proceso de actualización completado."
 
 ### Referencias
 
-- [Joomla 1.5 security patch made easy to install](http://anything-digital.com/blog/security-updates/joomla-updates/joomla-15-security-patch-made-easy-to-install.html)
-- [Joomla Bug [#31626] Unauthorized file upload security issue](http://joomlacode.org/gf/project/joomla/tracker/?action=TrackerItemEdit&tracker_item_id=31626)
+- [Joomla 1.5 security patch made easy to install](https://anything-digital.com/blog/security-updates/joomla-updates/joomla-15-security-patch-made-easy-to-install.html)
+- [Joomla Bug [#31626] Unauthorized file upload security issue](https://joomlacode.org/gf/project/joomla/tracker/?action=TrackerItemEdit&tracker_item_id=31626)

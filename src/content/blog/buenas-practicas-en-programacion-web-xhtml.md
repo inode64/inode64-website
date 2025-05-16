@@ -12,18 +12,18 @@ isDraft: false
 ### Las principales ventajas del XHTML sobre el HTML son
 
 1. Se pueden incorporar elementos de
-   distintos [espacios de nombres](http://es.wikipedia.org/w/index.php?title=Espacio_de_nombres&amp;action=edit&amp;redlink=1) [XML](http://es.wikipedia.org/wiki/XML) (
-   como [MathML](http://es.wikipedia.org/wiki/MathML)
-   y [Scalable Vector Graphics](http://es.wikipedia.org/wiki/Scalable_Vector_Graphics)).
-2. Un navegador no necesita implementar [heurísticas](http://es.wikipedia.org/wiki/Heur%C3%ADstica) para detectar qué
-   quiso poner el autor, por lo que el [parser](http://es.wikipedia.org/wiki/Parser) puede ser mucho más sencillo.
+   distintos [espacios de nombres](https://es.wikipedia.org/w/index.php?title=Espacio_de_nombres&amp;action=edit&amp;redlink=1) [XML](https://es.wikipedia.org/wiki/XML) (
+   como [MathML](https://es.wikipedia.org/wiki/MathML)
+   y [Scalable Vector Graphics](https://es.wikipedia.org/wiki/Scalable_Vector_Graphics)).
+2. Un navegador no necesita implementar [heurísticas](https://es.wikipedia.org/wiki/Heur%C3%ADstica) para detectar qué
+   quiso poner el autor, por lo que el [parser](https://es.wikipedia.org/wiki/Parser) puede ser mucho más sencillo.
 3. Como es XML se pueden utilizar fácilmente herramientas creadas para procesamiento de documentos XML genéricos (
-   editores, [XSLT](http://es.wikipedia.org/wiki/XSLT), etc.).
+   editores, [XSLT](https://es.wikipedia.org/wiki/XSLT), etc.).
 
-### Lista de reglas que diferencian XHTML 1.0 de [HTML](http://es.wikipedia.org/wiki/HTML) 4.01
+### Lista de reglas que diferencian XHTML 1.0 de [HTML](https://es.wikipedia.org/wiki/HTML) 4.01
 
-Muchas de estas diferencias vienen con el cambio de ser una aplicación [SGML](http://es.wikipedia.org/wiki/SGML) a ser
-una aplicación del más estricto [XML](http://es.wikipedia.org/wiki/XML):
+Muchas de estas diferencias vienen con el cambio de ser una aplicación [SGML](https://es.wikipedia.org/wiki/SGML) a ser
+una aplicación del más estricto [XML](https://es.wikipedia.org/wiki/XML):
 
 - Los elementos vacíos deben cerrarse siempre:
     - Incorrecto: `<br>`
@@ -89,7 +89,7 @@ noresize="noresize"
 - Es necesaria la declaración de tipo de documento. En xhtml debemos declarar explícitamente el tipo de documento de que
   se trate; por ejemplo, para xhtml 1.0 transicional:
     - `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">`
-    - `<html xmlns="http://www.w3.org/1999/xhtml">`
+    - `<html xmlns="https://www.w3.org/1999/xhtml">`
     - Además, en xhtml debemos escribir explícitamente las etiquetas html, head, body con sus correspondientes parejas (
       en html, los navegadores presumían su existencia si no se escribían)
 
@@ -124,14 +124,14 @@ noresize="noresize"
 
 ### Referencias
 
-1. [http://www.w3.org/TR/xhtml1/#xhtml](http://www.w3.org/TR/xhtml1/#xhtml) Sección 'What is XHTML?' en *XHTML™ 1.0 The
+1. [https://www.w3.org/TR/xhtml1/#xhtml](https://www.w3.org/TR/xhtml1/#xhtml) Sección 'What is XHTML?' en *XHTML™ 1.0 The
    Extensible HyperText Markup Language (Second Edition)* A Reformulation of HTML 4 in XML 1.0 *W3C Recommendation 26
    January 2000, revised 1 August 2002*
-2. [OneStat Website Statistics and website metrics—Press Room](http://www.onestat.com/html/aboutus_pressbox40_browser_market_firefox_growing.html)
-3. [World Wide Web Consortium (W3C) Members](http://www.w3.org/Consortium/Member/List)
-4. [http://hixie.ch/advocacy/xhtml](http://hixie.ch/advocacy/xhtml)
+2. [OneStat Website Statistics and website metrics—Press Room](https://www.onestat.com/html/aboutus_pressbox40_browser_market_firefox_growing.html)
+3. [World Wide Web Consortium (W3C) Members](https://www.w3.org/Consortium/Member/List)
+4. [https://hixie.ch/advocacy/xhtml](https://hixie.ch/advocacy/xhtml)
 
 ### Fuentes
 
-1. [http://es.wikipedia.org/wiki/XHTML](http://es.wikipedia.org/wiki/XHTML)
-2. [http://www.ignside.net/man/html/a_xhtml.php](http://www.ignside.net/man/html/a_xhtml.php)
+1. [https://es.wikipedia.org/wiki/XHTML](https://es.wikipedia.org/wiki/XHTML)
+2. [https://www.ignside.net/man/html/a_xhtml.php](https://www.ignside.net/man/html/a_xhtml.php)

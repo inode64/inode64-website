@@ -10,7 +10,7 @@ isDraft: false
 ---
 
 Esta es una mera comparativa de los principales partidos políticos de España por orden de aparición en
-la [Wikipedia](http://es.wikipedia.org/wiki/Anexo:Partidos_pol%C3%ADticos_de_Espa%C3%B1a). No están todos, pero sí los
+la [Wikipedia](https://es.wikipedia.org/wiki/Anexo:Partidos_pol%C3%ADticos_de_Espa%C3%B1a). No están todos, pero sí los
 más representativos. Tampoco dispongo de más tiempo para realizar el estudio del resto.
 
 Primero realizamos un test de latencia usando el `ping` como herramienta. Existen algunos partidos políticos que

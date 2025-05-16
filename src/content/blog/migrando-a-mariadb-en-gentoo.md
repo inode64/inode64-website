@@ -77,5 +77,5 @@ Y a disfrutar de la velocidad de MariaDB.
 
 ### Referencias
 
-- [Impact of memory allocators on MySQL performance](http://www.mysqlperformanceblog.com/2012/07/05/impact-of-memory-allocators-on-mysql-performance/)
-- [Cómo migrar de MySQL a MariaDb en Ubuntu Server](http://davidburgosonline.com/ddbb-base-datos/2013/como-migrar-de-mysql-a-mariadb-en-ubuntu-server/)
+- [Impact of memory allocators on MySQL performance](https://www.mysqlperformanceblog.com/2012/07/05/impact-of-memory-allocators-on-mysql-performance/)
+- [Cómo migrar de MySQL a MariaDb en Ubuntu Server](https://davidburgosonline.com/ddbb-base-datos/2013/como-migrar-de-mysql-a-mariadb-en-ubuntu-server/)

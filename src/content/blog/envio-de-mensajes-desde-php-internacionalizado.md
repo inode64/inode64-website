@@ -51,5 +51,5 @@ mb_send_mail($to, $subject, $message, $headers);
 
 ### Referencias
 
-- [MIME - Wikipedia](http://es.wikipedia.org/wiki/MIME)
-- [Envío de emails desde PHP usando varios métodos](http://www.phpbsd.net/2007/02/04/envio-de-emails-desde-php-usando-varios-metodos-pear-mail_mime-mail-y-error_log/)
+- [MIME - Wikipedia](https://es.wikipedia.org/wiki/MIME)
+- [Envío de emails desde PHP usando varios métodos](https://www.phpbsd.net/2007/02/04/envio-de-emails-desde-php-usando-varios-metodos-pear-mail_mime-mail-y-error_log/)

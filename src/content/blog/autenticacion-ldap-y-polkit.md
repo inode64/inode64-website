@@ -42,5 +42,5 @@ permisos a usuarios o grupos concretos.
 
 ### Referencias
 
-- [Homepage Polkit](http://www.freedesktop.org/wiki/Software/polkit/)
-- [Ubuntu LDAP Admins and GUI Root Passwords](http://www.ossramblings.com/ubuntu-with-ldap-user-root-password-issue)
+- [Homepage Polkit](https://www.freedesktop.org/wiki/Software/polkit/)
+- [Ubuntu LDAP Admins and GUI Root Passwords](https://www.ossramblings.com/ubuntu-with-ldap-user-root-password-issue)

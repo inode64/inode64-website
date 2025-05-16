@@ -10,7 +10,7 @@ isDraft: false
 ---
 
 Partiendo del código
-de [SERMEPA webempresa](http://www.webempresa.com/blog/item/307-configuracion-de-la-pasarela-de-pago-sermepa-en-virtuemart.html),
+de [SERMEPA webempresa](https://www.webempresa.com/blog/item/307-configuracion-de-la-pasarela-de-pago-sermepa-en-virtuemart.html),
 seguimos los pasos de instalación y el código proporcionado, y cuando creamos el módulo de pago en Virtuemart lo
 cambiamos por este adaptado a los requerimientos especiales de Ruralvía que, aunque use el sistema SERMEPA, han
 realizado modificaciones en los parámetros enviados y la forma de generar la clave encriptada en sha1.
