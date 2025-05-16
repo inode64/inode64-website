@@ -70,6 +70,7 @@ gentoo
 geoip
 ghensi
 github
+Gluster
 gmail
 Gmail
 Gollum

@@ -1,19 +1,22 @@
 [
   {
-    "slug": "mantenimiento-de-sistemas-windows",
-    "title": "Mantenimiento sistemas Windows",
-    "shortDescription": "Optimización, actualización y soporte técnico para sistemas Windows en entornos empresariales y domésticos. Mantén tu equipo en su mejor estado con nuestra gestión proactiva.",
-    "longDescription": "Nuestro servicio de mantenimiento de sistemas Windows está diseñado para garantizar que tus equipos funcionen de manera eficiente y sin interrupciones. Realizamos diagnósticos periódicos, optimización del rendimiento, instalación de actualizaciones críticas y resolución de problemas técnicos. Además, ofrecemos soporte técnico personalizado para ayudarte a resolver cualquier inconveniente, ya sea en entornos empresariales o domésticos. Con nuestra gestión proactiva, puedes estar seguro de que tus sistemas estarán siempre en su mejor estado.",
+    "slug": "mantenimiento-de-sistemas-linux",
+    "title": "Mantenimiento sistemas Linux",
+    "shortDescription": "Optimización, actualización y soporte técnico para sistemas Linux en entornos empresariales. Mantén tu equipo en su mejor estado con nuestra gestión proactiva.",
+    "longDescription": "Nuestro servicio de mantenimiento proactivo de servidores Linux asegura que tu infraestructura esté siempre disponible, segura y optimizada. Combinamos diagnósticos periódicos, actualizaciones críticas y monitorización avanzada para prevenir incidencias antes de que afecten a tu negocio.",
+
     "imageName": "maintenance",
-    "keywords": ["mantenimiento", "windows", "soporte técnico", "optimización", "actualización"],
+    "keywords": ["mantenimiento", "linux", "soporte técnico", "optimización", "actualización"],
     "details": [
       "Diagnóstico y resolución de problemas.",
       "Instalación y configuración de software.",
       "Implementación medidas seguridad.",
       "Optimización del rendimiento del sistema.",
       "Asesoramiento técnico personalizado.",
-      "Actualización y mantenimiento drivers.",
-      "Sistemas de monitorización remota (Prometheus / Grafana)."
+      "Contenedores Docker.",
+      "Sistemas de monitorización remota (Prometheus, Grafana).",
+      "Alta Disponibilidad y Almacenamiento Distribuido (Ceph, GlusterFS, DRBD).",
+      "Nos especializamos en la distribución Gentoo, pero también ofrecemos soporte para otras distribuciones como Debian, Ubuntu y CentOS."
     ],
     "price": "según proyecto",
     "priceUnit": ""
