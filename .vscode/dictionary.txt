@@ -21,6 +21,7 @@ castellón
 cdrom
 CFLAGS
 CHOST
+chumillas
 ciberdelincuentes
 ciberseguridad
 Clubdelpaseo
@@ -38,6 +39,7 @@ devicekit
 Díaz
 dizumo
 django
+dkasesor
 editables
 einsamer
 enfermeria
@@ -171,11 +173,13 @@ spanish
 srvdr
 STARTTLS
 stime
+stpwf
 stpwoodflooring
 supernodo
 supernodos
 Suscríbete
 tailwindcss
+takeachef
 telefonica
 tenjin
 Tenjin
