@@ -32,6 +32,7 @@ consolekit
 Consúltanos
 crossdev
 d'escacs
+debian
 descacs
 devicekit
 Díaz

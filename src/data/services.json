@@ -6,6 +6,7 @@
     "shortDescription": "Garantice la continuidad y el rendimiento de su negocio con nuestro servicio de mantenimiento, optimización y soporte técnico especializado para sistemas Linux.",
     "longDescription": "Asegure la máxima disponibilidad, seguridad y eficiencia de su infraestructura Linux empresarial con nuestro servicio de mantenimiento proactivo. Implementamos diagnósticos exhaustivos, aplicamos actualizaciones críticas de seguridad y rendimiento, y utilizamos monitorización avanzada para anticipar y neutralizar incidencias antes de que impacten sus operaciones. Nuestra gestión experta está diseñada para que sus sistemas Linux funcionen de manera óptima, permitiéndole enfocarse en el crecimiento de su negocio.\n\nConfíe en nuestra especialización en Gentoo y nuestra amplia experiencia en Debian, Ubuntu y CentOS para una infraestructura Linux robusta y fiable.",
     "imageName": "maintenance",
+    "landing": true,
     "keywords": [
       "mantenimiento linux empresarial",
       "soporte técnico linux",
@@ -38,6 +39,7 @@
     "shortDescription": "Soluciones completas de monitorización, ciberseguridad y mantenimiento IT para servidores, redes y estaciones. Potenciamos la eficiencia y continuidad de su negocio.",
     "longDescription": "Fortalezca la operativa de su empresa con nuestro servicio de administración integral de infraestructuras IT. Nos especializamos en la monitorización proactiva 24/7, la implementación de estrategias de ciberseguridad robustas y el mantenimiento preventivo y correctivo de todos sus activos tecnológicos: servidores, redes y estaciones de trabajo. Nuestro objetivo es garantizar que su infraestructura IT funcione con la máxima eficiencia y fiabilidad, minimizando el riesgo de interrupciones y optimizando la productividad.\n\nPermita que nuestros expertos se encarguen de la complejidad tecnológica, para que usted pueda concentrarse en sus objetivos estratégicos.",
     "imageName": "admin",
+    "landing": true,
     "keywords": [
       "gestión infraestructura TI",
       "servicios TI para empresas",
@@ -66,6 +68,7 @@
     "shortDescription": "Transforme su negocio con nuestros servicios de implementación y gestión cloud: almacenamiento seguro, servidores virtuales (VPS/VDS), backup robusto y colaboración optimizada.",
     "longDescription": "Impulse la agilidad, escalabilidad y eficiencia de su empresa con nuestras soluciones cloud estratégicas. Diseñamos, implementamos y gestionamos infraestructuras en la nube que incluyen almacenamiento flexible y seguro, servidores virtuales de alto rendimiento (IaaS), estrategias de backup y recuperación ante desastres (BaaS/DRaaS), y plataformas de colaboración que potencian la productividad. Nos aseguramos de que sus datos críticos estén protegidos, accesibles y cumplan con la normativa vigente, liberando recursos para que su empresa innove y crezca.\n\nMigre y optimice sus cargas de trabajo en la nube con expertos que entienden sus necesidades de negocio.",
     "imageName": "cloud",
+    "landing": false,
     "keywords": [
       "soluciones cloud empresariales",
       "servicios gestionados en la nube",
@@ -96,6 +99,7 @@
     "shortDescription": "Impulse su presencia online con nuestro hosting web profesional. Velocidad, seguridad robusta y soporte 24/7 para webs corporativas, e-commerce y aplicaciones críticas.",
     "longDescription": "Ofrezca la mejor experiencia a sus usuarios y proteja sus activos digitales con nuestro servicio de hosting web de alto rendimiento, diseñado específicamente para las exigencias empresariales. Garantizamos velocidad de carga superior, uptime excepcional y seguridad multicapa para su página web, tienda online o aplicación web. Nuestras soluciones son personalizadas y escalables, adaptándose al crecimiento de su proyecto, y respaldadas por un equipo de soporte técnico experto disponible 24/7 para resolver cualquier incidencia.\n\nInvierta en un hosting que contribuya al éxito de su negocio online, con la tranquilidad de una infraestructura fiable y optimizada.",
     "imageName": "hosting",
+    "landing": false,
     "keywords": [
       "hosting web empresarial",
       "alojamiento web profesional",
@@ -125,6 +129,7 @@
     "shortDescription": "Transforme datos en decisiones. Optimizamos la UX, velocidad y conversión de su web para maximizar el ROI y el impacto de su negocio digital.",
     "longDescription": "Potencie el rendimiento de su presencia online con nuestra consultoría y analítica web basada en datos. Identificamos oportunidades críticas de mejora analizando la experiencia de usuario (UX/UI), la velocidad de carga (Core Web Vitals), el funnel de conversión y el comportamiento del visitante. Proporcionamos insights accionables y estrategias personalizadas para optimizar cada faceta de su web, desde la captación hasta la fidelización. Nuestro objetivo es ayudarle a tomar decisiones informadas que impulsen el crecimiento y la rentabilidad de su negocio en el competitivo entorno digital.\n\nConvierta su sitio web en una potente herramienta de negocio con nuestro enfoque analítico y estratégico.",
     "imageName": "analysis",
+    "landing": false,
     "keywords": [
       "consultoría web empresarial",
       "analítica web avanzada",
@@ -153,6 +158,7 @@
     "shortDescription": "Diseño, implementación y gestión de redes WiFi profesionales. Cobertura total, seguridad robusta y rendimiento optimizado para la productividad de su empresa.",
     "longDescription": "Garantice una conectividad inalámbrica fiable, segura y de alto rendimiento para su organización con nuestras soluciones WiFi empresariales. Realizamos estudios de cobertura (site surveys), diseñamos e implementamos infraestructuras WiFi personalizadas, incluyendo redes mesh para entornos complejos y la integración de tecnologías WiFi 6/6E. Implementamos protocolos de seguridad avanzados (WPA3-Enterprise, segmentación de red, NAC) para proteger sus datos y dispositivos. Nuestro servicio asegura que su red inalámbrica soporte las crecientes demandas de movilidad, IoT y aplicaciones críticas para el negocio, mejorando la productividad y la experiencia de empleados y clientes.\n\nOptimice la conectividad de su empresa con una infraestructura WiFi diseñada para el futuro.",
     "imageName": "wireless",
+    "landing": false,
     "keywords": [
       "WiFi empresarial",
       "redes inalámbricas seguras",
