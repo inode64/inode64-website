@@ -1,3 +1,4 @@
+accionables
 actm
 Adrià
 adsl
@@ -58,6 +59,7 @@ ESET
 ethernet
 faqs
 felix
+fidelización
 finogomez
 finoygomez
 flickr
@@ -85,6 +87,7 @@ guifi
 guifinet
 heurísticas
 Hiren's
+Hotjar
 htdocs
 httpdocs
 indexación
@@ -121,6 +124,8 @@ Moby
 modularidad
 moodle
 multibyte
+multicanal
+multicapa
 Multiidioma
 multilib
 mysqlcheck
@@ -146,6 +151,7 @@ proarpro
 Proarpro
 promopublic
 Realtek
+recalcular
 redactalia
 redirecciones
 Redmine
@@ -164,6 +170,7 @@ ruralvía
 Ruralvía
 sanitización
 sartel
+satisfacerle
 Securización
 sermepa
 SERMEPA

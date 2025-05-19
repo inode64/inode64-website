@@ -3,11 +3,7 @@ import { Image } from "astro:assets";
 import logo from "../assets/images/brand/logo.webp";
 import { icons } from "../assets/icons";
 import allServices from "../data/services.json";
-import {
-  ObfuscatedEmail,
-  ObfuscatedPhone,
-  ObfuscatedData
-} from 'astro-obfuscate/components';
+import { ObfuscatedEmail, ObfuscatedPhone, ObfuscatedData } from "astro-obfuscate/components";
 
 const servicesForFooter = allServices.filter((service) => service.shortTitle && service.shortTitle.trim() !== "");
 
@@ -157,16 +153,16 @@ const fullWhatsappLink = `https://wa.me/${whatsappNumber}`;
 </footer>
 
 <script>
-  import ObfuscatedData from 'astro-obfuscate/client';
-  ObfuscatedData.registerElement('link', (deobfuscated, text) => {
-    const elem = document.createElement('a');
+  import ObfuscatedData from "astro-obfuscate/client";
+  ObfuscatedData.registerElement("link", (deobfuscated, text) => {
+    const elem = document.createElement("a");
     elem.href = deobfuscated;
 
-    const imgElement = document.createElement('img');
+    const imgElement = document.createElement("img");
 
-    imgElement.src = text;
-    imgElement.alt = 'WhatsApp';
-    imgElement.className = 'transition duration-200 hover:brightness-120'; // Espera data-img-class
+    imgElement.src = text ?? "";
+    imgElement.alt = "WhatsApp";
+    imgElement.className = "transition duration-200 hover:brightness-120"; // Espera data-img-class
 
     elem.appendChild(imgElement);
 
