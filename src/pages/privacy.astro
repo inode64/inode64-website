@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
+import { ObfuscatedPhone } from "astro-obfuscate/components";
 ---
 
 <Layout title={seoConfig.privacy.title} description={seoConfig.privacy.description} image={seoConfig.privacy.image}>
@@ -41,7 +42,7 @@ import { seoConfig } from "@/config/seo-config";
         De conformidad con lo establecido en la Ley Orgánica 15/99, de 13 de Diciembre de Protección de Datos de
         Carácter Personal y en la normativa de desarrollo, usted puede, en cualquier momento, acceder, modificar o
         solicitar que cancelemos su información personal de nuestra base de datos enviando un e-mail o bien
-        telefónicamente al +34 964 21 31 05.
+        telefónicamente al <ObfuscatedPhone phone={import.meta.env.PHONE_NUMBER} />.
       </p>
       <p class="mt-4 text-gray-700">
         El tratamiento y gestión de los mismos cumple lo estipulado en el Real Decreto 994/1999, de 11 de junio, por el

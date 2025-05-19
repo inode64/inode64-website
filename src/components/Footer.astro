@@ -3,10 +3,14 @@ import { Image } from "astro:assets";
 import logo from "../assets/images/brand/logo.webp";
 import { icons } from "../assets/icons";
 import allServices from "../data/services.json";
+import { ObfuscatedEmail, ObfuscatedPhone, ObfuscatedData } from "astro-obfuscate/components";
 
 const servicesForFooter = allServices.filter((service) => service.shortTitle && service.shortTitle.trim() !== "");
 
 const year = new Date().getFullYear();
+
+const whatsappNumber = import.meta.env.WHATSAPP_NUMBER;
+const fullWhatsappLink = `https://wa.me/${whatsappNumber}`;
 ---
 
 <footer class="bg-white">
@@ -24,9 +28,7 @@ const year = new Date().getFullYear();
 
         <ul class="mt-8 flex justify-center gap-8 sm:justify-center md:gap-7 sm:max-w-xs">
           <li>
-            <a href="https://wa.me/34607398682" rel="noopener noreferrer" target="_blank">
-              <img src={icons.whatsapp.src} alt="WhatsApp" class="transition duration-200 hover:brightness-120" />
-            </a>
+            <ObfuscatedData data={fullWhatsappLink} text={icons.whatsapp.src} type="link" />
           </li>
 
           <li>
@@ -110,12 +112,16 @@ const year = new Date().getFullYear();
           <ul class="mt-8 space-y-4 text-sm">
             <li class="-mt-0.5 flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
               <img src={icons.mail.src} alt="Icono de correo" class="max-w-6" />
-              <a href="mailto:sat@inode64.com" class="flex-1 text-gray-700">sat@inode64.com</a>
+              <span class="flex-1 text-gray-700">
+                <ObfuscatedEmail email={import.meta.env.SENDER_CONTACT_EMAIL} />
+              </span>
             </li>
 
             <li class="-mt-0.5 flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
               <img src={icons.phone.src} alt="Icono de teléfono" class="max-w-6" />
-              <span class="flex-1 text-gray-700">+34 964 213 105</span>
+              <span class="flex-1 text-gray-700">
+                <ObfuscatedPhone phone={import.meta.env.PHONE_NUMBER} />
+              </span>
             </li>
 
             <li class="-mt-0.5 flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
@@ -145,3 +151,21 @@ const year = new Date().getFullYear();
     </div>
   </div>
 </footer>
+
+<script>
+  import ObfuscatedData from "astro-obfuscate/client";
+  ObfuscatedData.registerElement("link", (deobfuscated, text) => {
+    const elem = document.createElement("a");
+    elem.href = deobfuscated;
+
+    const imgElement = document.createElement("img");
+
+    imgElement.src = text ?? "";
+    imgElement.alt = "WhatsApp";
+    imgElement.className = "transition duration-200 hover:brightness-120"; // Espera data-img-class
+
+    elem.appendChild(imgElement);
+
+    return elem;
+  });
+</script>

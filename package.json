@@ -23,15 +23,16 @@
   "dependencies": {
     "@astrojs/mdx": "^4.2.6",
     "@astrojs/sitemap": "^3.4.0",
-    "@tailwindcss/vite": "^4.1.6",
+    "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.7.13",
     "astro-robots-txt": "^1.0.0",
-    "tailwindcss": "^4.1.6",
+    "tailwindcss": "^4.1.7",
     "imagemin": "^9.0.1",
     "imagemin-webp": "^8.0.0",
     "imagemin-pngquant": "^10.0.0",
     "imagemin-svgo": "^11.0.1",
-    "glob": "11.0.2"
+    "glob": "11.0.2",
+    "astro-obfuscate": "^0.0.5"
   },
   "ContactDependencies": {
     "nodemailer": "^7.0.3"
