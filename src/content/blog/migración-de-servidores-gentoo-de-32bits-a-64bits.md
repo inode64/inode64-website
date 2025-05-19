@@ -3,8 +3,8 @@ title: Migración de Servidores Gentoo de 32Bits a 64Bits
 date: 2014-12-05
 description: Una guía detallada sobre cómo migrar servidores Gentoo de 32 bits a 64 bits, optimizando el rendimiento y aprovechando al máximo el hardware moderno.
 author: Francisco Javier Félix Belmonte
-image: 'migracion-de-servidores-gentoo-de-32bits-a-64bits'
-category: 'seguridad'
+image: "migración-de-servidores-gentoo-de-32bits-a-64bits"
+category: "seguridad"
 tags: [gentoo, server]
 isDraft: false
 ---
@@ -15,12 +15,12 @@ bits. Para poder gestionar más de tres gigabytes de memoria y mejorar el rendim
 bits para sacar el mayor provecho al hardware.
 
 En el proceso de migración de un sistema **Gentoo** de 32 bits a 64 bits existen varias formas de realizarlo. Nosotros
-creamos un *chroot* con todo el sistema desde cero y luego vamos copiando la configuración. Esto nos permite actualizar
+creamos un _chroot_ con todo el sistema desde cero y luego vamos copiando la configuración. Esto nos permite actualizar
 el servidor sin apenas tiempo de desconexión.
 
 ### Pasos previos
 
-- Actualizar el portage, emerge e instalar el último *kernel* estable:
+- Actualizar el portage, emerge e instalar el último _kernel_ estable:
 
 ```bash
 emerge --sync

@@ -3,9 +3,9 @@ title: Comentario de INODE64 en Periódico mediterráneo
 date: 2009-01-12
 description: Un análisis del artículo publicado en el periódico Mediterráneo el 12 de enero de 2009, que aborda los riesgos de la inseguridad informática y la importancia de implementar medidas preventivas.
 author: Francisco Javier Félix Belmonte
-image: "comentario-en-periodico-mediterraneo"
+image: "comentario-en-periódico-mediterráneo"
 category: "prensa"
-tags: [mediterraneo, prensa, ciberseguridad]
+tags: [mediterráneo, prensa, ciberseguridad]
 isDraft: false
 ---
 

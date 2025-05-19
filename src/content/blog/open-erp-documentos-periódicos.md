@@ -3,8 +3,8 @@ title: Gestión de documentos periódicos en OPEN ERP
 date: 2012-08-22
 description: Aprende cómo configurar documentos periódicos en Open ERP para automatizar la facturación de servicios o productos de manera eficiente.
 author: Francisco Javier Félix Belmonte
-image: 'open-erp-documentos-periodicos'
-category: 'blog'
+image: "open-erp-documentos-periódicos"
+category: "blog"
 tags: [openerp, documentos, automatizaciones]
 isDraft: false
 ---
@@ -33,6 +33,6 @@ a cuando se genera el documento).
    Los "Tipos de documento" especifican qué modelo está involucrado en el proceso, por ejemplo un pedido, y qué campos
    de ese modelo se modifican al generar la copia.
 3. Ir a **Herramientas → Documentos periódicos → Todos los documentos periódicos**:
-    - Aquí especificamos el modelo base creado en el punto 1, lo que también indica el cliente al que se le aplica.
-    - Cada cuánto se genera el documento o modelo (facturación mensual, anual, bimensual, ...).
-    - Cuánto tiempo se estarán generando modelos (Contrato de un año, 3 meses, ...).
+   - Aquí especificamos el modelo base creado en el punto 1, lo que también indica el cliente al que se le aplica.
+   - Cada cuánto se genera el documento o modelo (facturación mensual, anual, bimensual, ...).
+   - Cuánto tiempo se estarán generando modelos (Contrato de un año, 3 meses, ...).

@@ -3,7 +3,7 @@ title: Buenas Practicas en programación web XHTML
 date: 2010-06-04
 description: Una guía detallada sobre las mejores prácticas en programación web utilizando XHTML, destacando sus ventajas, reglas y diferencias clave con HTML.
 author: Francisco Javier Félix Belmonte
-image: "buenas-practicas-en-programacion-web-xhtml"
+image: "buenas-practicas-en-programación-web-xhtml"
 category: "blog"
 tags: [xhtml, clean code]
 isDraft: false
@@ -45,7 +45,7 @@ una aplicación del más estricto [XML](https://es.wikipedia.org/wiki/XML):
     bloque. `<font size="2"><center>texto</center></font>` es inválido.
 
 | Elementos block-line (formadores de bloque):   |
-|------------------------------------------------|
+| ---------------------------------------------- |
 | p dir dl noframes menu isindex table           |
 | blockquote ul ol center address h1-h6 fieldset |
 | pre hr di                                      |

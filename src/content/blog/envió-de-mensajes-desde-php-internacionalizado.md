@@ -3,8 +3,8 @@ title: Envió de mensajes desde PHP internacionalizado
 date: 2010-06-04
 description: Aprende cómo enviar correos electrónicos internacionalizados en PHP utilizando `mb_send_mail()` y mejores prácticas para garantizar compatibilidad y soporte multilenguaje.
 author: Francisco Javier Félix Belmonte
-image: 'envio-de-mensajes-desde-php-internacionalizado'
-category: 'blog'
+image: "envió-de-mensajes-desde-php-internacionalizado"
+category: "blog"
 tags: [php, emails, clean code]
 isDraft: false
 ---

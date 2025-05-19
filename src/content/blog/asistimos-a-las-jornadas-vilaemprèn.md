@@ -1,11 +1,11 @@
 ---
-title: Asistimos con entusiasmo a las jornadas del Vilaemprén 2014
+title: Asistimos con entusiasmo a las jornadas del Vilaemprèn 2014
 date: 2014-01-24
 description: Resumen de la 1ª jornada Vilaemprèn, destacando las actividades, el espíritu emprendedor y las oportunidades de networking para jóvenes de Vila-real.
 author: Francisco Javier Félix Belmonte
-image: 'asistimos-a-las-jornadas-vilaempren'
-category: 'blog'
-tags: [vilaempren, empresas, emprendedores]
+image: "asistimos-a-las-jornadas-vilaemprèn"
+category: "blog"
+tags: [vilaemprèn, empresas, emprendedores]
 isDraft: false
 ---
 
@@ -14,15 +14,15 @@ La 1ª jornada **Vilaemprèn** estuvo dedicada a promover el espíritu emprended
 El propósito de Vilaemprèn es reunir a 50 o más emprendedores de distintos perfiles en un día de exposición, talleres,
 trabajo colaborativo, networking y, sobre todo, conocer a otros jóvenes y sus inquietudes.
 
-Los emprendedores que han disfrutado de una *Vilabeca* toman las riendas y protagonizan lo que será el portal de
+Los emprendedores que han disfrutado de una _Vilabeca_ toman las riendas y protagonizan lo que será el portal de
 lanzamiento de sus ideas.
 
-La 1ª jornada Vilaemprèn nace de la inquietud del **Ayuntamiento de Vila-real** por promover los proyectos *Vilabeca
-emprèn*.
+La 1ª jornada Vilaemprèn nace de la inquietud del **Ayuntamiento de Vila-real** por promover los proyectos _Vilabeca
+emprèn_.
 
 El **proyecto VilaBeca** es un programa de becas que comenzó en 2012 con el objetivo de fomentar, a través de la
 creatividad, el espíritu emprendedor de los jóvenes de Vila-real que nunca se habían planteado emprender. De aquí surge
-el reto de la segunda edición: *VilaBeca Emprèn*.
+el reto de la segunda edición: _VilaBeca Emprèn_.
 
 Es un programa de becas de emprendimiento social, ya que uno de los requisitos para los becados es que el proyecto tenga
 repercusión o beneficio para la sociedad de Vila-real.

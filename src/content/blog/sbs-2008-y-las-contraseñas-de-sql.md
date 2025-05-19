@@ -3,7 +3,7 @@ title: Sistemas SBS 2008 y las contraseñas de SQL
 date: 2012-01-30
 description: Solución al problema de acceso a MSSQL en Small Business Server 2008 tras el cambio o caducidad de la contraseña del administrador.
 author: Francisco Javier Félix Belmonte
-image: "sbs-2008-y-las-contrasenas-de-sql"
+image: "sbs-2008-y-las-contraseñas-de-sql"
 category: "blog"
 tags: [sbs, sql, passwords]
 isDraft: false

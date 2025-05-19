@@ -3,9 +3,9 @@ title: Reseña de INODE64 en el Periódico Mediterráneo
 date: 2009-11-02
 description: Un análisis sobre el aumento de la ciberdelincuencia en Castellón durante noviembre de 2009, destacando la importancia de la educación digital y la seguridad en línea.
 author: Francisco Javier Félix Belmonte
-image: 'resena-en-el-periodico-mediterraneo'
-category: 'prensa'
-tags: [mediterraneo, prensa, ciberdelincuencia]
+image: "reseña-en-el-periódico-mediterráneo"
+category: "prensa"
+tags: [mediterráneo, prensa, ciberdelincuencia]
 isDraft: false
 ---
 

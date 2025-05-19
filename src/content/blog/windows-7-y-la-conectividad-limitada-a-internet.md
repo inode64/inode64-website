@@ -3,7 +3,7 @@ title: Windows 7 y la conectividad limitada a internet
 date: 2011-09-26
 description: Explicación del mensaje de conectividad limitada en Windows 7, sus diferencias con versiones anteriores y cómo afecta a la red local.
 author: Francisco Javier Félix Belmonte
-image: "windows-7-y-la-conectilidad-limitada-a-internet"
+image: "windows-7-y-la-conectividad-limitada-a-internet"
 category: "blog"
 tags: [windows, internet, conectividad, red]
 isDraft: false

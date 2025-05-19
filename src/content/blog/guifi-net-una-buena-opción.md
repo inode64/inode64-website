@@ -3,8 +3,8 @@ title: Guifi.net, ¿una buena opción para redes comunitarias?
 date: 2014-06-13
 description: Un análisis crítico sobre el estado actual de guifi.net, sus desafíos y propuestas para mejorar esta red libre y colaborativa.
 author: Francisco Javier Félix Belmonte
-image: 'guifi-net-una-buena-opcion'
-category: 'blog'
+image: "guifi-net-una-buena-opción"
+category: "blog"
 tags: [guifinet, internet, comunidad]
 isDraft: false
 ---
@@ -59,10 +59,10 @@ Por tanto, proponemos las siguientes soluciones:
 - Establecer Administradores (voluntarios) que controlen el uso racional de la red por zonas, y que tenga unas tareas de
   control específicas, como por ejemplo:
 
-    - Que se ajuste a la potencia correcta.
-    - Active el DFS para que no interfieran en los radares meteorológicos y de aviación.
-    - Mantener un inventario de nodos y cuando un nodo esté mal configurado o sin uso, tener autoridad para avisar y en
-      última instancia borrarlo y dejar libre la IP para nuevos miembros.
+  - Que se ajuste a la potencia correcta.
+  - Active el DFS para que no interfieran en los radares meteorológicos y de aviación.
+  - Mantener un inventario de nodos y cuando un nodo esté mal configurado o sin uso, tener autoridad para avisar y en
+    última instancia borrarlo y dejar libre la IP para nuevos miembros.
 
 - Estudiar la forma de activar el QoS y así limitar que un único usuario pueda saturar la red entera.
 

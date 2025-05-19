@@ -3,9 +3,9 @@ title: La experiencia de la iWeekend Castellón 2012
 date: 2012-12-12
 description: Reflexión sobre la experiencia vivida en la iWeekend Castellón 2012, destacando aprendizajes, propuestas de mejora y el impacto en la colaboración entre emprendedores.
 author: Francisco Javier Félix Belmonte
-image: 'la-experiencia-de-la-iweekend-castellon-2012'
-category: 'blog'
-tags: [iweekend, castellon]
+image: "la-experiencia-de-la-iweekend-castellón-2012"
+category: "blog"
+tags: [iweekend, castellón]
 isDraft: false
 ---
 

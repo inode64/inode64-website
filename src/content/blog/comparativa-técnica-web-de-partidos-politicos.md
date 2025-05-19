@@ -3,8 +3,8 @@ title: Comparativa técnica web de partidos políticos
 date: 2011-11-01
 description: Una comparativa técnica de las páginas web de los principales partidos políticos de España, analizando latencia, tiempos de renderizado y conclusiones clave.
 author: Francisco Javier Félix Belmonte
-image: 'comparativa-tecnica-web-de-partidos-politicos'
-category: 'blog'
+image: "comparativa-técnica-web-de-partidos-politicos"
+category: "blog"
 tags: [partidos políticos, web]
 isDraft: false
 ---
@@ -26,8 +26,8 @@ permite emular el funcionamiento de un rastreador tipo Google y aproximarnos a l
 ### CONCLUSIONES
 
 1. ONO es más rápido que Telefónica.
-2. Como norma general, la latencia es buena. Esto ayudará a una carga de elementos más rápida, con excepción de *Unión
-   Progreso y Democracia*.
+2. Como norma general, la latencia es buena. Esto ayudará a una carga de elementos más rápida, con excepción de _Unión
+   Progreso y Democracia_.
 3. Existen muchas webs alojadas en Francia (OVH).
 4. La renderización de algunas webs es lenta, lo que puede colapsarlas fácilmente si aumenta el número de usuarios
    concurrentes, haciendo que muchos desistan y abandonen la navegación.

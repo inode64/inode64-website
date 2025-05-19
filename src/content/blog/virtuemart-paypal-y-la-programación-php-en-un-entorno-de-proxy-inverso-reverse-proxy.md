@@ -3,8 +3,8 @@ title: Virtuemart, Paypal y PHP en Proxy inverso (Reverse Proxy)
 date: 2014-07-19
 description: Aprende a configurar Virtuemart y Paypal en entornos con Proxy inverso, optimizando el rendimiento y solucionando errores comunes en la programación PHP.
 author: Francisco Javier Félix Belmonte
-image: 'virtuemart-paypal-y-la-programacion-php-en-un-entorno-de-proxy-inverso-reverse-proxy'
-category: 'Joomla'
+image: "virtuemart-paypal-y-la-programación-php-en-un-entorno-de-proxy-inverso-reverse-proxy"
+category: "Joomla"
 tags: [cache, proxy, php, joomla, virtuemart, paypal, squid]
 isDraft: false
 ---

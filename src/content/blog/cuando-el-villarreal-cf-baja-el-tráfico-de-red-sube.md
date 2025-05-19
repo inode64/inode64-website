@@ -3,13 +3,13 @@ title: Cuando el Villarreal CF baja el tráfico sube
 date: 2012-05-23
 description: Un análisis del impacto en redes sociales y tráfico web tras el descenso del Villarreal CF a la segunda división, destacando cómo las noticias negativas generan mayor interacción.
 author: Francisco Javier Félix Belmonte
-image: 'cuando-el-villarreal-cf-baja-el-trafico-de-red-sube'
-category: 'blog'
+image: "cuando-el-villarreal-cf-baja-el-tráfico-de-red-sube"
+category: "blog"
 tags: [villarreal cf, red, trafico]
 isDraft: false
 ---
 
-El día *13 de mayo de 2012* será recordado por la afición del [Villarreal CF](https://www.villarrealcf.es) como un día en
+El día _13 de mayo de 2012_ será recordado por la afición del [Villarreal CF](https://www.villarrealcf.es) como un día en
 el que todos los factores se conjuraron para que el equipo, que disfrutaba de un reconocimiento internacional,
 descendiera a la categoría plata de la liga española (2ª división).
 

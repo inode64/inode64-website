@@ -3,7 +3,7 @@ title: Jornadas empresariales - Enrédate Castellón 2012
 date: 2012-09-14
 description: Resumen del Encuentro Empresarial Enrédate Castellón 2012, destacando talleres, networking y claves para la innovación y el emprendimiento.
 author: Francisco Javier Félix Belmonte
-image: "jornadas-enredate-castellon-2012"
+image: "jornadas-enredate-castellón-2012"
 category: "blog"
 tags: [jornadas, innovación, networking]
 isDraft: false

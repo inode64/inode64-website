@@ -3,8 +3,8 @@ title: Configuración de Autenticación LDAP y Polkit
 date: 2013-09-22
 description: Exploramos cómo configurar la autenticación centralizada con LDAP y Polkit, resolviendo problemas comunes y optimizando permisos en sistemas GNOME.
 author: Francisco Javier Félix Belmonte
-image: 'autenticacion-ldap-y-polkit'
-category: 'seguridad'
+image: "autenticación-ldap-y-polkit"
+category: "seguridad"
 tags: [ldap, polkit, seguridad, gnome]
 isDraft: false
 ---
@@ -32,8 +32,8 @@ las reglas de _polkit_.
 Creamos el fichero **`50-allowall.rules`** en **`/etc/polkit-1/rules.d/`** con el siguiente contenido:
 
 ```javascript
-polkit.addRule(function(action, subject) {
-        return polkit.Result.YES;
+polkit.addRule(function (action, subject) {
+  return polkit.Result.YES;
 });
 ```
 
