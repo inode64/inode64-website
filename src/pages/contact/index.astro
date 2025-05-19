@@ -13,13 +13,7 @@ import Button from "@/components/ui/Button.astro";
         no dude en contactar a nuestro equipo de ventas. Estaremos encantados de ayudarle.
       </p>
     </div>
-    <form
-      action="https://api.web3forms.com/submit"
-      method="POST"
-      id="form"
-      class="mt-10 needs-validation max-w-2xl mx-auto grid gap-6"
-      novalidate
-    >
+    <form method="POST" id="form" class="mt-10 needs-validation max-w-2xl mx-auto grid gap-6" novalidate>
       <input type="hidden" name="access_key" value={import.meta.env.CONTACT_ACCESS_KEY} />
       <input type="hidden" name="from_name" value="INODE64" />
       <input type="hidden" name="subject" value="Nueva consulta desde la web" />
@@ -155,7 +149,7 @@ import Button from "@/components/ui/Button.astro";
 <script src="https://web3forms.com/client/script.js" async defer></script>
 
 <script type="module">
-  document.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("load", () => {
     const form = document.getElementById("form");
     const result = document.getElementById("result");
     const privacyCheckbox = document.getElementById("privacy-policy-checkbox");
