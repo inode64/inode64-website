@@ -1,6 +1,9 @@
 ---
 import services from "../../data/services.json";
 import Button from "../ui/Button.astro";
+
+// Filtrar primero los servicios que se van a mostrar (landing: true)
+const servicesToDisplay = services.filter(service => service.landing === true);
 ---
 
 <section
@@ -19,56 +22,54 @@ import Button from "../ui/Button.astro";
   </div>
   <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-2 md:gap-8 justify-center">
     {
-      services
-        .filter((service) => service.landing === true) // Filtrar servicios con landing: true
-        .map((service) => (
-          <div class="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs">
-            <div
-              class="p-6 pb-0 sm:px-8 rounded-2xl border-0"
-              style="background: linear-gradient(to bottom, rgba(255, 0, 0, 0.1), rgba(255, 255, 255, 0.1));"
-            >
-              <h2 class="text-xl font-medium text-gray-900">
-                {service.title}
-                <span class="sr-only">Plan</span>
-              </h2>
-              <div>
-                <p class="mt-2 pb-4 text-gray-700">{service.shortDescription}</p>
-              </div>
-              <Button
-                type="button"
-                withFull={true}
-                text="Más información"
-                href={`/services/${service.slug}`}
-                srText={`sobre ${service.title.toLowerCase()}`}
-              />
+      servicesToDisplay.map((service) => (
+        <div class="divide-y divide-gray-200 rounded-2xl border border-gray-200 shadow-xs">
+          <div
+            class="p-6 pb-0 sm:px-8 rounded-2xl border-0"
+            style="background: linear-gradient(to bottom, rgba(255, 0, 0, 0.1), rgba(255, 255, 255, 0.1));"
+          >
+            <h2 class="text-xl font-medium text-gray-900">
+              {service.title}
+              <span class="sr-only">Plan</span>
+            </h2>
+            <div>
+              <p class="mt-2 pb-4 text-gray-700">{service.shortDescription}</p>
             </div>
-
-            <div class="p-6 lg:px-8">
-              <p class="text-lg font-medium text-gray-900 sm:text-xl">Incluye:</p>
-
-              {service.details && Array.isArray(service.details) && (
-                <ul class="mt-2 space-y-2 sm:mt-4">
-                  {service.details.slice(0, 6).map((detail) => (
-                    <li class="flex items-center gap-1">
-                      <svg
-                        xmlns="https://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-5 text-red-700 shadow-sm"
-                      >
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                      </svg>
-
-                      <span class="text-gray-700 text-sm">{detail}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
+            <Button
+              type="button"
+              withFull={true}
+              text="Más información"
+              href={`/services/${service.slug}`}
+              srText={`sobre ${service.title.toLowerCase()}`}
+            />
           </div>
-        ))
+
+          <div class="p-6 lg:px-8">
+            <p class="text-lg font-medium text-gray-900 sm:text-xl">Incluye:</p>
+
+            {service.details && Array.isArray(service.details) && (
+              <ul class="mt-2 space-y-2 sm:mt-4">
+                {service.details.map((detail) => (
+                  <li class="flex items-center gap-1">
+                    <svg
+                      xmlns="https://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5 text-red-700 shadow-sm"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                    </svg>
+
+                    <span class="text-gray-700 text-sm">{detail}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+      ))
     }
   </div>
   <div class="mt-8 text-center">
