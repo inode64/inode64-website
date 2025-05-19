@@ -25,19 +25,20 @@
     "@astrojs/sitemap": "^3.4.0",
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.7.13",
+    "astro-htaccess": "^0.2.3",
+    "astro-obfuscate": "^0.0.5",
     "astro-robots-txt": "^1.0.0",
-    "tailwindcss": "^4.1.7",
+    "glob": "11.0.2",
     "imagemin": "^9.0.1",
-    "imagemin-webp": "^8.0.0",
     "imagemin-pngquant": "^10.0.0",
     "imagemin-svgo": "^11.0.1",
-    "glob": "11.0.2",
-    "astro-obfuscate": "^0.0.5"
+    "imagemin-webp": "^8.0.0",
+    "tailwindcss": "^4.1.7"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.17",
     "prettier": "^3.5.3",
-    "prettier-plugin-astro": "^0.14.1",
-    "@types/nodemailer": "^6.4.17"
+    "prettier-plugin-astro": "^0.14.1"
   },
   "cspell": {
     "dictionaryDefinitions": [
