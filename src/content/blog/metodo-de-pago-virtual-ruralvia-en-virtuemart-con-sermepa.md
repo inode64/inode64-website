@@ -5,7 +5,7 @@ description: Aprende cómo configurar el método de pago Virtual Ruralvía en Vi
 author: Francisco Javier Félix Belmonte
 image: "metodo-de-pago-virtual-ruralvia-en-virtuemart-con-sermepa"
 category: "joomla"
-tags: [pagos virtuales, serpema, ruralvía]
+tags: [pagos virtuales, sermepa, ruralvía]
 isDraft: false
 ---
 
