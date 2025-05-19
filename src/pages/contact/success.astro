@@ -1,0 +1,21 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { seoConfig } from "@/config/seo-config";
+import Button from "@/components/ui/Button.astro";
+import { icons } from "../../assets/icons";
+---
+
+<Layout title={seoConfig.contact.title} description={seoConfig.contact.description} image={seoConfig.contact.image}>
+  <section class="min-h-[70vh] flex flex-col justify-center items-center text-center px-6 py-24 bg-gray-50">
+    <div class="max-w-xl w-full">
+      <div class="flex justify-center mb-8">
+        <img src={icons.successContact.src} alt="Mensaje enviado correctamente" class="w-44 h-44" />
+      </div>
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">¡Mensaje enviado con éxito!</h1>
+      <p class="text-lg text-gray-700 mb-6 pb-10">
+        Gracias por ponerte en contacto con nosotros. Hemos recibido tu mensaje y te responderemos lo antes posible.
+      </p>
+      <Button href="/" text="Volver al inicio" />
+    </div>
+  </section>
+</Layout>
