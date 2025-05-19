@@ -1,6 +1,13 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
+
+import {
+  ObfuscatedEmail,
+  ObfuscatedPhone,
+  ObfuscatedData
+} from 'astro-obfuscate/components';
+
 ---
 
 <Layout title={seoConfig.terms.title} description={seoConfig.terms.description} image={seoConfig.terms.image}>
@@ -222,7 +229,7 @@ import { seoConfig } from "@/config/seo-config";
       </p>
       <p>
         Para tramitar el envío de una forma más ágil y contrastar más rápidamente la información facilitada por nuestra
-        entidad bancaria le solicitamos que nos remita por e-mail a sat@inode64.com, el justificante de la
+        entidad bancaria le solicitamos que nos remita por e-mail a <ObfuscatedEmail email={import.meta.env.SENDER_CONTACT_EMAIL} />, el justificante de la
         transferencia.
       </p>
       <p>
@@ -287,12 +294,12 @@ import { seoConfig } from "@/config/seo-config";
       <p>
         En caso de disconformidad con la gestión de una reclamación en periodo de garantía o con el fin de detallar
         alguna consideración al respecto sobre el producto, siempre podrá ponerse en contacto telefónico con nuestro
-        responsable de atención al cliente en horario comercial (+34 964 21 31 05) Cancelación de Compras.
+        responsable de atención al cliente en horario comercial (<ObfuscatedPhone phone={import.meta.env.PHONE_NUMBER} />) Cancelación de Compras.
       </p>
       <p>
         El usuario puede cancelar el proceso de compra siempre y cuando este no haya sido procesado en su totalidad y no
         haya salido de nuestro almacén. Con el fin de asegurar por parte del cliente dicha cancelación, es aconsejable
-        ponerse en contacto telefónico con nuestra tienda (+34 964 21 31 05 ) .
+        ponerse en contacto telefónico con nuestra tienda (<ObfuscatedPhone phone={import.meta.env.PHONE_NUMBER} />) .
       </p>
       <p>
         En caso de que el pedido haya sido enviado antes de su llamada, se considerará entonces como una devolución.

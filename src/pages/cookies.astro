@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
+import { ObfuscatedEmail, ObfuscatedPhone } from "astro-obfuscate/components";
 ---
 
 <Layout title={seoConfig.cookies.title} description={seoConfig.cookies.description} image={seoConfig.cookies.image}>
@@ -58,11 +59,11 @@ import { seoConfig } from "@/config/seo-config";
         contactarnos:
       </p>
       <ul>
-        <li>Por correo electrónico: sat@inode64.com</li>
+        <li>Por correo electrónico: <ObfuscatedEmail email={import.meta.env.SENDER_CONTACT_EMAIL} /></li>
         <li>
           Visitando: <a href="https://www.inode64.com/contact" target="_blank">https://www.inode64.com/contact</a>
         </li>
-        <li>Por teléfono: +34 964 213 105</li>
+        <li>Por teléfono: <ObfuscatedPhone phone={import.meta.env.PHONE_NUMBER} /></li>
         <li>Por correo postal: Calle Picaso, 5 - Bajo 12005 Castellón, España</li>
       </ul>
     </div>
