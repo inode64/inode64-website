@@ -29,19 +29,35 @@ export default defineConfig({
         { match: "^\\/info\\/servicios$", url: "/services", code: 301 },
         {
           match: "^\\/info\\/administracion-de-sistemas-informaticos-para-empresas$",
-          url: "/services/infraestructura-it-empresas",
+          url: "/services/mantenimiento-de-sistemas-linux-empresarial",
           code: 301,
         },
         { match: "^\\/info\\/hospedaje-web-basico$", url: "/services/hosting-web-de-alto-rendimiento", code: 301 },
-        { match: "^\\/info\\/servicios-en-la-nube$", url: "/services/soluciones-en-la-nube", code: 301 },
-        { match: "^\\/info\\/escuela-20$", url: "/services", code: 301 },
         {
-          match: "^\\/info\\/marketing-online-seo-sem$",
-          url: "/services/marketing-digital-y-desarrollo-web",
+          match: "^\\/info\\/servicios-en-la-nube$",
+          url: "/services/hosting-web-empresarial-alto-rendimiento-seguro",
           code: 301,
         },
-        { match: "^\\/info\\/instalaciones-de-redes-inalambricas-wifi$", url: "/services", code: 301 },
-        { match: "^\\/info\\/instalador-guifi-net$", url: "/services", code: 301 },
+        {
+          match: "^\\/info\\/escuela-20$",
+          url: "/services/gestión-integral-infraestructura-it-empresarial",
+          code: 301,
+        },
+        {
+          match: "^\\/info\\/marketing-online-seo-sem$",
+          url: "/services/consultoría-analítica-web-optimización-conversion",
+          code: 301,
+        },
+        {
+          match: "^\\/info\\/instalaciones-de-redes-inalambricas-wifi$",
+          url: "/services/soluciones-wifi-empresarial-seguras-alto-rendimiento",
+          code: 301,
+        },
+        {
+          match: "^\\/info\\/instalador-guifi-net$",
+          url: "/services/soluciones-wifi-empresarial-seguras-alto-rendimiento",
+          code: 301,
+        },
         {
           match: "^\\/guias\\/seguridad\\/php-5-6-y-las-conexiones-seguras-ssl-tls$",
           url: "/blog/php-5-6-y-las-conexiones-seguras-ssl-tls",
