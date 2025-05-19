@@ -1,10 +1,15 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import { seoConfig } from "@/config/seo-config";
-import Button from "@/components/ui/Button.astro";
+import Layout from "../../layouts/Layout.astro";
+import { seoConfig } from "../../config/seo-config";
+import Button from "../../components/ui/Button.astro";
 ---
 
-<Layout title={seoConfig.contact.title} description={seoConfig.contact.description} image={seoConfig.contact.image}>
+<Layout
+  title={seoConfig.contact.title}
+  description={seoConfig.contact.description}
+  image={seoConfig.contact.image}
+  robots={seoConfig.contact.robots}
+>
   <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
     <div class="mx-auto max-w-250 text-center">
       <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Contáctenos</h2>
@@ -21,7 +26,7 @@ import Button from "@/components/ui/Button.astro";
 
       <div class="flex flex-col md:flex-row md:space-x-4 mb-2 space-y-4 md:space-y-0">
         <div class="w-full md:w-1/2">
-          <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Nombre</label>
+          <label for="first_name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Nombre</label>
           <input
             type="text"
             name="nombre"
@@ -33,11 +38,11 @@ import Button from "@/components/ui/Button.astro";
           <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">Por favor, indique su nombre.</div>
         </div>
         <div class="w-full md:w-1/2">
-          <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Apellidos</label>
+          <label for="surname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Apellidos</label>
           <input
             type="text"
             name="apellidos"
-            id="lname"
+            id="surname"
             placeholder="Apellidos"
             required
             class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 bg-white dark:bg-gray-800 transition-colors duration-200"
@@ -65,7 +70,7 @@ import Button from "@/components/ui/Button.astro";
           <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Teléfono</label>
           <input
             type="text"
-            name="telefono"
+            name="phone"
             id="phone"
             placeholder="123 456 789"
             required

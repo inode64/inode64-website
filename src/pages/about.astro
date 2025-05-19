@@ -5,7 +5,12 @@ import { icons } from "../assets/icons";
 import about from "../assets/images/about/about.svg";
 ---
 
-<Layout title={seoConfig.about.title} description={seoConfig.about.description} image={seoConfig.about.image}>
+<Layout
+  title={seoConfig.about.title}
+  description={seoConfig.about.description}
+  image={seoConfig.about.image}
+  robots={seoConfig.about.robots}
+>
   <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
     <div class="mx-auto max-w-250 text-center">
       <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Quiénes Somos</h2>

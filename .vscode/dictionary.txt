@@ -16,6 +16,7 @@ belmonte
 betatesters
 bogomips
 Boronat
+botcheck
 cafile
 cartagena
 castellón

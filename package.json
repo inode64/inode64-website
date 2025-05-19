@@ -34,9 +34,6 @@
     "glob": "11.0.2",
     "astro-obfuscate": "^0.0.5"
   },
-  "ContactDependencies": {
-    "nodemailer": "^7.0.3"
-  },
   "devDependencies": {
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",

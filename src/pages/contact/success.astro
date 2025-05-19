@@ -1,11 +1,16 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-import { seoConfig } from "@/config/seo-config";
-import Button from "@/components/ui/Button.astro";
+import Layout from "../../layouts/Layout.astro";
+import { seoConfig } from "../../config/seo-config";
+import Button from "../../components/ui/Button.astro";
 import { icons } from "../../assets/icons";
 ---
 
-<Layout title={seoConfig.contact.title} description={seoConfig.contact.description} image={seoConfig.contact.image}>
+<Layout
+  title={seoConfig.contact.title}
+  description={seoConfig.contact.description}
+  image={seoConfig.contact.image}
+  robots={seoConfig.contact.robots}
+>
   <section class="min-h-[70vh] flex flex-col justify-center items-center text-center px-6 py-24 bg-gray-50">
     <div class="max-w-xl w-full">
       <div class="flex justify-center mb-8">

@@ -2,15 +2,15 @@
 import Layout from "@/layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
 
-import {
-  ObfuscatedEmail,
-  ObfuscatedPhone,
-  ObfuscatedData
-} from 'astro-obfuscate/components';
-
+import { ObfuscatedEmail, ObfuscatedPhone, ObfuscatedData } from "astro-obfuscate/components";
 ---
 
-<Layout title={seoConfig.terms.title} description={seoConfig.terms.description} image={seoConfig.terms.image}>
+<Layout
+  title={seoConfig.terms.title}
+  description={seoConfig.terms.description}
+  image={seoConfig.terms.image}
+  robots={seoConfig.terms.robots}
+>
   <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
     <div class="mx-auto max-w-250 text-center">
       <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
@@ -229,8 +229,9 @@ import {
       </p>
       <p>
         Para tramitar el envío de una forma más ágil y contrastar más rápidamente la información facilitada por nuestra
-        entidad bancaria le solicitamos que nos remita por e-mail a <ObfuscatedEmail email={import.meta.env.SENDER_CONTACT_EMAIL} />, el justificante de la
-        transferencia.
+        entidad bancaria le solicitamos que nos remita por e-mail a <ObfuscatedEmail
+          email={import.meta.env.SENDER_CONTACT_EMAIL}
+        />, el justificante de la transferencia.
       </p>
       <p>
         No olvide que debe efectuar el pago en EUROS y que todas las eventuales comisiones bancarias corren por su
@@ -294,7 +295,9 @@ import {
       <p>
         En caso de disconformidad con la gestión de una reclamación en periodo de garantía o con el fin de detallar
         alguna consideración al respecto sobre el producto, siempre podrá ponerse en contacto telefónico con nuestro
-        responsable de atención al cliente en horario comercial (<ObfuscatedPhone phone={import.meta.env.PHONE_NUMBER} />) Cancelación de Compras.
+        responsable de atención al cliente en horario comercial (<ObfuscatedPhone
+          phone={import.meta.env.PHONE_NUMBER}
+        />) Cancelación de Compras.
       </p>
       <p>
         El usuario puede cancelar el proceso de compra siempre y cuando este no haya sido procesado en su totalidad y no

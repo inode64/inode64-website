@@ -4,7 +4,12 @@ import { seoConfig } from "@/config/seo-config";
 import { ObfuscatedPhone } from "astro-obfuscate/components";
 ---
 
-<Layout title={seoConfig.privacy.title} description={seoConfig.privacy.description} image={seoConfig.privacy.image}>
+<Layout
+  title={seoConfig.privacy.title}
+  description={seoConfig.privacy.description}
+  image={seoConfig.privacy.image}
+  robots={seoConfig.privacy.robots}
+>
   <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
     <div class="mx-auto max-w-250 text-center">
       <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">

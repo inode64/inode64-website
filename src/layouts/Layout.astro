@@ -18,12 +18,14 @@ interface Props {
   title?: string;
   image?: string | ImageMetadata;
   description?: string;
+  robots?: string;
 }
 
 const {
   title = seoConfig.home.title,
   description = seoConfig.home.description,
   image = seoConfig.home.image,
+  robots = seoConfig.home.robots,
 } = Astro.props;
 
 const ogImage = typeof image === "string" ? image : image.src;
@@ -45,6 +47,9 @@ const ogImage = typeof image === "string" ? image : image.src;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
+
+    <!-- Robots -->
+    <meta name="robots" content={robots} />
 
     <title>{title}</title>
     <ClientRouter />
