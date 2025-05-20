@@ -3,7 +3,7 @@ title: Método de pago Virtual Ruralvía en Virtuemart con SERMEPA
 date: 2012-01-04
 description: Aprende cómo configurar el método de pago Virtual Ruralvía en Virtuemart utilizando el sistema SERMEPA, con instrucciones detalladas y código adaptado.
 author: Francisco Javier Félix Belmonte
-image: "método-de-pago-virtual-ruralvia-en-virtuemart-con-sermepa"
+image: "método-de-pago-virtual-ruralvía-en-virtuemart-con-sermepa"
 category: "joomla"
 tags: [pagos virtuales, sermepa, ruralvía]
 isDraft: false
@@ -23,4 +23,4 @@ el nuevo código.
 // Código PHP adaptado para Ruralvía
 ```
 
-[Descargar ruralvia.php (1.99 kB)](https://inode64.com)
+[Descargar ruralvía.php (1.99 kB)](https://inode64.com)
