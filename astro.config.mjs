@@ -178,7 +178,7 @@ export default defineConfig({
         { match: "^\\/guias\\/socialmediaday-castellon$", url: "/blog/socialmediaday-castellón", code: 301 },
         {
           match: "^\\/guias\\/jornadas-enredate-castellon-2012$",
-          url: "/blog/jornadas-enredate-castellón-2012",
+          url: "/blog/jornadas-enrédate-castellón-2012",
           code: 301,
         },
         {
@@ -221,7 +221,7 @@ export default defineConfig({
         },
         {
           match: "^\\/codigo\\/joomla\\/metodo-de-pago-virtual-ruralvia-en-virtuemart-con-sermepa$",
-          url: "/blog/método-de-pago-virtual-ruralvia-en-virtuemart-con-sermepa",
+          url: "/blog/método-de-pago-virtual-ruralvía-en-virtuemart-con-sermepa",
           code: 301,
         },
         {
