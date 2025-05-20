@@ -1,8 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/images/brand/logo.webp";
-
-const isDev = import.meta.env.DEV ?? false;
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow">
@@ -64,7 +62,6 @@ const isDev = import.meta.env.DEV ?? false;
     </div>
   </nav>
 
-  {isDev ? <>/** Menú móvil */</> : null}
   <div
     id="mobile-menu"
     class="opacity-0 pointer-events-none fixed inset-0 bg-white z-10 p-3 sm:max-w-xxl sm:ring-1 sm:ring-gray-900/10 transition-opacity duration-300 ease-in-out"
@@ -108,12 +105,3 @@ const isDev = import.meta.env.DEV ?? false;
     document.addEventListener("astro:page-load", handlePageLoad);
   </script>
 </header>
-
-{
-  isDev ? (
-    <>
-      Recuerda añadir `pt-24` (o según la altura real del header) al contenedor principal de cada página para evitar que
-      el contenido quede oculto detrás del header fijo.
-    </>
-  ) : null
-}
