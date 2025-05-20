@@ -191,14 +191,19 @@ export default defineConfig({
           url: "/blog/mediterráneo-fotografía-en-cpd-trabajando",
           code: 301,
         },
-        { match: "^\\/guias\\/en-agosto-no-cerramos$", url: "/blog/en-agosto-no-cerramos", code: 301 },
+        { match: "^\\/blog\\/en-agosto-no-cerramos$", url: "/blog/en-agosto-no-cerramos", code: 301 },
         {
           match: "^\\/guias\\/como-es-atacado-un-joomla-2-parte$",
           url: "/blog/como-es-atacado-un-joomla-2-parte",
           code: 301,
         },
         {
-          match: "^\\/codigo\\/joomla\\/componente-content-fake-para-la-creacion-de-contenidos-falsos$",
+          match: "^\\/blog\\/como-es-atacado-un-joomla-2-parte\\/como-es-atacado-un-joomla$",
+          url: "/blog/como-es-atacado-un-joomla-2-parte",
+          code: 301,
+        },
+        {
+          match: "^\\/codigo\\/joomla\\/componente-content_fake-para-la-creacion-de-contenidos-falsos$",
           url: "/blog/componente-content-fake-para-la-creación-de-contenidos-falsos",
           code: 301,
         },
@@ -294,6 +299,26 @@ export default defineConfig({
           code: 301,
         },
         { match: "^\\/prensa\\/reportaje-en-el-mediterraneo$", url: "/blog/reportaje-en-el-mediterráneo", code: 301 },
+        {
+          match: "^\\/oferta-de-empleo$",
+          url: "/contact",
+          code: 301,
+        },
+        {
+          match: "^\\/sobre-nosotros\\/contacto",
+          url: "/contact",
+          code: 301,
+        },
+        {
+          match: "^\\/codigo\\/joomla",
+          url: "/blog",
+          code: 301,
+        },
+        {
+          match: "^\\/tag\\/",
+          url: "/blog",
+          code: 301,
+        },
       ],
     }),
   ],
