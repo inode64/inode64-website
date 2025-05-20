@@ -29,6 +29,7 @@ const {
 } = Astro.props;
 
 const ogImage = typeof image === "string" ? image : image.src;
+const isDev = import.meta.env.DEV ?? false;
 ---
 
 <!doctype html>
@@ -39,19 +40,19 @@ const ogImage = typeof image === "string" ? image : image.src;
     <link rel="icon" type="image/svg+xml" href={favicon.src} />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- SEO -->
+    {isDev ? <>/** SEO */</> : null}
     <meta name="description" content={description} />
     <meta name="author" content={"Roberto Galán"} />
 
-    <!-- OG MetaTags -->
+    {isDev ? <>/** OG MetaTags */</> : null}
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
 
-    <!-- Robots -->
+    {isDev ? <>/** Robots */</> : null}
     <meta name="robots" content={robots} />
 
-    <!-- RSS -->
+    {isDev ? <>/** RSS */</> : null}
     <link rel="alternate" type="application/rss+xml" title="INODE64's Blog" href={new URL("rss.xml", Astro.site)} />
 
     <title>{title}</title>

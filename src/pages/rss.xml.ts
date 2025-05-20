@@ -1,5 +1,3 @@
-// src/pages/rss.xml.ts
-import { siteConfig } from "@/config/site-config";
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 
