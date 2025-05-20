@@ -2,6 +2,8 @@
 import Layout from "@/layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
 import { ObfuscatedPhone } from "astro-obfuscate/components";
+
+const SITE = import.meta.env.SITE;
 ---
 
 <Layout
@@ -33,8 +35,8 @@ import { ObfuscatedPhone } from "astro-obfuscate/components";
 
       <h3 class="mt-8 text-2xl font-semibold text-gray-900">1. General</h3>
       <p class="mt-4 text-gray-700">
-        INODE64 SISTEMAS, como propietario de www.inode64.com, garantiza expresamente que los datos que usted nos
-        facilite son mantenidos con absoluta confidencialidad.
+        INODE64 SISTEMAS, como propietario de {SITE}, garantiza expresamente que los datos que usted nos facilite son
+        mantenidos con absoluta confidencialidad.
       </p>
 
       <h3 class="mt-8 text-2xl font-semibold text-gray-900">2. Tratamiento de sus datos personales</h3>
@@ -55,20 +57,20 @@ import { ObfuscatedPhone } from "astro-obfuscate/components";
         carácter personal.
       </p>
       <p class="mt-4 text-gray-700">
-        INODE64 SISTEMAS, como propietario de www.inode64.com, bajo ningún concepto, vende información sobre sus
-        clientes a terceros ni cederá información alguna de sus datos.
+        INODE64 SISTEMAS, como propietario de {SITE}, bajo ningún concepto, vende información sobre sus clientes a
+        terceros ni cederá información alguna de sus datos.
       </p>
 
       <h3 class="mt-8 text-2xl font-semibold text-gray-900">3. Datos de tarjeta de crédito</h3>
       <p class="mt-4 text-gray-700">
-        INODE64 SISTEMAS, como propietario de www.inode64.com, nunca recibe los datos de su tarjeta de crédito, éstos
-        son enviados directamente al soporte de pago Website Payments Standard Integration de PayPal o a los bancos
-        quienes procesan el pago y nos notifican la realización de la operación.
+        INODE64 SISTEMAS, como propietario de {SITE}, nunca recibe los datos de su tarjeta de crédito, éstos son
+        enviados directamente al soporte de pago Website Payments Standard Integration de PayPal o a los bancos quienes
+        procesan el pago y nos notifican la realización de la operación.
       </p>
 
       <h3 class="mt-8 text-2xl font-semibold text-gray-900">4. Seguridad</h3>
       <p class="mt-4 text-gray-700">
-        INODE64 SISTEMAS, como propietario de www.inode64.com, toma todas las medidas necesarias para proteger la
+        INODE64 SISTEMAS, como propietario de {SITE}, toma todas las medidas necesarias para proteger la
         confidencialidad de su información personal.
       </p>
       <p class="mt-4 text-gray-700">
@@ -78,9 +80,8 @@ import { ObfuscatedPhone } from "astro-obfuscate/components";
 
       <h3 class="mt-8 text-2xl font-semibold text-gray-900">5. Modificaciones</h3>
       <p class="mt-4 text-gray-700">
-        INODE64 SISTEMAS, como propietario de www.inode64.com, se reserva el derecho de modificar su política de
-        confidencialidad a causa de un cambio legislativo, jurisprudencial o de acuerdo con su criterio o práctica
-        empresarial.
+        INODE64 SISTEMAS, como propietario de {SITE}, se reserva el derecho de modificar su política de confidencialidad
+        a causa de un cambio legislativo, jurisprudencial o de acuerdo con su criterio o práctica empresarial.
       </p>
       <p class="mt-4 text-gray-700">
         Para cualquier duda o aclaración referente a nuestra política de confidencialidad, por favor póngase en contacto

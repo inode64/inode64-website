@@ -3,6 +3,8 @@ import Layout from "@/layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
 
 import { ObfuscatedEmail, ObfuscatedPhone } from "astro-obfuscate/components";
+
+const SITE = import.meta.env.SITE;
 ---
 
 <Layout
@@ -41,9 +43,9 @@ import { ObfuscatedEmail, ObfuscatedPhone } from "astro-obfuscate/components";
       <p>
         Los derechos relativos a la propiedad industrial e intelectual (a título enunciativo y no limitativo: marcas,
         logotipos, textos, fotografías, iconos, imágenes,..., así como el diseño gráfico, código fuente y demás
-        elementos de software contenidos en la página Web www.inode64.com son propiedad de INODE64 SISTEMAS. o de las
-        empresas representadas y fabricantes de los productos y servicios ofertados. Por tanto están sujetos a derechos
-        de propiedad intelectual e industrial protegidos por la legislación española e internacional.
+        elementos de software contenidos en la página Web {SITE} son propiedad de INODE64 SISTEMAS. o de las empresas representadas
+        y fabricantes de los productos y servicios ofertados. Por tanto están sujetos a derechos de propiedad intelectual
+        e industrial protegidos por la legislación española e internacional.
       </p>
       <p>
         Sin la previa autorización escrita de forma fehaciente de INODE64 SISTEMAS, o, en su caso, del representante o
@@ -103,7 +105,7 @@ import { ObfuscatedEmail, ObfuscatedPhone } from "astro-obfuscate/components";
       <h3>7. Modificaciones</h3>
       <p>
         INODE64 SISTEMAS se reserva el derecho a realizar modificaciones o actualizaciones sobre los productos, precios,
-        promociones y demás condiciones contenidas en la página www.inode64.com.
+        promociones y demás condiciones contenidas en la página {SITE}.
       </p>
 
       <h2>Condiciones Generales de compra</h2>
@@ -111,16 +113,16 @@ import { ObfuscatedEmail, ObfuscatedPhone } from "astro-obfuscate/components";
       <h3>1.- Identificación</h3>
       <p>
         Las Condiciones Generales de Contratación recogidas en el presente documento son de aplicación a todas las
-        transacciones comerciales que se realicen a través de la página web www.inode64.com, cuyo titular es INODE64
-        SISTEMAS, con domicilio en c/ Zumalacárregui nº 43, 1, 12540 VILA-REAL ( Castellón ).
+        transacciones comerciales que se realicen a través de la página web {SITE}, cuyo titular es INODE64 SISTEMAS,
+        con domicilio en {import.meta.env.PUBLIC_ADDRESS}.
       </p>
       <p>
         Estas condiciones generales de venta son las únicas aplicables y consideramos que una vez que haya hecho un
         pedido, habrá aceptado sin reservas nuestras condiciones generales de venta tras haberlas leído.
       </p>
       <p>
-        Accediendo a www.inode64.com, el comprador se compromete a respetar las Condiciones Generales así como las
-        Condiciones de Utilización que figuran en las mismas.
+        Accediendo a {SITE}, el comprador se compromete a respetar las Condiciones Generales así como las Condiciones de
+        Utilización que figuran en las mismas.
       </p>
 
       <h3>2.- Objeto y actividad</h3>
@@ -197,13 +199,12 @@ import { ObfuscatedEmail, ObfuscatedPhone } from "astro-obfuscate/components";
       </p>
       <p>
         Si pulsa "comprar", aparecerá un formulario en el que se le solicitará su nombre de usuario y contraseña
-        registrada en www.inode64.com. Si no está todavía registrado en nuestra página, aparecerá la opción "nuevo
-        cliente" para registrarse. Si pulsa "Nuevo cliente", aparecerá un formulario en el que se solicitan sus datos.
-        Si quiere puede guardar sus datos para futuras compras, introduciendo una contraseña que deberá recordar, junto
-        con el nombre de usuario introducido. Una vez introducido el nombre de usuario y contraseña en caso de estar ya
-        registrado o cumplimentado el formulario de registro de nuevo usuario, aparecerá una nueva pantalla donde podrás
-        cambiar la dirección de envío del pedido si lo deseas y seleccionar el modo de pago. Pulse el botón "OK.
-        Continuar".
+        registrada en {SITE}. Si no está todavía registrado en nuestra página, aparecerá la opción "nuevo cliente" para
+        registrarse. Si pulsa "Nuevo cliente", aparecerá un formulario en el que se solicitan sus datos. Si quiere puede
+        guardar sus datos para futuras compras, introduciendo una contraseña que deberá recordar, junto con el nombre de
+        usuario introducido. Una vez introducido el nombre de usuario y contraseña en caso de estar ya registrado o
+        cumplimentado el formulario de registro de nuevo usuario, aparecerá una nueva pantalla donde podrás cambiar la
+        dirección de envío del pedido si lo deseas y seleccionar el modo de pago. Pulse el botón "OK. Continuar".
       </p>
       <p>
         En la siguiente pantalla, podrá confirmar todos los datos del pedido. Una vez confirmados estos datos y si desea
@@ -309,7 +310,7 @@ import { ObfuscatedEmail, ObfuscatedPhone } from "astro-obfuscate/components";
       </p>
 
       <h3>10.- Legislación aplicable en la materia</h3>
-      <p>Las transacciones comerciales realizadas con www.inode64.com están sometidas a la legislación española.</p>
+      <p>Las transacciones comerciales realizadas con {SITE} están sometidas a la legislación española.</p>
       <p>Leyes de aplicación a la materia</p>
       <p>
         <strong>
@@ -330,7 +331,7 @@ import { ObfuscatedEmail, ObfuscatedPhone } from "astro-obfuscate/components";
         cuyo responsable es Fco. Javier Félix Belmonte.En virtud de lo dispuesto en el artículo 15 y siguientes de la
         LOPD y en los términos que indica su Reglamento de desarrollo aprobado por Real Decreto 1720/2007, de 21 de
         diciembre (RLOPD), en cualquier momento usted podrá ejercer sus derechos de acceso, rectificación, cancelación y
-        oposición, dirigiéndose por escrito a Calle Zumalacárregui nº 43 1, 12540 VILA-REAL, Castellón.
+        oposición, dirigiéndose por escrito a {import.meta.env.PUBLIC_ADDRESS}.
       </p>
       <p>
         El hecho que no introduzca los datos de carácter personal que aparecen en el formulario de inscripción como
@@ -342,8 +343,8 @@ import { ObfuscatedEmail, ObfuscatedPhone } from "astro-obfuscate/components";
         productos y servicios e información de carácter comercial de interés de Fco. Javier Félix Belmonte. Le
         informamos, asimismo, que nuestro servidor enviará a su ordenador un fichero ('cookie') que, con la información
         que nos facilitará sobre el idioma escogido y otras opciones de navegación de las páginas que visite a través de
-        www.inode64.com. En cualquier caso, usted tiene la posibilidad de configurar su ordenador de manera que rechacé
-        la instalación de estas 'cookies'.
+        {SITE}. En cualquier caso, usted tiene la posibilidad de configurar su ordenador de manera que rechacé la
+        instalación de estas 'cookies'.
       </p>
       <p>
         Fco. Javier Félix Belmonte se compromete a tratar de una manera absolutamente confidencial sus datos de carácter

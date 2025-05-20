@@ -184,7 +184,6 @@ peniscola
 Peñíscola
 phpmailer
 phps
-Picaso
 plugdev
 polkit
 PORTDIR
@@ -290,4 +289,3 @@ Wsportpro
 Xavi
 xcache
 youtube
-Zumalacárregui

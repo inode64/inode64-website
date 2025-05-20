@@ -7,7 +7,7 @@ export async function GET() {
   return rss({
     title: "Inode64's Blog",
     description: "Últimos artículos y noticias",
-    site: "https://inode64.com",
+    site: import.meta.env.SITE,
     items: posts.map((post) => ({
       title: post.data.title,
       pubDate: post.data.date,
