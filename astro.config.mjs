@@ -32,14 +32,29 @@ export default defineConfig({
         { match: "^\\/info\\/tecnologia-thin-client$", url: "/services", code: 301 },
         { match: "^\\/info\\/alianzas$", url: "/partners", code: 301 },
         { match: "^\\/info\\/porfolio$", url: "/services", code: 301 },
-        { match: "^\\/info\\/clientes$", url: "#clientes", code: 301 },
+        { match: "^\\/info\\/clientes$", url: "/#clientes", code: 301 },
         { match: "^\\/info\\/aplicaciones$", url: "/resources", code: 301 },
+        { match: "^\\/Entrar$", url: "/", code: 301 },
+        { match: "^\\/jcomments$", url: "/contact", code: 301 },
+        { match: "^\\/guias$", url: "/blog", code: 301 },
+        { match: "^\\/info\\/aviso-legal$", url: "/terms", code: 301 },
+        { match: "^\\/info\\/privacidad$", url: "/privacy", code: 301 },
+        { match: "^\\/mapa-del-sitio$", url: "/", code: 301 },
         {
           match: "^\\/info\\/administracion-de-sistemas-informaticos-para-empresas$",
           url: "/services/mantenimiento-de-sistemas-linux-empresarial",
           code: 301,
         },
-        { match: "^\\/info\\/hospedaje-web-basico$", url: "/services/hosting-web-de-alto-rendimiento", code: 301 },
+        {
+          match: "^\\info\\/mantenimiento-software-y-hardware-windows/$",
+          url: "/services/mantenimiento-de-sistemas-linux-empresarial",
+          code: 301,
+        },
+        {
+          match: "^\\/info\\/hospedaje-web-basico$",
+          url: "/services/hosting-web-empresarial-alto-rendimiento-seguro",
+          code: 301,
+        },
         {
           match: "^\\/info\\/servicios-en-la-nube$",
           url: "/services/hosting-web-empresarial-alto-rendimiento-seguro",
@@ -57,6 +72,11 @@ export default defineConfig({
         },
         {
           match: "^\\/info\\/marketing-online-seo-sem$",
+          url: "/services/consultoría-analítica-web-optimización-conversion",
+          code: 301,
+        },
+        {
+          match: "^\\info\\/analisis-web$",
           url: "/services/consultoría-analítica-web-optimización-conversion",
           code: 301,
         },
@@ -174,6 +194,11 @@ export default defineConfig({
         {
           match: "^\\/codigo\\/joomla\\/sincronizar-tablas-en-mysql$",
           url: "/blog/sincronizar-tablas-en-mysql",
+          code: 301,
+        },
+        {
+          match: "^\\guias\\/colaboracion-en-iweekend-castellon-2012/$",
+          url: "/blog/la-experiencia-de-la-iweekend-castellón-2012",
           code: 301,
         },
         {
