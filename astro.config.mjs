@@ -20,6 +20,8 @@ export default defineConfig({
       errorPages: [{ code: 404, document: "/404.html" }],
       redirects: [
         { match: "^\\/prensa$", url: "/blog", code: 301 },
+        { match: "^\\/info\\/rendimiento$", url: "/", code: 301 },
+        { match: "^\\/info\\/estadisticas$", url: "/", code: 301 },
         { match: "^\\/info\\/donde-estamos$", url: "/contact", code: 301 },
         { match: "^\\/sobre-nosotros\\/contacto$", url: "/contact", code: 301 },
         { match: "^\\/contacto$", url: "/contact", code: 301 },
@@ -34,7 +36,7 @@ export default defineConfig({
         { match: "^\\/info\\/porfolio$", url: "/services", code: 301 },
         { match: "^\\/info\\/clientes$", url: "/#clientes", code: 301 },
         { match: "^\\/info\\/aplicaciones$", url: "/resources", code: 301 },
-        { match: "^\\/Entrar$", url: "/", code: 301 },
+        { match: "^\\/Entrar", url: "/", code: 301 },
         { match: "^\\/jcomments$", url: "/contact", code: 301 },
         { match: "^\\/guias$", url: "/blog", code: 301 },
         { match: "^\\/info\\/aviso-legal$", url: "/terms", code: 301 },
@@ -46,12 +48,17 @@ export default defineConfig({
           code: 301,
         },
         {
-          match: "^\\/info\\/mantenimiento-software-y-hardware-windows/$",
+          match: "^\\/info\\/mantenimiento-software-y-hardware-windows",
           url: "/services/mantenimiento-de-sistemas-linux-empresarial",
           code: 301,
         },
         {
           match: "^\\/info\\/hospedaje-web-basico$",
+          url: "/services/hosting-web-empresarial-alto-rendimiento-seguro",
+          code: 301,
+        },
+        {
+          match: "^\\/services\\/hosting-web-de-alto-rendimiento$",
           url: "/services/hosting-web-empresarial-alto-rendimiento-seguro",
           code: 301,
         },
@@ -197,7 +204,7 @@ export default defineConfig({
           code: 301,
         },
         {
-          match: "^\\/guias\\/colaboracion-en-iweekend-castellon-2012/$",
+          match: "^\\/guias\\/colaboracion-en-iweekend-castellon-2012$",
           url: "/blog/la-experiencia-de-la-iweekend-castellón-2012",
           code: 301,
         },
