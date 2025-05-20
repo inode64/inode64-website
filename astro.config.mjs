@@ -46,7 +46,7 @@ export default defineConfig({
           code: 301,
         },
         {
-          match: "^\\info\\/mantenimiento-software-y-hardware-windows/$",
+          match: "^\\/info\\/mantenimiento-software-y-hardware-windows/$",
           url: "/services/mantenimiento-de-sistemas-linux-empresarial",
           code: 301,
         },
@@ -76,7 +76,7 @@ export default defineConfig({
           code: 301,
         },
         {
-          match: "^\\info\\/analisis-web$",
+          match: "^\\/info\\/analisis-web$",
           url: "/services/consultoría-analítica-web-optimización-conversion",
           code: 301,
         },
@@ -197,7 +197,7 @@ export default defineConfig({
           code: 301,
         },
         {
-          match: "^\\guias\\/colaboracion-en-iweekend-castellon-2012/$",
+          match: "^\\/guias\\/colaboracion-en-iweekend-castellon-2012/$",
           url: "/blog/la-experiencia-de-la-iweekend-castellón-2012",
           code: 301,
         },
