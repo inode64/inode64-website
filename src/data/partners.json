@@ -22,5 +22,17 @@
     "description": "Desmarca está formada por un equipo de profesionales caracterizado por su juventud, talento y ambición. Gracias a nuestra experiencia, identificamos los principales problemas de las empresas y ofrecemos soluciones rápidas y creativas.\n\nBasamos nuestra estrategia de marketing en el análisis, planificando acciones a corto, medio y largo plazo que ayuden a cada empresa a crecer y posicionarse de manera destacada en el mercado.",
     "url": "https://desmarcamarketing.com/",
     "image": "desmarca"
+  },
+  {
+    "name": "Hando",
+    "description": "Hando.es es un estudio creativo especializado en diseño gráfico, desarrollo web y simuladores 3D. Combinamos tecnología y creatividad para dar forma a experiencias visuales únicas, funcionales e impactantes. Nuestro enfoque multidisciplinar nos permite abordar cada proyecto de manera integral, adaptándonos a las necesidades específicas de cada cliente. Apostamos por la innovación, el detalle y la eficiencia para ofrecer soluciones digitales que potencien el valor de marca y mejoren la experiencia de usuario.",
+    "url": "https://hando.es",
+    "image": "hando"
+  },
+  {
+    "name": "Arrufat Informàtica",
+    "description": "En Arrufat Informàtica, nos especializamos en ofrecer soluciones digitales integrales para empresas y autónomos. Con sede en Villarreal (Castellón), contamos con un equipo de profesionales expertos en diseño web, desarrollo a medida y marketing digital. Nuestra misión es potenciar la presencia online de nuestros clientes mediante páginas web atractivas, funcionales y adaptadas a sus necesidades específicas.  Nos enfocamos en la usabilidad y la experiencia del usuario, asegurando que cada sitio web sea intuitivo y fácil de navegar. Además, ofrecemos servicios de mantenimiento y actualización de páginas web, garantizando que los sitios de nuestros clientes estén siempre actualizados y en óptimas condiciones.",
+    "url": "https://www.arrufatinformatica.net",
+    "image": "arrufat"
   }
 ]

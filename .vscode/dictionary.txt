@@ -12,6 +12,7 @@ amics
 Aparicio
 APARISI
 arbolitos
+arrufat
 Artprizz
 Athlon
 Auditori
@@ -112,6 +113,7 @@ grayscale
 guifi
 guifinet
 gzinflate
+hando
 heurísticas
 Hiren's
 Hotjar
@@ -119,6 +121,7 @@ htdocs
 httpdocs
 indexación
 Inforgames
+Informàtica
 Inkscape
 Inno
 innovamaquinaria
