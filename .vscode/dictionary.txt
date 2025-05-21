@@ -62,6 +62,7 @@ descacs
 desconexión
 devicekit
 Díaz
+digi
 dizumo
 django
 dkasesor
@@ -111,6 +112,7 @@ Googlebot
 gransimenuts
 grau
 grayscale
+GTAG
 guifi
 guifinet
 gzinflate
@@ -243,6 +245,7 @@ suhosin
 supernodo
 supernodos
 Suscríbete
+tagmanager
 tailwindcss
 takeachef
 telefonica

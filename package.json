@@ -24,6 +24,7 @@
     "@astrojs/mdx": "^4.2.6",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.4.0",
+    "@digi4care/astro-google-tagmanager": "^1.6.0",
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.7.13",
     "astro-htaccess": "^0.2.3",
