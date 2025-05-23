@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # ignore all images in the src directory
 #src/assets/
+
+# history changes from plugin local history
+.history/

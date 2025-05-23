@@ -34,5 +34,11 @@
     "description": "En Arrufat Informàtica, nos especializamos en ofrecer soluciones digitales integrales para empresas y autónomos. Con sede en Villarreal (Castellón), contamos con un equipo de profesionales expertos en diseño web, desarrollo a medida y marketing digital. Nuestra misión es potenciar la presencia online de nuestros clientes mediante páginas web atractivas, funcionales y adaptadas a sus necesidades específicas.  Nos enfocamos en la usabilidad y la experiencia del usuario, asegurando que cada sitio web sea intuitivo y fácil de navegar. Además, ofrecemos servicios de mantenimiento y actualización de páginas web, garantizando que los sitios de nuestros clientes estén siempre actualizados y en óptimas condiciones.",
     "url": "https://www.arrufatinformatica.net",
     "image": "arrufat"
+  },
+  {
+    "name": "Electricidad Andrés Roca",
+    "description": "En Electricidad Andrés Roca solucionamos todas las necesidades de nuestros clientes en materia de electricidad y redes de datos, somos electricistas profesionales con 40 años de experiencia y nuestra especialidad son los trabajos para clientes exigentes, los materiales que empleamos y nuestros acabados son siempre de primera calidad.",
+    "url": "https://www.andresroca.com",
+    "image": "electricidad"
   }
 ]
