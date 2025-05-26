@@ -103,6 +103,7 @@ genshi
 gentoo
 geoip
 geolocalización
+gestoría
 ghensi
 github
 Gluster
@@ -130,6 +131,7 @@ Inno
 innovamaquinaria
 inoperativa
 insca
+inspiracional
 interiorismo
 ISAM
 ismap
