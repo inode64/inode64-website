@@ -1,6 +1,6 @@
 ---
 title: 25 Años de DKS - Rock, Innovación y Pasión por las Empresas
-date: 2025-05-26
+date: 2025-05-23
 description: Asistimos al 25 aniversario de DKS con una conferencia inspiradora de SalvaROCK, explorando la conexión entre el espíritu empresarial y la historia del rock.
 author: Francisco Javier Félix Belmonte
 image: "dks-25-aniversario"
