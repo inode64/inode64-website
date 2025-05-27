@@ -1,15 +1,15 @@
 ---
-title: 25 Años de DKS - Rock, Innovación y Pasión por las Empresas
+title: 25 Años de DK Assessors - TAX - Rock, Innovación y Pasión por las Empresas
 date: 2025-05-23
-description: Asistimos al 25 aniversario de DKS con una conferencia inspiradora de SalvaROCK, explorando la conexión entre el espíritu empresarial y la historia del rock.
+description: Asistimos al 25 aniversario de DK Assessors - TAX con una conferencia inspiradora de SalvaROCK, explorando la conexión entre el espíritu empresarial y la historia del rock.
 author: Francisco Javier Félix Belmonte
 image: "dks-25-aniversario"
 category: "blog"
-tags: [DKS, aniversario, empresas, inspiración, rock, SalvaROCK]
+tags: [aniversario, empresas, inspiración, rock, SalvaROCK]
 isDraft: false
 ---
 
-Este mes, la gestoría **DKS Asesoría de Empresas** celebró su **25 aniversario** y tuve la suerte de asistir como invitado a uno de los actos conmemorativos: una conferencia muy especial titulada "Empresas en clave de ROCK", impartida por **SalvaROCK**, músico y conferenciante inspiracional.
+Este mes, la asesoría **DK Assessors - TAX** celebró su **25 aniversario** y tuve la suerte de asistir como invitado a uno de los actos conmemorativos: una conferencia muy especial titulada "Empresas en clave de ROCK", impartida por **SalvaROCK**, músico y conferenciante inspiracional.
 
 ### "Empresas en clave de ROCK": una charla para recordar
 
@@ -32,10 +32,10 @@ _SalvaROCK durante su ponencia, combinando música y reflexión empresarial._
 
 Fue refrescante asistir a una conmemoración que rompía con lo habitual y apostaba por una visión creativa del mundo empresarial. La música, el humor y las historias reales dieron forma a una experiencia inspiradora y distinta.
 
-Gracias a DKS por la invitación y por apostar por este tipo de encuentros. Y gracias a **SalvaROCK** por recordarnos que, en la vida profesional como en la música, lo importante es seguir tocando.
+Gracias a **DK Assessors - TAX** por la invitación y por apostar por este tipo de encuentros. Y gracias a **SalvaROCK** por recordarnos que, en la vida profesional como en la música, lo importante es seguir tocando.
 
 ---
 
-[Más sobre DKS](https://www.dkasesor.es/)
+[Más sobre DK Assessors - TAX](https://www.dkasesor.es/)
 
 [Perfil de SalvaROCK en LinkedIn](https://www.linkedin.com/in/salvarock/)
