@@ -3,8 +3,8 @@ title: Como es atacado un sistema Joomla (1ª Parte)
 date: 2012-06-03
 description: Descubre cómo los atacantes explotan vulnerabilidades en Joomla y aprende a proteger tu web corporativa con consejos prácticos y ejemplos reales.
 author: Francisco Javier Félix Belmonte
-image: 'como-es-atacado-un-joomla'
-category: 'blog'
+image: "como-es-atacado-un-joomla"
+category: "blog"
 tags: [joomla, ataques, seguridad]
 isDraft: false
 ---
@@ -27,29 +27,29 @@ la empresa. Esto incluso puede poner en peligro las relaciones con los clientes.
 1. **Búsqueda en Google**
    Realiza una búsqueda como la siguiente para comprobar si tu web está comprometida con enlaces externos:
 
-    ```bash
-    site:***** (pharm|viagra)
-    ```
+   ```bash
+   site:***** (pharm|viagra)
+   ```
 
    Reemplaza `*****` con tu dominio, por ejemplo, `inode64.com` o `villarrealcf.es`.
 
 2. **Análisis de registros del servidor**
    Revisa los logs del servidor web para detectar accesos sospechosos. Por ejemplo:
 
-    ```bash
-    79.142.73.67 - - [11/Apr/2012:05:29:04 +0200] "GET / HTTP/1.1" 200 152204 "-" "Opera/9.80 (Windows NT 7.0; U; en) Presto/2.9.211 Version/12.00"
-    79.142.73.67 - - [11/Apr/2012:05:29:05 +0200] "GET /administrator/ HTTP/1.1" 200 7202 "-" "Opera/9.80 (Windows NT 7.0; U; en) Presto/2.9.211 Version/12.00"
-    ...
-    ```
+   ```bash
+   79.142.73.67 - - [11/Apr/2012:05:29:04 +0200] "GET / HTTP/1.1" 200 152204 "-" "Opera/9.80 (Windows NT 7.0; U; en) Presto/2.9.211 Version/12.00"
+   79.142.73.67 - - [11/Apr/2012:05:29:05 +0200] "GET /administrator/ HTTP/1.1" 200 7202 "-" "Opera/9.80 (Windows NT 7.0; U; en) Presto/2.9.211 Version/12.00"
+   ...
+   ```
 
    En este ejemplo, se comprueban diferentes componentes conocidos por tener problemas de seguridad, como:
 
-    - [xmap](https://extensions.joomla.org/extensions/structure-a-navigation/site-map/3066) ([CVE-2010-2678](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2678))
-    - [rsgallery2](https://extensions.joomla.org/extensions/photos-a-images/galleries/photo-gallery/142) ([CVE-2006-6962](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-6962))
-    - Myblog ([CVE-2010-1540](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1540), CVE-2008-6193,
-      CVE-2008-4341)
-    - [rokmodule](https://www.rockettheme.com/extensions-downloads/free/1012-rokmodule) ([CVE-2010-1479](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1479))
-    - Otros componentes como Play, Sport, Etree, Tag, Adagency, Storedirectory, etc.
+   - [xmap](https://extensions.joomla.org/extensions/structure-a-navigation/site-map/3066) ([CVE-2010-2678](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-2678))
+   - [rsgallery2](https://extensions.joomla.org/extensions/photos-a-images/galleries/photo-gallery/142) ([CVE-2006-6962](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2006-6962))
+   - Myblog ([CVE-2010-1540](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-1540), CVE-2008-6193,
+     CVE-2008-4341)
+   - [rokmodule](https://www.rockettheme.com/extensions-downloads/free/1012-rokmodule) ([CVE-2010-1479](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2010-1479))
+   - Otros componentes como Play, Sport, Etree, Tag, Adagency, Storedirectory, etc.
 
 ### Cómo actúan los atacantes
 
@@ -80,4 +80,4 @@ administrador. Aquí un extracto de los logs:
   si se ha modificado el código, ya que podrías dejar la web inoperativa.
 - Considera contratar a un experto en seguridad o contactar a los profesionales que desarrollaron la web.
 
-[Sigue leyendo la 2º Parte](como-es-atacado-un-joomla-2-parte)
+[Sigue leyendo la 2º Parte](/blog/como-es-atacado-un-joomla-2-parte)

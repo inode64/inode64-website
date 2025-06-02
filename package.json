@@ -25,8 +25,8 @@
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.4.0",
     "@digi4care/astro-google-tagmanager": "^1.6.0",
-    "@tailwindcss/vite": "^4.1.7",
-    "astro": "^5.8.0",
+    "@tailwindcss/vite": "^4.1.8",
+    "astro": "^5.8.1",
     "astro-htaccess": "^0.2.3",
     "astro-obfuscate": "^0.0.5",
     "astro-robots-txt": "^1.0.0",
@@ -35,7 +35,7 @@
     "imagemin-pngquant": "^10.0.0",
     "imagemin-svgo": "^11.0.1",
     "imagemin-webp": "^8.0.0",
-    "tailwindcss": "^4.1.7"
+    "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
     "@types/nodemailer": "^6.4.17",
