@@ -16,16 +16,12 @@ más representativos. Tampoco dispongo de más tiempo para realizar el estudio d
 Primero realizamos un test de latencia usando el `ping` como herramienta. Existen algunos partidos políticos que
 bloquean el tráfico ICMP y no aparecen en la gráfica:
 
-<div class="flex justify-center my-4">
-  <Image src="latencia.png" alt="Estadísticas latencias web de partidos políticos" />
-</div>
+![Estadísticas latencias web de partidos políticos](/blog/latencia.png)
 
 Luego evaluamos el tiempo de renderizado (en segundos) de la página web sin carga de imágenes ni otros objetos. Esto nos
 permite emular el funcionamiento de un rastreador tipo Google y aproximarnos a la eficiencia del servidor / lenguaje:
 
-<div class="flex justify-center my-4">
-  <Image src="render.png" alt="Estadísticas web renderizado de partidos políticos" />
-</div>
+![Estadísticas renderizado de partidos políticos](/blog/render.png)
 
 ### CONCLUSIONES
 

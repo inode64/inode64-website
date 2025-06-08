@@ -18,9 +18,7 @@ noticia. Desde el primer momento pasó de tener un tráfico escaso a alcanzar pi
 siguientes sufrió una sobrecarga aún mayor debido a los vídeos, comentarios y el interés de la afición por conocer el
 estado de su equipo.
 
-<div class="flex justify-center my-4">
-  <Image src="villarrealcf_baja.png" alt="Estadísticas web baja entrenador villarreal CF" />
-</div>
+![Estadísticas web baja entrenador villarreal CF](/blog/villarrealcf_baja.png)
 
 ---
 

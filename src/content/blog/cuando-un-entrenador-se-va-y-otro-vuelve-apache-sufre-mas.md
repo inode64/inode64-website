@@ -14,6 +14,4 @@ sufre más el apache que cuando entra el nuevo entrenador.
 
 Se puede ver la gráfica de los hits por segundo, parece que hay más morbo y causa más repercusión mediática.
 
-<div class="flex justify-center my-4">
-  <Image src="expulsion_nuevo_entrenador.png" alt="Estadísticas web cambio de entrador Villarreal CF" />
-</div>
+![Estadísticas web cambio de entrador Villarreal CF](/blog/expulsion_nuevo_entrenador.png)
