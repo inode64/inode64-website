@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { icons } from "../../assets/icons";
 ---
 
@@ -29,19 +30,21 @@ import { icons } from "../../assets/icons";
         </a>
       </div>
 
-      <img
-        src={icons.welcome.src}
+      <Image
+        src={icons.welcome}
         class="mt-10 h-auto max-h-[520px] w-full max-w-xs sm:max-w-sm mx-auto lg:hidden"
         loading="lazy"
         alt="Ilustración de clúster de servidores"
+        sizes="(max-width: 1024px) 100vw, 50vw"
       />
     </div>
 
-    <img
-      src={icons.welcome.src}
+    <Image
+      src={icons.welcome}
       class="hidden lg:block h-auto max-h-[520px] w-full max-w-md mx-auto lg:max-w-xl"
       loading="lazy"
       alt="Ilustración de clúster de servidores"
+      sizes="(max-width: 1280px) 50vw, 40vw"
     />
   </div>
 </section>

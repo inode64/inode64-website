@@ -37,30 +37,55 @@ const fullWhatsappLink = `https://wa.me/${whatsappNumber}`;
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img src={icons.linkedin.src} alt="Linkedin" class="transition duration-200 hover:brightness-120" />
+              <Image
+                src={icons.linkedin}
+                alt="Linkedin"
+                class="transition duration-200 hover:brightness-120"
+                sizes="24px"
+              />
             </a>
           </li>
 
           <li>
             <a href="https://www.youtube.com/user/inode64" rel="noopener noreferrer" target="_blank">
-              <img src={icons.youtube.src} alt="YouTube" class="transition duration-200 hover:brightness-120" />
+              <Image
+                src={icons.youtube}
+                alt="YouTube"
+                class="transition duration-200 hover:brightness-120"
+                sizes="24px"
+              />
             </a>
           </li>
 
           <li>
             <a href="https://twitter.com/inode64" target="_blank" rel="noopener noreferrer">
-              <img src={icons.twitter.src} alt="Twitter" class="transition duration-200 hover:brightness-120" />
+              <Image
+                src={icons.twitter}
+                alt="Twitter"
+                class="transition duration-200 hover:brightness-120"
+                sizes="24px"
+              />
             </a>
           </li>
 
           <li>
             <a href="https://github.com/inode64" rel="noopener noreferrer" target="_blank">
-              <img src={icons.github.src} alt="Github" class="transition duration-200 hover:brightness-110" />
+              <Image
+                src={icons.github}
+                alt="Github"
+                class="transition duration-200 hover:brightness-110"
+                sizes="24px"
+              />
             </a>
           </li>
           <li>
             <a href="https://www.flickr.com/photos/inode64/" rel="noopener noreferrer" target="_blank">
-              <img src={icons.flickr.src} alt="Flickr" class="transition duration-200 hover:brightness-110" />
+              <Image
+                src={icons.flickr}
+                alt="Flickr"
+                class="transition duration-200 hover:brightness-110"
+                sizes="24px"
+              />
             </a>
           </li>
         </ul>
@@ -111,21 +136,36 @@ const fullWhatsappLink = `https://wa.me/${whatsappNumber}`;
 
           <ul class="mt-8 space-y-4 text-sm">
             <li class="-mt-0.5 flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
-              <img src={icons.mail.src} alt="Icono de correo" class="max-w-6" />
+              <Image
+                src={icons.mail}
+                alt="Icono de correo"
+                class="max-w-6"
+                sizes="24px"
+              />
               <span class="flex-1 text-gray-700">
                 <ObfuscatedEmail email={import.meta.env.SENDER_CONTACT_EMAIL} />
               </span>
             </li>
 
             <li class="-mt-0.5 flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
-              <img src={icons.phone.src} alt="Icono de teléfono" class="max-w-6" />
+              <Image
+                src={icons.phone}
+                alt="Icono de teléfono"
+                class="max-w-6"
+                sizes="24px"
+              />
               <span class="flex-1 text-gray-700">
                 <ObfuscatedPhone phone={import.meta.env.PHONE_NUMBER} />
               </span>
             </li>
 
             <li class="-mt-0.5 flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
-              <img src={icons.location.src} alt="Icono de localización" class="max-w-6" />
+              <Image
+                src={icons.location}
+                alt="Icono de localización"
+                class="max-w-6"
+                sizes="24px"
+              />
               <address class="-mt-0.5 flex-1 text-gray-700 not-italic">
                 {import.meta.env.PUBLIC_ADDRESS}
               </address>
