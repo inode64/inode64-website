@@ -1,6 +1,7 @@
 ---
 import { seoConfig } from "@/config/seo-config";
 import Layout from "@/layouts/Layout.astro";
+import { Image } from "astro:assets";
 import { icons } from "../assets/icons";
 import about from "../assets/images/about/about.svg";
 ---
@@ -40,7 +41,7 @@ import about from "../assets/images/about/about.svg";
         </div>
       </div>
       <div class="lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden lg:pt-15">
-        <img src={about.src} alt="about background" />
+        <Image src={about} alt="about background" sizes="(max-width: 1024px) 100vw, 50vw" />
       </div>
       <div
         class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
@@ -55,21 +56,21 @@ import about from "../assets/images/about/about.svg";
             </p>
             <ul role="list" class="mt-8 space-y-8 text-gray-600">
               <li class="flex gap-x-3">
-                <img src={icons.cloudAbout.src} alt="Icono nube" class="size-10" />
+                <Image src={icons.cloudAbout} alt="Icono nube" class="size-10" sizes="40px" />
                 <span>
                   <strong class="font-semibold text-gray-900">Gestión y despliegue eficiente.</strong> Implementamos estrategias
                   efectivas para asegurar un funcionamiento óptimo de tus sistemas tecnológicos.
                 </span>
               </li>
               <li class="flex gap-x-3">
-                <img src={icons.lockAbout.src} alt="Icono candado" class="size-10" />
+                <Image src={icons.lockAbout} alt="Icono candado" class="size-10" sizes="40px" />
                 <span>
                   <strong class="font-semibold text-gray-900">Seguridad garantizada con certificados SSL.</strong> Protegemos
                   tus datos y los de tus clientes mediante estándares de seguridad de alto nivel.
                 </span>
               </li>
               <li class="flex gap-x-3">
-                <img src={icons.driveAbout.src} alt="Icono disco ssd" class="size-10" />
+                <Image src={icons.driveAbout} alt="Icono disco ssd" class="size-10" sizes="40px" />
                 <span>
                   <strong class="font-semibold text-gray-900">Copias de seguridad automatizadas para tus datos.</strong>
                   Aseguramos la continuidad de tu negocio con respaldos regulares y seguros.
@@ -87,21 +88,21 @@ import about from "../assets/images/about/about.svg";
             </p>
             <ul role="list" class="mt-8 space-y-8 text-gray-600">
               <li class="flex gap-x-3">
-                <img src={icons.circleAbout.src} alt="Icono circulo" class="size-8" />
+                <Image src={icons.circleAbout} alt="Icono circulo" class="size-8" sizes="32px" />
                 <span>
                   <strong class="font-semibold text-gray-900">Consultoría especializada.</strong> Ofrecemos asesoramiento
                   técnico para identificar las mejores soluciones tecnológicas para tu negocio.
                 </span>
               </li>
               <li class="flex gap-x-3">
-                <img src={icons.circleAbout.src} alt="Icono circulo" class="size-8" />
+                <Image src={icons.circleAbout} alt="Icono circulo" class="size-8" sizes="32px" />
                 <span>
                   <strong class="font-semibold text-gray-900">Soporte técnico 24/7.</strong> Nuestro equipo está disponible
                   en todo momento para resolver cualquier incidencia o consulta técnica.
                 </span>
               </li>
               <li class="flex gap-x-3">
-                <img src={icons.circleAbout.src} alt="Icono circulo" class="size-8" />
+                <Image src={icons.circleAbout} alt="Icono circulo" class="size-8" sizes="32px" />
                 <span>
                   <strong class="font-semibold text-gray-900">Integración de sistemas.</strong> Facilitamos la conexión entre
                   diferentes plataformas y herramientas para optimizar tus procesos.
