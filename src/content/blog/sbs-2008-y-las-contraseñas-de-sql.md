@@ -17,4 +17,4 @@ Esto suele ser un problema, porque solo cuando reinicias el servidor y comprueba
 solucionarlo.
 
 Es algo similar a lo que ocurría con **SBS 2000** cuando cambiabas la IP de la interfaz de red: aunque modificabas la IP
-correctamente, luego había que ir al administrador de SQL y reconfigurarlo con las nuevas IPs.
+correctamente, luego había que ir al administrador de SQL y reconfigurarlo con las nuevas IP.

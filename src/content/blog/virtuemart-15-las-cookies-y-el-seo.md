@@ -22,6 +22,6 @@ generando una nueva *URL*, como en el siguiente ejemplo:
 "GET /index.php?page=shop.ask&flypage=flypage.tpl&product_id=1202&category_id=186&option=com_virtuemart&Itemid=2&vmcchk=1&Itemid=2 HTTP/1.1" 200 15603 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +https://www.google.com/bot.html)"
 ```
 
-Donde, al estar activa, se incluye la variable **vmcchk** y repite de nuevo el **Itemid**, generando *URLs* repetidas y
+Donde, al estar activa, se incluye la variable **vmcchk** y repite de nuevo el **Itemid**, generando *URL* repetidas y
 haciendo pensar a Google que se intenta engañarle creando páginas duplicadas, lo cual también consume recursos
 innecesarios.

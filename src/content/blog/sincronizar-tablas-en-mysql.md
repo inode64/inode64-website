@@ -91,7 +91,7 @@ CREATE TABLE `h3241_users` (
 CONNECTION='mysql://usuario:password@localhost/basededatos/a4821_users';
 ```
 
-Hemos quitado del original el `AUTO_INCREMENT`, cambiado el `ENGINE` y, por supuesto, la conexión a la otra base de
+Hemos quitado del original `AUTO_INCREMENT`, cambiado `ENGINE` y, por supuesto, la conexión a la otra base de
 datos.
 
 ### Referencias

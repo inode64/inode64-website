@@ -110,7 +110,7 @@ defer="defer" ismap="ismap" nohref="nohref" noshade="noshade" nowrap="nowrap" mu
     estilo en cascada es recomendado.
   - Se recomienda eliminar el uso de _font_ y de _div_ en su lugar usar hojas de estilo.
 
-### Reglas para DTDs estrictos
+### Reglas para DTD estrictos
 
 - El texto no debe ser insertado directamente en el cuerpo (dentro de la etiqueta "body").
 

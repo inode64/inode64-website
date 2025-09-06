@@ -34,7 +34,7 @@ Esto ha sido debido a diferentes factores, entre ellos:
   generado una alta saturación de las conexiones haciendo el uso en ciertas zonas prácticamente inviable.
 
 - Aparición de ciertos instaladores y empresas privadas que usan y abusan de los pocos canales libres que están
-  disponibles (5Ghz), incluso trabajan a potencias muy superiores no permitidas en nuestro país, generando
+  disponibles (5 Ghz), incluso trabajan a potencias muy superiores no permitidas en nuestro país, generando
   interferencias y ruidos que afectan a la totalidad de la red.
 
 - Los supernodos y sus troncales son elementos de responsabilidad que deberían de ser instalados por gente comprometida,
@@ -44,7 +44,7 @@ Esto ha sido debido a diferentes factores, entre ellos:
 
 - Zonas donde existen "feudos" que impiden que otros usuarios puedan mejorar los servicios ofrecidos actualmente.
 
-- Falta de control en la cesión y gestión de las IPs en los supernodos, creando falsamente una falta de disponibilidad.
+- Falta de control en la cesión y gestión de las IP en los supernodos, creando falsamente una falta de disponibilidad.
 
 - Algunos servicios que se ofrecen de forma gratuita se convierten sin motivo aparente en contribución obligatoria,
   generando a los usuarios una desconfianza hacia la red.

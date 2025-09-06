@@ -15,7 +15,7 @@ utilizando herramientas proporcionadas por [Tenjin](https://www.kuwata-lab.com/t
 
 ### Configuración del entorno de pruebas
 
-El banco de pruebas se realizó en un ordenador con Gentoo Linux 64Bits con las siguientes especificaciones:
+El banco de pruebas se realizó en un ordenador con Gentoo Linux 64 Bits con las siguientes especificaciones:
 
 ```bash
 Model name       : AMD Athlon(tm) II X2 255 Processor

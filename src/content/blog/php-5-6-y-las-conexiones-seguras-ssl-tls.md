@@ -52,7 +52,7 @@ Si tu aplicación deja de funcionar debido a esta verificación, considera las s
 
    ⚠ **Advertencia:** Desactivar la verificación reduce la seguridad y deja la conexión vulnerable a ataques MITM.
 
-4. **Añadir certificado raíz manualmente:** Si no puedes obtener un certificado válido, puedes añadir manualmente los
+4. **Añadir certíficado raíz manualmente:** Si no puedes obtener un certificado válido, puedes añadir manualmente los
    certificados CA en la configuración global de PHP, editando `openssl.cafile` en `php.ini`.
 
 ## Recursos adicionales

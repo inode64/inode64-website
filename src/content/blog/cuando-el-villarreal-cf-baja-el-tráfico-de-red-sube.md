@@ -14,7 +14,7 @@ el que todos los factores se conjuraron para que el equipo, que disfrutaba de un
 descendiera a la categoría plata de la liga española (2ª división).
 
 Este hecho generó un enorme tráfico en redes sociales como Twitter, Facebook, etc., y la web oficial no fue ajena a la
-noticia. Desde el primer momento pasó de tener un tráfico escaso a alcanzar picos de 1000 Mb reales, y durante los días
+noticia. Desde el primer momento pasó de tener un tráfico escaso a alcanzar picos de 1000 MB reales, y durante los días
 siguientes sufrió una sobrecarga aún mayor debido a los vídeos, comentarios y el interés de la afición por conocer el
 estado de su equipo.
 
