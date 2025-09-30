@@ -12,7 +12,7 @@ isDraft: false
 # Soporte Zigbee para el motor tubular ENKI Lexman Ø40 mm · 10 Nm (Leroy Merlin) en Zigbee2MQTT
 
 
-> Hemos contribuido a comunidad **Zigbee2MQTT** añadiendo compatibilidad con el motor tubular **ENKI Lexman Ø40 mm · 10 Nm** (referencia **ADEO WSD005**).
+> Hemos contribuido a la comunidad **Zigbee2MQTT** añadiendo compatibilidad con el motor tubular **ENKI Lexman Ø40 mm · 10 Nm** (referencia **ADEO WSD005**).
 > Esto permite controlar persianas con **Zigbee** desde **Home Assistant** (y cualquier plataforma compatible con Zigbee2MQTT), incluyendo **abrir / cerrar / stop / posición**.
 
 ---
