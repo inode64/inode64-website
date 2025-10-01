@@ -25,5 +25,6 @@ isDraft: false
 - **Actualización de documentación (`zigbee2mqtt.io`):** entrada específica para el modelo.
   <https://github.com/Koenkk/zigbee2mqtt.io/commit/4df9f04dc0c91603b9f35566422e927e72a8aec1>
 
+- Pagina del dispositovo <https://www.zigbee2mqtt.io/devices/WSD005.html>
 
 #### Gracias a estas aportaciones, el motor se reconoce en Zigbee2MQTT como **actuador de persiana** y expone las acciones habituales (**abrir**, **cerrar**, **detener** y **posición**).
