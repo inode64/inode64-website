@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Layout from "@/layouts/Layout.astro";
 import services from "../../data/services.json";
 import { siteConfig } from "@/config/site-config";
-import { serviceImages } from "../../assets/images/services";
+import { serviceImages } from "@/assets/images/services";
 
 export async function getStaticPaths() {
   return services.map((service) => ({
