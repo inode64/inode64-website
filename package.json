@@ -21,12 +21,12 @@
     "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.6",
-    "@astrojs/rss": "^4.0.12",
+    "@astrojs/mdx": "^4.3.8",
+    "@astrojs/rss": "^4.0.13",
     "@astrojs/sitemap": "^3.6.0",
     "@digi4care/astro-google-tagmanager": "^1.6.0",
-    "@tailwindcss/vite": "^4.1.13",
-    "astro": "^5.14.1",
+    "@tailwindcss/vite": "^4.1.16",
+    "astro": "^5.15.1",
     "astro-htaccess": "^0.2.3",
     "astro-obfuscate": "^0.0.5",
     "astro-robots-txt": "^1.0.0",
@@ -35,10 +35,10 @@
     "imagemin-pngquant": "^10.0.0",
     "imagemin-svgo": "^11.0.1",
     "imagemin-webp": "^8.0.0",
-    "tailwindcss": "^4.1.13"
+    "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
-    "@types/nodemailer": "^7.0.2",
+    "@types/nodemailer": "^7.0.3",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1"
   },
