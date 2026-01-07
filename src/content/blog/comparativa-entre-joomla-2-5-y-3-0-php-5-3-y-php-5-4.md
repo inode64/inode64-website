@@ -4,8 +4,8 @@ date: 2013-03-29
 description: Una comparativa detallada entre Joomla 2.5 y 3.0, evaluando su rendimiento con diferentes versiones de PHP y sistemas de caché como XCache.
 author: Francisco Javier Félix Belmonte
 image: "comparativa-entre-joomla-2-5-y-3-0-php-5-3-y-php-5-4"
-category: "joomla"
-tags: [joomla, benchmark, xcache]
+category: "Joomla"
+tags: [Joomla, benchmark, xcache]
 isDraft: false
 ---
 

@@ -5,7 +5,7 @@ description: Repositorio de actualizaciones para Joomla 1.5 en formato parche, c
 author: Francisco Javier Félix Belmonte
 image: "joomla-15-update"
 category: "joomla"
-tags: [joomla, actualizaciones, parche, linux]
+tags: [joomla, actualizaciones, parche, Linux]
 isDraft: false
 ---
 

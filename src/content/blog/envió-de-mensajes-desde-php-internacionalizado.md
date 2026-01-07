@@ -5,7 +5,7 @@ description: Aprende cómo enviar correos electrónicos internacionalizados en P
 author: Francisco Javier Félix Belmonte
 image: "envió-de-mensajes-desde-php-internacionalizado"
 category: "blog"
-tags: [php, emails, clean code]
+tags: [PHP, emails, clean code]
 isDraft: false
 ---
 

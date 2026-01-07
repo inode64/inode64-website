@@ -5,7 +5,7 @@ description: Análisis de una grave vulnerabilidad en Virtuemart 1.1.4 a 1.1.9 q
 author: Francisco Javier Félix Belmonte
 image: "problema-de-seguridad-con-virtuemart-1-1-4-a-1-1-9-de-envió-masivo-de-correo"
 category: "seguridad"
-tags: [seguridad, joomla, virtuemart]
+tags: [seguridad, Joomla, virtuemart]
 isDraft: false
 ---
 

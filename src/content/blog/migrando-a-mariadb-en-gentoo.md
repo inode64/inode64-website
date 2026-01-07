@@ -5,7 +5,7 @@ description: Una guía sencilla para migrar de MySQL a MariaDB en Gentoo, destac
 author: Francisco Javier Félix Belmonte
 image: "migrando-a-mariadb-en-gentoo"
 category: "blog"
-tags: [gentoo, mysql, benchmark]
+tags: [Gentoo, mysql, benchmark]
 isDraft: false
 ---
 

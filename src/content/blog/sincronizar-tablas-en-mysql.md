@@ -4,7 +4,7 @@ date: 2013-01-07
 description: Aprende a sincronizar tablas en MySQL utilizando el motor FEDERATED, ideal para compartir datos entre diferentes sitios web de manera eficiente.
 author: Francisco Javier Félix Belmonte
 image: "sincronizar-tablas-en-mysql"
-category: "joomla"
+category: "Joomla"
 tags: [mysql, federated, gentoo]
 isDraft: false
 ---

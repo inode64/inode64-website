@@ -5,7 +5,7 @@ description: Descubre cómo los atacantes comprometen sitios Joomla, los método
 author: Francisco Javier Félix Belmonte
 image: "como-es-atacado-un-joomla-2-parte"
 category: "blog"
-tags: [joomla, ataques, cms]
+tags: [Joomla, ataques, cms]
 isDraft: false
 ---
 

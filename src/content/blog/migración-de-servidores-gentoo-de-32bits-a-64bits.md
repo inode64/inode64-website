@@ -5,7 +5,7 @@ description: Una guía detallada sobre cómo migrar servidores Gentoo de 32 bits
 author: Francisco Javier Félix Belmonte
 image: "migración-de-servidores-gentoo-de-32bits-a-64bits"
 category: "seguridad"
-tags: [gentoo, server]
+tags: [Gentoo, server]
 isDraft: false
 ---
 

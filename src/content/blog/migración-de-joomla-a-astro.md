@@ -5,7 +5,7 @@ description: Hemos migrado con éxito nuestro sitio web desde Joomla 2.5 al mode
 author: Francisco Javier Félix Belmonte
 image: "astro"
 category: "blog"
-tags: [joomla, astro, website, migración, static-site]
+tags: [Joomla, astro, website, migración, static-site]
 isDraft: false
 ---
 

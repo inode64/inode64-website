@@ -5,7 +5,7 @@ description: Aprende cómo configurar Gentoo para requerir la contraseña de adm
 author: Francisco Javier Félix Belmonte
 image: "requerir-contrasena-para-apagar-o-reiniciar-el-equipo-en-gentoo"
 category: "blog"
-tags: [passwords, gentoo]
+tags: [passwords, Gentoo]
 isDraft: false
 ---
 

@@ -4,8 +4,8 @@ date: 2011-12-11
 description: Consejos prácticos para mejorar la seguridad de tu sitio web en Joomla, protegiéndolo contra ataques y vulnerabilidades comunes.
 author: Francisco Javier Félix Belmonte
 image: "como-mejorar-la-seguridad-de-tu-web-en-joomla"
-category: "joomla"
-tags: [seguridad, joomla, geoip]
+category: "Joomla"
+tags: [seguridad, Joomla, geoip]
 isDraft: false
 ---
 

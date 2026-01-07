@@ -5,7 +5,7 @@ description: Estamos buscando un programador web con experiencia en PHP y tecnol
 author: Francisco Javier Félix Belmonte
 image: "buscamos-un-perfil-de-programador-web-en-php"
 category: "blog"
-tags: [joomla, php]
+tags: [Joomla, PHP]
 isDraft: false
 ---
 

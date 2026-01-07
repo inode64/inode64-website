@@ -5,7 +5,7 @@ description: Exploramos las ventajas de usar Gentoo en servidores, destacando su
 author: Francisco Javier Félix Belmonte
 image: "por-que-gentoo"
 category: "blog"
-tags: [gentoo, benchmark]
+tags: [Gentoo, benchmark]
 isDraft: false
 ---
 

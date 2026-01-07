@@ -5,7 +5,7 @@ description: Exploramos los riesgos y desventajas del RAID5 basándonos en un ca
 author: Francisco Javier Félix Belmonte
 image: "raid5-no-gracias"
 category: "blog"
-tags: [linux, almacenamiento]
+tags: [Linux, almacenamiento]
 isDraft: false
 ---
 

@@ -4,8 +4,8 @@ date: 2010-09-09
 description: Un plugin para Joomla que ajusta automáticamente las preferencias de idioma del usuario en el frontend al cambiar de idioma con JoomFish.
 author: Francisco Javier Félix Belmonte
 image: "plugin-update-language"
-category: "joomla"
-tags: [joomla, joomfish, frontend, plugin]
+category: "Joomla"
+tags: [Joomla, joomfish, frontend, plugin]
 isDraft: false
 ---
 

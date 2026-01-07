@@ -4,7 +4,7 @@ date: 2012-10-24
 description: Descubre cómo un ajuste en Virtuemart 1.5 puede afectar negativamente al SEO de tu sitio web, generando problemas de indexación y URLs duplicadas.
 author: Francisco Javier Félix Belmonte
 image: "virtuemart-15-las-cookies-y-el-seo"
-category: "joomla"
+category: "Joomla"
 tags: [virtuemart, cookies, seo]
 isDraft: false
 ---

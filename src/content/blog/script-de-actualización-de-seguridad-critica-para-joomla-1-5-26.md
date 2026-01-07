@@ -5,7 +5,7 @@ description: Descubre cómo solucionar un grave problema de seguridad en Joomla 
 author: Francisco Javier Félix Belmonte
 image: "script-de-actualización-de-seguridad-critica-para-joomla-1-5-26"
 category: "seguridad"
-tags: [joomla, seguridad]
+tags: [Joomla, seguridad]
 isDraft: false
 ---
 

@@ -5,7 +5,7 @@ description: Descubre cómo los atacantes explotan vulnerabilidades en Joomla y 
 author: Francisco Javier Félix Belmonte
 image: "como-es-atacado-un-joomla"
 category: "blog"
-tags: [joomla, ataques, seguridad]
+tags: [Joomla, ataques, seguridad]
 isDraft: false
 ---
 
