@@ -22,12 +22,38 @@ export const getStaticPaths = (async () => {
 const { post } = Astro.props;
 const frontmatter = post.data;
 const { Content } = await post.render();
+const ogImage = postImages[frontmatter.image];
+const publishedTime = new Date(frontmatter.date).toISOString();
+const pageUrl = Astro.url?.href ?? "";
+const siteUrl = Astro.site?.href?.replace(/\/$/, "") ?? "";
+const ogImageSrc = typeof ogImage === "string" ? ogImage : ogImage.src;
+const absoluteOgImage = ogImageSrc && siteUrl ? new URL(ogImageSrc, siteUrl).href : ogImageSrc;
+const articleSchema = {
+  "@type": "BlogPosting",
+  "@id": pageUrl ? `${pageUrl}#article` : undefined,
+  headline: frontmatter.title,
+  description: frontmatter.description,
+  image: absoluteOgImage ? [absoluteOgImage] : undefined,
+  author: {
+    "@type": "Person",
+    name: frontmatter.author,
+  },
+  publisher: siteUrl ? { "@id": `${siteUrl}#organization` } : undefined,
+  datePublished: publishedTime,
+  mainEntityOfPage: pageUrl ? { "@type": "WebPage", "@id": pageUrl } : undefined,
+  inLanguage: siteConfig.locale,
+};
 ---
 
 <Layout
   title={`${frontmatter.title} | Blog ${siteConfig.title}`}
   description={frontmatter.description}
-  image={postImages[frontmatter.image]}
+  image={ogImage}
+  ogType="article"
+  author={frontmatter.author}
+  publishedTime={publishedTime}
+  articleTags={frontmatter.tags}
+  structuredData={articleSchema}
 >
   <div class="lg:pt-14 sm:pt-14 pt-5 px-6 lg:px-8">
     <div class="mx-auto mt-10 pt-10 sm:mt-6 sm:pt-6 lg:mx-auto lg:max-w-4xl">
@@ -70,7 +96,7 @@ const { Content } = await post.render();
 
       <div class="mt-6">
         <a
-          href="javascript:history.back()"
+          href="/blog"
           class="inline-block rounded-md py-3 text-sm font-semibold text-red-800 hover:text-red-700 transition"
         >
           ← Volver al blog

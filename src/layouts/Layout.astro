@@ -1,7 +1,8 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import "../styles/global.css";
-import { seoConfig } from "@/config/seo-config";
+import { seoConfig, logoInode } from "@/config/seo-config";
+import { siteConfig } from "@/config/site-config";
 import favicon from "../assets/favicon.png";
 
 import Header from "@/components/Header.astro";
@@ -21,6 +22,12 @@ interface Props {
   image?: string | ImageMetadata;
   description?: string;
   robots?: string;
+  canonicalUrl?: string;
+  ogType?: string;
+  author?: string;
+  publishedTime?: string;
+  articleTags?: string[];
+  structuredData?: Record<string, unknown> | Array<Record<string, unknown>>;
 }
 
 const {
@@ -28,31 +35,126 @@ const {
   description = seoConfig.home.description,
   image = seoConfig.home.image,
   robots = seoConfig.home.robots,
+  canonicalUrl,
+  ogType = "website",
+  author = "INODE64",
+  publishedTime,
+  articleTags = [],
+  structuredData,
 } = Astro.props;
 
 const ogImage = typeof image === "string" ? image : image.src;
+const normalizedArticleTags = Array.isArray(articleTags) ? articleTags : [];
+const siteUrl = Astro.site?.href?.replace(/\/$/, "") ?? "";
+const canonicalHref = canonicalUrl ?? (Astro.url ? Astro.url.href : siteUrl);
+
+const toAbsoluteUrl = (url: string) => {
+  if (!url) {
+    return "";
+  }
+
+  if (url.startsWith("http://") || url.startsWith("https://")) {
+    return url;
+  }
+
+  if (!siteUrl) {
+    return url;
+  }
+
+  return new URL(url, siteUrl).href;
+};
+
+const ogImageUrl = toAbsoluteUrl(ogImage);
+const ogImageWidth = typeof image === "string" ? undefined : image.width;
+const ogImageHeight = typeof image === "string" ? undefined : image.height;
+const logoUrl = toAbsoluteUrl(logoInode);
+const twitterCard = ogImageUrl ? "summary_large_image" : "summary";
+const organizationId = siteUrl ? `${siteUrl}#organization` : undefined;
+const websiteId = siteUrl ? `${siteUrl}#website` : undefined;
+
+const organizationSchema = {
+  "@type": "Organization",
+  "@id": organizationId,
+  name: siteConfig.legalName ?? siteConfig.title,
+  url: siteUrl || undefined,
+  logo: logoUrl || undefined,
+};
+
+const websiteSchema = {
+  "@type": "WebSite",
+  "@id": websiteId,
+  url: siteUrl || undefined,
+  name: siteConfig.title,
+  description: siteConfig.description,
+  publisher: organizationId ? { "@id": organizationId } : undefined,
+  inLanguage: siteConfig.locale,
+};
+
+const webPageSchema = {
+  "@type": "WebPage",
+  "@id": canonicalHref ? `${canonicalHref}#webpage` : undefined,
+  url: canonicalHref || undefined,
+  name: title,
+  description,
+  isPartOf: websiteId ? { "@id": websiteId } : undefined,
+  inLanguage: siteConfig.locale,
+};
+
+const extraStructuredData = Array.isArray(structuredData) ? structuredData : structuredData ? [structuredData] : [];
+const structuredDataJson = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [organizationSchema, websiteSchema, webPageSchema, ...extraStructuredData],
+});
 ---
 
 <!doctype html>
 <html lang="es">
   <head class="h-full">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href={favicon.src} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href={favicon.src} />
+    <link rel="apple-touch-icon" href={favicon.src} />
     <meta name="generator" content={Astro.generator} />
 
     <meta name="description" content={description} />
-    <meta name="author" content={"Roberto Galán"} />
+    <meta name="author" content={author} />
+    <meta name="theme-color" content="#991b1b" />
 
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalHref} />
+    <meta property="og:site_name" content={siteConfig.title} />
+    <meta property="og:locale" content={siteConfig.locale} />
+    <meta property="og:image:alt" content={title} />
+    {ogImageWidth && <meta property="og:image:width" content={ogImageWidth.toString()} />}
+    {ogImageHeight && <meta property="og:image:height" content={ogImageHeight.toString()} />}
 
     <meta name="robots" content={robots} />
 
+    {canonicalHref && <link rel="canonical" href={canonicalHref} />}
+    {canonicalHref && <link rel="alternate" hreflang="es" href={canonicalHref} />}
+
     <link rel="alternate" type="application/rss+xml" title="INODE64's Blog" href={new URL("rss.xml", Astro.site)} />
 
+    <meta name="twitter:card" content={twitterCard} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {siteConfig.twitterHandle && <meta name="twitter:site" content={siteConfig.twitterHandle} />}
+    {siteConfig.twitterHandle && <meta name="twitter:creator" content={siteConfig.twitterHandle} />}
+    {ogImageUrl && <meta name="twitter:image" content={ogImageUrl} />}
+
+    {ogType === "article" && publishedTime && (
+      <meta property="article:published_time" content={publishedTime} />
+    )}
+    {ogType === "article" && author && <meta property="article:author" content={author} />}
+    {ogType === "article" &&
+      normalizedArticleTags.map((tag) => <meta property="article:tag" content={tag} />)}
+
     <GoogleTagmanager id={import.meta.env.GTAG_NUMBER} />
+
+    <script type="application/ld+json" set:html={structuredDataJson} />
 
     <title>{title}</title>
     <ClientRouter />

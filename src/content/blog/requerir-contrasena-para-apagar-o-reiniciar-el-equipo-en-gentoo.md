@@ -2,7 +2,7 @@
 title: Requerir contraseña para apagar o reiniciar el equipo en Gentoo
 date: 2010-06-27
 description: Aprende cómo configurar Gentoo para requerir la contraseña de administrador al apagar o reiniciar el equipo, mejorando la seguridad del sistema.
-author: Roberto Galán
+author: Francisco Javier Félix Belmonte
 image: "requerir-contrasena-para-apagar-o-reiniciar-el-equipo-en-gentoo"
 category: "blog"
 tags: [passwords, gentoo]

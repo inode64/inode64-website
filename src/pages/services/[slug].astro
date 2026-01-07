@@ -19,12 +19,28 @@ if (!service) {
 }
 
 const { title, shortDescription, longDescription, details, imageName, keywords, price, priceUnit } = service;
+const ogImage = serviceImages[imageName];
+const pageUrl = Astro.url?.href ?? "";
+const siteUrl = Astro.site?.href?.replace(/\/$/, "") ?? "";
+const ogImageSrc = typeof ogImage === "string" ? ogImage : ogImage.src;
+const absoluteOgImage = ogImageSrc && siteUrl ? new URL(ogImageSrc, siteUrl).href : ogImageSrc;
+const serviceSchema = {
+  "@type": "Service",
+  "@id": pageUrl ? `${pageUrl}#service` : undefined,
+  name: title,
+  description: shortDescription,
+  image: absoluteOgImage ? [absoluteOgImage] : undefined,
+  url: pageUrl || undefined,
+  provider: siteUrl ? { "@id": `${siteUrl}#organization` } : undefined,
+  inLanguage: siteConfig.locale,
+};
 ---
 
 <Layout
   title={`${title} | Servicios ${siteConfig.title}`}
   description={shortDescription}
-  image={serviceImages[imageName]}
+  image={ogImage}
+  structuredData={serviceSchema}
 >
   <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
     <section>
