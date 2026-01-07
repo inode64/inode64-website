@@ -3,8 +3,8 @@ title: PHP 5.6 y las conexiones seguras SSL / TLS
 date: 2016-12-04
 description: Análisis de cómo PHP 5.6 mejora la seguridad en SSL/TLS al activar la verificación de certificados y posibles soluciones a problemas derivados.
 author: Francisco Javier Félix Belmonte
-image: 'php-5-6-y-las-conexiones-seguras-ssl-tls'
-category: 'security'
+image: "php-5-6-y-las-conexiones-seguras-ssl-tls"
+category: "security"
 tags: [php, ssl, seguridad, certificados]
 isDraft: false
 ---

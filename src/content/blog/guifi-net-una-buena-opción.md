@@ -58,7 +58,6 @@ Por tanto, proponemos las siguientes soluciones:
 
 - Establecer Administradores (voluntarios) que controlen el uso racional de la red por zonas, y que tenga unas tareas de
   control específicas, como por ejemplo:
-
   - Que se ajuste a la potencia correcta.
   - Active el DFS para que no interfieran en los radares meteorológicos y de aviación.
   - Mantener un inventario de nodos y cuando un nodo esté mal configurado o sin uso, tener autoridad para avisar y en

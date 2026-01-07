@@ -3,8 +3,8 @@ title: Como montar una imagen KVM con ntfs3g
 date: 2011-12-15
 description: Aprende cómo montar una imagen de máquina virtual KVM con el sistema de archivos NTFS utilizando la herramienta ntfs-3g, ideal para recuperación de datos y mantenimiento.
 author: Francisco Javier Félix Belmonte
-image: 'como-montar-una-imagen-kvm-con-ntfs3g'
-category: 'blog'
+image: "como-montar-una-imagen-kvm-con-ntfs3g"
+category: "blog"
 tags: [kvm, ntfs3g, maquinas virtuales]
 isDraft: false
 ---

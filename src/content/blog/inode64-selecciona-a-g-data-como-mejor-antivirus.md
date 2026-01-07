@@ -3,8 +3,8 @@ title: INODE64 selecciona a G-DATA como mejor antivirus
 date: 2014-06-13
 description: Un análisis crítico sobre el estado actual de guifi.net, sus desafíos y propuestas para mejorar esta red libre y colaborativa.
 author: Francisco Javier Félix Belmonte
-image: 'inode64-selecciona-a-g-data-como-mejor-antivirus'
-category: 'blog'
+image: "inode64-selecciona-a-g-data-como-mejor-antivirus"
+category: "blog"
 tags: [antivirus, g-data, comparativa]
 isDraft: false
 ---

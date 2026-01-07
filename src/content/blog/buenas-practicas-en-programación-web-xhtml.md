@@ -26,13 +26,11 @@ Muchas de estas diferencias vienen con el cambio de ser una aplicación [SGML](h
 una aplicación del más estricto [XML](https://es.wikipedia.org/wiki/XML):
 
 - Los elementos vacíos deben cerrarse siempre:
-
   - Incorrecto: `<br>`
   - Correcto: `<br></br>` o `<br/>` o `<br />`
     Nota: Cualquiera de las tres formas es válida en XHTML. Para compatibilidad debe usarse `<br />`
 
 - Los elementos no vacíos también deben cerrarse siempre:
-
   - Incorrecto: `<p>Primer párrafo<p>Segundo párrafo`
   - Correcto: `<p>Primer párrafo</p><p>Segundo párrafo</p>`
 
@@ -51,13 +49,11 @@ una aplicación del más estricto [XML](https://es.wikipedia.org/wiki/XML):
 | pre hr di                                      |
 
 - Los valores de los atributos deben siempre ir encerrados entre comillas (simples o dobles)
-
   - Incorrecto: `<td rowspan=3>`
   - Correcto: `<td rowspan="3">`
   - Correcto: `<td rowspan='3'>`
 
 - Los nombres de elementos y atributos deben ir en minúsculas.
-
   - Incorrecto: `<DIV Align="center">Hola Mundo</DIV>`
   - Correcto: `<div align="center">Hola Mundo</div>`
 
@@ -72,25 +68,21 @@ defer="defer" ismap="ismap" nohref="nohref" noshade="noshade" nowrap="nowrap" mu
 ```
 
 - Los atributos desaprobados en HTML 4.01 no forman parte de XHTML.
-
   - Incorrecto: `<font color="#0000FF">Blue text</font>`
   - Correcto: `<span style="color: #0000FF;">Blue text</span>`
 
 - El atributo _name_ declarado no recomendado en xhtml, el atributo _name_ queda en desuso, recomendándose en su lugar
   el atributo _id_ de los siguientes elementos "_a_, _applet_, _form_, _frame_, _iframe_, _img_ y _map_".
-
   - `<img src="dibujo.gif" id="dibujo1" />`
 
 - Es necesaria la declaración de tipo de documento. En xhtml debemos declarar explícitamente el tipo de documento de que
   se trate; por ejemplo, para xhtml 1.0 transitional:
-
   - `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">`
   - `<html xmlns="https://www.w3.org/1999/xhtml">`
   - Además, en xhtml debemos escribir explícitamente las etiquetas html, head, body con sus correspondientes parejas (
     en html, los navegadores presumían su existencia si no se escribían)
 
 - Prohibiciones de elementos
-
   - _a_ no puede contener otro _a_
   - _pre_ no puede contener _img_, _object_, _big_, _small_, _sub_ o _sup_
   - _button_ no puede contener _input_, _select_, _textarea_, _label_, _button_, _form_, _fieldset_, _iframe_ o
@@ -99,7 +91,6 @@ defer="defer" ismap="ismap" nohref="nohref" noshade="noshade" nowrap="nowrap" mu
   - _form_ no puede contener otro _form_
 
 - Los atributos no pueden empezar o terminar con espacios
-
   - Incorrecto: `<font color=" #0000FF ">Blue text</font>`
   - Correcto: `<font color="#0000FF">Blue text</font>`
 
@@ -113,7 +104,6 @@ defer="defer" ismap="ismap" nohref="nohref" noshade="noshade" nowrap="nowrap" mu
 ### Reglas para DTD estrictos
 
 - El texto no debe ser insertado directamente en el cuerpo (dentro de la etiqueta "body").
-
   - Incorrecto: `<body>Texto plano</body>`
   - Correcto: `<body><span>Texto plano</span></body>`
 

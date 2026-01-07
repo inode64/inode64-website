@@ -3,14 +3,13 @@ title: Añadimos soporte Zigbee para el motor tubular ENKI Lexman
 date: 2025-09-22
 description: Nuevo dispositivo disponible para el ecosistema Zigbee2MQTT el motor tubular ENKI Lexman Ø40 mm 10 Nm, ideal para persianas y cortinas motorizadas.
 author: Francisco Javier Félix Belmonte
-image: 'enki-lexman-wsd005'
-category: 'blog'
+image: "enki-lexman-wsd005"
+category: "blog"
 tags: [zigbee, zigbee2mqtt, domótica, iot, motor-tubular, adeo-wsd005, home-assistant]
 isDraft: false
 ---
 
 # Soporte Zigbee para el motor tubular ENKI Lexman Ø40 mm · 10 Nm (Leroy Merlin) en Zigbee2MQTT
-
 
 > Hemos contribuido a la comunidad **Zigbee2MQTT** añadiendo compatibilidad con el motor tubular **ENKI Lexman Ø40 mm · 10 Nm** (referencia **ADEO WSD005**).
 > Esto permite controlar persianas con **Zigbee** desde **Home Assistant** (y cualquier plataforma compatible con Zigbee2MQTT), incluyendo **abrir / cerrar / stop / posición**.
@@ -19,7 +18,7 @@ isDraft: false
 
 ## ¿Qué hemos publicado?
 
-- **Nueva compatibilidad en `zigbee-herdsman-converters`:** definición del dispositivo **ADEO WSD005** (ENKI Lexman, *roller shutter*).
+- **Nueva compatibilidad en `zigbee-herdsman-converters`:** definición del dispositivo **ADEO WSD005** (ENKI Lexman, _roller shutter_).
   <https://github.com/Koenkk/zigbee-herdsman-converters/commit/628a967627544f338676c5d573ff0b9860b9e54a>
 
 - **Actualización de documentación (`zigbee2mqtt.io`):** entrada específica para el modelo.

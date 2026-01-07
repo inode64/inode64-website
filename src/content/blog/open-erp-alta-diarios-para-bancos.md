@@ -3,8 +3,8 @@ title: OPEN ERP Alta de nuevos diarios para bancos
 date: 2012-08-23
 description: Aprende cómo configurar diarios en OpenERP para gestionar de manera eficiente las transacciones contables de tu empresa, incluyendo bancos, ventas, compras y más.
 author: Francisco Javier Félix Belmonte
-image: 'open-erp-alta-diarios-para-bancos'
-category: 'blog'
+image: "open-erp-alta-diarios-para-bancos"
+category: "blog"
 tags: [bancos, openerp, configuración]
 isDraft: false
 ---

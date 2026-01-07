@@ -5,12 +5,12 @@ author: Francisco Javier Félix Belmonte
 description: "Celebramos haber pasado los 50 PRs a Gentoo y presentamos nuestro overlay público."
 tags: ["Gentoo", "inode64", "overlay", "ebuilds", "open source"]
 image: "gentoo-50-prs-inode64"
-category: 'blog'
+category: "blog"
 ---
 
 # Hemos superado los **50 pull requests** a Gentoo 🎉
 
-En *inode64* celebramos que ya hemos superado la barrera de los **50 pull requests (PR)** en colaboraciones con la distribución **Gentoo Linux**.
+En _inode64_ celebramos que ya hemos superado la barrera de los **50 pull requests (PR)** en colaboraciones con la distribución **Gentoo Linux**.
 Este hito refleja nuestro compromiso con la calidad de los ebuilds, la salud del árbol y la mejora continua para usuarios y administradores.
 
 ---

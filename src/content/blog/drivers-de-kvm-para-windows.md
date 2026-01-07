@@ -3,8 +3,8 @@ title: Guía instalar los Drivers de KVM en Máquinas Virtuales Windows
 date: 2012-02-29
 description: Aprende cómo instalar y utilizar los drivers de KVM para mejorar el rendimiento de máquinas virtuales Windows, con una guía detallada y enlaces útiles.
 author: Francisco Javier Félix Belmonte
-image: 'drivers-de-kvm-para-windows'
-category: 'blog'
+image: "drivers-de-kvm-para-windows"
+category: "blog"
 tags: [kvm, windows, maquinas virtuales]
 isDraft: false
 ---
@@ -19,7 +19,7 @@ soporte.
 La siguiente tabla muestra los diferentes controladores disponibles para cada versión de Windows:
 
 | Versión | Descripción                                 |
-|---------|---------------------------------------------|
+| ------- | ------------------------------------------- |
 | Wxp     | Controlador de disco para Windows XP 32bits |
 | Wnet    | Controlador de disco para Win2003           |
 | Wlh     | Controlador de disco para Win2008           |

@@ -3,8 +3,8 @@ title: Impresiones y Reflexiones del evento ResetWeekend 2014
 date: 2014-12-21
 description: Una experiencia enriquecedora en la que se combinan aprendizaje, colaboración y espíritu emprendedor en un entorno dinámico y profesional.
 author: Francisco Javier Félix Belmonte
-image: 'impresiones-de-resetweekend-2014'
-category: 'blog'
+image: "impresiones-de-resetweekend-2014"
+category: "blog"
 tags: [resetweekend, startup, iweekend]
 isDraft: false
 ---

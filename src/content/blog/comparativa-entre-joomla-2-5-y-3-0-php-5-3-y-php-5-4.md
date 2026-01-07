@@ -3,19 +3,19 @@ title: Comparativa entre Joomla 2.5 y 3.0 (PHP 5.3 y PHP 5.4)
 date: 2013-03-29
 description: Una comparativa detallada entre Joomla 2.5 y 3.0, evaluando su rendimiento con diferentes versiones de PHP y sistemas de caché como XCache.
 author: Francisco Javier Félix Belmonte
-image: 'comparativa-entre-joomla-2-5-y-3-0-php-5-3-y-php-5-4'
-category: 'joomla'
+image: "comparativa-entre-joomla-2-5-y-3-0-php-5-3-y-php-5-4"
+category: "joomla"
 tags: [joomla, benchmark, xcache]
 isDraft: false
 ---
 
 Hemos usado como banco de pruebas [gk_magazine](https://www.gavick.com/joomla-templates/magazine,111.html), template
-de [Gavick](https://www.gavick.com) que se encuentra optimizado tanto para *Joomla* 2.5 como 3.0, para intentar ser lo
-más justos posible. Usamos en los dos casos el *quickstart* para que el contenido de la página principal tuviera un
+de [Gavick](https://www.gavick.com) que se encuentra optimizado tanto para _Joomla_ 2.5 como 3.0, para intentar ser lo
+más justos posible. Usamos en los dos casos el _quickstart_ para que el contenido de la página principal tuviera un
 contenido más parecido a una web real.
 
 |                                         | Joomla 2.5 | Joomla 3.0 |
-|-----------------------------------------|:----------:|:----------:|
+| --------------------------------------- | :--------: | :--------: |
 | PHP 5.3                                 |   38,529   |   34,050   |
 | PHP 5.4                                 |   37,235   |   33,353   |
 | PHP 5.3 + Xcache                        |   30,356   |   26,836   |
@@ -25,8 +25,8 @@ contenido más parecido a una web real.
 | PHP 5.3 + Xcache + Cache Progresiva     |   20,852   |   19,469   |
 | PHP 5.4 + Xcache + Cache Progresiva     |   20,508   |   19,307   |
 
-En conclusión, vemos que es un poco más rápida la versión de *Joomla* 3.0, pero esa diferencia es imperceptible cuando
-se activa la *caché progresiva*. Algo similar sucede con **PHP** 5.4, donde el aumento de velocidad no es muy
+En conclusión, vemos que es un poco más rápida la versión de _Joomla_ 3.0, pero esa diferencia es imperceptible cuando
+se activa la _caché progresiva_. Algo similar sucede con **PHP** 5.4, donde el aumento de velocidad no es muy
 significativo. Lo más destacado es usar un sistema de caché para **PHP** como son [XCache](https://xcache.lighttpd.net/)
 o [APC](https://pecl.php.net/package/APC), pero este último nos ha dado algún problema y lo hemos tenido que reemplazar
 en nuestros servidores de producción.

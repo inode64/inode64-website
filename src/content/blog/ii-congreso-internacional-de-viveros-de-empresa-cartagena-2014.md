@@ -3,8 +3,8 @@ title: Congreso Internacional de Viveros Empresa - Cartagena 2014
 date: 2014-12-05
 description: Un resumen del II Congreso Internacional de Viveros de Empresa en Cartagena, destacando experiencias, networking y casos de éxito.
 author: Francisco Javier Félix Belmonte
-image: 'ii-congreso-internacional-de-viveros-de-empresa-cartagena-2014'
-category: 'blog'
+image: "ii-congreso-internacional-de-viveros-de-empresa-cartagena-2014"
+category: "blog"
 tags: [viveros, congresos]
 isDraft: false
 ---

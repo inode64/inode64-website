@@ -3,8 +3,8 @@ title: Actualización a Joomla 1.5 versión spanish
 date: 2010-10-02
 description: Repositorio de actualizaciones para Joomla 1.5 en formato parche, con instrucciones y herramientas para facilitar su implementación en sistemas Linux.
 author: Francisco Javier Félix Belmonte
-image: 'joomla-15-update'
-category: 'joomla'
+image: "joomla-15-update"
+category: "joomla"
 tags: [joomla, actualizaciones, parche, linux]
 isDraft: false
 ---

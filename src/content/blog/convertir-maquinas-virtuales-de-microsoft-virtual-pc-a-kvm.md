@@ -3,8 +3,8 @@ title: Convertir maquinas virtuales de Microsoft Virtual PC a KVM
 date: 2013-03-25
 description: Aprende cómo migrar máquinas virtuales de Microsoft Virtual PC a KVM, incluyendo pasos detallados para la conversión de imágenes y configuración de hardware.
 author: Francisco Javier Félix Belmonte
-image: 'convertir-maquinas-virtuales-de-microsoft-virtual-pc-a-kvm'
-category: 'blog'
+image: "convertir-maquinas-virtuales-de-microsoft-virtual-pc-a-kvm"
+category: "blog"
 tags: [kvm, virtualización]
 isDraft: false
 ---

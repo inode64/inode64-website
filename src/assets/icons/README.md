@@ -7,5 +7,5 @@
 
 ## Parameters
 
-- Line color: #9f0811 
+- Line color: #9f0811
 - Icon Size: 200px
