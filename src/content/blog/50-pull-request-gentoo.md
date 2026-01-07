@@ -13,6 +13,8 @@ category: "blog"
 En _inode64_ celebramos que ya hemos superado la barrera de los **50 pull requests (PR)** en colaboraciones con la distribución **Gentoo Linux**.
 Este hito refleja nuestro compromiso con la calidad de los ebuilds, la salud del árbol y la mejora continua para usuarios y administradores.
 
+Enlace de las colaboraciones en [github.com](https://github.com/gentoo/gentoo/pulls?q=is%3Apr++author%3Ainode64+)
+
 ---
 
 ## ¿Qué tipo de contribuciones hacemos?
