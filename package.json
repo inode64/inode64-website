@@ -21,25 +21,25 @@
     "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.8",
-    "@astrojs/rss": "^4.0.13",
-    "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/rss": "^4.0.14",
+    "@astrojs/sitemap": "^3.6.1",
     "@digi4care/astro-google-tagmanager": "^1.6.0",
-    "@tailwindcss/vite": "^4.1.16",
-    "astro": "^5.15.1",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "5.15.9",
     "astro-htaccess": "^0.2.3",
-    "astro-obfuscate": "^0.0.5",
+    "astro-obfuscate": "^0.0.6",
     "astro-robots-txt": "^1.0.0",
-    "glob": "11.0.3",
+    "glob": "11.1.0",
     "imagemin": "^9.0.1",
     "imagemin-pngquant": "^10.0.0",
     "imagemin-svgo": "^11.0.1",
     "imagemin-webp": "^8.0.0",
-    "tailwindcss": "^4.1.16"
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
-    "@types/nodemailer": "^7.0.3",
-    "prettier": "^3.6.2",
+    "@types/nodemailer": "^7.0.4",
+    "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1"
   },
   "cspell": {
