@@ -1,4 +1,5 @@
-export const logoInode = new URL("./assets/images/og/inode64.webp", import.meta.url).href;
+import inodeImage from "../assets/images/og/inode64.webp";
+export const logoInode = inodeImage.src;
 
 export const seoConfig = {
   home: {
