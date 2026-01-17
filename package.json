@@ -22,11 +22,11 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
-    "@astrojs/rss": "^4.0.14",
-    "@astrojs/sitemap": "^3.6.1",
+    "@astrojs/rss": "^4.0.15",
+    "@astrojs/sitemap": "^3.7.0",
     "@digi4care/astro-google-tagmanager": "^1.6.0",
     "@tailwindcss/vite": "^4.1.18",
-    "astro": "5.16.7",
+    "astro": "5.16.11",
     "astro-htaccess": "^0.2.3",
     "astro-obfuscate": "^0.0.6",
     "astro-robots-txt": "^1.0.0",
@@ -38,9 +38,9 @@
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
-    "@types/nodemailer": "^7.0.4",
+    "@types/nodemailer": "^7.0.5",
     "pa11y": "^9.0.1",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.0",
     "prettier-plugin-astro": "^0.14.1"
   },
   "cspell": {
