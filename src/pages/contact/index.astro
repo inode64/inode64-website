@@ -22,7 +22,7 @@ import Button from "../../components/ui/Button.astro";
       <input type="hidden" name="access_key" value={import.meta.env.CONTACT_ACCESS_KEY} />
       <input type="hidden" name="from_name" value="INODE64" />
       <input type="hidden" name="subject" value="Nueva consulta desde la web" />
-      <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
+      <input type="hidden" name="botcheck" value="" />
 
       <div class="flex flex-col md:flex-row md:space-x-4 mb-2 space-y-4 md:space-y-0">
         <div class="w-full md:w-1/2">
@@ -96,12 +96,12 @@ import Button from "../../components/ui/Button.astro";
         <div class="mt-2 flex gap-x-4 sm:col-span-2">
           <div class="flex h-6 items-center">
             <label class="relative inline-block w-10 h-6 cursor-pointer" id="privacy-switch-label">
+              <span class="sr-only">Aceptar la política de privacidad</span>
               <input
                 type="checkbox"
                 id="privacy-policy-checkbox"
                 class="sr-only peer"
-                role="switch"
-                aria-checked="false"
+                aria-describedby="privacy-description privacy-error"
                 required
               />
               <span
@@ -114,19 +114,20 @@ import Button from "../../components/ui/Button.astro";
               </span>
             </label>
           </div>
-          <label class="text-sm/6 text-gray-600" id="switch-1-label">
+          <p class="text-sm/6 text-gray-600" id="privacy-description">
             Al seleccionar esto, acepta nuestra
             <a href="/privacy" class="font-semibold text-red-800">política&nbsp;de&nbsp;privacidad</a>.
-          </label>
+          </p>
         </div>
-        <div id="privacy-error" class="text-red-400 text-sm mt-1 hidden">Debe aceptar la política de privacidad</div>
+        <div id="privacy-error" class="text-red-400 text-sm mt-1 hidden" role="alert">
+          Debe aceptar la política de privacidad
+        </div>
       </div>
-      <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
       <div class="h-captcha" data-captcha="true"></div>
       <div class="mb-6">
         <Button type="submit" text="Enviar consulta" withFull={true} />
       </div>
-      <p class="text-base text-center text-gray-400 mt-4 min-h-[1.5rem]" id="result"></p>
+      <p class="text-base text-center text-gray-400 mt-4 min-h-[1.5rem]" id="result" role="status" aria-live="polite" aria-atomic="true"></p>
     </form>
   </div>
 </Layout>
@@ -159,9 +160,22 @@ import Button from "../../components/ui/Button.astro";
     const result = document.getElementById("result");
     const privacyCheckbox = document.getElementById("privacy-policy-checkbox");
     const privacyError = document.getElementById("privacy-error");
-    const privacyLabel = document.getElementById("privacy-switch-label");
-
     if (!form || !result) return;
+
+    const markCaptchaResponse = () => {
+      const hcaptchaResponse = form.querySelector('textarea[name="h-captcha-response"]');
+      if (!hcaptchaResponse) return false;
+      hcaptchaResponse.setAttribute("aria-hidden", "true");
+      hcaptchaResponse.setAttribute("tabindex", "-1");
+      return true;
+    };
+
+    if (!markCaptchaResponse()) {
+      const observer = new MutationObserver(() => {
+        if (markCaptchaResponse()) observer.disconnect();
+      });
+      observer.observe(form, { childList: true, subtree: true });
+    }
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
@@ -178,11 +192,13 @@ import Button from "../../components/ui/Button.astro";
       // Validación checkbox privacidad
       if (privacyCheckbox && !privacyCheckbox.checked) {
         alert("❌ Debes aceptar la política de privacidad antes de enviar el formulario.");
+        privacyCheckbox.setAttribute("aria-invalid", "true");
+        if (privacyError) privacyError.classList.remove("hidden");
         privacyCheckbox.focus();
         return;
       } else {
         if (privacyError) privacyError.classList.add("hidden");
-        if (privacyLabel) privacyLabel.classList.remove("border-red-500");
+        privacyCheckbox?.removeAttribute("aria-invalid");
       }
 
       // Validación HTML5

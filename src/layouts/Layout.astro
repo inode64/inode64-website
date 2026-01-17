@@ -162,18 +162,29 @@ const structuredDataJson = JSON.stringify({
   <body class="h-full">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-red-600 text-white px-4 py-2 rounded z-50">Saltar al contenido principal</a>
     <Header />
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <slot />
     </main>
     <Footer />
 
     <!-- Cookie Consent Banner -->
-    <div id="cookie-consent" class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 z-50 hidden">
+    <div
+      id="cookie-consent"
+      class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 z-50 hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cookie-consent-title"
+      aria-describedby="cookie-consent-text"
+      aria-hidden="true"
+    >
       <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between">
-        <p class="text-sm mb-4 sm:mb-0 sm:mr-4">
+        <div class="text-sm mb-4 sm:mb-0 sm:mr-4">
+          <p id="cookie-consent-title" class="sr-only">Aviso de cookies</p>
+          <p id="cookie-consent-text">
           Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.
           <a href="/cookies" class="underline hover:no-underline">Más información</a>
-        </p>
+          </p>
+        </div>
         <button id="accept-cookies" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm">
           Aceptar
         </button>
@@ -184,15 +195,27 @@ const structuredDataJson = JSON.stringify({
       document.addEventListener('DOMContentLoaded', () => {
         const banner = document.getElementById('cookie-consent');
         const acceptBtn = document.getElementById('accept-cookies');
+        let lastFocused = null;
 
         if (banner && !localStorage.getItem('cookies-accepted')) {
+          lastFocused = document.activeElement;
           banner.classList.remove('hidden');
+          banner.setAttribute('aria-hidden', 'false');
+          if (acceptBtn instanceof HTMLElement) {
+            acceptBtn.focus();
+          }
         }
 
         if (acceptBtn) {
           acceptBtn.addEventListener('click', () => {
             localStorage.setItem('cookies-accepted', 'true');
-            if (banner) banner.classList.add('hidden');
+            if (banner) {
+              banner.classList.add('hidden');
+              banner.setAttribute('aria-hidden', 'true');
+            }
+            if (lastFocused instanceof HTMLElement) {
+              lastFocused.focus();
+            }
           });
         }
       });

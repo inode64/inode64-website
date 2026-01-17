@@ -16,7 +16,7 @@ const {
       href={disabled ? undefined : href}
       class={`group inline-flex items-center justify-center gap-2 rounded-md ${
         disabled ? "bg-gray-300 cursor-deny" : "bg-red-800 hover:bg-red-700 cursor-pointer"
-      } px-5 py-3 text-white text-sm font-medium transition focus:outline-none ${
+      } px-5 py-3 text-white text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 ${
         withFull ? "w-full" : ""
       } ${className}`}
     >
@@ -29,7 +29,7 @@ const {
       disabled={disabled}
       class={`group inline-flex items-center justify-center gap-2 rounded-md ${
         disabled ? "bg-gray-300 cursor-deny" : "bg-red-800 hover:bg-red-700 cursor-pointer"
-      } px-5 py-3 text-white text-sm font-medium transition focus:outline-none ${
+      } px-5 py-3 text-white text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 ${
         withFull ? "w-full" : ""
       } ${className}`}
     >

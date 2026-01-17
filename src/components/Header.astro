@@ -14,6 +14,8 @@ import logo from "../assets/images/brand/logo.webp";
       <button
         id="menu-toggle"
         type="button"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
         class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
       >
         <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -62,9 +64,11 @@ import logo from "../assets/images/brand/logo.webp";
     </div>
   </nav>
 
-  <div
+  <nav
     id="mobile-menu"
     class="opacity-0 pointer-events-none fixed inset-0 bg-white z-10 p-3 sm:max-w-xxl sm:ring-1 sm:ring-gray-900/10 transition-opacity duration-300 ease-in-out"
+    aria-label="Menú principal"
+    hidden
   >
     <div class="flex items-center justify-between">
       <a href="/">
@@ -86,7 +90,7 @@ import logo from "../assets/images/brand/logo.webp";
       <a href="/resources" class="block px-3 py-2 text-2xl font-semibold text-gray-800 hover:text-red-700">Recursos</a>
       <a href="/contact" class="block px-3 py-2 text-2xl font-semibold text-gray-800 hover:text-red-700">Contacto</a>
     </div>
-  </div>
+  </nav>
 
   <script>
     const handlePageLoad = () => {
@@ -94,13 +98,46 @@ import logo from "../assets/images/brand/logo.webp";
       const menuClose = document.getElementById("menu-close");
       const mobileMenu = document.getElementById("mobile-menu");
 
-      menuToggle?.addEventListener("click", () => {
-        mobileMenu?.classList.remove("opacity-0", "pointer-events-none");
-      });
+      if (!menuToggle || !menuClose || !mobileMenu) return;
 
-      menuClose?.addEventListener("click", () => {
-        mobileMenu?.classList.add("opacity-0", "pointer-events-none");
-      });
+      let lastFocused = null;
+
+      const handleKeydown = (event) => {
+        if (event.key === "Escape") {
+          closeMenu();
+        }
+      };
+
+      const openMenu = () => {
+        if (!mobileMenu.hidden) return;
+        lastFocused = document.activeElement;
+        mobileMenu.hidden = false;
+        requestAnimationFrame(() => {
+          mobileMenu.classList.remove("opacity-0", "pointer-events-none");
+        });
+        menuToggle.setAttribute("aria-expanded", "true");
+        document.addEventListener("keydown", handleKeydown);
+        const firstFocusable = mobileMenu.querySelector("a, button");
+        if (firstFocusable instanceof HTMLElement) {
+          firstFocusable.focus();
+        }
+      };
+
+      const closeMenu = () => {
+        if (mobileMenu.hidden) return;
+        mobileMenu.classList.add("opacity-0", "pointer-events-none");
+        menuToggle.setAttribute("aria-expanded", "false");
+        document.removeEventListener("keydown", handleKeydown);
+        window.setTimeout(() => {
+          mobileMenu.hidden = true;
+          if (lastFocused instanceof HTMLElement) {
+            lastFocused.focus();
+          }
+        }, 300);
+      };
+
+      menuToggle.addEventListener("click", openMenu);
+      menuClose.addEventListener("click", closeMenu);
     };
     document.addEventListener("astro:page-load", handlePageLoad);
   </script>

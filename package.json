@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@types/nodemailer": "^7.0.4",
+    "pa11y": "^9.0.1",
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1"
   },
