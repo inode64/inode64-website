@@ -358,16 +358,7 @@ export default defineConfig({
           url: "/contact",
           code: 301,
         },
-        {
-          match: "^\\/codigo\\/joomla",
-          url: "/blog",
-          code: 301,
-        },
-        {
-          match: "^\\/tag\\/",
-          url: "/blog",
-          code: 301,
-        },
+        { match: "^\\/blog$", url: "/blog/1", code: 301 },
       ],
     }),
   ],
