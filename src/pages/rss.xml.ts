@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 
 export async function GET() {
   const posts = await getCollection("blog");
-  const visiblePosts = posts.filter((post) => post.data.isDraft !== true);
+  const visiblePosts = posts.filter((post) => !post.data.isDraft);
 
   return rss({
     title: "Inode64's Blog",
