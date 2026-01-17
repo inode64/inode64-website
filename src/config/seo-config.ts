@@ -93,4 +93,11 @@ export const seoConfig = {
     image: logoInode,
     robots: "noindex, nofollow",
   },
+  accessibility: {
+    title: "Declaración de Accesibilidad | INODE64",
+    description:
+      "Compromiso de INODE64 con la accesibilidad web. Información sobre nuestro cumplimiento con las directrices WCAG 2.1.",
+    image: logoInode,
+    robots: "noindex, nofollow",
+  },
 };

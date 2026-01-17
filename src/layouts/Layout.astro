@@ -115,6 +115,7 @@ const structuredDataJson = JSON.stringify({
     <link rel="icon" type="image/png" href={favicon.src} />
     <link rel="apple-touch-icon" href={favicon.src} />
     <meta name="generator" content={Astro.generator} />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://web3forms.com https://js.hcaptcha.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://api.web3forms.com https://www.googletagmanager.com; frame-src https://hcaptcha.com;" />
 
     <meta name="description" content={description} />
     <meta name="author" content={author} />
@@ -149,6 +150,8 @@ const structuredDataJson = JSON.stringify({
     {ogType === "article" && author && <meta property="article:author" content={author} />}
     {ogType === "article" && normalizedArticleTags.map((tag) => <meta property="article:tag" content={tag} />)}
 
+    <link rel="preload" href={logoUrl} as="image" type="image/webp">
+
     <GoogleTagmanager id={import.meta.env.GTAG_NUMBER} />
 
     <script type="application/ld+json" set:html={structuredDataJson} />
@@ -157,8 +160,50 @@ const structuredDataJson = JSON.stringify({
     <ClientRouter />
   </head>
   <body class="h-full">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-red-600 text-white px-4 py-2 rounded z-50">Saltar al contenido principal</a>
     <Header />
-    <slot />
+    <main id="main-content">
+      <slot />
+    </main>
     <Footer />
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 z-50 hidden">
+      <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between">
+        <p class="text-sm mb-4 sm:mb-0 sm:mr-4">
+          Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.
+          <a href="/cookies" class="underline hover:no-underline">Más información</a>
+        </p>
+        <button id="accept-cookies" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-sm">
+          Aceptar
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const banner = document.getElementById('cookie-consent');
+        const acceptBtn = document.getElementById('accept-cookies');
+
+        if (banner && !localStorage.getItem('cookies-accepted')) {
+          banner.classList.remove('hidden');
+        }
+
+        if (acceptBtn) {
+          acceptBtn.addEventListener('click', () => {
+            localStorage.setItem('cookies-accepted', 'true');
+            if (banner) banner.classList.add('hidden');
+          });
+        }
+      });
+    </script>
   </body>
+  <style media="print">
+    .no-print { display: none !important; }
+    body { font-size: 12pt; line-height: 1.4; }
+    h1, h2, h3, h4, h5, h6 { page-break-after: avoid; }
+    img { max-width: 100%; height: auto; }
+    a { color: inherit; text-decoration: none; }
+    a[href^="http"]:after { content: " (" attr(href) ")"; }
+  </style>
 </html>

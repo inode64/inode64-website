@@ -1,0 +1,59 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { seoConfig } from "@/config/seo-config";
+---
+
+<Layout
+  title={seoConfig.accessibility.title}
+  description={seoConfig.accessibility.description}
+  image={seoConfig.accessibility.image}
+  robots={seoConfig.accessibility.robots}
+>
+  <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
+    <div class="mx-auto max-w-4xl">
+      <h1 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Declaración de Accesibilidad</h1>
+      <p class="mt-5 text-lg leading-relaxed text-gray-600">
+        En INODE64 nos comprometemos a hacer nuestro sitio web accesible para todas las personas, incluyendo aquellas con discapacidades.
+      </p>
+
+      <section class="mt-10">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Compromiso con la Accesibilidad</h2>
+        <p class="text-gray-600 mb-4">
+          Nos esforzamos por cumplir con las directrices de accesibilidad para el contenido web (WCAG) 2.1 nivel AA.
+          Nuestro sitio web está diseñado para ser usable por personas con diferentes tipos de discapacidades.
+        </p>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Medidas de Accesibilidad Implementadas</h2>
+        <ul class="list-disc list-inside text-gray-600 space-y-2">
+          <li>Textos alternativos descriptivos para todas las imágenes</li>
+          <li>Navegación por teclado completa</li>
+          <li>Contraste de color adecuado</li>
+          <li>Estructura semántica del HTML</li>
+          <li>Enlaces de salto para navegación rápida</li>
+          <li>Formularios accesibles con etiquetas claras</li>
+          <li>Compatibilidad con lectores de pantalla</li>
+        </ul>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Contacto</h2>
+        <p class="text-gray-600 mb-4">
+          Si experimentas dificultades para acceder a cualquier parte de nuestro sitio web, por favor contacta con nosotros:
+        </p>
+        <p class="text-gray-600">
+          Email: <a href="mailto:sat@inode64.com" class="text-red-600 hover:text-red-700">sat@inode64.com</a><br>
+          Teléfono: <a href="tel:+34607398682" class="text-red-600 hover:text-red-700">+34 607 39 86 82</a>
+        </p>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Actualización</h2>
+        <p class="text-gray-600">
+          Esta declaración fue actualizada por última vez el 17 de enero de 2026.
+        </p>
+      </section>
+    </div>
+  </div>
+</Layout>
