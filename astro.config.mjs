@@ -16,7 +16,6 @@ export default defineConfig({
     sitemap(),
     mdx(),
     htaccessIntegration({
-      generateHtaccessFile: import.meta.env.GENERATE_HTACCESS_FILE === "true",
       errorPages: [{ code: 404, document: "/404.html" }],
       redirects: [
         { match: "^\\/prensa$", url: "/blog", code: 301 },
