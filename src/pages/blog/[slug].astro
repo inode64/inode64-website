@@ -26,7 +26,7 @@ const ogImage = postImages[frontmatter.image];
 const publishedTime = new Date(frontmatter.date).toISOString();
 const pageUrl = Astro.url?.href ?? "";
 const siteUrl = Astro.site?.href?.replace(/\/$/, "") ?? "";
-const ogImageSrc = typeof ogImage === "string" ? ogImage : ogImage.src;
+const ogImageSrc = ogImage.src;
 const absoluteOgImage = ogImageSrc && siteUrl ? new URL(ogImageSrc, siteUrl).href : ogImageSrc;
 const articleSchema = {
   "@type": "BlogPosting",
