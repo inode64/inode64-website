@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">kernel-config</title>
+  <desc id="desc">Ilustracion para el articulo sobre el proyecto kernel-config de inode64.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="55%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#7c2d12" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" rx="28" />
+  <rect x="70" y="72" width="1060" height="486" rx="28" fill="rgba(15, 23, 42, 0.58)" stroke="rgba(251, 146, 60, 0.32)" />
+  <rect x="120" y="118" width="320" height="46" rx="23" fill="url(#accent)" />
+  <text x="145" y="148" fill="#111827" font-family="monospace" font-size="24" font-weight="700">GitHub / inode64</text>
+
+  <text x="120" y="252" fill="#f8fafc" font-family="monospace" font-size="86" font-weight="700">kernel-config</text>
+  <text x="122" y="308" fill="#fdba74" font-family="monospace" font-size="28">optimizacion y configuracion del kernel Linux</text>
+
+  <g transform="translate(120 360)">
+    <rect width="430" height="126" rx="18" fill="#020617" stroke="#334155" />
+    <text x="28" y="42" fill="#94a3b8" font-family="monospace" font-size="22">$ ./kernel-config.sh</text>
+    <text x="28" y="76" fill="#e2e8f0" font-family="monospace" font-size="20">--optimization-profile server</text>
+    <text x="28" y="106" fill="#e2e8f0" font-family="monospace" font-size="20">IOMMU_SUPPORT=auto NR_CPUS=auto</text>
+  </g>
+
+  <g transform="translate(690 180)">
+    <circle cx="150" cy="120" r="98" fill="#111827" stroke="#f97316" stroke-width="10" />
+    <path d="M115 121l24 24 48-56" fill="none" stroke="#fb923c" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" />
+    <text x="44" y="255" fill="#f8fafc" font-family="monospace" font-size="24">.config limpio y reproducible</text>
+  </g>
+
+  <text x="120" y="542" fill="#cbd5e1" font-family="monospace" font-size="22">github.com/inode64/kernel-config</text>
+</svg>
