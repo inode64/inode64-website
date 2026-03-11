@@ -2,6 +2,9 @@
 import Layout from "../../layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config.ts";
 import Button from "../../components/ui/Button.astro";
+
+const contactEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || "/contact/send.php";
+const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
 ---
 
 <Layout
@@ -18,10 +21,13 @@ import Button from "../../components/ui/Button.astro";
         no dude en contactar a nuestro equipo de ventas. Estaremos encantados de ayudarle.
       </p>
     </div>
-    <form method="POST" id="form" class="mt-10 needs-validation max-w-2xl mx-auto grid gap-6" novalidate>
-      <input type="hidden" name="access_key" value={import.meta.env.CONTACT_ACCESS_KEY} />
-      <input type="hidden" name="from_name" value="INODE64" />
-      <input type="hidden" name="subject" value="Nueva consulta desde la web" />
+    <form
+      method="POST"
+      action={contactEndpoint}
+      id="form"
+      class="mt-10 needs-validation max-w-2xl mx-auto grid gap-6"
+      novalidate
+    >
       <input type="hidden" name="botcheck" value="" />
 
       <div class="flex flex-col md:flex-row md:space-x-4 mb-2 space-y-4 md:space-y-0">
@@ -100,6 +106,8 @@ import Button from "../../components/ui/Button.astro";
               <input
                 type="checkbox"
                 id="privacy-policy-checkbox"
+                name="privacy_accepted"
+                value="yes"
                 class="sr-only peer"
                 aria-describedby="privacy-description privacy-error"
                 required
@@ -123,7 +131,15 @@ import Button from "../../components/ui/Button.astro";
           Debe aceptar la política de privacidad
         </div>
       </div>
-      <div class="h-captcha" data-captcha="true"></div>
+      {
+        hCaptchaSiteKey ? (
+          <div class="h-captcha" data-sitekey={hCaptchaSiteKey}></div>
+        ) : (
+          <p class="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-md px-4 py-3">
+            El captcha del formulario no está configurado todavía en este entorno.
+          </p>
+        )
+      }
       <div class="mb-6">
         <Button type="submit" text="Enviar consulta" withFull={true} />
       </div>
@@ -152,7 +168,9 @@ import Button from "../../components/ui/Button.astro";
   }
 </style>
 
-<script src="https://web3forms.com/client/script.js" async defer></script>
+{
+  hCaptchaSiteKey && <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+}
 
 <script type="module">
   window.addEventListener("load", () => {
@@ -160,6 +178,7 @@ import Button from "../../components/ui/Button.astro";
     const result = document.getElementById("result");
     const privacyCheckbox = document.getElementById("privacy-policy-checkbox");
     const privacyError = document.getElementById("privacy-error");
+    const captchaContainer = form?.querySelector(".h-captcha");
     if (!form || !result) return;
 
     const markCaptchaResponse = () => {
@@ -170,7 +189,7 @@ import Button from "../../components/ui/Button.astro";
       return true;
     };
 
-    if (!markCaptchaResponse()) {
+    if (captchaContainer && !markCaptchaResponse()) {
       const observer = new MutationObserver(() => {
         if (markCaptchaResponse()) observer.disconnect();
       });
@@ -181,17 +200,17 @@ import Button from "../../components/ui/Button.astro";
       e.preventDefault();
       e.stopPropagation();
 
-      // Validación captcha
-      const hCaptchaElem = form.querySelector('textarea[name="h-captcha-response"]');
-      const hCaptcha = hCaptchaElem ? hCaptchaElem.value : "";
-      if (!hCaptcha) {
-        alert("❌ Por favor, complete la verificación captcha");
-        return;
+      if (captchaContainer) {
+        const hCaptchaElem = form.querySelector('textarea[name="h-captcha-response"]');
+        const hCaptcha = hCaptchaElem ? hCaptchaElem.value : "";
+        if (!hCaptcha) {
+          alert("Por favor, complete la verificación captcha.");
+          return;
+        }
       }
 
-      // Validación checkbox privacidad
       if (privacyCheckbox && !privacyCheckbox.checked) {
-        alert("❌ Debes aceptar la política de privacidad antes de enviar el formulario.");
+        alert("Debes aceptar la política de privacidad antes de enviar el formulario.");
         privacyCheckbox.setAttribute("aria-invalid", "true");
         if (privacyError) privacyError.classList.remove("hidden");
         privacyCheckbox.focus();
@@ -201,7 +220,6 @@ import Button from "../../components/ui/Button.astro";
         privacyCheckbox?.removeAttribute("aria-invalid");
       }
 
-      // Validación HTML5
       if (!form.checkValidity()) {
         const firstInvalid = form.querySelector(":invalid");
         if (firstInvalid) firstInvalid.focus();
@@ -209,30 +227,28 @@ import Button from "../../components/ui/Button.astro";
         return;
       }
 
-      // Envío del formulario
       const formData = new FormData(form);
-      const object = {};
-      formData.forEach((value, key) => {
-        object[key] = value.toString();
-      });
-
       result.textContent = "Enviando...";
       result.className = "text-base text-center mt-4 min-h-[1.5rem] text-green-600 font-semibold animate-shake";
       result.style.display = "block";
 
       try {
-        const response = await fetch("https://api.web3forms.com/submit", {
+        const response = await fetch(form.action, {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
             Accept: "application/json",
           },
-          body: JSON.stringify(object),
+          body: formData,
         });
-        const data = await response.json();
+
+        const isJson = response.headers.get("content-type")?.includes("application/json");
+        const data = isJson ? await response.json() : { success: false, message: "Respuesta inesperada del servidor." };
         result.textContent = data.message;
 
-        if (data.success) {
+        if (response.ok && data.success) {
+          form.reset();
+          form.classList.remove("was-validated");
+          window.hcaptcha?.reset();
           window.location.href = "/contact/success";
         } else {
           result.className = "text-base text-center text-red-500 mt-4 min-h-[1.5rem]";
@@ -241,8 +257,6 @@ import Button from "../../components/ui/Button.astro";
         result.textContent = "Ha ocurrido un error.";
         result.className = "text-base text-center mt-4 min-h-[1.5rem] text-red-600 font-semibold animate-shake";
       } finally {
-        form.reset();
-        form.classList.remove("was-validated");
         setTimeout(() => {
           if (result) result.style.display = "none";
         }, 5000);
