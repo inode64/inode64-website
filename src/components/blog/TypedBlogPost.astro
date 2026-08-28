@@ -1,34 +1,36 @@
 ---
 import { Image } from "astro:assets";
 import { Formatter } from "@/utils/formatter";
-import type { CollectionEntry } from "astro:content";
+import { postSlug, type BlogPost } from "@/utils/blog";
 
 import { postImages } from "@/assets/images/blog/post";
 import felixAvatar from "../../assets/images/team/felix.webp";
 
 interface Props {
-  post: CollectionEntry<"blog">;
+  post: BlogPost;
   className?: string;
 }
 
 const { post, className } = Astro.props;
 const frontmatter = post.data;
+const slug = postSlug(post);
+const coverFormat = postImages[frontmatter.image]?.src?.endsWith(".svg") ? "svg" : "webp";
 ---
 
 <article
   class={`flex max-w-xl flex-col items-start justify-between rounded-lg shadow-sm transition hover:shadow-lg ${className ?? ""}`}
 >
-  <a href={`/blog/${post.slug}`}>
+  <a href={`/blog/${slug}`}>
     <div class="group relative">
       {
         frontmatter.image && (
           <Image
             src={postImages[frontmatter.image]}
-            format="webp"
+            format={coverFormat}
             class="w-full rounded-t-lg bg-gray-100 object-cover max-h-48 border-b border-b-gray-100"
             loading="lazy"
             alt={frontmatter.title}
-            transition:name={post.slug}
+            transition:name={slug}
           />
         )
       }

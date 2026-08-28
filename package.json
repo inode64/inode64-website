@@ -21,13 +21,11 @@
     "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.14",
-    "@astrojs/rss": "^4.0.17",
-    "@astrojs/sitemap": "^3.7.1",
-    "@digi4care/astro-google-tagmanager": "^1.6.0",
-    "@tailwindcss/vite": "^4.2.1",
-    "astro": "5.17.1",
-    "astro-htaccess": "^0.2.3",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "@digi4care/astro-google-tagmanager": "^2.0.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.2.9",
     "astro-obfuscate": "^0.0.6",
     "astro-robots-txt": "^1.0.0",
     "glob": "13.0.6",
@@ -35,12 +33,12 @@
     "imagemin-pngquant": "^10.0.0",
     "imagemin-svgo": "^12.0.0",
     "imagemin-webp": "^8.0.0",
-    "tailwindcss": "^4.2.1"
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "@types/nodemailer": "^7.0.11",
+    "@types/nodemailer": "^8.0.1",
     "pa11y": "^9.1.1",
-    "prettier": "^3.8.1",
+    "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1"
   },
   "cspell": {

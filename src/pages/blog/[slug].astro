@@ -1,10 +1,11 @@
 ---
 import { Image } from "astro:assets";
+import { render } from "astro:content";
 import type { GetStaticPaths } from "astro";
 import Layout from "@/layouts/Layout.astro";
 import { Formatter } from "@/utils/formatter";
 import { siteConfig } from "@/config/site-config";
-import { getPublishedPosts } from "@/utils/blog";
+import { getPublishedPosts, postSlug } from "@/utils/blog";
 
 import { postImages } from "@/assets/images/blog/post";
 import felixAvatar from "../../assets/images/team/felix.webp";
@@ -13,15 +14,16 @@ export const getStaticPaths = (async () => {
   const visiblePosts = await getPublishedPosts();
 
   return visiblePosts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: postSlug(post) },
     props: { post: post },
   }));
 }) satisfies GetStaticPaths;
 
 const { post } = Astro.props;
 const frontmatter = post.data;
-const { Content } = await post.render();
+const { Content } = await render(post);
 const ogImage = postImages[frontmatter.image];
+const heroFormat = ogImage?.src?.endsWith(".svg") ? "svg" : "webp";
 const publishedTime = new Date(frontmatter.date).toISOString();
 const pageUrl = Astro.url?.href ?? "";
 const siteUrl = Astro.site?.href?.replace(/\/$/, "") ?? "";
@@ -96,11 +98,11 @@ const articleSchema = {
       <div class="flex justify-center my-4">
         <Image
           src={postImages[frontmatter.image]}
-          format="webp"
+          format={heroFormat}
           class="w-full max-w-xl"
           loading="lazy"
           alt={frontmatter.title}
-          transition:name={post.slug}
+          transition:name={postSlug(post)}
         />
       </div>
 

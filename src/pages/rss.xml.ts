@@ -1,5 +1,5 @@
 import rss from "@astrojs/rss";
-import { getPublishedPosts } from "@/utils/blog";
+import { getPublishedPosts, postSlug } from "@/utils/blog";
 
 export async function GET() {
   const visiblePosts = await getPublishedPosts();
@@ -12,7 +12,7 @@ export async function GET() {
       title: post.data.title,
       pubDate: post.data.date,
       description: post.data.description,
-      link: `/blog/${post.slug}/`,
+      link: `/blog/${postSlug(post)}/`,
     })),
   });
 }
