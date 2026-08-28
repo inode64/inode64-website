@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">llama.cpp con ROCm 10 en una Radeon AI PRO R9700</title>
+  <desc id="desc">Tokens por segundo de generación con contexto largo: 46 con ROCm 7.2, 30 con ROCm 10 recién migrado y 48 con ROCm 10 sin HIP graphs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="55%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#7c2d12" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" rx="28" />
+  <rect x="70" y="72" width="1060" height="486" rx="28" fill="rgba(15, 23, 42, 0.58)" stroke="rgba(251, 146, 60, 0.32)" />
+  <rect x="120" y="112" width="470" height="46" rx="23" fill="url(#accent)" />
+  <text x="145" y="142" fill="#111827" font-family="monospace" font-size="24" font-weight="700">Gentoo / ROCm 10 / gfx1201</text>
+
+  <text x="120" y="226" fill="#f8fafc" font-family="monospace" font-size="64" font-weight="700">llama.cpp + R9700</text>
+  <text x="122" y="270" fill="#fdba74" font-family="monospace" font-size="26">generación con contexto largo, tokens/s</text>
+
+  <!-- gráfico de barras: una medida, tres configuraciones; la definitiva en acento -->
+  <g transform="translate(120 300)" font-family="monospace">
+    <!-- baseline -->
+    <line x1="330" y1="0" x2="330" y2="196" stroke="#334155" stroke-width="2" />
+
+    <text x="0" y="36" fill="#e2e8f0" font-size="22">ROCm 7.2.4</text>
+    <rect x="332" y="18" width="626" height="28" rx="4" fill="#94a3b8" />
+    <text x="972" y="40" fill="#e2e8f0" font-size="24" font-weight="700">46,3</text>
+
+    <text x="0" y="104" fill="#e2e8f0" font-size="22">ROCm 10.0.0</text>
+    <text x="0" y="128" fill="#94a3b8" font-size="18">HIP graphs (defecto)</text>
+    <rect x="332" y="86" width="416" height="28" rx="4" fill="#94a3b8" />
+    <text x="762" y="108" fill="#e2e8f0" font-size="24" font-weight="700">30,8</text>
+
+    <text x="0" y="172" fill="#f8fafc" font-size="22" font-weight="700">ROCm 10.0.0</text>
+    <text x="0" y="196" fill="#fdba74" font-size="18">sin HIP graphs + VMM</text>
+    <rect x="332" y="154" width="656" height="28" rx="4" fill="url(#accent)" />
+    <text x="1002" y="176" fill="#f8fafc" font-size="24" font-weight="700">48,6</text>
+  </g>
+
+  <text x="120" y="536" fill="#94a3b8" font-family="monospace" font-size="18">Qwen3.8-27B Q6_K · MTP + ngram · tras prompt de 1600 tokens · inode64.com</text>
+</svg>
