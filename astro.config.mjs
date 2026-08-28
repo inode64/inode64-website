@@ -13,7 +13,9 @@ export default defineConfig({
 
   integrations: [
     robotsTxt(),
-    sitemap(),
+    sitemap({
+      filter: (page) => !page.endsWith("/blog/") && !page.endsWith("/contact/success/"),
+    }),
     mdx(),
     htaccessIntegration({
       errorPages: [{ code: 404, document: "/404.html" }],

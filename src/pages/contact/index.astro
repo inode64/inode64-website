@@ -15,7 +15,7 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
 >
   <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
     <div class="mx-auto max-w-250 text-center">
-      <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Contáctenos</h2>
+      <h1 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Contáctenos</h1>
       <p class="mt-5 text-lg leading-relaxed text-gray-600">
         Si tiene alguna pregunta sobre nuestros productos o servicios, o desea solicitar un presupuesto personalizado,
         no dude en contactar a nuestro equipo de ventas. Estaremos encantados de ayudarle.
@@ -229,7 +229,7 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
 
       const formData = new FormData(form);
       result.textContent = "Enviando...";
-      result.className = "text-base text-center mt-4 min-h-[1.5rem] text-green-600 font-semibold animate-shake";
+      result.className = "text-base text-center mt-4 min-h-[1.5rem] text-green-600 font-semibold";
       result.style.display = "block";
 
       try {
@@ -255,7 +255,7 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
         }
       } catch {
         result.textContent = "Ha ocurrido un error.";
-        result.className = "text-base text-center mt-4 min-h-[1.5rem] text-red-600 font-semibold animate-shake";
+        result.className = "text-base text-center mt-4 min-h-[1.5rem] text-red-600 font-semibold";
       } finally {
         setTimeout(() => {
           if (result) result.style.display = "none";

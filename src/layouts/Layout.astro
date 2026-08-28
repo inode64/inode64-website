@@ -4,6 +4,7 @@ import "../styles/global.css";
 import { seoConfig, logoInode } from "@/config/seo-config";
 import { siteConfig } from "@/config/site-config";
 import favicon from "../assets/favicon.png";
+import headerLogo from "../assets/images/brand/logo.webp";
 
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
@@ -68,6 +69,7 @@ const ogImageUrl = toAbsoluteUrl(ogImage);
 const ogImageWidth = typeof image === "string" ? undefined : image.width;
 const ogImageHeight = typeof image === "string" ? undefined : image.height;
 const logoUrl = toAbsoluteUrl(logoInode);
+const headerLogoUrl = toAbsoluteUrl(headerLogo.src);
 const twitterCard = ogImageUrl ? "summary_large_image" : "summary";
 const organizationId = siteUrl ? `${siteUrl}#organization` : undefined;
 const websiteId = siteUrl ? `${siteUrl}#website` : undefined;
@@ -150,7 +152,7 @@ const structuredDataJson = JSON.stringify({
     {ogType === "article" && author && <meta property="article:author" content={author} />}
     {ogType === "article" && normalizedArticleTags.map((tag) => <meta property="article:tag" content={tag} />)}
 
-    <link rel="preload" href={logoUrl} as="image" type="image/webp">
+    <link rel="preload" href={headerLogoUrl} as="image" type="image/webp" />
 
     <GoogleTagmanager id={import.meta.env.GTAG_NUMBER} />
 

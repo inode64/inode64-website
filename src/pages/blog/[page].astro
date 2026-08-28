@@ -3,13 +3,11 @@ import TypedBlogPost from "@/components/blog/TypedBlogPost.astro";
 import Layout from "../../layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
 import type { GetStaticPaths } from "astro";
-import { getCollection } from "astro:content";
 import Button from "@/components/ui/Button.astro";
+import { getPublishedPosts } from "@/utils/blog";
 
 export const getStaticPaths = (async ({ paginate }) => {
-  const blogPosts = (await getCollection("blog", (post) => post.data.isDraft === false)).sort((a, b) => {
-    return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
-  });
+  const blogPosts = await getPublishedPosts();
 
   return paginate(blogPosts, { pageSize: 9 });
 }) satisfies GetStaticPaths;
@@ -26,7 +24,7 @@ const currentPage = page.currentPage;
 >
   <div class="lg:pt-24 sm:pt-24 pt-24 px-6 py-10 sm:py-12 lg:px-8">
     <div class="mx-auto max-w-250 text-center">
-      <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Blog</h2>
+      <h1 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Blog</h1>
       <p class="mt-5 text-lg/8 text-gray-600">
         Bienvenido a nuestro blog, donde compartimos ideas, consejos y las últimas novedades. Explora nuestros artículos
         y descubre contenido diseñado para inspirarte y mantenerte informado.
@@ -48,14 +46,3 @@ const currentPage = page.currentPage;
     </section>
   </div>
 </Layout>
-
-<style>
-  @reference 'tailwindcss';
-  a {
-    @apply bg-red-800 text-white p-2 rounded hover:bg-red-700 cursor-pointer;
-  }
-
-  .disabled {
-    @apply bg-gray-300 hover:bg-gray-600 pointer-events-none;
-  }
-</style>

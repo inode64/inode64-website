@@ -2,16 +2,15 @@
 import { Image } from "astro:assets";
 import type { GetStaticPaths } from "astro";
 import Layout from "@/layouts/Layout.astro";
-import { getCollection } from "astro:content";
 import { Formatter } from "@/utils/formatter";
 import { siteConfig } from "@/config/site-config";
+import { getPublishedPosts } from "@/utils/blog";
 
 import { postImages } from "@/assets/images/blog/post";
 import felixAvatar from "../../assets/images/team/felix.webp";
 
 export const getStaticPaths = (async () => {
-  const blogPosts = await getCollection("blog");
-  const visiblePosts = blogPosts.filter((post) => post.data.isDraft !== true);
+  const visiblePosts = await getPublishedPosts();
 
   return visiblePosts.map((post) => ({
     params: { slug: post.slug },
