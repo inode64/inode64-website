@@ -13,6 +13,10 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=9.6.5"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -23,10 +27,8 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
-    "@digi4care/astro-google-tagmanager": "^2.0.0",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.2.9",
-    "astro-obfuscate": "^0.0.6",
     "astro-robots-txt": "^1.0.0",
     "glob": "13.0.6",
     "imagemin": "^9.0.1",

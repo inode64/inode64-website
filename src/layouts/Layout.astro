@@ -8,8 +8,7 @@ import headerLogo from "../assets/images/brand/logo.webp";
 
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-
-import { GoogleTagmanager, GoogleTagmanagerNoscript, SiteVerification } from "@digi4care/astro-google-tagmanager";
+import GoogleTagManager from "@/components/GoogleTagManager.astro";
 
 interface ImageMetadata {
   src: string;
@@ -154,7 +153,7 @@ const structuredDataJson = JSON.stringify({
 
     <link rel="preload" href={headerLogoUrl} as="image" type="image/webp" />
 
-    <GoogleTagmanager id={import.meta.env.GTAG_NUMBER} />
+    <GoogleTagManager id={import.meta.env.GTAG_NUMBER} />
 
     <script type="application/ld+json" set:html={structuredDataJson} />
 

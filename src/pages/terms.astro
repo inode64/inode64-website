@@ -2,7 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config";
 
-import { ObfuscatedEmail, ObfuscatedPhone } from "astro-obfuscate/components";
+import ObfuscatedContact from "@/components/ObfuscatedContact.astro";
 
 const SITE = import.meta.env.SITE;
 ---
@@ -229,8 +229,9 @@ const SITE = import.meta.env.SITE;
       </p>
       <p>
         Para tramitar el envío de una forma más ágil y contrastar más rápidamente la información facilitada por nuestra
-        entidad bancaria le solicitamos que nos remita por e-mail a <ObfuscatedEmail
-          email={import.meta.env.SENDER_CONTACT_EMAIL}
+        entidad bancaria le solicitamos que nos remita por e-mail a <ObfuscatedContact
+          value={import.meta.env.SENDER_CONTACT_EMAIL}
+          type="email"
         />, el justificante de la transferencia.
       </p>
       <p>
@@ -295,14 +296,18 @@ const SITE = import.meta.env.SITE;
       <p>
         En caso de disconformidad con la gestión de una reclamación en periodo de garantía o con el fin de detallar
         alguna consideración al respecto sobre el producto, siempre podrá ponerse en contacto telefónico con nuestro
-        responsable de atención al cliente en horario comercial (<ObfuscatedPhone
-          phone={import.meta.env.PHONE_NUMBER}
+        responsable de atención al cliente en horario comercial (<ObfuscatedContact
+          value={import.meta.env.PHONE_NUMBER}
+          type="phone"
         />) Cancelación de Compras.
       </p>
       <p>
         El usuario puede cancelar el proceso de compra siempre y cuando este no haya sido procesado en su totalidad y no
         haya salido de nuestro almacén. Con el fin de asegurar por parte del cliente dicha cancelación, es aconsejable
-        ponerse en contacto telefónico con nuestra tienda (<ObfuscatedPhone phone={import.meta.env.PHONE_NUMBER} />) .
+        ponerse en contacto telefónico con nuestra tienda (<ObfuscatedContact
+          value={import.meta.env.PHONE_NUMBER}
+          type="phone"
+        />) .
       </p>
       <p>
         En caso de que el pedido haya sido enviado antes de su llamada, se considerará entonces como una devolución.

@@ -1,0 +1,36 @@
+---
+interface Props {
+  id?: string;
+}
+
+const { id = "" } = Astro.props;
+const normalizedId = id.trim();
+const isValidId = /^GTM-[A-Z0-9]+$/i.test(normalizedId);
+const serializedId = JSON.stringify(normalizedId);
+
+const script = isValidId
+  ? `
+    window.dataLayer = window.dataLayer || [];
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer',${serializedId});
+
+    if (!window.__inode64GtmAfterSwapAdded) {
+      window.__inode64GtmAfterSwapAdded = true;
+      document.addEventListener('astro:after-swap', function() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'virtualPageview',
+          'gtm.start': new Date().getTime(),
+          virtualPagePath: window.location.pathname,
+          virtualPageTitle: document.title
+        });
+      });
+    }
+  `
+  : "";
+---
+
+{isValidId && <script is:inline set:html={script} />}

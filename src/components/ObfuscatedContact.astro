@@ -1,0 +1,91 @@
+---
+interface Props {
+  value: string;
+  type: "email" | "phone" | "link";
+  text?: string;
+  imageSrc?: string;
+  imageAlt?: string;
+  imageClass?: string;
+}
+
+const { value, type, text, imageSrc, imageAlt = "", imageClass = "" } = Astro.props;
+const xorKey = Math.floor(Math.random() * 255) + 1;
+
+function obfuscate(input: string): string {
+  const bytes = new TextEncoder().encode(input);
+
+  return Array.from(bytes, (byte, index) => (byte ^ (index % 256) ^ xorKey).toString(16).padStart(2, "0")).join("");
+}
+---
+
+<obfuscated-contact
+  data-obfuscated={obfuscate(value)}
+  data-text={text ? obfuscate(text) : undefined}
+  data-xor={xorKey}
+  data-type={type}
+  data-image-src={imageSrc}
+  data-image-alt={imageAlt}
+  data-image-class={imageClass}
+>
+  [espere, por favor]
+</obfuscated-contact>
+
+<noscript>
+  <span>[active JavaScript para ver este dato]</span>
+  <style>
+    obfuscated-contact {
+      display: none;
+    }
+  </style>
+</noscript>
+
+<script>
+  function deobfuscate(value: string, xorKey: number): string {
+    const bytes = value.match(/.{2}/g)?.map((hex, index) => Number.parseInt(hex, 16) ^ xorKey ^ (index % 256)) ?? [];
+
+    return new TextDecoder().decode(Uint8Array.from(bytes));
+  }
+
+  class ObfuscatedContactElement extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.ready === "true") return;
+
+      const encodedValue = this.dataset.obfuscated;
+      const xorKey = Number.parseInt(this.dataset.xor ?? "", 10);
+      const type = this.dataset.type;
+
+      if (!encodedValue || !Number.isInteger(xorKey) || !type) {
+        this.textContent = "[dato no disponible]";
+        return;
+      }
+
+      try {
+        const value = deobfuscate(encodedValue, xorKey);
+        const text = this.dataset.text ? deobfuscate(this.dataset.text, xorKey) : value;
+        const anchor = document.createElement("a");
+
+        anchor.href = type === "email" ? `mailto:${value}` : type === "phone" ? `tel:${value}` : value;
+
+        if (this.dataset.imageSrc) {
+          const image = document.createElement("img");
+          image.src = this.dataset.imageSrc;
+          image.alt = this.dataset.imageAlt ?? "";
+          image.className = this.dataset.imageClass ?? "";
+          anchor.append(image);
+        } else {
+          anchor.textContent = text;
+        }
+
+        this.dataset.ready = "true";
+        this.replaceChildren(anchor);
+      } catch (error) {
+        this.textContent = "[no se pudo mostrar el dato]";
+        console.error("No se pudo desofuscar el dato de contacto", error);
+      }
+    }
+  }
+
+  if (!customElements.get("obfuscated-contact")) {
+    customElements.define("obfuscated-contact", ObfuscatedContactElement);
+  }
+</script>

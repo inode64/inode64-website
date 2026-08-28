@@ -8,8 +8,8 @@ Esta web representa la presencia digital de INODE64, ofreciendo información sob
 
 ### 1.2. Tecnologías utilizadas
 
-- **Astro 5.7**: Framework principal para generación de sitios estáticos.
-- **Tailwind CSS 4.0.9**: Sistema de utilidades CSS para el diseño.
+- **Astro 7**: Framework principal para generación de sitios estáticos.
+- **Tailwind CSS 4.3**: Sistema de utilidades CSS para el diseño.
 - **TypeScript**: Para tipado estático y mayor mantenibilidad.
 - **VS Code**: Editor recomendado para el desarrollo.
 
@@ -25,8 +25,8 @@ INODE64 tiene previsto realizar el despliegue final en sus propios servidores.
 
 ### 2.1. Software necesario
 
-- Node.js v20.11.1
-- npm (v10 o superior)
+- Node.js v22.12.0 o superior
+- npm v9.6.5 o superior
 
 Instalación de dependencias:
 

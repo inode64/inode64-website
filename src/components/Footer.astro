@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import logo from "../assets/images/brand/logo.webp";
 import { icons } from "@/assets/icons";
 import allServices from "../data/services.json";
-import { ObfuscatedEmail, ObfuscatedPhone, ObfuscatedData } from "astro-obfuscate/components";
+import ObfuscatedContact from "@/components/ObfuscatedContact.astro";
 
 const servicesForFooter = allServices.filter((service) => service.shortTitle && service.shortTitle.trim() !== "");
 
@@ -28,7 +28,13 @@ const fullWhatsappLink = `https://wa.me/${whatsappNumber}`;
 
         <ul class="mt-8 flex justify-center gap-8 sm:justify-center md:gap-7 sm:max-w-xs">
           <li>
-            <ObfuscatedData data={fullWhatsappLink} text={icons.whatsapp.src} type="link" />
+            <ObfuscatedContact
+              value={fullWhatsappLink}
+              type="link"
+              imageSrc={icons.whatsapp.src}
+              imageAlt="WhatsApp"
+              imageClass="transition duration-200 hover:brightness-120"
+            />
           </li>
 
           <li>
@@ -137,14 +143,14 @@ const fullWhatsappLink = `https://wa.me/${whatsappNumber}`;
             <li class="-mt-0.5 flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
               <Image src={icons.mail} alt="Icono de correo" class="max-w-6" sizes="24px" />
               <span class="flex-1 text-gray-700">
-                <ObfuscatedEmail email={import.meta.env.SENDER_CONTACT_EMAIL} />
+                <ObfuscatedContact value={import.meta.env.SENDER_CONTACT_EMAIL} type="email" />
               </span>
             </li>
 
             <li class="-mt-0.5 flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
               <Image src={icons.phone} alt="Icono de teléfono" class="max-w-6" sizes="24px" />
               <span class="flex-1 text-gray-700">
-                <ObfuscatedPhone phone={import.meta.env.PHONE_NUMBER} />
+                <ObfuscatedContact value={import.meta.env.PHONE_NUMBER} type="phone" />
               </span>
             </li>
 
@@ -175,21 +181,3 @@ const fullWhatsappLink = `https://wa.me/${whatsappNumber}`;
     </div>
   </div>
 </footer>
-
-<script>
-  import ObfuscatedData from "astro-obfuscate/client";
-  ObfuscatedData.registerElement("link", (deobfuscated, text) => {
-    const elem = document.createElement("a");
-    elem.href = deobfuscated;
-
-    const imgElement = document.createElement("img");
-
-    imgElement.src = text ?? "";
-    imgElement.alt = "WhatsApp";
-    imgElement.className = "transition duration-200 hover:brightness-120"; // Espera data-img-class
-
-    elem.appendChild(imgElement);
-
-    return elem;
-  });
-</script>
