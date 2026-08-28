@@ -33,7 +33,7 @@ Dos reglas que aprendimos a golpes: la generación con sampling tiene mucha vari
 
 ## Ronda 1: parámetros del servidor
 
-Con la configuración original (ROCm 7.2) ya salieron cosas interesantes barriendo flags de `llama-server`:
+Con la configuración original (ROCm 7.2.4) ya salieron cosas interesantes barriendo flags de `llama-server`:
 
 | Cambio | Generación (tok/s) | Comentario |
 |---|---|---|
@@ -109,7 +109,7 @@ Los datos lo confirmaron, todo dentro del ruido de medida:
 
 La única palanca grande que queda es leer menos bytes por token: Q5_K_M o Q4_K_M darían un 15–35 % más a cambio de calidad.
 
-## Limpiar los ebuilds con datos, no con `grep`
+## Limpiar los ebuilds
 
 ROCm 10 pasó a monorepos (`rocm-systems`, `rocm-libraries`, `llvm-project`) y muchos `sed` de los ebuilds, escritos contra los tarballs antiguos, podían haber dejado de coincidir en silencio (`sed` no falla cuando no encuentra el patrón). Para auditarlos sin fiarnos de la vista: desempaquetar con `ebuild unpack`, md5 de todo el árbol, `ebuild prepare`, y diff de cada fichero modificado contra el tarball original. Un `sed` cuyo fichero destino sale intacto es un no-op, se mire como se mire.
 
