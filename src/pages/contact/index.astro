@@ -2,9 +2,11 @@
 import Layout from "../../layouts/Layout.astro";
 import { seoConfig } from "@/config/seo-config.ts";
 import Button from "../../components/ui/Button.astro";
+import ObfuscatedContact from "../../components/ObfuscatedContact.astro";
 
 const contactEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || "/contact/send.php";
 const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
+const contactEmail = import.meta.env.SENDER_CONTACT_EMAIL || "";
 ---
 
 <Layout
@@ -32,11 +34,14 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
 
       <div class="flex flex-col md:flex-row md:space-x-4 mb-2 space-y-4 md:space-y-0">
         <div class="w-full md:w-1/2">
-          <label for="first_name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Nombre</label>
+          <label for="first_name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">
+            Nombre
+          </label>
           <input
             type="text"
             name="nombre"
             id="first_name"
+            maxlength="100"
             placeholder="Nombre"
             required
             class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 bg-white dark:bg-gray-800 transition-colors duration-200"
@@ -44,11 +49,14 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
           <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">Por favor, indique su nombre.</div>
         </div>
         <div class="w-full md:w-1/2">
-          <label for="surname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Apellidos</label>
+          <label for="surname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">
+            Apellidos
+          </label>
           <input
             type="text"
             name="apellidos"
             id="surname"
+            maxlength="150"
             placeholder="Apellidos"
             required
             class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 bg-white dark:bg-gray-800 transition-colors duration-200"
@@ -59,11 +67,14 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
 
       <div class="flex flex-col md:flex-row md:space-x-4 mb-6 space-y-4 md:space-y-0">
         <div class="w-full md:w-1/2">
-          <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Correo electrónico</label>
+          <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">
+            Correo electrónico
+          </label>
           <input
             type="email"
             name="email"
             id="email"
+            maxlength="254"
             placeholder="tu@empresa.com"
             required
             class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 bg-white dark:bg-gray-800 transition-colors duration-200"
@@ -73,11 +84,14 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
         </div>
 
         <div class="w-full md:w-1/2">
-          <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Teléfono</label>
+          <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">
+            Teléfono
+          </label>
           <input
             type="text"
             name="phone"
             id="phone"
+            maxlength="50"
             placeholder="123 456 789"
             required
             class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 bg-white dark:bg-gray-800 transition-colors duration-200"
@@ -88,11 +102,14 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
         </div>
       </div>
       <div class="mb-6">
-        <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Mensaje</label>
+        <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">
+          Mensaje
+        </label>
         <textarea
           rows="5"
           name="mensaje"
           id="message"
+          maxlength="5000"
           placeholder="Escriba su mensaje"
           class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 bg-white dark:bg-gray-800 transition-colors duration-200"
           required
@@ -112,38 +129,46 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
                 aria-describedby="privacy-description privacy-error"
                 required
               />
-              <span
-                class="absolute left-0 top-0 h-6 w-10 rounded-full bg-gray-200 transition-colors duration-200 peer-checked:bg-red-800"
-              >
-              </span>
-              <span
-                class="absolute left-0 top-0 h-6 w-6 rounded-full bg-white ring-1 shadow-xs ring-gray-900/5 transform transition-transform duration-200 translate-x-0 peer-checked:translate-x-4"
-              >
-              </span>
+              <span class="absolute left-0 top-0 h-6 w-10 rounded-full bg-gray-200 transition-colors duration-200 peer-checked:bg-red-800"></span>
+              <span class="absolute left-0 top-0 h-6 w-6 rounded-full bg-white ring-1 shadow-xs ring-gray-900/5 transform transition-transform duration-200 translate-x-0 peer-checked:translate-x-4"></span>
             </label>
           </div>
           <p class="text-sm/6 text-gray-600" id="privacy-description">
             Al seleccionar esto, acepta nuestra
-            <a href="/privacy" class="font-semibold text-red-800">política&nbsp;de&nbsp;privacidad</a>.
+            <a href="/privacy" class="font-semibold text-red-800">
+              política&nbsp;de&nbsp;privacidad
+            </a>
+            .
           </p>
         </div>
         <div id="privacy-error" class="text-red-400 text-sm mt-1 hidden" role="alert">
           Debe aceptar la política de privacidad
         </div>
       </div>
-      {
-        hCaptchaSiteKey ? (
-          <div class="h-captcha" data-sitekey={hCaptchaSiteKey}></div>
-        ) : (
-          <p class="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-md px-4 py-3">
-            El captcha del formulario no está configurado todavía en este entorno.
-          </p>
-        )
-      }
+      {hCaptchaSiteKey ? (
+        <div class="h-captcha" data-sitekey={hCaptchaSiteKey}></div>
+      ) : (
+        <p class="text-sm text-amber-800 bg-amber-50 border border-amber-200 rounded-md px-4 py-3">
+          El formulario no está disponible temporalmente. Puede contactar con nosotros por teléfono
+          {contactEmail && (
+            <>
+              {" "}
+              o escribir a <ObfuscatedContact value={contactEmail} type="email" />
+            </>
+          )}
+          .
+        </p>
+      )}
       <div class="mb-6">
-        <Button type="submit" text="Enviar consulta" withFull={true} />
+        <Button type="submit" text="Enviar consulta" withFull={true} disabled={!hCaptchaSiteKey} />
       </div>
-      <p class="text-base text-center text-gray-400 mt-4 min-h-[1.5rem]" id="result" role="status" aria-live="polite" aria-atomic="true"></p>
+      <p
+        class="text-base text-center text-gray-400 mt-4 min-h-[1.5rem]"
+        id="result"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
     </form>
   </div>
 </Layout>
@@ -168,18 +193,54 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
   }
 </style>
 
-{
-  hCaptchaSiteKey && <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-}
-
 <script>
-  document.addEventListener("astro:page-load", () => {
+  type HCaptcha = {
+    render: (container: HTMLElement, options: Record<string, unknown>) => string;
+    reset: (widget: string) => void;
+    remove: (widget: string) => void;
+  };
+  const captchaWindow = window as Window & {
+    hcaptcha?: HCaptcha;
+    inode64CaptchaReady?: () => void;
+  };
+  let captchaLoading: Promise<void> | undefined;
+
+  function loadCaptcha(): Promise<void> {
+    if (captchaWindow.hcaptcha) return Promise.resolve();
+    if (captchaLoading) return captchaLoading;
+
+    captchaLoading = new Promise<void>((resolve, reject) => {
+      const script = document.createElement("script");
+      const fail = () => {
+        clearTimeout(timeout);
+        script.remove();
+        captchaLoading = undefined;
+        reject(new Error("Could not load hCaptcha"));
+      };
+      const timeout = window.setTimeout(fail, 15000);
+      // The SDK callback runs after its initialization, which can finish after the script's load event.
+      captchaWindow.inode64CaptchaReady = () => {
+        clearTimeout(timeout);
+        resolve();
+      };
+      script.src = "https://js.hcaptcha.com/1/api.js?render=explicit&onload=inode64CaptchaReady&recaptchacompat=off";
+      script.async = true;
+      script.onerror = fail;
+      document.head.append(script);
+    });
+    return captchaLoading;
+  }
+
+  document.addEventListener("astro:page-load", async () => {
     const form = document.querySelector<HTMLFormElement>("#form");
     const result = document.getElementById("result");
     const privacyCheckbox = document.querySelector<HTMLInputElement>("#privacy-policy-checkbox");
     const privacyError = document.getElementById("privacy-error");
-    const captchaContainer = form?.querySelector(".h-captcha");
-    if (!form || !result) return;
+    const captchaContainer = form?.querySelector<HTMLElement>(".h-captcha");
+    const submitButton = form?.querySelector<HTMLButtonElement>('button[type="submit"]');
+    if (!form || !result || !submitButton) return;
+    let submitting = false;
+    let widgetId: string | undefined;
 
     const markCaptchaResponse = () => {
       const hcaptchaResponse = form.querySelector('textarea[name="h-captcha-response"]');
@@ -189,28 +250,29 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
       return true;
     };
 
-    if (captchaContainer && !markCaptchaResponse()) {
-      const observer = new MutationObserver(() => {
-        if (markCaptchaResponse()) observer.disconnect();
-      });
+    const observer = new MutationObserver(() => {
+      if (markCaptchaResponse()) observer.disconnect();
+    });
+    if (captchaContainer) {
       observer.observe(form, { childList: true, subtree: true });
     }
+    document.addEventListener(
+      "astro:before-swap",
+      () => {
+        observer.disconnect();
+        if (widgetId !== undefined) captchaWindow.hcaptcha?.remove(widgetId);
+      },
+      { once: true },
+    );
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       e.stopPropagation();
 
-      if (captchaContainer) {
-        const hCaptchaElem = form.querySelector<HTMLTextAreaElement>('textarea[name="h-captcha-response"]');
-        const hCaptcha = hCaptchaElem ? hCaptchaElem.value : "";
-        if (!hCaptcha) {
-          alert("Por favor, complete la verificación captcha.");
-          return;
-        }
-      }
+      if (submitting || !captchaContainer) return;
+      result.className = "text-base text-center text-red-700 mt-4 min-h-[1.5rem]";
 
       if (privacyCheckbox && !privacyCheckbox.checked) {
-        alert("Debes aceptar la política de privacidad antes de enviar el formulario.");
         privacyCheckbox.setAttribute("aria-invalid", "true");
         if (privacyError) privacyError.classList.remove("hidden");
         privacyCheckbox.focus();
@@ -227,10 +289,18 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
         return;
       }
 
+      const captchaResponse = form.querySelector<HTMLTextAreaElement>('textarea[name="h-captcha-response"]');
+      if (!captchaResponse?.value) {
+        result.textContent = "Por favor, complete la verificación captcha.";
+        return;
+      }
+
       const formData = new FormData(form);
+      submitting = true;
+      submitButton.disabled = true;
+      let succeeded = false;
       result.textContent = "Enviando...";
-      result.className = "text-base text-center mt-4 min-h-[1.5rem] text-green-600 font-semibold";
-      result.style.display = "block";
+      result.className = "text-base text-center mt-4 min-h-[1.5rem] text-green-700 font-semibold";
 
       try {
         const response = await fetch(form.action, {
@@ -243,26 +313,46 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
 
         const isJson = response.headers.get("content-type")?.includes("application/json");
         const data = isJson ? await response.json() : { success: false, message: "Respuesta inesperada del servidor." };
-        result.textContent = data.message;
+        result.textContent = data.message || "No se pudo enviar el mensaje. Inténtelo de nuevo.";
 
         if (response.ok && data.success) {
+          succeeded = true;
           form.reset();
           form.classList.remove("was-validated");
-          (window as Window & { hcaptcha?: { reset: () => void } }).hcaptcha?.reset();
           window.location.href = "/contact/success";
         } else {
-          result.className = "text-base text-center text-red-500 mt-4 min-h-[1.5rem]";
+          result.className = "text-base text-center text-red-700 mt-4 min-h-[1.5rem]";
         }
       } catch {
-        result.textContent = "Ha ocurrido un error.";
-        result.className = "text-base text-center mt-4 min-h-[1.5rem] text-red-600 font-semibold";
+        result.textContent = "No se pudo enviar el mensaje. Compruebe su conexión e inténtelo de nuevo.";
+        result.className = "text-base text-center mt-4 min-h-[1.5rem] text-red-700 font-semibold";
       } finally {
-        setTimeout(() => {
-          if (result) result.style.display = "none";
-        }, 5000);
+        submitting = false;
+        submitButton.disabled = false;
+        // Verification tokens are single-use, including requests that later fail to send email.
+        if (!succeeded && widgetId !== undefined && form.isConnected) captchaWindow.hcaptcha?.reset(widgetId);
       }
-
-      form.classList.add("was-validated");
     });
+
+    if (captchaContainer) {
+      try {
+        await loadCaptcha();
+        if (!form.isConnected) return;
+        widgetId = captchaWindow.hcaptcha!.render(captchaContainer, {
+          sitekey: captchaContainer.dataset.sitekey,
+          "error-callback": () => {
+            result.textContent = "No se pudo cargar la verificación. Recargue la página o contacte por correo.";
+          },
+          "expired-callback": () => {
+            result.textContent = "La verificación ha caducado. Complete el captcha de nuevo.";
+          },
+        });
+        markCaptchaResponse();
+      } catch {
+        if (!form.isConnected) return;
+        result.textContent = "No se pudo cargar la verificación. Recargue la página o contacte por correo.";
+        result.className = "text-base text-center text-red-700 mt-4 min-h-[1.5rem]";
+      }
+    }
   });
 </script>

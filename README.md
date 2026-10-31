@@ -15,7 +15,7 @@ Esta web representa la presencia digital de INODE64, ofreciendo información sob
 
 ### 1.3. Estado del despliegue
 
-Actualmente, la web se encuentra desplegada temporalmente en Netlify: [https://tangerine-crumble-afbcfc.netlify.app](https://tangerine-crumble-afbcfc.netlify.app)
+La web de producción está disponible en [https://inode64.com](https://inode64.com).
 
 INODE64 tiene previsto realizar el despliegue final en sus propios servidores.
 
@@ -113,22 +113,33 @@ El sitio ha sido diseñado con un enfoque `mobile-first`, adaptándose a cualqui
 
 ### 5.1. Formulario de contacto
 
-El formulario de contacto se encuentra en la página `/contact` y utiliza el componente `FormContact.astro`, ubicado en `/src/components/forms/`. Este componente es modular, reutilizable y está diseñado con clases de Tailwind CSS.
-
-Está integrado con Netlify Forms como solución temporal para gestionar envíos. En producción, puede conectarse a un endpoint personalizado para mayor control.
+El formulario está en `src/pages/contact/index.astro` y envía a `/contact/send.php`. El backend utiliza Symfony Mailer y requiere PHP 8.4.1 o posterior con cURL, iconv y OpenSSL. Astro genera la interfaz; el servidor web debe ejecutar el endpoint mediante PHP-FPM.
 
 ### 5.2. Validaciones y endpoints
 
-Actualmente, las validaciones son de tipo HTML5 (`required`, `type="email"`, etc.). Se recomienda en el futuro implementar validaciones backend, filtrado anti-spam y seguridad adicional en endpoints.
+El servidor valida campos, longitudes, aceptación de privacidad, honeypot, origen exacto y hCaptcha. Limita a cinco intentos por IP cada quince minutos mediante un directorio temporal privado y escribible por PHP. La interfaz conserva los datos ante errores y renueva el captcha para reintentar.
 
-### 5.3. Validaciones y endpoints
+### 5.3. Configuración y comprobaciones
 
-Además de las validaciones nativas en cliente, en producción se aconseja:
+Copiar `.env.template` a `.env` y configurar `PUBLIC_HCAPTCHA_SITEKEY` antes de compilar. Registrar en hCaptcha los dominios que muestran el formulario. Sin sitekey, la interfaz muestra los medios alternativos de contacto y desactiva el envío.
 
-- Validación adicional en servidor
-- Uso de honeypot o reCAPTCHA
-- Sanitización de entradas y control de longitud
-- Protección CSRF si se usan APIs externas
+Las variables de ejecución deben llegar al proceso PHP-FPM; PHP no carga `.env` automáticamente:
+
+- `CONTACT_HCAPTCHA_SITEKEY`: la misma sitekey pública usada al compilar.
+- `CONTACT_HCAPTCHA_SECRET`: secreto privado de hCaptcha, nunca una variable `PUBLIC_*`.
+- `CONTACT_ALLOWED_ORIGINS`: orígenes HTTPS separados por comas, sin barra final, por ejemplo `https://inode64.com,https://www.inode64.com`.
+- `MAILER_DSN`: transporte de Symfony. Para un MTA local que acepte correo desde loopback, puede usarse `smtp://127.0.0.1:25?auto_tls=false`; las conexiones a servidores remotos deben usar TLS. Con `sendmail://default`, comprobar que el MTA respeta el remitente de retorno y no lo sustituye por el usuario del proceso PHP.
+- `CONTACT_FORM_TO_EMAIL`, `CONTACT_FORM_FROM_EMAIL` y `CONTACT_FORM_FROM_NAME`: destinatario y remitente propios. El correo del visitante se usa como `Reply-To`.
+
+Instalar las dependencias PHP desde la raíz con `composer install --no-dev --prefer-dist --optimize-autoloader`. El DocumentRoot debe ser `dist/`, con `vendor/` y `.env` fuera del acceso público. Configurar un handler PHP para `/contact/send.php`, impedir servir otros archivos PHP como texto y limitar el cuerpo de la petición a 64 KiB. No usar claves de prueba de hCaptcha en producción.
+
+`npm run preview` sirve archivos estáticos y no ejecuta PHP. Para comprobar el backend localmente, después de instalar Composer:
+
+```bash
+node --test tests/contact.test.mjs
+```
+
+Estas pruebas no envían correo ni consultan hCaptcha. Cubren validación, orígenes, configuración ausente y límite de intentos concurrentes. La entrega real requiere una prueba adicional con el MTA y hCaptcha configurados.
 
 ---
 

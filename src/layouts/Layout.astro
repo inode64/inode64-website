@@ -116,7 +116,7 @@ const structuredDataJson = JSON.stringify({
     <link rel="icon" type="image/png" href={favicon.src} />
     <link rel="apple-touch-icon" href={favicon.src} />
     <meta name="generator" content={Astro.generator} />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://web3forms.com https://js.hcaptcha.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://api.web3forms.com https://www.googletagmanager.com; frame-src https://hcaptcha.com;" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hcaptcha.com https://*.hcaptcha.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://hcaptcha.com https://*.hcaptcha.com; img-src 'self' data: https:; connect-src 'self' https://hcaptcha.com https://*.hcaptcha.com https://www.googletagmanager.com; frame-src https://hcaptcha.com https://*.hcaptcha.com;" />
 
     <meta name="description" content={description} />
     <meta name="author" content={author} />

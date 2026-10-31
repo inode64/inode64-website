@@ -31,6 +31,7 @@ function wants_json(): bool
 function respond(int $status, string $message, bool $success = false): never
 {
     http_response_code($status);
+    header('Cache-Control: no-store');
 
     if (wants_json()) {
         header('Content-Type: application/json; charset=UTF-8');
@@ -66,18 +67,19 @@ function clean_header_value(string $value): string
     return trim(str_replace(["\r", "\n"], ' ', $value));
 }
 
-function verify_hcaptcha(string $secret, string $response, string $remoteIp): bool
+function verify_hcaptcha(string $secret, string $sitekey, string $response, string $remoteIp): bool
 {
     $payload = http_build_query(
         [
             'secret' => $secret,
+            'sitekey' => $sitekey,
             'response' => $response,
             'remoteip' => $remoteIp,
         ]
     );
 
     if (function_exists('curl_init')) {
-        $ch = curl_init('https://hcaptcha.com/siteverify');
+        $ch = curl_init('https://api.hcaptcha.com/siteverify');
         curl_setopt_array(
             $ch,
             [
@@ -106,7 +108,7 @@ function verify_hcaptcha(string $secret, string $response, string $remoteIp): bo
                 ],
             ]
         );
-        $raw = @file_get_contents('https://hcaptcha.com/siteverify', false, $context);
+        $raw = @file_get_contents('https://api.hcaptcha.com/siteverify', false, $context);
         if (!is_string($raw) || $raw === '') {
             return false;
         }
@@ -114,7 +116,7 @@ function verify_hcaptcha(string $secret, string $response, string $remoteIp): bo
 
     $decoded = json_decode($raw, true);
 
-    return is_array($decoded) && !empty($decoded['success']);
+    return is_array($decoded) && ($decoded['success'] ?? false) === true;
 }
 
 function rate_limit_check(string $ip): bool
@@ -125,8 +127,17 @@ function rate_limit_check(string $ip): bool
     $now = time();
     $attempts = [];
 
-    if (is_file($file)) {
-        $stored = json_decode((string) file_get_contents($file), true);
+    $handle = @fopen($file, 'c+');
+    if ($handle === false) {
+        throw new RuntimeException('Cannot open contact rate limit storage.');
+    }
+
+    try {
+        // Keep the read and write under one lock so parallel requests share the same limit.
+        if (!flock($handle, LOCK_EX)) {
+            throw new RuntimeException('Cannot lock contact rate limit storage.');
+        }
+        $stored = json_decode((string) stream_get_contents($handle), true);
         if (is_array($stored)) {
             foreach ($stored as $attempt) {
                 if (is_int($attempt) && ($attempt + $windowSeconds) > $now) {
@@ -134,40 +145,84 @@ function rate_limit_check(string $ip): bool
                 }
             }
         }
+        if (count($attempts) >= $maxAttempts) {
+            return false;
+        }
+
+        $attempts[] = $now;
+        $encoded = json_encode($attempts);
+        if (!rewind($handle) || !ftruncate($handle, 0) || fwrite($handle, $encoded) !== strlen($encoded)) {
+            throw new RuntimeException('Cannot update contact rate limit storage.');
+        }
+
+        return true;
+    } finally {
+        fclose($handle);
     }
-
-    if (count($attempts) >= $maxAttempts) {
-        return false;
-    }
-
-    $attempts[] = $now;
-    @file_put_contents($file, json_encode($attempts), LOCK_EX);
-
-    return true;
 }
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Allow: POST');
     respond(405, 'Método no permitido.');
+}
+
+if ((int) ($_SERVER['CONTENT_LENGTH'] ?? 0) > 65536) {
+    respond(413, 'El mensaje es demasiado largo.');
 }
 
 $autoloadPath = dirname(__DIR__, 2) . '/vendor/autoload.php';
 if (!is_file($autoloadPath)) {
-    respond(500, 'Symfony Mailer no está disponible en el servidor.');
+    error_log('inode64 contact form: Composer autoload is missing.');
+    respond(503, 'El formulario no está disponible temporalmente.');
 }
 
 require_once $autoloadPath;
 
-$allowedOrigin = env_value('CONTACT_ALLOWED_ORIGIN');
-if ($allowedOrigin !== null) {
-    $origin = $_SERVER['HTTP_ORIGIN'] ?? $_SERVER['HTTP_REFERER'] ?? '';
-    if ($origin === '' || stripos($origin, $allowedOrigin) !== 0) {
-        respond(403, 'Origen de envío no permitido.');
+$allowedOrigins = env_value('CONTACT_ALLOWED_ORIGINS', env_value('CONTACT_ALLOWED_ORIGIN'));
+if ($allowedOrigins === null) {
+    error_log('inode64 contact form: Allowed origins are not configured.');
+    respond(503, 'El formulario no está disponible temporalmente.');
+}
+
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+if ($origin === '' && isset($_SERVER['HTTP_REFERER'])) {
+    $referer = parse_url($_SERVER['HTTP_REFERER']);
+    if (is_array($referer) && isset($referer['scheme'], $referer['host'])) {
+        $origin = $referer['scheme'] . '://' . $referer['host'];
+        if (isset($referer['port'])) {
+            $origin .= ':' . $referer['port'];
+        }
     }
+}
+if (!in_array($origin, array_map('trim', explode(',', $allowedOrigins)), true)) {
+    respond(403, 'Origen de envío no permitido.');
 }
 
 $remoteIp = $_SERVER['REMOTE_ADDR'] ?? '0.0.0.0';
-if (!rate_limit_check($remoteIp)) {
-    respond(429, 'Demasiados intentos. Espere unos minutos antes de reenviar el formulario.');
+try {
+    if (!rate_limit_check($remoteIp)) {
+        respond(429, 'Demasiados intentos. Espere unos minutos antes de reenviar el formulario.');
+    }
+} catch (RuntimeException $exception) {
+    error_log('inode64 contact form: ' . $exception->getMessage());
+    respond(503, 'El formulario no está disponible temporalmente.');
+}
+
+$fieldLimits = [
+    'nombre' => 400,
+    'apellidos' => 600,
+    'email' => 254,
+    'phone' => 200,
+    'mensaje' => 20000,
+    'botcheck' => 200,
+    'privacy_accepted' => 3,
+    'h-captcha-response' => 16384,
+];
+foreach ($fieldLimits as $field => $maxBytes) {
+    $value = $_POST[$field] ?? '';
+    if (!is_string($value) || strlen($value) > $maxBytes) {
+        respond(422, 'Los datos del formulario no son válidos o son demasiado largos.');
+    }
 }
 
 $botcheck = trim((string) ($_POST['botcheck'] ?? ''));
@@ -196,11 +251,13 @@ if (!$privacyAccepted) {
 }
 
 $captchaSecret = env_value('CONTACT_HCAPTCHA_SECRET');
-if ($captchaSecret === null) {
-    respond(500, 'El captcha del formulario no está configurado en el servidor.');
+$captchaSitekey = env_value('CONTACT_HCAPTCHA_SITEKEY');
+if ($captchaSecret === null || $captchaSitekey === null) {
+    error_log('inode64 contact form: hCaptcha is not configured.');
+    respond(503, 'El formulario no está disponible temporalmente.');
 }
 
-if ($captchaResponse === '' || !verify_hcaptcha($captchaSecret, $captchaResponse, $remoteIp)) {
+if ($captchaResponse === '' || !verify_hcaptcha($captchaSecret, $captchaSitekey, $captchaResponse, $remoteIp)) {
     respond(422, 'No se ha podido validar el captcha.');
 }
 
@@ -210,15 +267,18 @@ $fromName = env_value('CONTACT_FORM_FROM_NAME', 'INODE64');
 $mailerDsn = env_value('MAILER_DSN', env_value('CONTACT_MAILER_DSN'));
 
 if ($recipient === null || !filter_var($recipient, FILTER_VALIDATE_EMAIL)) {
-    respond(500, 'El correo de destino del formulario no está configurado correctamente.');
+    error_log('inode64 contact form: Recipient is not configured.');
+    respond(503, 'El formulario no está disponible temporalmente.');
 }
 
 if ($fromEmail === null || !filter_var($fromEmail, FILTER_VALIDATE_EMAIL)) {
-    respond(500, 'El remitente del formulario no está configurado correctamente.');
+    error_log('inode64 contact form: Sender is not configured.');
+    respond(503, 'El formulario no está disponible temporalmente.');
 }
 
 if ($mailerDsn === null) {
-    respond(500, 'El DSN de Symfony Mailer no está configurado.');
+    error_log('inode64 contact form: Mailer transport is not configured.');
+    respond(503, 'El formulario no está disponible temporalmente.');
 }
 
 $fullName = trim($nombre . ' ' . $apellidos);
