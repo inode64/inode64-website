@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#17172e"/>
+      <stop offset="1" stop-color="#403b73"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <circle cx="1100" cy="20" r="370" fill="#777bb4" opacity=".1"/>
+  <circle cx="1100" cy="20" r="280" fill="none" stroke="#aaa6db" opacity=".18"/>
+  <g font-family="system-ui, sans-serif">
+    <text x="80" y="90" fill="#c9c6ed" font-size="24" letter-spacing="4">SEGURIDAD · GENTOO LINUX</text>
+    <text x="75" y="265" fill="#fff" font-size="160" font-weight="750">PHP</text>
+    <text x="82" y="323" fill="#e2e0f4" font-size="32">Parches para versiones heredadas</text>
+    <g fill="#272640" stroke="#7774a8">
+      <rect x="80" y="378" width="300" height="116" rx="16"/>
+      <rect x="450" y="378" width="300" height="116" rx="16"/>
+      <rect x="820" y="378" width="300" height="116" rx="16"/>
+    </g>
+    <g fill="#fff" font-size="54" font-weight="650" text-anchor="middle">
+      <text x="230" y="455">5.6</text>
+      <text x="600" y="455">7.3</text>
+      <text x="970" y="455">7.4</text>
+    </g>
+    <text x="80" y="571" fill="#fff" font-size="27" font-weight="700" letter-spacing="3">INODE64</text>
+    <text x="1120" y="570" fill="#c9c6ed" font-size="23" text-anchor="end">Nuestro overlay de Gentoo</text>
+  </g>
+  <g fill="none" stroke="#c5bee9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M965 147 1040 176V230C1040 272 1007 300 965 319 923 300 890 272 890 230V176Z"/>
+    <path d="m934 229 22 22 42-45"/>
+  </g>
+</svg>
