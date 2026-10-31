@@ -159,6 +159,8 @@ Esto genera la carpeta `/dist` con los archivos estáticos. Puedes hacer una vis
 npm run preview
 ```
 
+En producción, generar primero el build en un directorio temporal del mismo sistema de archivos y comprobarlo antes de sustituir `dist/`. Conservar durante al menos 24 horas los archivos de `_astro/` de la versión anterior, sin sobrescribir los nuevos: las páginas abiertas o guardadas en caché pueden seguir solicitándolos. `public/.htaccess` configura la revalidación del HTML (`Cache-Control: no-cache`) y debe publicarse también; los archivos con hash conservan su caché independiente.
+
 ### 6.2. Recomendaciones para hosting propio
 
 Desplegado en los propios servidores de INODE64, con las siguientes características:
