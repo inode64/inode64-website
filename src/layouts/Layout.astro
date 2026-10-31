@@ -193,10 +193,10 @@ const structuredDataJson = JSON.stringify({
     </div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener('astro:page-load', () => {
         const banner = document.getElementById('cookie-consent');
         const acceptBtn = document.getElementById('accept-cookies');
-        let lastFocused = null;
+        let lastFocused: Element | null = null;
 
         if (banner && !localStorage.getItem('cookies-accepted')) {
           lastFocused = document.activeElement;

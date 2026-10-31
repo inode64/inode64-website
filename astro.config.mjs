@@ -8,6 +8,10 @@ export default defineConfig({
   compressHTML: true,
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      // External modules avoid ClientRouter's data: script fallback, which the CSP blocks.
+      assetsInlineLimit: 0,
+    },
   },
 
   integrations: [

@@ -100,9 +100,9 @@ import logo from "../assets/images/brand/logo.webp";
 
       if (!menuToggle || !menuClose || !mobileMenu) return;
 
-      let lastFocused = null;
+      let lastFocused: Element | null = null;
 
-      const handleKeydown = (event) => {
+      const handleKeydown = (event: KeyboardEvent) => {
         if (event.key === "Escape") {
           closeMenu();
         }

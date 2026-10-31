@@ -25,7 +25,7 @@ INODE64 tiene previsto realizar el despliegue final en sus propios servidores.
 
 ### 2.1. Software necesario
 
-- Node.js v22.12.0 o superior
+- Node.js v22.23.4 o superior
 - npm v9.6.5 o superior
 
 Instalación de dependencias:

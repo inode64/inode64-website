@@ -172,11 +172,11 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
   hCaptchaSiteKey && <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 }
 
-<script type="module">
-  window.addEventListener("load", () => {
-    const form = document.getElementById("form");
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const form = document.querySelector<HTMLFormElement>("#form");
     const result = document.getElementById("result");
-    const privacyCheckbox = document.getElementById("privacy-policy-checkbox");
+    const privacyCheckbox = document.querySelector<HTMLInputElement>("#privacy-policy-checkbox");
     const privacyError = document.getElementById("privacy-error");
     const captchaContainer = form?.querySelector(".h-captcha");
     if (!form || !result) return;
@@ -201,7 +201,7 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
       e.stopPropagation();
 
       if (captchaContainer) {
-        const hCaptchaElem = form.querySelector('textarea[name="h-captcha-response"]');
+        const hCaptchaElem = form.querySelector<HTMLTextAreaElement>('textarea[name="h-captcha-response"]');
         const hCaptcha = hCaptchaElem ? hCaptchaElem.value : "";
         if (!hCaptcha) {
           alert("Por favor, complete la verificación captcha.");
@@ -221,7 +221,7 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
       }
 
       if (!form.checkValidity()) {
-        const firstInvalid = form.querySelector(":invalid");
+        const firstInvalid = form.querySelector<HTMLElement>(":invalid");
         if (firstInvalid) firstInvalid.focus();
         form.classList.add("was-validated");
         return;
@@ -248,7 +248,7 @@ const hCaptchaSiteKey = import.meta.env.PUBLIC_HCAPTCHA_SITEKEY || "";
         if (response.ok && data.success) {
           form.reset();
           form.classList.remove("was-validated");
-          window.hcaptcha?.reset();
+          (window as Window & { hcaptcha?: { reset: () => void } }).hcaptcha?.reset();
           window.location.href = "/contact/success";
         } else {
           result.className = "text-base text-center text-red-500 mt-4 min-h-[1.5rem]";
