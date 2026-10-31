@@ -147,6 +147,8 @@ Estas pruebas no envían correo ni consultan hCaptcha. Cubren validación, oríg
 
 ### 6.1. Generación y despliegue de producción
 
+Los cambios de código y documentación, los commits y el `git push` se realizan en el checkout de desarrollo. El checkout del servidor de producción solo recibe cambios mediante `git pull --ff-only`: no editar allí archivos versionados ni crear commits. Antes de actualizar, comprobar que `git status --short` esté limpio. La configuración `.env` y los archivos generados permanecen fuera del control de versiones.
+
 Para compilar la web:
 
 ```bash
